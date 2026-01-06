@@ -1,0 +1,14 @@
+---
+title: "Modul Praktik Statistika Untuk Perencanaan"
+subtitle: "Penggunaan R dalam Pengolahan Data Kuantitatif"
+site: bookdown::bookdown_site
+output:
+    bookdown::gitbook:
+        css: style.css
+bibliography: referensi.bib
+link-citations: true
+---
+
+# Pengantar: Pengenalan R, RStudio, dan R Markdown {-}
+
+Selamat datang di dunia pengolahan data yang lebih canggih! Dalam praktikum ini, kalian akan berkenalan dengan teknik pengolahan dan analisis data yang lebih canggih, yakni dengan menggunakan bahasa pemrograman bernama R. R adalah bahasa pemrograman yang dibuat khusus untuk keperluan analisis statistik. 

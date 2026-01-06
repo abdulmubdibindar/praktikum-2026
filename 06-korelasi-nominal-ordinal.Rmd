@@ -1,0 +1,366 @@
+# Modul-6: Analisis Hubungan Korelatif: Korelasi Variabel Nominal dan Ordinal
+
+Setelah mempelajari modul ini, Anda diharapkan dapat:
+
+1. mampu menghasilkan koefisien korelasi variabel di tingkat nominal dengan perangkat lunak komputer **`STP-9.2`**
+2. mampu menghasilkan koefisien korelasi variabel di tingkat ordinal dengan perangkat lunak komputer **`STP-10.2`**
+
+## Pendahuluan
+
+Analisis korelasi adalah salah satu teknik analisis yang termasuk ke dalam lingkup statistika bivariat, statistika yang analisisnya melibatkan dua variabel **sekaligus**. Pada praktikum-praktikum sebelumnya kita hanya melibatkan satu variabel saja, misalnya:
+
+-   pada praktikum ke-2, kita mengaplikasikan persentase hanya pada variabel `Jenis.Kelamin`, `Fakultas`, `Tingkat.Semester`, `Uang.Saku`, atau`jenis.tempat.tinggal` saja, tetapi tidak menghubungkannya satu sama lain,
+
+    ``` r
+    data.ubl |> 
+      tbl_summary(include = c(Jenis.Kelamin,
+                              Fakultas,
+                              Tingkat.Semester,
+                              Uang.Saku,
+                              jenis.tempat.tinggal)) |> 
+      as_flex_table()
+    ```
+
+-   pada praktikum ke-3, kita membuat histogram untuk variabel `Umur` saja
+
+    ``` r
+    histogram <- ggplot(data.ubl.cleaned) +
+      geom_histogram(mapping = aes(x = Umur), binwidth = 1, fill = "darkseagreen", color = "white") +
+      labs(
+        title = "Distribusi Umur Mahasiswa",
+        x = "Umur (Tahun)",
+        y = "Frekuensi"
+      ) +
+      theme_minimal()
+
+    histogram
+    ```
+
+-   pada praktikum-praktikum tentang analisis statistik inferensial, kita hanya tertarik pada proporsi atau rata-rata suatu variabel saja, yang pastinya tunggal.
+
+Dalam praktikum ini kita akan mempraktikkan analisis korelasi pada dua variabel **secara bersamaan.** Ketika kita tertarik pada analisis untuk dua variabel secara bersamaan, artinya kita sedang menganalisis sebuah **keterkaitan** atau sebuah **hubungan**. Dalam praktikum ini, hubungan itu disebut **korelasi**.
+
+Korelasi yang akan kita pelajari adalah korelasi pada pasangan variabel dengan tingkat pengukuran nominal dan juga ordinal.
+
+## Pustaka *(Libraries)* yang Diperlukan dan Memuat Data
+
+Seperti biasa, kita perlu memuat pustaka *(libraries)* yang diperlukan dalam pengolahan data kita. Untuk memuat tabel silang kita akan gunakan pustaka `gtsummary` kembali seperti pada praktikum ke-2
+
+```{r }
+library(tidyverse)
+library(readr)
+```
+
+**Memuat dataset**
+
+Kita akan menggunakan dataset keempat kampus di Kota Bandar Lampung dan sekitarnya sebagai bahan. Tulis ulang dan jalankan baris perintah berikut untuk mengolah data keempat kampus
+
+```{r}
+# Membaca data
+data_mahasiswa <- read_csv2("datasets/Data Praktikum 06.csv")
+```
+
+**Mengatur Faktor untuk Variabel Kategoris**
+
+Setelah membaca data, kita perlu mengatur variabel-variabel nominal dan ordinal dengan mengatur nilai-nilainya berupa *factor*.
+
+Namun sebelum itu, kita akan membuat vektor-vektor untuk kita aplikasikan menjadi *factor* dengan memanfaatkan `group_by` dan `summarize` yang berasal dari pustaka `dplyr`.
+
+```{r membuat-vektor}
+# MEMBUAT FAKTOR UNTUK KAMPUS
+# Meringkas data berdasarkan kolom Kampus PT
+faktor_kampus <- data_mahasiswa |>
+  group_by(kampus = Kampus_PT) |>
+  summarize(jumlah = n())
+# Membuat vektor untuk faktor Kampus PT dari kolom nama Kampus
+faktor_kampus <- faktor_kampus$kampus
+
+# MEMBUAT FAKTOR UNTUK FAKULTAS
+# Meringkas data berdasarkan kolom Fakultas
+faktor_fakultas <- data_mahasiswa |>
+  group_by(fakultas = Fakultas) |>
+  summarize(jumlah = n())
+# Membuat vektor untuk faktor Fakultas dari kolom nama fakultas
+faktor_fakultas <- faktor_fakultas$fakultas
+
+# MEMBUAT FAKTOR UNTUK PROGRAM STUDI
+# Meringkas data berdasarkan kolom Prodi
+faktor_prodi <- data_mahasiswa |>
+  group_by(prodi = Prodi) |>
+  summarize(jumlah = n())
+# Membuat vektor untuk faktor Prodi dari kolom nama Prodi
+faktor_prodi <- faktor_prodi$prodi
+
+# MEMBUAT FAKTOR UNTUK JENIS KELAMIN
+# Meringkas data berdasarkan kolom Jenis Kelamin
+faktor_jk <- data_mahasiswa |>
+  group_by(jk = `Jenis Kelamin`) |> 
+  summarize(jumlah = n())
+# Membuat vektor untuk faktor Jenis Kelamin dari kolom nama Jenis Kelamin
+faktor_jk <- faktor_jk$jk
+
+# MEMBUAT FAKTOR UNTUK TINGKAT SEMESTER
+# Meringkas data berdasarkan kolom Tingkat Semester
+faktor_semester <- data_mahasiswa |>
+  group_by(semester = `Tingkat Semester`) |>
+  summarize(jumlah = n())
+# Membuat vektor faktor Tingkat Semester dari kolom Tingkat Semester
+faktor_semester <- faktor_semester$semester
+
+# MEMBUAT FAKTOR UNTUK UANG SAKU
+# Meringkas data berdasarkan kolom Uang Saku
+faktor_uangsaku <- data_mahasiswa |>
+  group_by(uang = `Uang Saku`) |>
+  summarize(jumlah = n())
+# Memperbaiki urutan uang saku
+faktor_uangsaku$uang[c(1,4)] <- faktor_uangsaku$uang[c(4,1)]
+faktor_uangsaku$jumlah[c(1,4)] <- faktor_uangsaku$jumlah[c(4,1)]
+
+faktor_uangsaku$uang[c(2,4)] <- faktor_uangsaku$uang[c(4,2)]
+faktor_uangsaku$jumlah[c(2,4)] <- faktor_uangsaku$jumlah[c(4,2)]
+
+faktor_uangsaku$uang[c(3,4)] <- faktor_uangsaku$uang[c(4,3)]
+faktor_uangsaku$jumlah[c(3,4)] <- faktor_uangsaku$jumlah[c(4,3)]
+
+# Membuat vektor faktor Tingkat Uang Saku dari kolom Uang Saku
+faktor_uangsaku <- faktor_uangsaku$uang
+
+# MEMBUAT FAKTOR UNTUK KENDARAAN UTAMA
+# Meringkas data berdasarkan kolom Kendaraan Utama
+faktor_kendaraanutama <- data_mahasiswa |>
+  group_by(kendaraan = `kendaraan utama`) |>
+  summarize(jumlah = n())
+# Membuat vektpr faktor untuk kendaraan utama dari kolom 'kendaraan'
+faktor_kendaraanutama <- faktor_kendaraanutama$kendaraan
+
+
+# MEMBUAT FAKTOR JENIS TEMPAT TINGGAL
+# Meringkas data berdasarkan kolom Jenis Tempat Tinggal
+faktor_jenistempattinggal <- data_mahasiswa |>
+  group_by(tempat_tinggal = `jenis tempat tinggal`) |>
+  summarize(jumlah = n())
+# Membuat vektor faktor untuk jenis tempat tinggal berdasarkan kolom Jenis Tempat Tinggal
+faktor_jenistempattinggal <- faktor_jenistempattinggal$tempat_tinggal
+```
+
+Barulah selanjutnya kita bisa mengatur *factor* untuk setiap variabel kategoris
+
+```{r mengatur-faktor}
+data_mahasiswa <- data_mahasiswa |>
+  mutate (Kampus_PT = factor(Kampus_PT, levels = faktor_kampus),
+         `Jenis Kelamin` = factor(`Jenis Kelamin`, levels = faktor_jk),
+         Fakultas = factor(Fakultas, levels = faktor_fakultas),
+         Prodi = factor(Prodi, levels = faktor_prodi),
+         `Tingkat Semester` = factor(`Tingkat Semester`, levels = faktor_semester,
+                                     ordered = TRUE), # Variabel ordinal
+         `Uang Saku` = factor(`Uang Saku`, levels = faktor_uangsaku,
+                              ordered = TRUE), # Variabel ordinal
+         `kendaraan utama` = factor(`kendaraan utama`, levels = faktor_kendaraanutama),
+         `jenis tempat tinggal` = factor(`jenis tempat tinggal`, levels = faktor_jenistempattinggal)
+         )
+```
+
+Kita dapat memeriksa hasil pekerjaan kita dengan perintah `glimpse`
+
+```{r memeriksa-hasil-factor}
+# Memeriksa hasil pengaturan factor
+glimpse(data_mahasiswa)
+```
+
+## Pembuatan Tabel Silang
+
+Setelah kita memastikan data kita bersih, kita siap untuk menganalisis korelasi antarvariabel kategoris.
+
+Korelasi antarvariabel kategoris memerlukan "bahan baku" berupa **tabel silang** atau ***cross table***. Kebanyakan literatur juga menggunakan istilah ***contingency table***. Tabel silang adalah tabel dua arah, yakni yang baik baris maupun kolomnya adalah **nilai-nilai dari dua variabel** yang disilangkan.
+
+*Chunk* berikut memperlihatkan bagaimana membuat tabel silang antara variabel `jenis tempat tinggal` dengan `kendaraan utama`.
+
+```{r membuat-tabel-silang}
+library(gtsummary)
+library(flextable)
+
+# Menghasilkan tabel silang antara variabel kendaraan utama dan jenis tempat tinggal
+# untuk keperluan presentasi
+data_mahasiswa |>
+  select(`jenis tempat tinggal`, `kendaraan utama`) |>
+  tbl_summary(by = `jenis tempat tinggal`) |>
+  as_flex_table()
+```
+
+Tabel silang yang merupakan hasil dari *script* di atas adalah seperti berikut. Baris menunjukkan kategori dalam variabel `kendaraan utama`, sementara kolom menunjukkan kategori dalam variabel `jenis tempat tinggal`. Nilai-nilai dalam sel-selnya adalah frekuensi/jumlah data yang termasuk ke dalam kondisi berupa kategori kedua variabel.
+
+Perhatikan cara menginterpretasi informasi dari tabel tersebut:
+
+-   jumlah pengguna layanan online yang tinggal di kos bersama-sama adalah 19 orang, yang setara dengan 16%.
+
+-   tidak ada pengguna sepeda yang tinggal di Asrama, Kos bersama-sama, atau mengontrak rumah secara pribadi. Keberadaannya juga langka pada kalangan mahasiswa yang tinggal di rumah pribadi atau di saudaranya.
+
+![Tabel Silang antara variabel jenis kendaraan utama dengan jenis tempat tinggal](images/hasil%20tabel%20silang.png){width="600"}
+
+Selain dengan `tbl_summary()` yang gunanya cenderung untuk presentasi, kita dapat menggunakan perintah `table()` untuk menghasilkan tabel silang yang siap dioperasikan ke dalam perhitungan koefisien korelasi di tahap selanjutnya. Perintah `table()` mengambil dua masukan, yakni vektor variabel-variabel yang kita akan analisis, dipisahkan dengan tanda koma (`,`).
+
+```{r perintah-table()}
+table(data_mahasiswa$`jenis tempat tinggal`,  # vektor variabel-variabel ini kita akses dari 
+      data_mahasiswa$`kendaraan utama`)       # dataset menggunakan operator '$'
+```
+
+**Latihan: buatlah tabel silang antara variabel `Tingkat Semester` dan `Uang Saku` baik dengan `gt_summary` maupun dengan `table()`!**
+
+## Analisis Korelasi Antarvariabel Nominal
+
+Dalam analisis korelasi variabel nominal, kita mengukur **keberadaan** dan juga **kekuatan hubungan**. Ukuran yang kita pakai untuk menyatakan hal tersebut adalah **koefisien korelasi variabel nominal**, yang di antaranya adalah koefisien $\phi$ **(phi)**, **V Cramer** dan **koefisien C**. Ketiga koefisien tersebut dihitung dari nilai $\chi^2$ ("chi kuadrat").
+
+Selain itu, terdapat juga $\lambda$ **(lambda)** yang merupakan koefisien korelasi variabel nominal berbasis *error,* atau disebut juga PRE *(proportional reduction of error).*
+
+Ukuran dari keempat koefisien tersebut adalah besarnya yang berkisar **antara 0 dan 1** dengan **0 berarti tidak ada hubungan sama sekali** dan **1 berarti hubungan yang ada sangat kuat.**
+
+### Koefisien Korelasi Variabel Nominal Berbasis $\chi^2$
+
+Yang pertama adalah koefisien korelasi berbasis nilai $\chi^2$ . Karena berbasis nilai $\chi^2$, maka kita harus menghitung terlebih dahulu nilai $\chi^2$ antara dua variabel kita.
+
+Untuk menghitung $\chi^2$ kita menggunakan dua perintah utama dalam R, yakni `table()` dan `chisq.test()`. Perintah `table()` berfungsi membuat tabel silang yang berguna sebagai "bahan baku" perhitungan $\chi^2$ kita, kemudian perintah `chisq.test()` menghitung nilai $\chi^2$ tersebut.
+
+```{r menghitung-chi-square}
+# Menyimpan tabel
+t4tinggal_kend <- table(data_mahasiswa$`kendaraan utama`,
+                        data_mahasiswa$`jenis tempat tinggal`)
+# Menyimpan hasil chi-square test
+chisq_t4tinggal_kend <- 
+  t4tinggal_kend |>
+  chisq.test()
+
+```
+
+Seperti yang bisa kita lihat, hasil perhitungan berupa variabel R `chisq_t4tinggal_kend` berada di bagian data, dan jika kita perluas, maka di dalamnya terdapat banyak variabel-variabel lain. Variabel-variabel lain tersebut menyimpan berbagai nilai yang menjadi bagian dari hasil perhitungan. Nilai-nilai yang penting untuk
+
+-   `.$statistic` menyimpan nilai $\chi^2$ dari tabel. Ini digunakan untuk menghitung kekuatan korelasi
+
+-   `.$parameter` menyimpan nilai *degree of freedom* (df)
+
+-   `.$p.value` menyimpan nilai probabilitas untuk menerima $H_0$ yang berarti tidak ada hubungan antara dua variabel yang dianalisis
+
+-   `.$expected` menyimpan tabel frekuensi yang diharapkan dari data kita
+
+Tampilkan seluruh nilai tersebut
+
+```{r menampilkan-nilai-penting}
+chisq_t4tinggal_kend$statistic
+
+chisq_t4tinggal_kend$parameter
+
+chisq_t4tinggal_kend$p.value
+
+chisq_t4tinggal_kend$expected
+```
+
+Kita akan menghitung nilai koefisien V Cramer untuk menyatakan korelasi antara jenis kendaraan yang digunakan sebagai moda ke kampus dan jenis tempat tinggal mahasiswa menggunakan rumus berikut dan berdasarkan nilai $\chi^2$ yang kita dapatkan dari tes sebelumnya.
+
+$$
+V = \sqrt{\frac{\chi^2}{n \times min(c−1,r−1)}}​​
+$$
+
+```{r menghitung-koefisien-V}
+# Menyimpan nilai Chi-squared menggunakan metode "as.numeric"
+chisq_t4tinggal_kend <- as.numeric(chisq_t4tinggal_kend$statistic)
+
+# Menghitung jumlah data
+n <- data_mahasiswa |>
+  summarize(jumlah = n())
+n <- n$jumlah
+
+# Menghitung jumlah kategori dari 'jenis tempat tinggal' sebagai jumlah kolom
+kolom <- data_mahasiswa |>
+  group_by(jenis = `jenis tempat tinggal`) |>
+  summarize(jumlah = n())
+kolom <- length(kolom$jenis)
+
+# Menghitung jumlah kategori dari 'kendaraan utama' sebagai jumlah baris
+baris <- data_mahasiswa |>
+  group_by(kend = `kendaraan utama`) |>
+  summarize(jumlah = (n))
+baris <- length(baris$kend)
+
+# Menghitung koefisien V
+v_t4tinggal_kend <- sqrt(chisq_t4tinggal_kend/(n * min(kolom-1, baris-1)))
+v_t4tinggal_kend
+```
+
+**Kesimpulan:** Hasil dari perhitungan koefisien V adalah **0,253**. Angka ini menunjukkan hubungan yang sedikit lemah, karena berada di bawah nilai tengah-tengah yaitu 0,5. Artinya, hubungan antara jenis tempat tinggal dengan jenis kendaraan yang sering digunakan ke kampus tidak begitu kuat.
+
+**Cara lain:** kita dapat menggunakan pustaka `rcompanion` untuk menghitung koefisien V Cramer, yaitu dengan perintah `cramerV()`. Perintah ini mengambil langsung vektor kolom variabel yang kita akan analisis, sehingga menggunakan notasi `$` untuk mengakses kolom `` `jenis tempat tinggal` `` dan `` `kendaraan utama` ``.
+
+Tentunya kita harus menginstal pustaka tersebut jika belum memilikinya dengan perintah `install.packages('rcompanion')`.
+
+```{r, eval=FALSE}
+install.packages("rcompanion")
+```
+
+```{r menggunakan-pustaka-rcompanion}
+library(rcompanion)
+
+cramerV(data_mahasiswa$`jenis tempat tinggal`, data_mahasiswa$`kendaraan utama`)
+```
+
+### Koefisien Korelasi Variabel Nominal Berbasis *Error*
+
+Untuk analisis korelasi variabel nominal berbasis *error* yang menggunakan koefisien $\lambda$ kita dapat menggunakan perintah `lambda()` yang ada di dalam pustaka `RCPA3`. Terlebih dahulu tentunya lakukan instalasi pustaka tersebut dengan perintah `install.packages('RCPA3')`.
+
+Perintah `lambda()` mengambil masukan berupa tabel silang seperti yang kita buat pada perhitungan $\chi^2$, yakni perintah `table()` .
+
+```{r, eval=FALSE}
+install.packages("RCPA3")
+```
+
+```{r menghitung-lambda}
+library(RCPA3)
+
+# Menghitung koefisien lambda
+lambda_t4tinggal_kend <- lambda(t4tinggal_kend, digits = 3, detailed = TRUE)
+# digits menandakan berapa desimal angka yang kita hasilkan
+# detailed menandakan apakah kita memperlihatkan nilai-nilai error yang dihitung
+```
+
+## Analisis Korelasi Antarvariabel Ordinal
+
+Dalam analisis korelasi variabel ordinal, kita tidak hanya dapat mengukur keberadaan dan juga kekuatan hubungan, tetapi juga **arah hubungan**. Yang dimaksud dengan 'arah hubungan' adalah **searah** atau **berlawanan**. Hubungan searah berarti semakin tinggi nilai variabel #1, maka semakin tinggi juga nilai variabel #2, begitu pula sebaliknya. Akan tetapi, jika arah hubungan berlawanan, semakin tinggi nilai variabel #1 maka semakin rendah nilai variabel #2, begitu pula sebaliknya.
+
+Arah hubungan ditunjukkan oleh **tanda koefisien** dan kekuatannya ditunjukkan oleh **besar angka koefisien.** Oleh karena itu, nilai korelasi pada variabel ordinal berkisar antara $-1$ hingga $+1$ dengan tanda $-$ untuk menandakan hubungan berlawanan dan $+$ untuk hubungan searah.
+
+Kita dapat menggunakan perintah `GKgamma()` dari pustaka `vcdExtra`. Lakukan instalasi pustaka terlebih dahulu dengan perintah `install.packages('vcdExtra')`.
+
+Perintah `GKgamma()` mengambil masukan sama seperti `chisq.test()`, yakni tabel silang yang dihasilkan dari perintah `table()`.
+
+Dalam praktikum ini, kita akan menganalisis kekuatan dan arah hubungan antara Uang Saku dan Tingkat Semester. Apakah mahasiswa dengan tingkat semester makin tinggi uang sakunya makin tinggi pula, atau sebaliknya?
+
+```{r, eval=FALSE}
+install.packages("vcdExtra")
+```
+
+```{r menghitung-koefisien-gamma}
+library(vcdExtra)
+
+# Membuat variabel table() sebagai masukan
+uangSaku_tingkatSemester <- table(data_mahasiswa$`Uang Saku`,
+                                  data_mahasiswa$`Tingkat Semester`)
+
+# Menghitung nilai Gamma dari variabel table() yang sudah dibuat
+G_uangSaku_tingkatSemester <- GKgamma(uangSaku_tingkatSemester)
+
+# Menampilkan nilai Gamma
+G_uangSaku_tingkatSemester
+```
+
+Seperti halnya nilai variabel hasil perhitungan `chisq.test()`, hasil perhitungan `GKgamma()` juga terdiri atas banyak variabel. Nilai gamma sendiri dapat kita akses dengan `.$gamma`.
+
+Nilai lain yang penting bagi kita adalah nilai `.$C` dan `.$D` . Nilai-nilai tersebut adalah nilai operasi dalam sel tabel silang yang merupakan penyusun dalam perhitungan koefisien tersebut mengikuti rumus berikut:
+
+$$
+G = \frac{C-D}{C+D}
+$$
+
+```{r mengakses-penyusun-rumus-gamma}
+# Menampilkan nilai C dan D
+print(G_uangSaku_tingkatSemester$C)
+print(G_uangSaku_tingkatSemester$D)
+```
+

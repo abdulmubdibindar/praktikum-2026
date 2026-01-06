@@ -1,0 +1,780 @@
+"";"Nomor.urut";"Jenis.Kelamin";"Umur";"Fakultas";"Prodi";"Tingkat.Semester";"Uang.Saku";"kepemilikan.mobil";"kepemilikan.motor";"kepemilikan.sepeda";"kendaraan.utama";"jenis.tempat.tinggal";"jarak";"Jumlah.perjalanan.Selasa";"Jumlah.perjalanan.Rabu";"Jumlah.perjalanan.Kamis";"Jumlah.perjalanan.Jumat";"Jumlah.perjalanan.Sabtu";"Jumlah.perjalanan.Ahad"
+"1";1;"Laki-laki";22;"Syariah";"Hukum Keluarga";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Rumah Bersama Saudara";19,27;3;0;0;0;0;0
+"2";2;"Laki-laki";25;"Syariah";"Hukum Keluarga";"4 (Semester 7 - Semester 8)";"< 1 Jt";1;4;0;"Sepeda Motor Pribadi";"Kos Sendiri";0,58;3;0;3;0;0;0
+"3";3;"Perempuan";24;"Tarbiyah dan Keguruan";"Pendidikan Agama Islam";"4 (Semester 7 - Semester 8)";"< 1 Jt";0;0;0;"Berjalan Kaki";"Kos Sendiri";0,56;0;3;0;0;0;0
+"4";4;"Laki-laki";19;"Dakwah dan Ilmu Komunikasi";"Komunikasi dan Penyiaran Islam";"1 (Semester 1 - Semester 2)";"< 1 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";1,05;2;0;2;2;0;2
+"5";5;"Laki-laki";23;"Tarbiyah dan Keguruan";"Manajemen Pendidikan Islam";"4 (Semester 7 - Semester 8)";"< 1 Jt";0;1;0;"Sepeda Motor Pribadi";"Rumah Mengontrak Bersama-sama";1,69;4;0;0;3;2;0
+"6";6;"Laki-laki";21;"Adab";"Ilmu Perpustakaan dan Informasi Islam";"4 (Semester 7 - Semester 8)";"< 1 Jt";0;1;0;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";7,91;2;2;0;2;2;2
+"7";7;"Laki-laki";22;"Dakwah dan Ilmu Komunikasi";"Komunikasi dan Penyiaran Islam";"4 (Semester 7 - Semester 8)";"< 1 Jt";1;1;0;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";2,58;0;3;0;2;2;2
+"8";8;"Laki-laki";21;"Dakwah dan Ilmu Komunikasi";"Pengembangan Masyarakat Islam";"4 (Semester 7 - Semester 8)";"< 1 Jt";1;4;0;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";2,32;4;4;4;4;2;2
+"9";9;"Perempuan";21;"Dakwah dan Ilmu Komunikasi";"Komunikasi dan Penyiaran Islam";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";1;4;1;"Sepeda Motor Pribadi";"Kos Sendiri";0,77;0;3;0;0;2;2
+"10";10;"Perempuan";21;"Tarbiyah dan Keguruan";"Pendidikan Agama Islam";"4 (Semester 7 - Semester 8)";"< 1 Jt";0;1;0;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";6,56;2;2;2;0;0;0
+"11";11;"Perempuan";19;"Ekonomi dan Bisnis Islam";"Manajemen Bisnis Syariah";"2 (Semester 3 - Semester 4)";"1Jt - 2 Jt";0;0;0;"Kendaraan Bermotor (menumpang)";"Kos Bersama-sama";0,63;4;4;2;2;2;2
+"12";12;"Perempuan";19;"Dakwah dan Ilmu Komunikasi";"Bimbingan Konseling Islam";"4 (Semester 7 - Semester 8)";"< 1 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";0,53;2;2;2;2;2;2
+"13";13;"Perempuan";19;"Ekonomi dan Bisnis Islam";"Manajemen Bisnis Syariah";"2 (Semester 3 - Semester 4)";"1Jt - 2 Jt";0;3;1;"Sepeda Motor Pribadi";"Rumah Mengontrak Pribadi";0,91;2;2;2;2;0;0
+"14";14;"Perempuan";19;"Ekonomi dan Bisnis Islam";"Manajemen Bisnis Syariah";"2 (Semester 3 - Semester 4)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";2,52;2;2;2;2;0;2
+"15";15;"Laki-laki";19;"Dakwah dan Ilmu Komunikasi";"Komunikasi dan Penyiaran Islam";"2 (Semester 3 - Semester 4)";"< 1 Jt";0;0;0;"Kendaraan Bermotor (menumpang)";"Kos Bersama-sama";1,31;3;2;0;2;0;2
+"16";16;"Perempuan";20;"Syariah";"Hukum Tata Negara";"4 (Semester 7 - Semester 8)";"< 1 Jt";0;0;0;"Berjalan Kaki";"Kos Sendiri";0,83;2;2;3;0;0;0
+"17";17;"Perempuan";19;"Tarbiyah dan Keguruan";"Pendidikan Bahasa Inggris";"1 (Semester 1 - Semester 2)";"< 1 Jt";0;1;0;"Sepeda Motor Pribadi";"Rumah Mengontrak Bersama-sama";0,95;2;2;2;2;0;0
+"18";18;"Laki-laki";21;"Ekonomi dan Bisnis Islam";"Manajemen Bisnis Syariah";"2 (Semester 3 - Semester 4)";"< 1 Jt";0;2;0;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";7,67;2;0;2;2;2;1
+"19";19;"Perempuan";20;"Ekonomi dan Bisnis Islam";"Manajemen Bisnis Syariah";"2 (Semester 3 - Semester 4)";"< 1 Jt";0;2;0;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";4,34;3;3;2;0;0;2
+"20";20;"Laki-laki";20;"Ekonomi dan Bisnis Islam";"Manajemen Bisnis Syariah";"2 (Semester 3 - Semester 4)";"< 1 Jt";0;1;1;"Sepeda Motor Pribadi";"Rumah Bersama Saudara";4,46;0;2;2;2;2;0
+"21";21;"Perempuan";20;"Tarbiyah dan Keguruan";"Pendidikan Agama Islam";"3 (Semester 5 - Semester 6)";"< 1 Jt";0;0;0;"Berjalan Kaki";"Kos Bersama-sama";0,71;0;2;2;2;0;0
+"22";22;"Perempuan";20;"Ekonomi dan Bisnis Islam";"Manajemen Bisnis Syariah";"2 (Semester 3 - Semester 4)";"< 1 Jt";0;0;0;"Kendaraan Bermotor (menumpang)";"Kos Bersama-sama";0,92;0;2;2;2;0;2
+"23";23;"Perempuan";20;"Syariah";"Hukum Keluarga";"4 (Semester 7 - Semester 8)";"2 Jt - 3 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";1,37;2;2;2;2;0;2
+"24";24;"Laki-laki";19;"Tarbiyah dan Keguruan";"Pendidikan Agama Islam";"2 (Semester 3 - Semester 4)";"< 1 Jt";0;0;1;"Sepeda";"Kos Sendiri";0,56;0;3;3;2;0;2
+"25";25;"Laki-laki";20;"Ekonomi dan Bisnis Islam";"Manajemen Bisnis Syariah";"2 (Semester 3 - Semester 4)";"< 1 Jt";0;1;0;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";3,02;0;3;2;2;0;0
+"26";26;"Laki-laki";22;"Tarbiyah dan Keguruan";"Pendidikan Anak Usia Dini";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";1;3;1;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";8,56;2;0;2;2;2;0
+"27";27;"Perempuan";22;"Syariah";"Hukum Keluarga";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";1;2;0;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";8,49;3;2;3;3;2;0
+"28";28;"Laki-laki";22;"Ekonomi dan Bisnis Islam";"Ekonomi Syariah";"4 (Semester 7 - Semester 8)";"< 1 Jt";1;2;3;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";4,77;1;2;2;3;2;0
+"29";29;"Perempuan";21;"Ekonomi dan Bisnis Islam";"Ekonomi Syariah";"4 (Semester 7 - Semester 8)";"< 1 Jt";0;0;0;"Berjalan Kaki";"Kos Sendiri";0,34;0;0;2;0;0;0
+"30";30;"Perempuan";20;"Ekonomi dan Bisnis Islam";"Manajemen Bisnis Syariah";"2 (Semester 3 - Semester 4)";"< 1 Jt";0;1;0;"Sepeda Motor Pribadi";"Rumah Mengontrak Bersama-sama";2,4;2;4;4;0;0;0
+"31";31;"Laki-laki";21;"Tarbiyah dan Keguruan";"Pendidikan Matematika";"3 (Semester 5 - Semester 6)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Rumah Bersama Saudara";4,3;3;3;3;4;2;0
+"32";32;"Laki-laki";21;"Syariah";"Hukum Keluarga";"4 (Semester 7 - Semester 8)";"< 1 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";0,27;2;2;2;2;2;0
+"33";33;"Laki-laki";20;"Ekonomi dan Bisnis Islam";"Manajemen Bisnis Syariah";"2 (Semester 3 - Semester 4)";"< 1 Jt";1;2;4;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";2,45;3;2;2;2;0;2
+"34";34;"Perempuan";21;"Ushuluddin dan Studi Agama";"Psikologi Islam";"3 (Semester 5 - Semester 6)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";26,14;2;2;2;1;0;0
+"35";35;"Perempuan";20;"Ushuluddin dan Studi Agama";"Psikologi Islam";"3 (Semester 5 - Semester 6)";"< 1 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";1,27;2;4;4;1;0;0
+"36";36;"Perempuan";21;"Tarbiyah dan Keguruan";"Pendidikan Agama Islam";"4 (Semester 7 - Semester 8)";"< 1 Jt";0;0;0;"Transportasi Online";"Rumah Pribadi/Rumah Keluarga";9,09;2;0;0;0;0;0
+"37";37;"Laki-laki";24;"Syariah";"Hukum Ekonomi";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;0;0;"Berjalan Kaki";"Rumah Mengontrak Bersama-sama";1,39;5;5;5;5;5;5
+"38";38;"Laki-laki";22;"Tarbiyah dan Keguruan";"Manajemen Pendidikan Islam";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";1;2;0;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";0,63;2;3;3;2;2;0
+"39";39;"Laki-laki";21;"Tarbiyah dan Keguruan";"Sistem Informasi";"3 (Semester 5 - Semester 6)";"< 1 Jt";0;3;1;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";4,56;0;5;2;2;4;2
+"40";40;"Perempuan";24;"Tarbiyah dan Keguruan";"Bimbingan dan Konseling";"4 (Semester 7 - Semester 8)";"< 1 Jt";0;2;0;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";2,06;4;4;2;2;2;2
+"41";41;"Perempuan";19;"Ekonomi dan Bisnis Islam";"Manajemen Bisnis Syariah";"2 (Semester 3 - Semester 4)";"< 1 Jt";0;2;1;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";5,07;2;2;4;0;0;0
+"42";42;"Perempuan";21;"Tarbiyah dan Keguruan";"Biologi";"2 (Semester 3 - Semester 4)";"1Jt - 2 Jt";0;0;0;"Kendaraan Bermotor (menumpang)";"Kos Sendiri";6,01;2;2;2;2;2;0
+"43";43;"Perempuan";20;"Ushuluddin dan Studi Agama";"Ilmu Alquran dan Tafsir";"1 (Semester 1 - Semester 2)";"< 1 Jt";1;2;2;"Sepeda Motor Pribadi";"Rumah Bersama Saudara";7,83;3;0;2;0;0;2
+"44";44;"Perempuan";20;"Ushuluddin dan Studi Agama";"Psikologi Islam";"3 (Semester 5 - Semester 6)";"< 1 Jt";0;1;0;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";7,87;3;4;2;0;0;0
+"45";45;"Laki-laki";20;"Ekonomi dan Bisnis Islam";"Akuntansi Syariah";"2 (Semester 3 - Semester 4)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Rumah Mengontrak Bersama-sama";1,05;4;0;3;2;0;0
+"46";46;"Perempuan";19;"Ekonomi dan Bisnis Islam";"Akuntansi Syariah";"2 (Semester 3 - Semester 4)";"< 1 Jt";1;2;0;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";10,66;2;0;2;0;2;0
+"47";47;"Perempuan";21;"Ekonomi dan Bisnis Islam";"Ekonomi Syariah";"2 (Semester 3 - Semester 4)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";1,15;4;2;2;2;2;2
+"48";48;"Perempuan";21;"Syariah";"Hukum Tata Negara";"2 (Semester 3 - Semester 4)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Bersama-sama";1,51;2;4;4;2;0;0
+"49";49;"Perempuan";19;"Ushuluddin dan Studi Agama";"Studi Agama-Agama";"2 (Semester 3 - Semester 4)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Rumah Bersama Saudara";6,18;2;2;2;0;0;0
+"50";50;"Laki-laki";21;"Dakwah dan Ilmu Komunikasi";"Bimbingan Konseling Islam";"3 (Semester 5 - Semester 6)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";0,97;0;3;3;4;1;1
+"51";51;"Laki-laki";21;"Ushuluddin dan Studi Agama";"Psikologi Islam";"3 (Semester 5 - Semester 6)";"1Jt - 2 Jt";1;3;3;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";4,26;3;3;0;2;0;0
+"52";52;"Perempuan";19;"Tarbiyah dan Keguruan";"Sistem Informasi";"2 (Semester 3 - Semester 4)";"< 1 Jt";0;0;0;"Berjalan Kaki";"Kos Sendiri";0,91;5;5;5;2;2;0
+"53";53;"Perempuan";19;"Ekonomi dan Bisnis Islam";"Ekonomi Syariah";"1 (Semester 1 - Semester 2)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";7,09;4;2;2;2;0;0
+"54";54;"Perempuan";19;"Tarbiyah dan Keguruan";"Pendidikan Bahasa Inggris";"2 (Semester 3 - Semester 4)";"< 1 Jt";0;0;0;"Berjalan Kaki";"Kos Sendiri";0,51;2;2;2;0;0;0
+"55";55;"Perempuan";20;"Tarbiyah dan Keguruan";"Pendidikan Biologi";"2 (Semester 3 - Semester 4)";"1Jt - 2 Jt";1;3;0;"Transportasi Online";"Rumah Pribadi/Rumah Keluarga";3,38;2;3;0;2;0;0
+"56";56;"Perempuan";20;"Tarbiyah dan Keguruan";"Bimbingan dan Konseling";"3 (Semester 5 - Semester 6)";"< 1 Jt";0;1;0;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";2,09;3;3;3;2;0;0
+"57";57;"Laki-laki";21;"Tarbiyah dan Keguruan";"Pendidikan Matematika";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";1,5;6;6;6;6;6;6
+"58";58;"Laki-laki";21;"Tarbiyah dan Keguruan";"Pendidikan Matematika";"3 (Semester 5 - Semester 6)";"1Jt - 2 Jt";1;2;1;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";1,46;2;2;2;2;0;0
+"59";59;"Perempuan";21;"Dakwah dan Ilmu Komunikasi";"Bimbingan Konseling Islam";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;0;0;"Berjalan Kaki";"Kos Bersama-sama";0,44;2;2;2;2;2;2
+"60";60;"Perempuan";21;"Dakwah dan Ilmu Komunikasi";"Bimbingan Konseling Islam";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";1,25;2;0;2;3;0;0
+"61";61;"Laki-laki";23;"Dakwah dan Ilmu Komunikasi";"Pengembangan Masyarakat Islam";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;3;2;"Sepeda Motor Pribadi";"Kos Sendiri";1,25;2;2;1;2;0;1
+"62";62;"Perempuan";22;"Tarbiyah dan Keguruan";"Pendidikan Agama Islam";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Bersama-sama";5,3;0;0;0;0;0;0
+"63";63;"Perempuan";19;"Ekonomi dan Bisnis Islam";"Perbankan Syariah";"2 (Semester 3 - Semester 4)";"< 1 Jt";0;0;0;"Transportasi Online";"Kos Sendiri";1,27;2;2;0;2;0;2
+"64";64;"Perempuan";21;"Tarbiyah dan Keguruan";"Bimbingan dan Konseling";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;0;0;"Kendaraan Bermotor (menumpang)";"Kos Sendiri";1,15;2;1;2;2;1;1
+"65";65;"Perempuan";21;"Tarbiyah dan Keguruan";"Bimbingan dan Konseling";"3 (Semester 5 - Semester 6)";"< 1 Jt";0;2;0;"Sepeda Motor Pribadi";"Rumah Bersama Saudara";2,69;2;0;3;3;0;0
+"66";66;"Perempuan";20;"Ekonomi dan Bisnis Islam";"Manajemen Bisnis Syariah";"2 (Semester 3 - Semester 4)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Bersama-sama";1,05;2;2;2;2;2;0
+"67";67;"Perempuan";19;"Ekonomi dan Bisnis Islam";"Akuntansi Syariah";"2 (Semester 3 - Semester 4)";"< 1 Jt";0;2;0;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";8,5;3;2;2;2;0;0
+"68";68;"Perempuan";20;"Tarbiyah dan Keguruan";"Pendidikan Biologi";"2 (Semester 3 - Semester 4)";"1Jt - 2 Jt";0;0;0;"Berjalan Kaki";"Kos Sendiri";0,78;3;0;3;3;0;0
+"69";69;"Perempuan";20;"Dakwah dan Ilmu Komunikasi";"Bimbingan Konseling Islam";"2 (Semester 3 - Semester 4)";"< 1 Jt";0;0;0;"Berjalan Kaki";"Kos Bersama-sama";0,78;3;3;3;3;2;2
+"70";70;"Laki-laki";19;"Ekonomi dan Bisnis Islam";"Ekonomi Syariah";"2 (Semester 3 - Semester 4)";"< 1 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";0,86;3;2;2;4;0;2
+"71";71;"Perempuan";21;"Ekonomi dan Bisnis Islam";"Manajemen Bisnis Syariah";"2 (Semester 3 - Semester 4)";"< 1 Jt";0;0;0;"Berjalan Kaki";"Asrama";0,22;4;0;4;0;0;0
+"72";72;"Perempuan";19;"Ushuluddin dan Studi Agama";"Ilmu Alquran dan Tafsir";"2 (Semester 3 - Semester 4)";"< 1 Jt";1;3;0;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";6,96;2;2;2;0;0;0
+"73";73;"Perempuan";20;"Ekonomi dan Bisnis Islam";"Akuntansi Syariah";"2 (Semester 3 - Semester 4)";"1Jt - 2 Jt";0;1;1;"Sepeda Motor Pribadi";"Kos Sendiri";2,45;3;2;0;3;0;0
+"74";74;"Perempuan";19;"Dakwah dan Ilmu Komunikasi";"Pengembangan Masyarakat Islam";"2 (Semester 3 - Semester 4)";"1Jt - 2 Jt";0;0;0;"Berjalan Kaki";"Kos Bersama-sama";0,8;2;3;3;0;3;0
+"75";75;"Perempuan";19;"Ekonomi dan Bisnis Islam";"Manajemen Bisnis Syariah";"2 (Semester 3 - Semester 4)";"< 1 Jt";0;0;0;"Transportasi Online";"Kos Sendiri";1,59;3;3;3;0;0;0
+"76";76;"Laki-laki";20;"Ekonomi dan Bisnis Islam";"Ekonomi Syariah";"4 (Semester 7 - Semester 8)";"< 1 Jt";0;1;0;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";5,47;3;3;0;3;0;2
+"77";77;"Perempuan";20;"Tarbiyah dan Keguruan";"Pendidikan Matematika";"3 (Semester 5 - Semester 6)";"1Jt - 2 Jt";0;0;0;"Kendaraan Bermotor (menumpang)";"Kos Sendiri";0,79;2;2;0;0;0;0
+"78";78;"Perempuan";20;"Ekonomi dan Bisnis Islam";"Manajemen Bisnis Syariah";"3 (Semester 5 - Semester 6)";"< 1 Jt";0;0;0;"Berjalan Kaki";"Kos Sendiri";0,79;2;2;2;2;0;0
+"79";79;"Laki-laki";21;"Syariah";"Hukum Keluarga";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Rumah Bersama Saudara";1,5;3;2;1;2;2;1
+"80";80;"Perempuan";19;"Ekonomi dan Bisnis Islam";"Manajemen Bisnis Syariah";"2 (Semester 3 - Semester 4)";"< 1 Jt";0;0;0;"Kendaraan Bermotor (menumpang)";"Kos Sendiri";0,78;2;2;4;0;0;0
+"81";81;"Perempuan";22;"Syariah";"Hukum Tata Negara";"4 (Semester 7 - Semester 8)";"< 1 Jt";0;1;0;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";7,13;2;3;3;0;0;0
+"82";82;"Laki-laki";18;"Tarbiyah dan Keguruan";"Sistem Informasi";"1 (Semester 1 - Semester 2)";"< 1 Jt";0;1;0;"Sepeda Motor Pribadi";"Asrama";0,22;0;4;2;2;0;0
+"83";83;"Perempuan";20;"Ushuluddin dan Studi Agama";"Psikologi Islam";"3 (Semester 5 - Semester 6)";"2 Jt - 3 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";1,5;2;2;2;0;0;1
+"84";84;"Laki-laki";21;"Syariah";"Hukum Tata Negara";"4 (Semester 7 - Semester 8)";"< 1 Jt";0;1;0;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";9,37;2;2;0;2;2;2
+"85";85;"Perempuan";22;"Tarbiyah dan Keguruan";"Pendidikan Agama Islam";"4 (Semester 7 - Semester 8)";"< 1 Jt";0;0;0;"Berjalan Kaki";"Kos Bersama-sama";1,15;4;2;1;3;2;2
+"86";86;"Perempuan";20;"Tarbiyah dan Keguruan";"Pendidikan Bahasa Inggris";"2 (Semester 3 - Semester 4)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";0,92;3;3;3;2;2;2
+"87";87;"Perempuan";20;"Ekonomi dan Bisnis Islam";"Perbankan Syariah";"3 (Semester 5 - Semester 6)";"< 1 Jt";0;0;0;"Berjalan Kaki";"Kos Bersama-sama";0,54;2;2;2;2;0;0
+"88";88;"Perempuan";22;"Dakwah dan Ilmu Komunikasi";"Komunikasi dan Penyiaran Islam";"4 (Semester 7 - Semester 8)";"< 1 Jt";0;0;0;"Kendaraan Bermotor (menumpang)";"Kos Bersama-sama";0,78;2;0;2;0;0;0
+"89";89;"Perempuan";20;"Ekonomi dan Bisnis Islam";"Perbankan Syariah";"3 (Semester 5 - Semester 6)";"> 4 Jt";2;2;3;"Mobil Pribadi";"Rumah Pribadi/Rumah Keluarga";3,44;2;0;2;2;0;0
+"90";90;"Perempuan";23;"Ekonomi dan Bisnis Islam";"Perbankan Syariah";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";0,51;0;2;0;2;2;0
+"91";91;"Perempuan";20;"Ekonomi dan Bisnis Islam";"Perbankan Syariah";"3 (Semester 5 - Semester 6)";"< 1 Jt";0;2;1;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";9,32;2;2;2;0;0;0
+"92";92;"Laki-laki";21;"Ekonomi dan Bisnis Islam";"Perbankan Syariah";"3 (Semester 5 - Semester 6)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";1,07;2;2;0;2;2;0
+"93";93;"Perempuan";21;"Tarbiyah dan Keguruan";"Pendidikan Agama Islam";"2 (Semester 3 - Semester 4)";"< 1 Jt";0;0;0;"Berjalan Kaki";"Kos Sendiri";0,72;0;2;2;0;2;0
+"94";94;"Perempuan";21;"Syariah";"Hukum Tata Negara";"2 (Semester 3 - Semester 4)";"1Jt - 2 Jt";0;4;2;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";5,79;2;0;2;0;0;0
+"95";95;"Laki-laki";21;"Tarbiyah dan Keguruan";"Pendidikan Agama Islam";"2 (Semester 3 - Semester 4)";"< 1 Jt";0;1;0;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";7,93;3;4;4;2;0;0
+"96";96;"Perempuan";20;"Ekonomi dan Bisnis Islam";"Perbankan Syariah";"3 (Semester 5 - Semester 6)";"< 1 Jt";0;0;0;"Transportasi Online";"Kos Bersama-sama";0,88;2;2;2;2;0;0
+"97";97;"Laki-laki";21;"Dakwah dan Ilmu Komunikasi";"Komunikasi dan Penyiaran Islam";"4 (Semester 7 - Semester 8)";"< 1 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";0,88;0;0;2;2;0;0
+"98";98;"Perempuan";20;"Tarbiyah dan Keguruan";"Bimbingan dan Konseling";"2 (Semester 3 - Semester 4)";"< 1 Jt";0;1;0;"Berjalan Kaki";"Asrama";0,22;6;4;4;4;2;2
+"99";99;"Laki-laki";23;"Ushuluddin dan Studi Agama";"Aqidah dan Filsafat Islam";"4 (Semester 7 - Semester 8)";"< 1 Jt";0;1;0;"Sepeda Motor Pribadi";"Rumah Bersama Saudara";2,1;0;2;0;2;1;1
+"100";100;"Perempuan";21;"Ekonomi dan Bisnis Islam";"Perbankan Syariah";"3 (Semester 5 - Semester 6)";"1Jt - 2 Jt";0;0;0;"Berjalan Kaki";"Rumah Mengontrak Bersama-sama";3,85;4;6;2;2;0;0
+"101";101;"Perempuan";22;"Syariah";"Hukum Tata Negara";"4 (Semester 7 - Semester 8)";"< 1 Jt";0;0;0;"Berjalan Kaki";"Kos Sendiri";0,71;2;0;2;2;2;0
+"102";102;"Perempuan";24;"Ekonomi dan Bisnis Islam";"Perbankan Syariah";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Rumah Mengontrak Bersama-sama";0,57;2;3;2;2;0;0
+"103";103;"Perempuan";22;"Ushuluddin dan Studi Agama";"Studi Agama-Agama";"4 (Semester 7 - Semester 8)";"< 1 Jt";1;2;0;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";4,95;2;2;2;2;0;0
+"104";104;"Laki-laki";22;"Tarbiyah dan Keguruan";"Pendidikan Matematika";"4 (Semester 7 - Semester 8)";"< 1 Jt";1;2;1;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";2,34;2;2;2;2;2;0
+"105";105;"Laki-laki";19;"Adab";"Ilmu Perpustakaan dan Informasi Islam";"2 (Semester 3 - Semester 4)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";1,84;3;3;0;4;4;3
+"106";106;"Perempuan";21;"Ushuluddin dan Studi Agama";"Tasawuf dan Psikoterapi";"4 (Semester 7 - Semester 8)";"< 1 Jt";0;0;0;"Transportasi Online";"Rumah Mengontrak Bersama-sama";3,17;2;2;2;0;2;0
+"107";107;"Laki-laki";21;"Ekonomi dan Bisnis Islam";"Perbankan Syariah";"3 (Semester 5 - Semester 6)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";2,31;4;4;3;2;0;2
+"108";108;"Laki-laki";21;"Adab";"Sejarah Peradaban Islam";"4 (Semester 7 - Semester 8)";"< 1 Jt";1;1;0;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";11,35;3;3;0;3;3;0
+"109";109;"Laki-laki";22;"Tarbiyah dan Keguruan";"Sistem Informasi";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";1,84;3;2;2;3;3;0
+"110";110;"Laki-laki";21;"Ekonomi dan Bisnis Islam";"Manajemen Bisnis Syariah";"4 (Semester 7 - Semester 8)";"> 4 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";2,31;3;0;3;2;0;2
+"111";111;"Laki-laki";22;"Syariah";"Hukum Ekonomi";"4 (Semester 7 - Semester 8)";"> 4 Jt";1;3;0;"Mobil Pribadi";"Rumah Pribadi/Rumah Keluarga";6,04;3;0;3;3;0;2
+"112";112;"Perempuan";21;"Dakwah dan Ilmu Komunikasi";"Komunikasi dan Penyiaran Islam";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;0;0;"Transportasi Online";"Rumah Mengontrak Bersama-sama";3,5;2;0;0;0;0;2
+"113";113;"Laki-laki";21;"Syariah";"Hukum Tata Negara";"3 (Semester 5 - Semester 6)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";1,15;2;0;2;4;4;0
+"114";114;"Perempuan";21;"Adab";"Sejarah Peradaban Islam";"2 (Semester 3 - Semester 4)";"< 1 Jt";1;1;1;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";4,29;3;0;0;0;2;0
+"115";115;"Laki-laki";20;"Tarbiyah dan Keguruan";"Pendidikan Guru Madrasah Ibtidaiyah";"2 (Semester 3 - Semester 4)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";1,36;3;3;0;3;2;0
+"116";116;"Laki-laki";22;"Tarbiyah dan Keguruan";"Biologi";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";1;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";1,84;3;2;2;3;3;0
+"117";117;"Laki-laki";20;"Syariah";"Hukum Keluarga";"3 (Semester 5 - Semester 6)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";0,8;2;2;0;2;0;0
+"118";118;"Laki-laki";23;"Syariah";"Hukum Tata Negara";"4 (Semester 7 - Semester 8)";"2 Jt - 3 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";0,91;4;4;4;4;4;4
+"119";119;"Laki-laki";22;"Syariah";"Hukum Keluarga";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";2;1;0;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";9,95;3;0;0;2;0;0
+"120";120;"Laki-laki";25;"Syariah";"Hukum Keluarga";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Bersama-sama";0,91;3;0;0;2;0;2
+"121";121;"Laki-laki";21;"Syariah";"Hukum Tata Negara";"3 (Semester 5 - Semester 6)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Rumah Mengontrak Bersama-sama";0,95;2;3;2;4;0;2
+"122";122;"Laki-laki";21;"Syariah";"Hukum Keluarga";"3 (Semester 5 - Semester 6)";"2 Jt - 3 Jt";0;1;0;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";3,7;3;2;3;2;2;2
+"123";123;"Laki-laki";22;"Ushuluddin dan Studi Agama";"Studi Agama-Agama";"4 (Semester 7 - Semester 8)";"< 1 Jt";0;2;1;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";4,59;3;2;2;2;0;2
+"124";124;"Laki-laki";22;"Tarbiyah dan Keguruan";"Pendidikan Biologi";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Bersama-sama";2,09;0;0;0;3;2;0
+"125";125;"Perempuan";22;"Syariah";"Hukum Keluarga";"4 (Semester 7 - Semester 8)";"2 Jt - 3 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Bersama-sama";1,84;3;3;3;0;0;2
+"126";126;"Laki-laki";23;"Ekonomi dan Bisnis Islam";"Manajemen Bisnis Syariah";"4 (Semester 7 - Semester 8)";"< 1 Jt";1;2;0;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";11,45;2;2;2;3;2;2
+"127";127;"Laki-laki";24;"Ekonomi dan Bisnis Islam";"Ekonomi Syariah";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Bersama-sama";4,31;3;2;2;4;2;2
+"128";128;"Laki-laki";23;"Tarbiyah dan Keguruan";"Pendidikan Bahasa Arab";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Rumah Bersama Saudara";0,9;0;2;2;2;2;0
+"129";129;"Perempuan";22;"Syariah";"Hukum Keluarga";"4 (Semester 7 - Semester 8)";"2 Jt - 3 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";0,77;2;2;2;2;3;2
+"130";130;"Perempuan";22;"Ekonomi dan Bisnis Islam";"Ekonomi Syariah";"3 (Semester 5 - Semester 6)";"1Jt - 2 Jt";0;0;0;"Transportasi Online";"Kos Sendiri";0,95;2;2;0;0;0;0
+"131";131;"Laki-laki";22;"Ushuluddin dan Studi Agama";"Sosiologi Agama";"4 (Semester 7 - Semester 8)";"2 Jt - 3 Jt";1;1;0;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";6,04;0;2;2;2;2;2
+"132";132;"Laki-laki";22;"Ushuluddin dan Studi Agama";"Aqidah dan Filsafat Islam";"4 (Semester 7 - Semester 8)";"< 1 Jt";0;2;1;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";17,52;2;2;2;3;2;2
+"133";133;"Perempuan";22;"Syariah";"Hukum Keluarga";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";1;2;0;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";7,7;2;2;2;0;2;0
+"134";134;"Perempuan";23;"Ushuluddin dan Studi Agama";"Psikologi Islam";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Bersama-sama";1,51;3;2;2;3;3;0
+"135";135;"Laki-laki";20;"Syariah";"Hukum Tata Negara";"3 (Semester 5 - Semester 6)";"1Jt - 2 Jt";1;3;1;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";2,23;2;2;3;2;4;0
+"136";136;"Perempuan";21;"Ushuluddin dan Studi Agama";"Psikologi Islam";"3 (Semester 5 - Semester 6)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";0,68;2;2;3;0;2;2
+"137";137;"Perempuan";21;"Ushuluddin dan Studi Agama";"Psikologi Islam";"3 (Semester 5 - Semester 6)";"1Jt - 2 Jt";0;3;1;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";0,97;3;2;2;2;2;2
+"138";138;"Perempuan";22;"Syariah";"Hukum Keluarga";"4 (Semester 7 - Semester 8)";"2 Jt - 3 Jt";0;1;0;"Sepeda Motor Pribadi";"Rumah Mengontrak Bersama-sama";8,34;0;2;0;2;2;2
+"139";139;"Perempuan";22;"Syariah";"Hukum Tata Negara";"4 (Semester 7 - Semester 8)";"2 Jt - 3 Jt";0;0;0;"Transportasi Online";"Kos Sendiri";2,27;3;0;2;2;0;0
+"140";140;"Laki-laki";21;"Ushuluddin dan Studi Agama";"Aqidah dan Filsafat Islam";"3 (Semester 5 - Semester 6)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";2,12;3;4;2;0;0;4
+"141";141;"Laki-laki";20;"Ushuluddin dan Studi Agama";"Studi Agama-Agama";"2 (Semester 3 - Semester 4)";"< 1 Jt";1;4;2;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";3,28;4;4;2;2;2;0
+"142";142;"Laki-laki";22;"Syariah";"Hukum Keluarga";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Bersama-sama";9,36;2;2;2;2;2;2
+"143";143;"Laki-laki";22;"Syariah";"Hukum Keluarga";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";4,36;3;3;0;2;2;2
+"144";144;"Laki-laki";21;"Ushuluddin dan Studi Agama";"Ilmu Alquran dan Tafsir";"3 (Semester 5 - Semester 6)";"< 1 Jt";0;3;0;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";1,34;3;0;2;2;2;0
+"145";145;"Laki-laki";21;"Syariah";"Hukum Keluarga";"3 (Semester 5 - Semester 6)";"1Jt - 2 Jt";0;2;0;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";4,05;3;3;0;3;2;0
+"146";146;"Perempuan";22;"Ekonomi dan Bisnis Islam";"Manajemen Bisnis Syariah";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";0,43;2;2;0;0;2;0
+"147";147;"Perempuan";20;"Syariah";"Hukum Keluarga";"2 (Semester 3 - Semester 4)";"2 Jt - 3 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Bersama-sama";2,37;3;3;3;0;3;2
+"148";148;"Laki-laki";22;"Syariah";"Hukum Tata Negara";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";1,28;0;0;3;2;2;2
+"149";149;"Laki-laki";22;"Syariah";"Hukum Tata Negara";"4 (Semester 7 - Semester 8)";"2 Jt - 3 Jt";1;4;1;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";5,52;0;0;3;2;2;0
+"150";150;"Perempuan";22;"Syariah";"Hukum Keluarga";"4 (Semester 7 - Semester 8)";"> 4 Jt";2;2;1;"Mobil Pribadi";"Rumah Pribadi/Rumah Keluarga";9,22;2;0;3;0;2;0
+"151";151;"Perempuan";23;"Syariah";"Hukum Keluarga";"4 (Semester 7 - Semester 8)";"< 1 Jt";0;2;1;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";6,16;0;2;2;2;2;0
+"152";152;"Perempuan";22;"Syariah";"Hukum Keluarga";"4 (Semester 7 - Semester 8)";"> 4 Jt";1;1;0;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";5,74;2;0;0;0;0;2
+"153";153;"Perempuan";22;"Syariah";"Hukum Keluarga";"4 (Semester 7 - Semester 8)";"3 Jt - 4 Jt";1;1;0;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";7,82;3;2;3;0;2;0
+"154";154;"Perempuan";20;"Dakwah dan Ilmu Komunikasi";"Pengembangan Masyarakat Islam";"3 (Semester 5 - Semester 6)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";2,71;4;5;4;4;0;2
+"155";155;"Laki-laki";21;"Dakwah dan Ilmu Komunikasi";"Manajemen Dakwah";"3 (Semester 5 - Semester 6)";"< 1 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";1,14;0;3;3;2;0;2
+"156";156;"Perempuan";22;"Syariah";"Hukum Keluarga";"4 (Semester 7 - Semester 8)";"2 Jt - 3 Jt";0;1;0;"Sepeda Motor Pribadi";"Rumah Bersama Saudara";0,84;3;3;3;0;0;0
+"157";157;"Perempuan";21;"Syariah";"Hukum Tata Negara";"4 (Semester 7 - Semester 8)";"< 1 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";1,4;3;3;0;2;0;2
+"158";158;"Laki-laki";21;"Syariah";"Hukum Keluarga";"4 (Semester 7 - Semester 8)";"2 Jt - 3 Jt";1;1;0;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";7,99;3;3;3;3;2;2
+"159";159;"Laki-laki";20;"Ushuluddin dan Studi Agama";"Sosiologi Agama";"2 (Semester 3 - Semester 4)";"1Jt - 2 Jt";1;3;2;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";1,13;2;0;2;2;2;0
+"160";160;"Laki-laki";21;"Tarbiyah dan Keguruan";"Sistem Informasi";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Rumah Mengontrak Bersama-sama";2,13;3;0;2;3;2;0
+"161";161;"Laki-laki";22;"Ushuluddin dan Studi Agama";"Psikologi Islam";"4 (Semester 7 - Semester 8)";"3 Jt - 4 Jt";1;1;0;"Mobil Pribadi";"Rumah Pribadi/Rumah Keluarga";3,86;2;2;3;2;2;2
+"162";162;"Laki-laki";21;"Syariah";"Hukum Tata Negara";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";3,17;3;5;2;3;2;0
+"163";163;"Laki-laki";23;"Syariah";"Hukum Keluarga";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Rumah Mengontrak Bersama-sama";6,34;3;3;3;0;0;0
+"164";164;"Laki-laki";22;"Syariah";"Hukum Keluarga";"4 (Semester 7 - Semester 8)";"< 1 Jt";0;1;0;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";1,76;3;3;3;3;2;2
+"165";165;"Perempuan";21;"Ekonomi dan Bisnis Islam";"Akuntansi Syariah";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";1;1;1;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";3,03;3;0;3;2;2;2
+"166";166;"Perempuan";20;"Tarbiyah dan Keguruan";"Biologi";"2 (Semester 3 - Semester 4)";"< 1 Jt";0;0;0;"Kendaraan Bermotor (menumpang)";"Rumah Mengontrak Bersama-sama";4,12;4;2;2;4;0;3
+"167";167;"Perempuan";21;"Tarbiyah dan Keguruan";"Biologi";"4 (Semester 7 - Semester 8)";"3 Jt - 4 Jt";1;0;0;"Mobil Pribadi";"Kos Sendiri";5,5;3;2;2;0;2;2
+"168";168;"Laki-laki";21;"Tarbiyah dan Keguruan";"Pendidikan Fisika";"3 (Semester 5 - Semester 6)";"< 1 Jt";1;4;1;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";0,9;0;2;2;2;2;2
+"169";169;"Laki-laki";22;"Dakwah dan Ilmu Komunikasi";"Pengembangan Masyarakat Islam";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";2,12;2;3;0;2;0;2
+"170";170;"Perempuan";21;"Ushuluddin dan Studi Agama";"Studi Agama-Agama";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";1,87;3;3;0;2;2;2
+"171";171;"Laki-laki";20;"Tarbiyah dan Keguruan";"Manajemen Pendidikan Islam";"2 (Semester 3 - Semester 4)";"1Jt - 2 Jt";2;5;2;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";1,43;0;3;2;2;2;0
+"172";172;"Perempuan";19;"Tarbiyah dan Keguruan";"Manajemen Pendidikan Islam";"2 (Semester 3 - Semester 4)";"< 1 Jt";0;1;0;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";0,28;2;2;4;2;0;0
+"173";173;"Perempuan";20;"Syariah";"Hukum Ekonomi";"2 (Semester 3 - Semester 4)";"< 1 Jt";0;1;0;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";5,55;4;4;4;4;0;0
+"174";174;"Perempuan";18;"Tarbiyah dan Keguruan";"Pendidikan Matematika";"2 (Semester 3 - Semester 4)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";5,83;2;2;3;2;0;2
+"175";175;"Laki-laki";21;"Ushuluddin dan Studi Agama";"Tasawuf dan Psikoterapi";"4 (Semester 7 - Semester 8)";"< 1 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";1,13;0;0;2;2;0;2
+"176";176;"Perempuan";21;"Tarbiyah dan Keguruan";"Pendidikan Matematika";"4 (Semester 7 - Semester 8)";"< 1 Jt";1;0;0;"Sepeda Motor Pribadi";"Rumah Mengontrak Bersama-sama";3,15;6;4;6;4;4;4
+"177";177;"Perempuan";18;"Tarbiyah dan Keguruan";"Pendidikan Biologi";"1 (Semester 1 - Semester 2)";"1Jt - 2 Jt";0;0;0;"Berjalan Kaki";"Kos Sendiri";1,1;2;2;0;2;0;0
+"178";178;"Laki-laki";25;"Ushuluddin dan Studi Agama";"Ilmu Alquran dan Tafsir";"3 (Semester 5 - Semester 6)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Bersama-sama";5,71;2;0;2;2;2;0
+"179";179;"Perempuan";24;"Ushuluddin dan Studi Agama";"Ilmu Alquran dan Tafsir";"4 (Semester 7 - Semester 8)";"> 4 Jt";5;6;0;"Mobil Pribadi";"Rumah Pribadi/Rumah Keluarga";0,62;2;2;0;0;0;2
+"180";180;"Perempuan";22;"Tarbiyah dan Keguruan";"Pendidikan Anak Usia Dini";"4 (Semester 7 - Semester 8)";"< 1 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";0,56;0;3;3;0;0;2
+"181";181;"Perempuan";21;"Ushuluddin dan Studi Agama";"Psikologi Islam";"3 (Semester 5 - Semester 6)";"2 Jt - 3 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";0,39;2;2;2;2;2;2
+"182";182;"Perempuan";21;"Ushuluddin dan Studi Agama";"Psikologi Islam";"3 (Semester 5 - Semester 6)";"2 Jt - 3 Jt";0;0;0;"Berjalan Kaki";"Kos Sendiri";0,55;0;2;2;3;0;2
+"183";183;"Perempuan";21;"Ushuluddin dan Studi Agama";"Pemikiran Politik Islam";"3 (Semester 5 - Semester 6)";"2 Jt - 3 Jt";0;0;0;"Kendaraan Bermotor (menumpang)";"Kos Sendiri";0,28;3;0;2;0;2;2
+"184";184;"Perempuan";21;"Ushuluddin dan Studi Agama";"Psikologi Islam";"3 (Semester 5 - Semester 6)";"1Jt - 2 Jt";0;2;2;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";29,26;3;2;2;0;0;0
+"185";185;"Laki-laki";21;"Ushuluddin dan Studi Agama";"Psikologi Islam";"3 (Semester 5 - Semester 6)";"1Jt - 2 Jt";1;3;0;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";16,17;3;0;0;2;2;0
+"186";186;"Laki-laki";23;"Ekonomi dan Bisnis Islam";"Manajemen Bisnis Syariah";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;3;1;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";34,73;3;3;3;2;0;0
+"187";187;"Perempuan";21;"Ushuluddin dan Studi Agama";"Sosiologi Agama";"4 (Semester 7 - Semester 8)";"2 Jt - 3 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";0,77;2;0;3;0;2;0
+"188";188;"Laki-laki";21;"Ushuluddin dan Studi Agama";"Ilmu Alquran dan Tafsir";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";1;2;1;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";0,87;0;3;0;2;2;2
+"189";189;"Perempuan";19;"Ushuluddin dan Studi Agama";"Pemikiran Politik Islam";"2 (Semester 3 - Semester 4)";"1Jt - 2 Jt";0;0;0;"Kendaraan Bermotor (menumpang)";"Kos Sendiri";1,37;3;0;3;2;0;0
+"190";190;"Perempuan";19;"Tarbiyah dan Keguruan";"Pendidikan Anak Usia Dini";"1 (Semester 1 - Semester 2)";"1Jt - 2 Jt";0;0;0;"Transportasi Online";"Kos Sendiri";1,4;3;2;2;3;4;1
+"191";191;"Laki-laki";22;"Tarbiyah dan Keguruan";"Pendidikan Bahasa Arab";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;3;2;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";1,65;0;0;2;2;0;2
+"192";192;"Perempuan";19;"Syariah";"Hukum Tata Negara";"1 (Semester 1 - Semester 2)";"< 1 Jt";0;0;0;"Berjalan Kaki";"Kos Sendiri";0,42;2;2;2;0;0;0
+"193";193;"Laki-laki";22;"Tarbiyah dan Keguruan";"Pendidikan Matematika";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";1,29;0;2;0;2;2;0
+"194";194;"Perempuan";20;"Syariah";"Hukum Ekonomi";"2 (Semester 3 - Semester 4)";"1Jt - 2 Jt";0;1;1;"Sepeda Motor Pribadi";"Kos Sendiri";0,83;2;3;0;0;0;4
+"195";195;"Perempuan";21;"Tarbiyah dan Keguruan";"Pendidikan Bahasa Arab";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Bersama-sama";2,12;2;2;2;2;0;3
+"196";196;"Perempuan";21;"Tarbiyah dan Keguruan";"Pendidikan Bahasa Inggris";"4 (Semester 7 - Semester 8)";"< 1 Jt";0;2;0;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";1,75;2;2;0;0;2;2
+"197";197;"Perempuan";21;"Syariah";"Hukum Ekonomi";"4 (Semester 7 - Semester 8)";"< 1 Jt";0;0;0;"Kendaraan Bermotor (menumpang)";"Kos Sendiri";2,41;3;3;3;3;3;0
+"198";198;"Perempuan";22;"Tarbiyah dan Keguruan";"Pendidikan Bahasa Inggris";"4 (Semester 7 - Semester 8)";"< 1 Jt";1;2;1;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";2,13;2;2;2;2;2;0
+"199";199;"Laki-laki";21;"Tarbiyah dan Keguruan";"Pendidikan Bahasa Inggris";"4 (Semester 7 - Semester 8)";"> 4 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";2,22;0;3;3;2;0;2
+"200";200;"Perempuan";22;"Tarbiyah dan Keguruan";"Pendidikan Bahasa Inggris";"4 (Semester 7 - Semester 8)";"3 Jt - 4 Jt";1;3;0;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";5,2;4;3;0;0;4;2
+"201";201;"Perempuan";21;"Syariah";"Hukum Ekonomi";"4 (Semester 7 - Semester 8)";"< 1 Jt";0;2;1;"Transportasi Online";"Rumah Pribadi/Rumah Keluarga";5,04;4;3;0;2;0;0
+"202";202;"Laki-laki";21;"Tarbiyah dan Keguruan";"Pendidikan Bahasa Inggris";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;1;1;"Sepeda Motor Pribadi";"Rumah Bersama Saudara";1,61;5;5;5;6;0;0
+"203";203;"Perempuan";21;"Tarbiyah dan Keguruan";"Pendidikan Bahasa Inggris";"4 (Semester 7 - Semester 8)";"< 1 Jt";0;2;0;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";3,86;2;0;3;3;2;0
+"204";204;"Perempuan";21;"Syariah";"Hukum Keluarga";"4 (Semester 7 - Semester 8)";"2 Jt - 3 Jt";0;1;0;"Sepeda Motor Pribadi";"Rumah Mengontrak Bersama-sama";1,02;3;3;0;0;2;0
+"205";205;"Perempuan";22;"Ushuluddin dan Studi Agama";"Psikologi Islam";"4 (Semester 7 - Semester 8)";"3 Jt - 4 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";0,55;2;3;0;0;1;1
+"206";206;"Perempuan";23;"Syariah";"Hukum Keluarga";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";0,97;2;2;2;2;2;0
+"207";207;"Perempuan";22;"Syariah";"Hukum Keluarga";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";0,95;0;0;2;3;0;0
+"208";208;"Laki-laki";22;"Syariah";"Hukum Keluarga";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";7,93;2;0;0;2;2;2
+"209";209;"Perempuan";21;"Ekonomi dan Bisnis Islam";"Perbankan Syariah";"3 (Semester 5 - Semester 6)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";1,5;2;2;0;0;0;1
+"210";210;"Perempuan";21;"Tarbiyah dan Keguruan";"Pendidikan Bahasa Inggris";"4 (Semester 7 - Semester 8)";"2 Jt - 3 Jt";0;1;1;"Sepeda Motor Pribadi";"Kos Sendiri";1,15;4;0;3;2;0;0
+"211";211;"Perempuan";21;"Syariah";"Hukum Ekonomi";"4 (Semester 7 - Semester 8)";"< 1 Jt";0;0;0;"Transportasi Online";"Rumah Mengontrak Bersama-sama";3,06;2;2;2;2;2;0
+"212";212;"Laki-laki";19;"Syariah";"Hukum Ekonomi";"2 (Semester 3 - Semester 4)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";1,84;3;3;4;4;4;3
+"213";213;"Perempuan";21;"Tarbiyah dan Keguruan";"Pendidikan Bahasa Inggris";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";2,14;3;3;2;3;3;2
+"214";214;"Perempuan";22;"Tarbiyah dan Keguruan";"Biologi";"4 (Semester 7 - Semester 8)";"< 1 Jt";0;0;0;"Transportasi Online";"Rumah Mengontrak Bersama-sama";2,14;2;2;2;4;0;0
+"215";215;"Perempuan";20;"Ushuluddin dan Studi Agama";"Psikologi Islam";"2 (Semester 3 - Semester 4)";"1Jt - 2 Jt";0;0;0;"Kendaraan Bermotor (menumpang)";"Kos Sendiri";2,55;3;0;2;2;0;2
+"216";216;"Perempuan";22;"Ushuluddin dan Studi Agama";"Psikologi Islam";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Rumah Mengontrak Bersama-sama";3,38;3;3;2;2;2;0
+"217";217;"Laki-laki";21;"Dakwah dan Ilmu Komunikasi";"Bimbingan Konseling Islam";"3 (Semester 5 - Semester 6)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";2,44;0;0;3;6;0;5
+"218";218;"Laki-laki";21;"Ushuluddin dan Studi Agama";"Studi Agama-Agama";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";3,17;5;3;4;6;4;5
+"219";219;"Laki-laki";21;"Syariah";"Hukum Tata Negara";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";2,93;0;2;0;5;4;0
+"220";220;"Perempuan";20;"Tarbiyah dan Keguruan";"Pendidikan Biologi";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;3;1;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";5,79;2;3;0;5;0;2
+"221";221;"Laki-laki";20;"Dakwah dan Ilmu Komunikasi";"Bimbingan Konseling Islam";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Rumah Mengontrak Bersama-sama";2,66;0;4;2;2;2;0
+"222";222;"Laki-laki";21;"Tarbiyah dan Keguruan";"Pendidikan Biologi";"4 (Semester 7 - Semester 8)";"< 1 Jt";0;0;1;"Kendaraan Bermotor (menumpang)";"Rumah Mengontrak Bersama-sama";2,66;0;2;0;2;0;2
+"223";223;"Perempuan";21;"Tarbiyah dan Keguruan";"Pendidikan Biologi";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";5,6;2;2;2;2;0;0
+"224";224;"Perempuan";21;"Tarbiyah dan Keguruan";"Pendidikan Biologi";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";2,27;2;2;2;4;4;0
+"225";225;"Perempuan";21;"Dakwah dan Ilmu Komunikasi";"Bimbingan Konseling Islam";"4 (Semester 7 - Semester 8)";"2 Jt - 3 Jt";3;3;3;"Mobil Pribadi";"Rumah Pribadi/Rumah Keluarga";8,7;3;4;3;5;0;2
+"226";226;"Perempuan";20;"Dakwah dan Ilmu Komunikasi";"Bimbingan Konseling Islam";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;0;0;"Transportasi Online";"Kos Sendiri";3,38;0;0;0;3;0;2
+"227";227;"Perempuan";21;"Dakwah dan Ilmu Komunikasi";"Bimbingan Konseling Islam";"4 (Semester 7 - Semester 8)";"< 1 Jt";0;0;0;"Transportasi Online";"Kos Sendiri";1,95;3;3;0;0;0;0
+"228";228;"Laki-laki";21;"Syariah";"Hukum Tata Negara";"4 (Semester 7 - Semester 8)";"2 Jt - 3 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Bersama-sama";1,04;3;3;4;3;4;4
+"229";229;"Perempuan";21;"Dakwah dan Ilmu Komunikasi";"Bimbingan Konseling Islam";"4 (Semester 7 - Semester 8)";"2 Jt - 3 Jt";0;2;0;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";8,03;2;2;2;0;0;0
+"230";230;"Laki-laki";22;"Dakwah dan Ilmu Komunikasi";"Komunikasi dan Penyiaran Islam";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";1;2;0;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";5,9;3;2;4;4;2;2
+"231";231;"Perempuan";19;"Tarbiyah dan Keguruan";"Pendidikan Biologi";"2 (Semester 3 - Semester 4)";"< 1 Jt";0;1;1;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";25,71;2;2;2;2;2;2
+"232";232;"Perempuan";21;"Syariah";"Hukum Tata Negara";"4 (Semester 7 - Semester 8)";"< 1 Jt";0;1;0;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";4,17;2;3;0;0;0;0
+"233";233;"Laki-laki";21;"Syariah";"Hukum Ekonomi";"3 (Semester 5 - Semester 6)";"< 1 Jt";0;2;1;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";1,13;0;2;2;2;2;2
+"234";234;"Perempuan";22;"Dakwah dan Ilmu Komunikasi";"Bimbingan Konseling Islam";"3 (Semester 5 - Semester 6)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";1,18;4;6;4;4;4;2
+"235";235;"Laki-laki";21;"Tarbiyah dan Keguruan";"Pendidikan Bahasa Inggris";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";1;3;0;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";0,28;2;3;0;2;2;2
+"236";236;"Perempuan";22;"Tarbiyah dan Keguruan";"Pendidikan Agama Islam";"4 (Semester 7 - Semester 8)";"< 1 Jt";0;0;0;"Berjalan Kaki";"Kos Bersama-sama";0,43;0;3;0;2;2;2
+"237";237;"Perempuan";21;"Tarbiyah dan Keguruan";"Pendidikan Agama Islam";"4 (Semester 7 - Semester 8)";"< 1 Jt";0;0;0;"Berjalan Kaki";"Kos Bersama-sama";0,43;0;3;0;2;2;2
+"238";238;"Perempuan";21;"Tarbiyah dan Keguruan";"Pendidikan Agama Islam";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;0;0;"Berjalan Kaki";"Kos Bersama-sama";0,28;0;3;0;2;2;0
+"239";239;"Perempuan";22;"Tarbiyah dan Keguruan";"Pendidikan Agama Islam";"4 (Semester 7 - Semester 8)";"< 1 Jt";0;0;0;"Berjalan Kaki";"Kos Bersama-sama";0,28;2;3;2;2;2;2
+"240";240;"Perempuan";21;"Tarbiyah dan Keguruan";"Pendidikan Agama Islam";"4 (Semester 7 - Semester 8)";"< 1 Jt";0;0;0;"Berjalan Kaki";"Kos Bersama-sama";0,46;2;2;1;2;2;2
+"241";241;"Laki-laki";18;"Ekonomi dan Bisnis Islam";"Akuntansi Syariah";"1 (Semester 1 - Semester 2)";"< 1 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";1,04;2;2;0;3;0;0
+"242";242;"Laki-laki";22;"Ekonomi dan Bisnis Islam";"Manajemen Bisnis Syariah";"4 (Semester 7 - Semester 8)";"< 1 Jt";1;2;1;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";2,59;3;2;4;4;2;2
+"243";243;"Perempuan";22;"Tarbiyah dan Keguruan";"Pendidikan Matematika";"4 (Semester 7 - Semester 8)";"< 1 Jt";0;0;0;"Berjalan Kaki";"Kos Bersama-sama";1,16;2;2;2;0;2;2
+"244";244;"Perempuan";21;"Tarbiyah dan Keguruan";"Manajemen Pendidikan Islam";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;0;0;"Transportasi Online";"Rumah Mengontrak Bersama-sama";3,93;0;2;2;0;0;4
+"245";245;"Perempuan";21;"Tarbiyah dan Keguruan";"Manajemen Pendidikan Islam";"4 (Semester 7 - Semester 8)";"< 1 Jt";0;2;0;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";8,09;0;3;1;0;0;0
+"246";246;"Perempuan";22;"Tarbiyah dan Keguruan";"Pendidikan Bahasa Arab";"4 (Semester 7 - Semester 8)";"< 1 Jt";0;0;0;"Transportasi Online";"Kos Sendiri";3,96;2;2;0;0;0;0
+"247";247;"Laki-laki";21;"Tarbiyah dan Keguruan";"Manajemen Pendidikan Islam";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Rumah Bersama Saudara";4,31;4;4;4;5;0;0
+"248";248;"Perempuan";21;"Tarbiyah dan Keguruan";"Pendidikan Bahasa Inggris";"4 (Semester 7 - Semester 8)";"< 1 Jt";1;2;0;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";9,65;4;4;4;2;2;2
+"249";249;"Perempuan";21;"Tarbiyah dan Keguruan";"Pendidikan Bahasa Inggris";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";2;2;0;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";6,07;3;5;4;2;4;3
+"250";250;"Laki-laki";22;"Dakwah dan Ilmu Komunikasi";"Manajemen Dakwah";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Rumah Mengontrak Bersama-sama";2,32;3;3;2;2;3;2
+"251";251;"Perempuan";21;"Dakwah dan Ilmu Komunikasi";"Bimbingan Konseling Islam";"3 (Semester 5 - Semester 6)";"< 1 Jt";0;1;1;"Sepeda Motor Pribadi";"Kos Sendiri";3,32;2;4;2;5;4;0
+"252";252;"Perempuan";20;"Tarbiyah dan Keguruan";"Manajemen Pendidikan Islam";"3 (Semester 5 - Semester 6)";"< 1 Jt";0;0;0;"Kendaraan Bermotor (menumpang)";"Rumah Mengontrak Bersama-sama";2,26;2;2;5;2;2;2
+"253";253;"Laki-laki";22;"Tarbiyah dan Keguruan";"Pendidikan Bahasa Inggris";"4 (Semester 7 - Semester 8)";"< 1 Jt";0;0;0;"Kendaraan Bermotor (menumpang)";"Rumah Pribadi/Rumah Keluarga";6,72;2;2;2;4;0;0
+"254";254;"Laki-laki";22;"Tarbiyah dan Keguruan";"Manajemen Pendidikan Islam";"3 (Semester 5 - Semester 6)";"1Jt - 2 Jt";1;2;0;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";5,08;4;4;4;7;0;0
+"255";255;"Perempuan";21;"Ushuluddin dan Studi Agama";"Studi Agama-Agama";"4 (Semester 7 - Semester 8)";"< 1 Jt";0;0;0;"Kendaraan Bermotor (menumpang)";"Kos Bersama-sama";3,38;2;0;0;3;2;0
+"256";256;"Perempuan";21;"Tarbiyah dan Keguruan";"Pendidikan Bahasa Inggris";"4 (Semester 7 - Semester 8)";"< 1 Jt";0;2;1;"Sepeda Motor Pribadi";"Rumah Bersama Saudara";3,87;4;3;3;4;0;0
+"257";257;"Perempuan";21;"Dakwah dan Ilmu Komunikasi";"Manajemen Dakwah";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Rumah Bersama Saudara";2,63;3;0;3;2;4;2
+"258";258;"Perempuan";21;"Dakwah dan Ilmu Komunikasi";"Pengembangan Masyarakat Islam";"4 (Semester 7 - Semester 8)";"< 1 Jt";0;1;0;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";2,42;2;2;0;2;0;2
+"259";259;"Perempuan";21;"Dakwah dan Ilmu Komunikasi";"Pengembangan Masyarakat Islam";"4 (Semester 7 - Semester 8)";"< 1 Jt";0;1;0;"Transportasi Online";"Kos Sendiri";2,2;3;3;2;0;2;0
+"260";260;"Perempuan";21;"Tarbiyah dan Keguruan";"Biologi";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";1,96;2;4;3;2;0;4
+"261";261;"Laki-laki";22;"Dakwah dan Ilmu Komunikasi";"Bimbingan Konseling Islam";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;1;1;"Sepeda Motor Pribadi";"Kos Sendiri";2,34;2;2;0;2;0;0
+"262";262;"Laki-laki";21;"Dakwah dan Ilmu Komunikasi";"Bimbingan Konseling Islam";"4 (Semester 7 - Semester 8)";"< 1 Jt";0;0;1;"Sepeda";"Rumah Mengontrak Bersama-sama";1,47;3;2;0;3;0;0
+"263";263;"Perempuan";21;"Dakwah dan Ilmu Komunikasi";"Bimbingan Konseling Islam";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Rumah Mengontrak Bersama-sama";3,99;0;2;2;2;5;0
+"264";264;"Laki-laki";21;"Dakwah dan Ilmu Komunikasi";"Bimbingan Konseling Islam";"4 (Semester 7 - Semester 8)";"< 1 Jt";0;0;0;"Kendaraan Bermotor (menumpang)";"Rumah Mengontrak Bersama-sama";3,87;3;0;2;2;0;2
+"265";265;"Perempuan";21;"Dakwah dan Ilmu Komunikasi";"Manajemen Dakwah";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Rumah Mengontrak Bersama-sama";0,84;2;0;2;2;0;3
+"266";266;"Perempuan";21;"Tarbiyah dan Keguruan";"Pendidikan Matematika";"4 (Semester 7 - Semester 8)";"< 1 Jt";0;1;0;"Sepeda Motor Pribadi";"Rumah Mengontrak Bersama-sama";2,6;3;4;0;0;0;0
+"267";267;"Perempuan";22;"Dakwah dan Ilmu Komunikasi";"Bimbingan Konseling Islam";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";3,24;0;2;2;4;0;0
+"268";268;"Laki-laki";22;"Ekonomi dan Bisnis Islam";"Perbankan Syariah";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";0,87;2;3;0;2;2;0
+"269";269;"Laki-laki";21;"Ekonomi dan Bisnis Islam";"Perbankan Syariah";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Rumah Mengontrak Bersama-sama";1,42;3;3;4;5;0;0
+"270";270;"Laki-laki";21;"Tarbiyah dan Keguruan";"Pendidikan Matematika";"4 (Semester 7 - Semester 8)";"2 Jt - 3 Jt";1;3;0;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";2,08;2;3;5;4;4;0
+"271";271;"Laki-laki";22;"Tarbiyah dan Keguruan";"Pendidikan Matematika";"4 (Semester 7 - Semester 8)";"2 Jt - 3 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";1,72;3;4;0;2;0;0
+"272";272;"Laki-laki";21;"Tarbiyah dan Keguruan";"Pendidikan Matematika";"4 (Semester 7 - Semester 8)";"< 1 Jt";0;1;0;"Sepeda Motor Pribadi";"Rumah Mengontrak Bersama-sama";4,01;2;3;2;3;0;2
+"273";273;"Perempuan";21;"Tarbiyah dan Keguruan";"Pendidikan Fisika";"3 (Semester 5 - Semester 6)";"2 Jt - 3 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";3,38;4;2;3;2;2;2
+"274";274;"Perempuan";23;"Ekonomi dan Bisnis Islam";"Ekonomi Syariah";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";1;1;1;"Transportasi Online";"Rumah Pribadi/Rumah Keluarga";2,1;2;2;0;2;2;0
+"275";275;"Perempuan";21;"Tarbiyah dan Keguruan";"Pendidikan Biologi";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";3,19;5;5;5;2;2;2
+"276";276;"Laki-laki";21;"Tarbiyah dan Keguruan";"Pendidikan Biologi";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Rumah Mengontrak Bersama-sama";1,56;4;6;4;4;4;4
+"277";277;"Laki-laki";20;"Tarbiyah dan Keguruan";"Biologi";"3 (Semester 5 - Semester 6)";"2 Jt - 3 Jt";0;1;1;"Sepeda Motor Pribadi";"Kos Sendiri";3,13;3;3;3;2;0;2
+"278";278;"Laki-laki";21;"Tarbiyah dan Keguruan";"Pendidikan Fisika";"3 (Semester 5 - Semester 6)";"1Jt - 2 Jt";0;1;1;"Sepeda Motor Pribadi";"Rumah Mengontrak Bersama-sama";1,38;2;3;3;2;0;2
+"279";279;"Laki-laki";21;"Tarbiyah dan Keguruan";"Pendidikan Fisika";"3 (Semester 5 - Semester 6)";"1Jt - 2 Jt";0;0;0;"Kendaraan Bermotor (menumpang)";"Rumah Mengontrak Bersama-sama";1,38;2;4;3;2;2;2
+"280";280;"Laki-laki";21;"Tarbiyah dan Keguruan";"Pendidikan Fisika";"3 (Semester 5 - Semester 6)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";2,22;4;2;3;2;4;0
+"281";281;"Perempuan";22;"Dakwah dan Ilmu Komunikasi";"Bimbingan Konseling Islam";"4 (Semester 7 - Semester 8)";"< 1 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";2,22;0;3;2;0;2;0
+"282";282;"Laki-laki";22;"Tarbiyah dan Keguruan";"Sistem Informasi";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Rumah Mengontrak Bersama-sama";3,96;4;4;5;4;4;4
+"283";283;"Laki-laki";22;"Dakwah dan Ilmu Komunikasi";"Manajemen Dakwah";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";1,36;0;2;2;3;0;2
+"284";284;"Laki-laki";22;"Tarbiyah dan Keguruan";"Pendidikan Bahasa Inggris";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;2;1;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";5,47;3;2;3;2;2;2
+"285";285;"Perempuan";21;"Tarbiyah dan Keguruan";"Pendidikan Fisika";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";1;2;1;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";3;0;2;0;2;0;2
+"286";286;"Laki-laki";21;"Tarbiyah dan Keguruan";"Pendidikan Biologi";"4 (Semester 7 - Semester 8)";"< 1 Jt";0;1;0;"Sepeda Motor Pribadi";"Rumah Mengontrak Bersama-sama";3,87;2;2;2;5;0;2
+"287";287;"Laki-laki";22;"Tarbiyah dan Keguruan";"Pendidikan Biologi";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Rumah Mengontrak Bersama-sama";4,17;2;0;2;2;3;2
+"288";288;"Laki-laki";22;"Tarbiyah dan Keguruan";"Pendidikan Biologi";"4 (Semester 7 - Semester 8)";"2 Jt - 3 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";1,5;4;2;0;2;4;0
+"289";289;"Laki-laki";21;"Tarbiyah dan Keguruan";"Pendidikan Guru Madrasah Ibtidaiyah";"3 (Semester 5 - Semester 6)";"1Jt - 2 Jt";1;2;3;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";3,86;2;4;2;3;0;0
+"290";290;"Laki-laki";22;"Tarbiyah dan Keguruan";"Pendidikan Fisika";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Rumah Mengontrak Bersama-sama";1,5;3;2;0;4;2;0
+"291";291;"Laki-laki";22;"Tarbiyah dan Keguruan";"Pendidikan Fisika";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";3,65;3;2;2;4;0;4
+"292";292;"Laki-laki";21;"Tarbiyah dan Keguruan";"Biologi";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Rumah Mengontrak Bersama-sama";1,5;3;4;4;2;2;2
+"293";293;"Laki-laki";21;"Tarbiyah dan Keguruan";"Pendidikan Fisika";"1 (Semester 1 - Semester 2)";"< 1 Jt";0;0;0;"Kendaraan Bermotor (menumpang)";"Rumah Mengontrak Bersama-sama";2,81;0;2;2;2;0;0
+"294";294;"Laki-laki";20;"Tarbiyah dan Keguruan";"Pendidikan Fisika";"3 (Semester 5 - Semester 6)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";1,26;4;4;4;3;0;0
+"295";295;"Laki-laki";22;"Tarbiyah dan Keguruan";"Biologi";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";1,93;4;2;0;3;0;2
+"296";296;"Laki-laki";22;"Tarbiyah dan Keguruan";"Pendidikan Biologi";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";0,83;0;0;0;2;0;2
+"297";297;"Laki-laki";21;"Dakwah dan Ilmu Komunikasi";"Manajemen Dakwah";"3 (Semester 5 - Semester 6)";"1Jt - 2 Jt";0;0;0;"Kendaraan Bermotor (menumpang)";"Rumah Mengontrak Bersama-sama";0,86;4;4;4;2;2;0
+"298";298;"Laki-laki";21;"Ekonomi dan Bisnis Islam";"Akuntansi Syariah";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;0;0;"Transportasi Online";"Kos Sendiri";3,06;4;2;2;3;2;0
+"299";299;"Perempuan";21;"Tarbiyah dan Keguruan";"Pendidikan Biologi";"3 (Semester 5 - Semester 6)";"< 1 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";3,17;2;2;2;0;0;2
+"300";300;"Perempuan";22;"Dakwah dan Ilmu Komunikasi";"Manajemen Dakwah";"3 (Semester 5 - Semester 6)";"1Jt - 2 Jt";0;0;0;"Transportasi Online";"Kos Sendiri";2,93;3;3;2;2;0;2
+"301";301;"Perempuan";21;"Tarbiyah dan Keguruan";"Bimbingan dan Konseling";"3 (Semester 5 - Semester 6)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";1,96;2;2;2;2;2;0
+"302";302;"Laki-laki";22;"Tarbiyah dan Keguruan";"Manajemen Pendidikan Islam";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Rumah Mengontrak Bersama-sama";2,46;2;3;2;5;0;2
+"303";303;"Perempuan";21;"Ekonomi dan Bisnis Islam";"Perbankan Syariah";"3 (Semester 5 - Semester 6)";"1Jt - 2 Jt";0;0;0;"Berjalan Kaki";"Rumah Mengontrak Bersama-sama";0,77;4;2;2;2;0;0
+"304";304;"Laki-laki";20;"Adab";"Ilmu Perpustakaan dan Informasi Islam";"2 (Semester 3 - Semester 4)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";2,39;2;2;0;3;3;2
+"305";305;"Laki-laki";21;"Dakwah dan Ilmu Komunikasi";"Pengembangan Masyarakat Islam";"3 (Semester 5 - Semester 6)";"1Jt - 2 Jt";1;3;1;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";2,31;4;2;2;2;2;2
+"306";306;"Perempuan";21;"Tarbiyah dan Keguruan";"Pendidikan Agama Islam";"3 (Semester 5 - Semester 6)";"1Jt - 2 Jt";0;0;0;"Transportasi Online";"Kos Sendiri";0,96;2;4;2;2;0;2
+"307";307;"Laki-laki";23;"Syariah";"Hukum Keluarga";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Rumah Mengontrak Bersama-sama";1,3;3;0;3;2;2;2
+"308";308;"Laki-laki";21;"Ushuluddin dan Studi Agama";"Pemikiran Politik Islam";"3 (Semester 5 - Semester 6)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";1,23;4;6;6;4;2;0
+"309";309;"Perempuan";21;"Tarbiyah dan Keguruan";"Pendidikan Bahasa Arab";"3 (Semester 5 - Semester 6)";"< 1 Jt";0;0;0;"Berjalan Kaki";"Rumah Mengontrak Bersama-sama";0,55;4;2;3;0;2;2
+"310";310;"Perempuan";21;"Tarbiyah dan Keguruan";"Pendidikan Biologi";"3 (Semester 5 - Semester 6)";"< 1 Jt";0;0;0;"Berjalan Kaki";"Rumah Mengontrak Bersama-sama";0,55;2;3;0;0;2;0
+"311";311;"Perempuan";22;"Tarbiyah dan Keguruan";"Pendidikan Bahasa Arab";"3 (Semester 5 - Semester 6)";"< 1 Jt";0;0;0;"Berjalan Kaki";"Rumah Mengontrak Bersama-sama";0,55;3;3;0;0;2;0
+"312";312;"Perempuan";20;"Tarbiyah dan Keguruan";"Pendidikan Guru Madrasah Ibtidaiyah";"1 (Semester 1 - Semester 2)";"1Jt - 2 Jt";0;0;0;"Berjalan Kaki";"Kos Sendiri";0,57;2;2;0;0;2;4
+"313";313;"Laki-laki";22;"Dakwah dan Ilmu Komunikasi";"Komunikasi dan Penyiaran Islam";"3 (Semester 5 - Semester 6)";"1Jt - 2 Jt";1;2;5;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";1,05;4;0;4;2;2;2
+"314";314;"Laki-laki";21;"Ekonomi dan Bisnis Islam";"Akuntansi Syariah";"3 (Semester 5 - Semester 6)";"< 1 Jt";0;2;0;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";1,93;2;1;0;2;0;1
+"315";315;"Laki-laki";22;"Tarbiyah dan Keguruan";"Pendidikan Biologi";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";2,08;4;4;4;5;2;0
+"316";316;"Perempuan";22;"Tarbiyah dan Keguruan";"Pendidikan Fisika";"4 (Semester 7 - Semester 8)";"< 1 Jt";0;2;1;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";0,56;0;2;2;0;0;0
+"317";317;"Laki-laki";23;"Tarbiyah dan Keguruan";"Pendidikan Biologi";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";1,84;0;2;0;2;2;2
+"318";318;"Laki-laki";22;"Tarbiyah dan Keguruan";"Pendidikan Biologi";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";1,41;0;0;3;3;0;0
+"319";319;"Laki-laki";21;"Ekonomi dan Bisnis Islam";"Ekonomi Syariah";"2 (Semester 3 - Semester 4)";"< 1 Jt";0;1;0;"Sepeda Motor Pribadi";"Rumah Mengontrak Bersama-sama";1,03;2;2;0;3;2;0
+"320";320;"Laki-laki";20;"Ekonomi dan Bisnis Islam";"Ekonomi Syariah";"2 (Semester 3 - Semester 4)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";1,82;3;4;3;4;0;2
+"321";321;"Laki-laki";23;"Tarbiyah dan Keguruan";"Biologi";"4 (Semester 7 - Semester 8)";"2 Jt - 3 Jt";1;0;0;"Mobil Pribadi";"Rumah Mengontrak Bersama-sama";1,83;3;2;2;3;2;2
+"322";322;"Perempuan";19;"Ekonomi dan Bisnis Islam";"Ekonomi Syariah";"1 (Semester 1 - Semester 2)";"< 1 Jt";0;0;1;"Sepeda";"Kos Sendiri";0,28;2;3;3;0;0;2
+"323";323;"Perempuan";18;"Tarbiyah dan Keguruan";"Pendidikan Bahasa Inggris";"2 (Semester 3 - Semester 4)";"< 1 Jt";0;2;0;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";5,59;0;2;2;0;2;0
+"324";324;"Perempuan";22;"Tarbiyah dan Keguruan";"Pendidikan Matematika";"4 (Semester 7 - Semester 8)";"< 1 Jt";0;2;1;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";4,5;2;3;2;0;0;2
+"325";325;"Perempuan";21;"Ekonomi dan Bisnis Islam";"Ekonomi Syariah";"3 (Semester 5 - Semester 6)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Rumah Mengontrak Bersama-sama";1,29;4;2;2;2;0;0
+"326";326;"Laki-laki";22;"Ushuluddin dan Studi Agama";"Ilmu Alquran dan Tafsir";"3 (Semester 5 - Semester 6)";"1Jt - 2 Jt";2;3;1;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";6,62;4;1;2;2;2;2
+"327";327;"Perempuan";20;"Tarbiyah dan Keguruan";"Pendidikan Biologi";"2 (Semester 3 - Semester 4)";"< 1 Jt";0;0;0;"Transportasi Online";"Kos Sendiri";2,27;4;4;2;0;0;0
+"328";328;"Laki-laki";21;"Tarbiyah dan Keguruan";"Pendidikan Fisika";"3 (Semester 5 - Semester 6)";"2 Jt - 3 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";1,14;2;2;2;4;0;3
+"329";329;"Perempuan";22;"Ekonomi dan Bisnis Islam";"Akuntansi Syariah";"1 (Semester 1 - Semester 2)";"1Jt - 2 Jt";0;0;0;"Transportasi Online";"Kos Sendiri";1,51;2;2;2;0;2;0
+"330";330;"Perempuan";19;"Ekonomi dan Bisnis Islam";"Ekonomi Syariah";"2 (Semester 3 - Semester 4)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Rumah Mengontrak Bersama-sama";1,02;2;2;4;4;3;2
+"331";331;"Laki-laki";20;"Tarbiyah dan Keguruan";"Biologi";"2 (Semester 3 - Semester 4)";"< 1 Jt";0;1;0;"Sepeda Motor Pribadi";"Rumah Bersama Saudara";4,32;2;2;0;2;1;0
+"332";332;"Perempuan";22;"Ekonomi dan Bisnis Islam";"Ekonomi Syariah";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";1;3;2;"Mobil Pribadi";"Rumah Pribadi/Rumah Keluarga";7,98;2;3;0;0;3;0
+"333";333;"Laki-laki";20;"Ekonomi dan Bisnis Islam";"Perbankan Syariah";"2 (Semester 3 - Semester 4)";"2 Jt - 3 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";2,27;4;0;4;4;0;0
+"334";334;"Perempuan";20;"Ekonomi dan Bisnis Islam";"Ekonomi Syariah";"2 (Semester 3 - Semester 4)";"2 Jt - 3 Jt";0;2;2;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";3,24;2;2;2;2;3;3
+"335";335;"Laki-laki";20;"Ekonomi dan Bisnis Islam";"Ekonomi Syariah";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";1;3;1;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";2,26;2;2;0;2;0;3
+"336";336;"Perempuan";20;"Tarbiyah dan Keguruan";"Pendidikan Anak Usia Dini";"3 (Semester 5 - Semester 6)";"< 1 Jt";0;1;0;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";3,74;2;2;2;2;1;1
+"337";337;"Laki-laki";21;"Ekonomi dan Bisnis Islam";"Perbankan Syariah";"3 (Semester 5 - Semester 6)";"1Jt - 2 Jt";0;2;0;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";2,08;3;3;3;3;2;0
+"338";338;"Perempuan";20;"Ekonomi dan Bisnis Islam";"Ekonomi Syariah";"3 (Semester 5 - Semester 6)";"2 Jt - 3 Jt";2;2;1;"Mobil Pribadi";"Rumah Pribadi/Rumah Keluarga";9,55;4;4;4;0;2;0
+"339";339;"Laki-laki";22;"Ushuluddin dan Studi Agama";"Psikologi Islam";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;0;0;"Transportasi Online";"Kos Sendiri";2,46;0;0;0;4;0;0
+"340";340;"Laki-laki";21;"Dakwah dan Ilmu Komunikasi";"Manajemen Dakwah";"4 (Semester 7 - Semester 8)";"2 Jt - 3 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";2,9;0;2;2;2;3;0
+"341";341;"Laki-laki";21;"Dakwah dan Ilmu Komunikasi";"Manajemen Dakwah";"3 (Semester 5 - Semester 6)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";2,35;4;4;4;3;3;0
+"342";342;"Perempuan";20;"Ekonomi dan Bisnis Islam";"Perbankan Syariah";"3 (Semester 5 - Semester 6)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Rumah Mengontrak Bersama-sama";7,63;2;2;3;1;0;3
+"343";343;"Perempuan";19;"Tarbiyah dan Keguruan";"Pendidikan Bahasa Inggris";"2 (Semester 3 - Semester 4)";"2 Jt - 3 Jt";0;0;0;"Transportasi Online";"Kos Sendiri";4,36;2;3;4;2;2;0
+"344";344;"Laki-laki";19;"Ekonomi dan Bisnis Islam";"Ekonomi Syariah";"2 (Semester 3 - Semester 4)";"< 1 Jt";0;1;0;"Sepeda Motor Pribadi";"Rumah Mengontrak Bersama-sama";2,13;3;3;4;2;0;0
+"345";345;"Laki-laki";21;"Tarbiyah dan Keguruan";"Pendidikan Bahasa Arab";"3 (Semester 5 - Semester 6)";"1Jt - 2 Jt";0;0;0;"Kendaraan Bermotor (menumpang)";"Kos Sendiri";0,83;2;2;2;0;0;2
+"346";346;"Laki-laki";21;"Tarbiyah dan Keguruan";"Manajemen Pendidikan Islam";"3 (Semester 5 - Semester 6)";"3 Jt - 4 Jt";1;3;1;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";4,26;2;2;2;3;2;0
+"347";347;"Laki-laki";21;"Dakwah dan Ilmu Komunikasi";"Manajemen Dakwah";"3 (Semester 5 - Semester 6)";"< 1 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";1,84;4;2;0;4;0;3
+"348";348;"Perempuan";22;"Dakwah dan Ilmu Komunikasi";"Manajemen Dakwah";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;0;0;"Transportasi Online";"Rumah Mengontrak Bersama-sama";1,48;2;2;2;0;2;0
+"349";349;"Perempuan";21;"Tarbiyah dan Keguruan";"Manajemen Pendidikan Islam";"3 (Semester 5 - Semester 6)";"2 Jt - 3 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";2,26;3;2;3;0;2;0
+"350";350;"Laki-laki";21;"Tarbiyah dan Keguruan";"Pendidikan Anak Usia Dini";"3 (Semester 5 - Semester 6)";"< 1 Jt";0;2;0;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";2,51;3;2;3;2;0;0
+"351";351;"Perempuan";21;"Tarbiyah dan Keguruan";"Pendidikan Biologi";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Rumah Mengontrak Bersama-sama";1,64;2;4;0;0;2;0
+"352";352;"Laki-laki";22;"Tarbiyah dan Keguruan";"Biologi";"1 (Semester 1 - Semester 2)";"2 Jt - 3 Jt";0;3;1;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";4,5;3;2;2;5;2;0
+"353";353;"Laki-laki";22;"Tarbiyah dan Keguruan";"Manajemen Pendidikan Islam";"1 (Semester 1 - Semester 2)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";0,87;2;0;3;3;0;2
+"354";354;"Laki-laki";21;"Tarbiyah dan Keguruan";"Pendidikan Biologi";"4 (Semester 7 - Semester 8)";"< 1 Jt";0;1;1;"Sepeda Motor Pribadi";"Rumah Mengontrak Bersama-sama";0,77;2;2;2;3;4;2
+"355";355;"Laki-laki";23;"Ekonomi dan Bisnis Islam";"Ekonomi Syariah";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";3,95;0;0;2;5;0;0
+"356";356;"Laki-laki";22;"Dakwah dan Ilmu Komunikasi";"Manajemen Dakwah";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";1;2;2;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";5,89;2;2;2;2;2;2
+"357";357;"Perempuan";19;"Ekonomi dan Bisnis Islam";"Ekonomi Syariah";"1 (Semester 1 - Semester 2)";"2 Jt - 3 Jt";2;2;2;"Mobil Pribadi";"Rumah Pribadi/Rumah Keluarga";8,4;2;2;2;4;2;0
+"358";358;"Perempuan";18;"Ekonomi dan Bisnis Islam";"Ekonomi Syariah";"1 (Semester 1 - Semester 2)";"1Jt - 2 Jt";1;2;2;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";7,11;4;4;2;4;0;0
+"359";359;"Perempuan";19;"Ekonomi dan Bisnis Islam";"Ekonomi Syariah";"1 (Semester 1 - Semester 2)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";2,44;2;2;3;2;0;2
+"360";360;"Laki-laki";23;"Ekonomi dan Bisnis Islam";"Akuntansi Syariah";"1 (Semester 1 - Semester 2)";"1Jt - 2 Jt";1;2;2;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";1,35;2;2;2;6;0;0
+"361";361;"Laki-laki";22;"Tarbiyah dan Keguruan";"Biologi";"4 (Semester 7 - Semester 8)";"2 Jt - 3 Jt";0;1;1;"Sepeda Motor Pribadi";"Kos Sendiri";1,41;3;3;2;3;2;2
+"362";362;"Perempuan";22;"Tarbiyah dan Keguruan";"Pendidikan Matematika";"4 (Semester 7 - Semester 8)";"3 Jt - 4 Jt";2;3;2;"Mobil Pribadi";"Rumah Pribadi/Rumah Keluarga";5,66;0;3;0;2;3;0
+"363";363;"Laki-laki";22;"Ekonomi dan Bisnis Islam";"Akuntansi Syariah";"1 (Semester 1 - Semester 2)";"2 Jt - 3 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";1,92;4;3;3;5;3;0
+"364";364;"Laki-laki";22;"Tarbiyah dan Keguruan";"Biologi";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";1;2;1;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";4,29;2;2;2;4;3;0
+"365";365;"Laki-laki";23;"Tarbiyah dan Keguruan";"Pendidikan Fisika";"1 (Semester 1 - Semester 2)";"2 Jt - 3 Jt";2;2;2;"Mobil Pribadi";"Rumah Pribadi/Rumah Keluarga";5,89;2;2;2;2;0;0
+"366";366;"Laki-laki";22;"Ekonomi dan Bisnis Islam";"Akuntansi Syariah";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Rumah Bersama Saudara";4,66;0;2;0;2;2;0
+"367";367;"Perempuan";21;"Tarbiyah dan Keguruan";"Biologi";"3 (Semester 5 - Semester 6)";"1Jt - 2 Jt";2;3;3;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";6,67;0;0;4;0;0;3
+"368";368;"Perempuan";21;"Ekonomi dan Bisnis Islam";"Ekonomi Syariah";"3 (Semester 5 - Semester 6)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";0,55;4;4;4;2;2;0
+"369";369;"Laki-laki";22;"Tarbiyah dan Keguruan";"Pendidikan Fisika";"3 (Semester 5 - Semester 6)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Rumah Bersama Saudara";3,77;3;2;2;4;0;2
+"370";370;"Laki-laki";21;"Ekonomi dan Bisnis Islam";"Akuntansi Syariah";"3 (Semester 5 - Semester 6)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Rumah Bersama Saudara";7,18;2;4;4;0;0;0
+"371";371;"Laki-laki";21;"Ekonomi dan Bisnis Islam";"Akuntansi Syariah";"3 (Semester 5 - Semester 6)";"2 Jt - 3 Jt";0;0;0;"Transportasi Online";"Rumah Bersama Saudara";1,37;2;2;2;2;1;0
+"372";372;"Perempuan";22;"Tarbiyah dan Keguruan";"Pendidikan Anak Usia Dini";"3 (Semester 5 - Semester 6)";"2 Jt - 3 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";2,27;4;4;4;3;2;3
+"373";373;"Perempuan";20;"Ushuluddin dan Studi Agama";"Psikologi Islam";"3 (Semester 5 - Semester 6)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";2,06;4;0;4;2;3;0
+"374";374;"Perempuan";22;"Ushuluddin dan Studi Agama";"Psikologi Islam";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Rumah Mengontrak Bersama-sama";2,14;0;3;0;2;2;0
+"375";375;"Laki-laki";22;"Ekonomi dan Bisnis Islam";"Ekonomi Syariah";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";2,13;0;3;0;4;2;2
+"376";376;"Laki-laki";21;"Tarbiyah dan Keguruan";"Pendidikan Bahasa Inggris";"3 (Semester 5 - Semester 6)";"< 1 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";0,53;4;4;0;4;0;0
+"377";377;"Perempuan";20;"Tarbiyah dan Keguruan";"Biologi";"2 (Semester 3 - Semester 4)";"< 1 Jt";0;2;0;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";4,15;2;0;0;2;2;2
+"378";378;"Perempuan";21;"Ekonomi dan Bisnis Islam";"Ekonomi Syariah";"1 (Semester 1 - Semester 2)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Rumah Bersama Saudara";6,43;0;4;0;2;4;2
+"379";379;"Laki-laki";20;"Ekonomi dan Bisnis Islam";"Akuntansi Syariah";"2 (Semester 3 - Semester 4)";"< 1 Jt";0;1;0;"Sepeda Motor Pribadi";"Rumah Bersama Saudara";2,34;2;2;2;0;0;0
+"380";380;"Perempuan";21;"Tarbiyah dan Keguruan";"Pendidikan Bahasa Inggris";"3 (Semester 5 - Semester 6)";"1Jt - 2 Jt";0;0;0;"Kendaraan Bermotor (menumpang)";"Rumah Mengontrak Bersama-sama";2,23;0;4;2;0;0;2
+"381";381;"Perempuan";20;"Tarbiyah dan Keguruan";"Manajemen Pendidikan Islam";"2 (Semester 3 - Semester 4)";"< 1 Jt";0;0;1;"Sepeda";"Rumah Mengontrak Bersama-sama";1,13;2;4;4;0;2;2
+"382";382;"Laki-laki";21;"Tarbiyah dan Keguruan";"Biologi";"3 (Semester 5 - Semester 6)";"3 Jt - 4 Jt";3;3;4;"Mobil Pribadi";"Rumah Pribadi/Rumah Keluarga";1,39;4;4;4;5;2;2
+"383";383;"Perempuan";19;"Tarbiyah dan Keguruan";"Pendidikan Bahasa Inggris";"2 (Semester 3 - Semester 4)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Rumah Bersama Saudara";1,27;2;2;0;2;0;0
+"384";384;"Laki-laki";20;"Tarbiyah dan Keguruan";"Pendidikan Matematika";"2 (Semester 3 - Semester 4)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";2,13;3;4;2;4;2;2
+"385";385;"Laki-laki";22;"Tarbiyah dan Keguruan";"Biologi";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Rumah Mengontrak Pribadi";2,93;0;2;0;2;0;3
+"386";386;"Laki-laki";21;"Tarbiyah dan Keguruan";"Pendidikan Bahasa Inggris";"3 (Semester 5 - Semester 6)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";1,74;0;2;2;2;0;0
+"387";387;"Laki-laki";22;"Ekonomi dan Bisnis Islam";"Akuntansi Syariah";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";1;3;2;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";1,19;2;2;0;4;2;2
+"388";388;"Laki-laki";21;"Ekonomi dan Bisnis Islam";"Akuntansi Syariah";"3 (Semester 5 - Semester 6)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";1,84;2;4;0;2;2;0
+"389";389;"Laki-laki";21;"Tarbiyah dan Keguruan";"Manajemen Pendidikan Islam";"3 (Semester 5 - Semester 6)";"< 1 Jt";0;1;0;"Sepeda Motor Pribadi";"Rumah Bersama Saudara";1,58;2;2;0;2;0;2
+"390";390;"Laki-laki";22;"Ekonomi dan Bisnis Islam";"Akuntansi Syariah";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";1;3;2;"Sepeda Motor Pribadi";"Rumah Pribadi/Rumah Keluarga";2,27;2;2;4;4;2;0
+"391";391;"Perempuan";20;"Ekonomi dan Bisnis Islam";"Ekonomi Syariah";"2 (Semester 3 - Semester 4)";"1Jt - 2 Jt";0;0;0;"Transportasi Online";"Kos Sendiri";1,31;0;4;4;0;2;2
+"392";392;"Laki-laki";23;"Tarbiyah dan Keguruan";"Pendidikan Bahasa Arab";"4 (Semester 7 - Semester 8)";"< 1 Jt";0;1;0;"Sepeda Motor Pribadi";"Rumah Mengontrak Bersama-sama";1,83;0;0;2;5;0;0
+"393";393;"Perempuan";19;"Dakwah dan Ilmu Komunikasi";"Manajemen Dakwah";"2 (Semester 3 - Semester 4)";"1Jt - 2 Jt";0;1;0;"Sepeda Motor Pribadi";"Kos Bersama-sama";2,5;4;4;4;0;0;3
+"394";394;"Perempuan";20;"Ekonomi dan Bisnis Islam";"Ekonomi Syariah";"2 (Semester 3 - Semester 4)";"< 1 Jt";0;0;0;"Kendaraan Bermotor (menumpang)";"Kos Bersama-sama";2,5;4;4;4;2;2;0
+"395";395;"Laki-laki";22;"Tarbiyah dan Keguruan";"Pendidikan Bahasa Arab";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";1;2;1;"Mobil Pribadi";"Rumah Pribadi/Rumah Keluarga";4,04;2;4;2;4;0;2
+"396";396;"Perempuan";21;"Tarbiyah dan Keguruan";"Biologi";"4 (Semester 7 - Semester 8)";"1Jt - 2 Jt";0;0;0;"Kendaraan Bermotor (menumpang)";"Kos Sendiri";1,29;2;2;2;3;0;2
+"397";397;"Perempuan";20;"Ekonomi dan Bisnis Islam";"Akuntansi Syariah";"2 (Semester 3 - Semester 4)";"< 1 Jt";0;0;0;"Kendaraan Bermotor (menumpang)";"Rumah Mengontrak Bersama-sama";4,42;2;0;2;0;0;2
+"398";398;"Perempuan";21;"Tarbiyah dan Keguruan";"Pendidikan Bahasa Inggris";"3 (Semester 5 - Semester 6)";"1Jt - 2 Jt";0;0;0;"Transportasi Online";"Kos Sendiri";1,38;4;2;2;2;0;0
+"399";399;"Laki-laki";21;"Tarbiyah dan Keguruan";"Pendidikan Bahasa Arab";"3 (Semester 5 - Semester 6)";"1Jt - 2 Jt";0;0;0;"Kendaraan Bermotor (menumpang)";"Rumah Mengontrak Bersama-sama";2,54;2;2;2;5;2;0
+"400";400;"Perempuan";20;"Tarbiyah dan Keguruan";"Pendidikan Bahasa Arab";"2 (Semester 3 - Semester 4)";"< 1 Jt";0;0;1;"Sepeda";"Rumah Mengontrak Bersama-sama";0,57;2;2;2;3;0;2
+"401";1;"Perempuan";21;"Fakultas Ilmu Sosial dan Politik";"Ilmu Komunikasi";"4 (Semester 7 - Semester 8)";"< 1 jt";1;2;1;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";4,22379670847997;3;2;3;2;2;2
+"402";2;"Laki-Laki";20;"Fakultas Hukum";"Ilmu Hukum";"3 (Semester 5 - Semester 6)";"1 jt – 2 jt";2;1;1;"Mobil Pribadi";"Rumah pribadi/rumah keluarga";2,70333096576248;3;3;3;3;3;3
+"403";3;"Laki-Laki";21;"Fakultas Ekonomi dan Bisnis";"Manajemen";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";1;2;2;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";3,23707224952542;1;1;1;1;1;1
+"404";4;"Laki-Laki";22;"Fakultas Ekonomi dan Bisnis";"Akuntansi";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";1;4;1;"Kendaraan Bermotor (menumpang dengan keluarga/teman)";"Rumah pribadi/rumah keluarga";3,00233620800345;2;2;2;2;2;2
+"405";5;"Laki-Laki";21;"Fakultas Ekonomi dan Bisnis";"Manajemen";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";4;4;1;"Mobil Pribadi";"Rumah pribadi/rumah keluarga";5,96192497325066;1;1;1;1;1;1
+"406";6;"Perempuan";21;"Fakultas Ekonomi dan Bisnis";"Akuntansi";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";1;2;1;"Transportasi Online";"Rumah pribadi/rumah keluarga";2,92533062380122;3;1;1;1;1;1
+"407";7;"Perempuan";22;"Fakultas Ilmu Sosial dan Politik";"Administrasi Publik";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";1;1;1;"Transportasi Online";"Rumah pribadi/rumah keluarga";2,0588294028315;2;2;2;2;2;2
+"408";8;"Perempuan";22;"Fakultas Ilmu Sosial dan Politik";"Administrasi Publik";"4 (Semester 7 - Semester 8)";"< 1 jt";1;1;1;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";12,0078708695755;4;4;4;4;3;3
+"409";9;"Laki-Laki";22;"Fakultas Ekonomi dan Bisnis";"Manajemen";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";1;1;1;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";4,73557825367564;4;4;4;3;4;4
+"410";10;"Perempuan";22;"Fakultas Ilmu Sosial dan Politik";"Administrasi Publik";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";1;1;1;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";6,7413073568515;3;3;3;3;2;1
+"411";11;"Laki-Laki";21;"Fakultas Hukum";"Ilmu Hukum";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";NA;1;NA;"Sepeda Motor Pribadi";"Rumah mengontrak pribadi";2,42393143882071;3;1;1;1;1;1
+"412";12;"Laki-Laki";22;"Fakultas Hukum";"Ilmu Hukum";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";0;2;0;"Sepeda Motor Pribadi";"Rumah mengontrak bersama-sama";2,41181595639213;1;2;1;2;1;1
+"413";13;"Laki-Laki";22;"Fakultas Hukum";"Ilmu Hukum";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";0;0;0;"Berjalan Kaki";"Rumah mengontrak pribadi";2,77874667603802;1;1;1;1;1;1
+"414";14;"Perempuan";22;"Fakultas Ilmu Sosial dan Politik";"Administrasi Publik";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";1;1;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";12,7777211017171;4;4;4;4;1;1
+"415";15;"Laki-Laki";19;"Fakultas Ekonomi dan Bisnis";"Administrasi Bisnis";"3 (Semester 5 - Semester 6)";"< 1 jt";0;1;0;"Sepeda Motor Pribadi";"Rumah mengontrak pribadi";2,41181595639213;1;3;3;3;1;1
+"416";16;"Perempuan";22;"Fakultas Ekonomi dan Bisnis";"Manajemen";"4 (Semester 7 - Semester 8)";"< 1 jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";0,781954445386644;3;2;2;2;2;1
+"417";17;"Perempuan";23;"Fakultas Ekonomi dan Bisnis";"Administrasi Bisnis";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";0;0;0;"Berjalan Kaki";"Kos Sendiri";0,323106549174391;3;4;2;3;1;2
+"418";18;"Perempuan";22;"Fakultas Ekonomi dan Bisnis";"Akuntansi";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";0;1;0;"Sepeda Motor Pribadi";"Kos bersama-sama";1,91103583617899;1;1;1;1;1;1
+"419";19;"Laki-Laki";23;"Fakultas Hukum";"Ilmu Hukum";"4 (Semester 7 - Semester 8)";"< 1 jt";1;0;0;"Sepeda Motor Pribadi";"Rumah bersama saudara";6,89095575098973;1;1;1;1;1;1
+"420";20;"Perempuan";22;"Fakultas Ekonomi dan Bisnis";"Manajemen";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";1;2;0;"Sepeda Motor Pribadi";"Kos Sendiri";0,109226290602469;3;3;3;3;3;3
+"421";21;"Laki-Laki";20;"Fakultas Teknik";"Teknik Sipil";"3 (Semester 5 - Semester 6)";"2,1 jt – 3 jt";1;2;3;"Sepeda Motor Pribadi";"Kos bersama-sama";43,5451922443416;1;1;1;1;1;1
+"422";22;"Laki-Laki";19;"Fakultas Ilmu Komputer";"Sistem Informasi";"2 (Semester 3 – Semester 4)";"< 1 jt";2;1;1;"Sepeda Motor Pribadi";"Kos bersama-sama";1,96535096672214;1;1;1;1;1;1
+"423";23;"Laki-Laki";21;"Fakultas Ilmu Komputer";"Sistem Informasi";"2 (Semester 3 – Semester 4)";"< 1 jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";1,96535096672214;1;1;1;1;1;1
+"424";24;"Laki-Laki";22;"Fakultas Ekonomi dan Bisnis";"Manajemen";"4 (Semester 7 - Semester 8)";"< 1 jt";0;0;0;"Kendaraan Bermotor (menumpang dengan keluarga/teman)";"Kos bersama-sama";2,50789877995786;3;3;3;3;3;3
+"425";25;"Laki-Laki";18;"Fakultas Ekonomi dan Bisnis";"Manajemen";"1 (Semester 1 – Semester 2)";"< 1 jt";0;1;1;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";3,75335538612546;4;3;3;3;3;3
+"426";26;"Perempuan";20;"Fakultas Ekonomi dan Bisnis";"Manajemen";"2 (Semester 3 – Semester 4)";"1 jt – 2 jt";0;0;0;"Sepeda Motor Pribadi";"Asrama";30,5272137574667;1;1;1;1;1;1
+"427";27;"Perempuan";22;"Fakultas Ekonomi dan Bisnis";"Manajemen";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";0;1;0;"Sepeda Motor Pribadi";"Kos bersama-sama";2,50789877995786;5;5;5;5;3;3
+"428";28;"Laki-Laki";21;"Fakultas Ekonomi dan Bisnis";"Administrasi Bisnis";"3 (Semester 5 - Semester 6)";"2,1 jt – 3 jt";2;3;3;"Sepeda Motor Pribadi";"Kos Sendiri";0,29861079428036;1;1;1;1;1;1
+"429";29;"Laki-Laki";20;"Fakultas Ekonomi dan Bisnis";"Manajemen";"2 (Semester 3 – Semester 4)";"1 jt – 2 jt";1;1;1;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";3,02048086833811;1;1;2;1;1;1
+"430";30;"Laki-Laki";20;"Fakultas Hukum";"Ilmu Hukum";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";1;3;0;"Mobil Pribadi";"Rumah pribadi/rumah keluarga";1,25171514097766;3;3;3;3;3;1
+"431";31;"Perempuan";22;"Fakultas Teknik";"Arsitektur";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";2;2;0;"Sepeda Motor Pribadi";"Kos Sendiri";0,329986236060145;3;2;1;1;1;1
+"432";32;"Laki-Laki";21;"Fakultas Teknik";"Teknik Sipil";"3 (Semester 5 - Semester 6)";"1 jt – 2 jt";1;2;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";1,7784158233703;3;3;2;1;4;1
+"433";33;"Laki-Laki";21;"Fakultas Hukum";"Ilmu Hukum";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";2;2;0;"Mobil Pribadi";"Rumah pribadi/rumah keluarga";3,23707224952542;3;1;4;1;3;1
+"434";34;"Laki-Laki";22;"Fakultas Teknik";"Teknik Sipil";"2 (Semester 3 – Semester 4)";"1 jt – 2 jt";1;2;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";2,14089151433054;4;3;2;3;3;1
+"435";35;"Perempuan";22;"Fakultas Ekonomi dan Bisnis";"Manajemen";"2 (Semester 3 – Semester 4)";"2,1 jt – 3 jt";3;2;0;"Mobil Pribadi";"Rumah pribadi/rumah keluarga";5,29675521321658;3;2;3;2;2;1
+"436";36;"Laki-Laki";23;"Fakultas Teknik";"Teknik Mesin";"3 (Semester 5 - Semester 6)";"1 jt – 2 jt";2;2;1;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";7,20338343150395;4;3;1;5;3;1
+"437";37;"Perempuan";23;"Fakultas Teknik";"Teknik Mesin";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";2;3;1;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";5,65453261540912;1;1;1;1;2;1
+"438";38;"Perempuan";19;"Fakultas Hukum";"Ilmu Hukum";"2 (Semester 3 – Semester 4)";"1 jt – 2 jt";1;2;2;"Transportasi Online";"Rumah pribadi/rumah keluarga";24,0211210515964;1;1;1;1;1;1
+"439";39;"Laki-Laki";21;"Fakultas Hukum";"Ilmu Hukum";"3 (Semester 5 - Semester 6)";"< 1 jt";0;1;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";4,23524011524345;3;4;4;3;3;3
+"440";40;"Perempuan";23;"Fakultas Ekonomi dan Bisnis";"Administrasi Bisnis";"4 (Semester 7 - Semester 8)";"3,1 jt – 4 jt";3;3;1;"Mobil Pribadi";"Rumah pribadi/rumah keluarga";6,3009777974308;2;1;1;5;1;2
+"441";41;"Perempuan";21;"Fakultas Ekonomi dan Bisnis";"Manajemen";"2 (Semester 3 – Semester 4)";"2,1 jt – 3 jt";2;1;0;"Mobil Pribadi";"Rumah pribadi/rumah keluarga";3,09440516959387;1;3;1;4;3;3
+"442";42;"Laki-Laki";20;"Fakultas Teknik";"Teknik Sipil";"2 (Semester 3 – Semester 4)";"1 jt – 2 jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";0,282353404418492;3;4;4;4;2;2
+"443";43;"Perempuan";20;"Fakultas Hukum";"Ilmu Hukum";"2 (Semester 3 – Semester 4)";"< 1 jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";24,0211210515964;1;1;1;1;1;1
+"444";44;"Laki-Laki";22;"Fakultas Teknik";"Arsitektur";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";0;1;2;"Sepeda Motor Pribadi";"Kos Sendiri";0,421196876042652;5;1;1;1;1;1
+"445";45;"Perempuan";22;"Fakultas Keguruan dan Ilmu Pendidikan";"Pendidikan Bahasa Inggris";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";1;3;0;"Sepeda Motor Pribadi";"Kos bersama-sama";0,421196876042652;4;1;4;5;3;2
+"446";46;"Perempuan";20;"Fakultas Ilmu Komputer";"Sistem Informasi";"1 (Semester 1 – Semester 2)";"2,1 jt – 3 jt";2;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";1,97739076110086;2;3;2;3;2;3
+"447";47;"Perempuan";18;"Fakultas Ilmu Sosial dan Politik";"Ilmu Komunikasi";"1 (Semester 1 – Semester 2)";"1 jt – 2 jt";0;1;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";3,23707224952542;2;2;2;2;1;1
+"448";48;"Laki-Laki";21;"Fakultas Ilmu Sosial dan Politik";"Administrasi Publik";"3 (Semester 5 - Semester 6)";"2,1 jt – 3 jt";2;1;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";5,85426974569908;3;2;3;2;2;2
+"449";49;"Laki-Laki";19;"Fakultas Hukum";"Ilmu Hukum";"1 (Semester 1 – Semester 2)";"1 jt – 2 jt";1;2;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";0,974907820549075;3;4;2;3;2;1
+"450";50;"Laki-Laki";19;"Fakultas Hukum";"Ilmu Hukum";"1 (Semester 1 – Semester 2)";"1 jt – 2 jt";1;2;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";5,49799205454565;4;1;3;1;2;1
+"451";51;"Perempuan";21;"Fakultas Ilmu Komputer";"Informatika";"3 (Semester 5 - Semester 6)";"1 jt – 2 jt";1;3;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";5,80623038660224;3;3;1;1;1;1
+"452";52;"Perempuan";22;"Fakultas Hukum";"Ilmu Hukum";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";1;3;2;"Transportasi Online";"Kos bersama-sama";2,50789877995786;3;5;4;3;3;3
+"453";53;"Laki-Laki";22;"Fakultas Hukum";"Ilmu Hukum";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";3;4;1;"Mobil Pribadi";"Rumah pribadi/rumah keluarga";4,21406621749952;4;1;2;2;3;1
+"454";54;"Perempuan";22;"Fakultas Hukum";"Ilmu Hukum";"3 (Semester 5 - Semester 6)";"2,1 jt – 3 jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";0,201040237931465;2;2;2;2;1;1
+"455";55;"Perempuan";20;"Fakultas Hukum";"Ilmu Hukum";"2 (Semester 3 – Semester 4)";"< 1 jt";0;3;1;"Kendaraan Bermotor (menumpang dengan keluarga/teman)";"Rumah pribadi/rumah keluarga";1,35212661097933;3;2;2;2;2;2
+"456";56;"Perempuan";20;"Fakultas Ekonomi dan Bisnis";"Administrasi Bisnis";"2 (Semester 3 – Semester 4)";"2,1 jt – 3 jt";1;0;0;"Mobil Pribadi";"Rumah pribadi/rumah keluarga";0,427721658672637;2;2;2;1;1;1
+"457";57;"Perempuan";21;"Fakultas Ilmu Sosial dan Politik";"Ilmu Komunikasi";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";0;1;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";5,44106780767758;3;1;3;1;1;1
+"458";58;"Laki-Laki";20;"Fakultas Ekonomi dan Bisnis";"Akuntansi";"3 (Semester 5 - Semester 6)";"2,1 jt – 3 jt";0;1;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";1,31126922216441;4;1;2;1;1;4
+"459";59;"Laki-Laki";18;"Fakultas Ekonomi dan Bisnis";"Akuntansi";"1 (Semester 1 – Semester 2)";"1 jt – 2 jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";1,31126922216441;3;1;4;4;1;3
+"460";60;"Perempuan";22;"Fakultas Teknik";"Arsitektur";"4 (Semester 7 - Semester 8)";"3,1 jt – 4 jt";1;0;0;"Mobil Pribadi";"Kos bersama-sama";1,31126922216441;5;1;1;2;2;1
+"461";61;"Laki-Laki";22;"Fakultas Teknik";"Teknik Sipil";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";0,0635167614127157;2;2;1;1;1;1
+"462";62;"Perempuan";19;"Fakultas Ilmu Komputer";"Informatika";"2 (Semester 3 – Semester 4)";"2,1 jt – 3 jt";0;1;0;"Transportasi Online";"Rumah mengontrak bersama-sama";0,0635167614127157;2;3;2;3;1;3
+"463";63;"Laki-Laki";20;"Fakultas Keguruan dan Ilmu Pendidikan";"Pendidikan Bahasa Inggris";"2 (Semester 3 – Semester 4)";"2,1 jt – 3 jt";1;0;0;"Mobil Pribadi";"Kos Sendiri";1,31126922216441;1;3;2;2;4;2
+"464";64;"Laki-Laki";21;"Fakultas Teknik";"Teknik Mesin";"3 (Semester 5 - Semester 6)";"2,1 jt – 3 jt";0;1;1;"Sepeda Motor Pribadi";"Rumah bersama saudara";1,19220448183182;3;4;4;2;2;2
+"465";65;"Perempuan";21;"Fakultas Teknik";"Arsitektur";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";0;1;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";4,89418854443346;1;1;5;1;1;1
+"466";66;"Perempuan";21;"Fakultas Ilmu Sosial dan Politik";"Ilmu Komunikasi";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";0;1;0;"Transportasi Online";"Kos Sendiri";0,177691507133403;1;3;3;1;2;3
+"467";67;"Laki-Laki";20;"Fakultas Ilmu Komputer";"Sistem Informasi";"2 (Semester 3 – Semester 4)";"2,1 jt – 3 jt";0;1;0;"Sepeda Motor Pribadi";"Rumah bersama saudara";5,05092303670438;2;4;2;1;4;1
+"468";68;"Laki-Laki";20;"Fakultas Ekonomi dan Bisnis";"Akuntansi";"1 (Semester 1 – Semester 2)";"2,1 jt – 3 jt";1;0;0;"Mobil Pribadi";"Kos bersama-sama";1,31126922216441;2;3;4;2;1;1
+"469";69;"Laki-Laki";22;"Fakultas Ekonomi dan Bisnis";"Manajemen";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";0;1;0;"Sepeda Motor Pribadi";"Rumah mengontrak bersama-sama";1,31126922216441;1;2;1;1;2;1
+"470";70;"Laki-Laki";21;"Fakultas Hukum";"Ilmu Hukum";"1 (Semester 1 – Semester 2)";"2,1 jt – 3 jt";0;1;1;"Sepeda";"Rumah pribadi/rumah keluarga";1,31126922216441;2;3;3;2;1;2
+"471";71;"Laki-Laki";22;"Fakultas Ilmu Sosial dan Politik";"Administrasi Publik";"3 (Semester 5 - Semester 6)";"1 jt – 2 jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";0,0635167614127157;1;2;2;1;1;3
+"472";72;"Perempuan";20;"Fakultas Ekonomi dan Bisnis";"Administrasi Bisnis";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";0;1;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";13,6560641197965;2;1;1;3;1;1
+"473";73;"Perempuan";22;"Fakultas Ilmu Sosial dan Politik";"Ilmu Komunikasi";"4 (Semester 7 - Semester 8)";"< 1 jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";1,31126922216441;1;1;3;2;1;1
+"474";74;"Perempuan";19;"Fakultas Teknik";"Teknik Sipil";"1 (Semester 1 – Semester 2)";"3,1 jt – 4 jt";1;0;0;"Mobil Pribadi";"Kos Sendiri";1,31126922216441;4;2;2;2;1;2
+"475";75;"Perempuan";23;"Fakultas Teknik";"Teknik Sipil";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";0;1;0;"Sepeda Motor Pribadi";"Rumah bersama saudara";13,6560641197965;1;1;1;1;2;1
+"476";76;"Perempuan";19;"Fakultas Teknik";"Teknik Mesin";"2 (Semester 3 – Semester 4)";"1 jt – 2 jt";0;1;0;"Sepeda Motor Pribadi";"Rumah bersama saudara";4,77400008460296;3;2;1;1;3;1
+"477";77;"Perempuan";20;"Fakultas Teknik";"Arsitektur";"2 (Semester 3 – Semester 4)";"2,1 jt – 3 jt";0;1;1;"Sepeda Motor Pribadi";"Kos Sendiri";0,421196876042652;3;2;1;1;1;2
+"478";78;"Perempuan";22;"Fakultas Ilmu Komputer";"Sistem Informasi";"4 (Semester 7 - Semester 8)";"3,1 jt – 4 jt";0;1;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";3,73550162663076;1;3;3;1;1;1
+"479";79;"Laki-Laki";21;"Fakultas Ilmu Komputer";"Sistem Informasi";"3 (Semester 5 - Semester 6)";"2,1 jt – 3 jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";1,31126922216441;2;3;2;1;1;3
+"480";80;"Perempuan";21;"Fakultas Ilmu Komputer";"Informatika";"4 (Semester 7 - Semester 8)";"> 4 jt";0;1;0;"Transportasi Online";"Kos bersama-sama";0,124797618516927;3;1;4;2;1;1
+"481";81;"Perempuan";21;"Fakultas Keguruan dan Ilmu Pendidikan";"Pendidikan Bahasa Inggris";"4 (Semester 7 - Semester 8)";"< 1 jt";0;1;0;"Berjalan Kaki";"Rumah bersama saudara";5,41365840447401;1;2;1;1;1;3
+"482";82;"Laki-Laki";23;"Fakultas Keguruan dan Ilmu Pendidikan";"Pendidikan Bahasa Inggris";"3 (Semester 5 - Semester 6)";"2,1 jt – 3 jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";0,201040237931465;4;1;1;2;2;1
+"483";83;"Laki-Laki";20;"Fakultas Ilmu Komputer";"Informatika";"4 (Semester 7 - Semester 8)";"3,1 jt – 4 jt";1;0;0;"Mobil Pribadi";"Kos Sendiri";0,201040237931465;3;1;3;1;1;1
+"484";84;"Laki-Laki";22;"Fakultas Ilmu Komputer";"Sistem Informasi";"2 (Semester 3 – Semester 4)";"3,1 jt – 4 jt";0;1;0;"Kendaraan Bermotor (menumpang dengan keluarga/teman)";"Kos bersama-sama";1,31126922216441;2;3;1;2;1;2
+"485";85;"Laki-Laki";23;"Fakultas Ilmu Komputer";"Sistem Informasi";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";0;1;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";1,31126922216441;1;1;1;1;2;1
+"486";86;"Laki-Laki";18;"Fakultas Teknik";"Arsitektur";"1 (Semester 1 – Semester 2)";"3,1 jt – 4 jt";0;1;0;"Sepeda Motor Pribadi";"Rumah mengontrak bersama-sama";0,177691507133403;2;2;2;2;3;1
+"487";87;"Perempuan";20;"Fakultas Keguruan dan Ilmu Pendidikan";"Pendidikan Bahasa Inggris";"2 (Semester 3 – Semester 4)";"1 jt – 2 jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";1,97739076110086;6;1;4;5;4;3
+"488";88;"Laki-Laki";20;"Fakultas Teknik";"Teknik Mesin";"3 (Semester 5 - Semester 6)";"1 jt – 2 jt";0;1;0;"Transportasi Online";"Rumah pribadi/rumah keluarga";5,44207388861691;1;1;2;1;1;1
+"489";89;"Laki-Laki";20;"Fakultas Teknik";"Teknik Sipil";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";0;1;0;"Sepeda Motor Pribadi";"Kos bersama-sama";1,31126922216441;3;1;3;1;3;1
+"490";90;"Perempuan";19;"Fakultas Ilmu Sosial dan Politik";"Ilmu Komunikasi";"2 (Semester 3 – Semester 4)";"3,1 jt – 4 jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";0,0635167614127157;1;2;2;1;1;1
+"491";91;"Perempuan";21;"Fakultas Ilmu Sosial dan Politik";"Ilmu Komunikasi";"3 (Semester 5 - Semester 6)";"1 jt – 2 jt";0;1;0;"Sepeda Motor Pribadi";"Kos bersama-sama";1,31126922216441;4;5;5;5;4;1
+"492";92;"Laki-Laki";18;"Fakultas Ilmu Sosial dan Politik";"Ilmu Komunikasi";"1 (Semester 1 – Semester 2)";"2,1 jt – 3 jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";1,31126922216441;4;2;3;2;1;2
+"493";93;"Perempuan";19;"Fakultas Ekonomi dan Bisnis";"Administrasi Bisnis";"3 (Semester 5 - Semester 6)";"1 jt – 2 jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";0,124797618516927;3;3;1;1;1;2
+"494";94;"Perempuan";21;"Fakultas Ilmu Sosial dan Politik";"Administrasi Publik";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";0;1;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";4,77400008460296;4;1;1;2;1;1
+"495";95;"Perempuan";22;"Fakultas Hukum";"Ilmu Hukum";"3 (Semester 5 - Semester 6)";"3,1 jt – 4 jt";1;0;0;"Mobil Pribadi";"Kos Sendiri";1,31126922216441;1;1;4;2;1;3
+"496";96;"Laki-Laki";21;"Fakultas Ekonomi dan Bisnis";"Manajemen";"3 (Semester 5 - Semester 6)";"1 jt – 2 jt";0;1;0;"Sepeda Motor Pribadi";"Rumah mengontrak bersama-sama";1,31126922216441;4;4;3;9;2;2
+"497";97;"Perempuan";21;"Fakultas Ekonomi dan Bisnis";"Manajemen";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";0;1;0;"Transportasi Online";"Rumah mengontrak bersama-sama";1,31126922216441;1;1;2;1;1;1
+"498";98;"Perempuan";22;"Fakultas Ekonomi dan Bisnis";"Akuntansi";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";0;1;0;"Kendaraan Bermotor (menumpang dengan keluarga/teman)";"Kos bersama-sama";1,31126922216441;2;1;1;2;1;1
+"499";99;"Perempuan";22;"Fakultas Teknik";"Arsitektur";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";0;1;0;"Sepeda Motor Pribadi";"Kos bersama-sama";4,77400008460296;4;1;2;5;2;2
+"500";100;"Laki-Laki";22;"Fakultas Ekonomi dan Bisnis";"Akuntansi";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";0;1;0;"Transportasi Online";"Kos Sendiri";0,201040237931465;3;1;1;1;1;1
+"501";101;"Laki-Laki";19;"Fakultas Ekonomi dan Bisnis";"Akuntansi";"1 (Semester 1 – Semester 2)";"2,1 jt – 3 jt";0;1;0;"Berjalan Kaki";"Kos Sendiri";1,1195030773666;5;4;7;5;4;4
+"502";102;"Laki-Laki";20;"Fakultas Ekonomi dan Bisnis";"Manajemen";"3 (Semester 5 - Semester 6)";"2,1 jt – 3 jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";1,31126922216441;1;3;1;4;1;1
+"503";103;"Laki-Laki";23;"Fakultas Hukum";"Ilmu Hukum";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";0;1;0;"Transportasi Online";"Rumah mengontrak bersama-sama";1,31126922216441;1;4;1;1;1;2
+"504";104;"Perempuan";23;"Fakultas Ilmu Sosial dan Politik";"Ilmu Komunikasi";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";0;1;1;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";0,201040237931465;4;1;1;2;1;1
+"505";105;"Perempuan";21;"Fakultas Ilmu Sosial dan Politik";"Ilmu Komunikasi";"4 (Semester 7 - Semester 8)";"< 1 jt";0;1;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";4,14653774109583;5;1;2;1;4;1
+"506";106;"Laki-Laki";20;"Fakultas Teknik";"Teknik Sipil";"3 (Semester 5 - Semester 6)";"1 jt – 2 jt";0;1;0;"Sepeda Motor Pribadi";"Rumah mengontrak bersama-sama";5,44624442479121;2;2;4;3;1;2
+"507";107;"Perempuan";22;"Fakultas Ilmu Sosial dan Politik";"Administrasi Publik";"4 (Semester 7 - Semester 8)";"< 1 jt";0;1;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";3,49180793965016;1;1;3;1;5;1
+"508";108;"Laki-Laki";20;"Fakultas Teknik";"Teknik Mesin";"3 (Semester 5 - Semester 6)";"1 jt – 2 jt";0;1;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";1,19220448183182;4;4;2;3;4;1
+"509";109;"Perempuan";20;"Fakultas Ekonomi dan Bisnis";"Akuntansi";"3 (Semester 5 - Semester 6)";"1 jt – 2 jt";0;0;0;"Berjalan Kaki";"Kos Sendiri";4,77400008460296;5;4;4;2;1;3
+"510";110;"Laki-Laki";19;"Fakultas Ilmu Sosial dan Politik";"Ilmu Komunikasi";"2 (Semester 3 – Semester 4)";"1 jt – 2 jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";0,255963698107833;3;4;4;4;2;2
+"511";111;"Perempuan";22;"Fakultas Teknik";"Arsitektur";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";1,32649711969215;5;4;2;3;2;1
+"512";112;"Laki-Laki";19;"Fakultas Ilmu Sosial dan Politik";"Administrasi Bisnis";"2 (Semester 3 – Semester 4)";"< 1 jt";0;1;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";2,30569456294589;2;3;2;4;3;1
+"513";113;"Perempuan";18;"Fakultas Ilmu Komputer";"Sistem Informasi";"1 (Semester 1 – Semester 2)";"2,1 jt – 3 jt";0;0;0;"Transportasi Online";"Kos Sendiri";4,77400008460296;3;4;4;4;1;3
+"514";114;"Laki-Laki";21;"Fakultas Teknik";"Teknik Mesin";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";0;1;0;"Sepeda Motor Pribadi";"Rumah bersama saudara";3,2455698408554;4;1;2;2;2;1
+"515";115;"Perempuan";21;"Fakultas Ilmu Komputer";"Informatika";"4 (Semester 7 - Semester 8)";"< 1 jt";0;1;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";4,14653774109583;1;3;2;1;2;1
+"516";116;"Perempuan";21;"Fakultas Keguruan dan Ilmu Pendidikan";"Pendidikan Bahasa Inggris";"4 (Semester 7 - Semester 8)";"< 1 jt";0;1;0;"Sepeda Motor Pribadi";"Rumah bersama saudara";13,6560641197965;1;1;1;5;1;1
+"517";117;"Laki-Laki";20;"Fakultas Ilmu Sosial dan Politik";"Administrasi Publik";"2 (Semester 3 – Semester 4)";"2,1 jt – 3 jt";0;1;0;"Sepeda Motor Pribadi";"Rumah bersama saudara";5,44624442479121;4;2;3;4;1;1
+"518";118;"Perempuan";18;"Fakultas Ilmu Sosial dan Politik";"Administrasi Publik";"1 (Semester 1 – Semester 2)";"1 jt – 2 jt";0;0;0;"Kendaraan Bermotor (menumpang dengan keluarga/teman)";"Kos bersama-sama";1,32649711969215;4;3;4;3;1;2
+"519";119;"Laki-Laki";19;"Fakultas Hukum";"Ilmu Hukum";"1 (Semester 1 – Semester 2)";"1 jt – 2 jt";0;0;0;"Transportasi Online";"Kos Sendiri";1,32649711969215;2;4;2;5;2;1
+"520";120;"Perempuan";21;"Fakultas Teknik";"Arsitektur";"4 (Semester 7 - Semester 8)";"3,1 jt – 4 jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";1,31126922216441;1;2;2;1;1;2
+"521";121;"Laki-Laki";19;"Fakultas Hukum";"Ilmu Hukum";"3 (Semester 5 - Semester 6)";"3,1 jt – 4 jt";1;0;0;"Mobil Pribadi";"Rumah pribadi/rumah keluarga";0,0635167614127157;2;1;1;2;1;1
+"522";122;"Laki-Laki";20;"Fakultas Ilmu Sosial dan Politik";"Ilmu Komunikasi";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";0;1;0;"Sepeda Motor Pribadi";"Kos bersama-sama";1,31126922216441;3;1;1;1;2;1
+"523";123;"Perempuan";23;"Fakultas Teknik";"Teknik Sipil";"3 (Semester 5 - Semester 6)";"> 4 jt";1;0;0;"Mobil Pribadi";"Rumah pribadi/rumah keluarga";1,31126922216441;1;3;5;1;1;2
+"524";124;"Laki-Laki";22;"Fakultas Ilmu Komputer";"Sistem Informasi";"2 (Semester 3 – Semester 4)";"1 jt – 2 jt";0;1;0;"Transportasi Online";"Kos Sendiri";1,31126922216441;4;1;1;2;1;1
+"525";125;"Perempuan";22;"Fakultas Ilmu Komputer";"Informatika";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";1,31126922216441;1;3;3;1;1;1
+"526";126;"Laki-Laki";23;"Fakultas Teknik";"Teknik Mesin";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";0,201040237931465;1;1;4;3;1;2
+"527";127;"Laki-Laki";20;"Fakultas Keguruan dan Ilmu Pendidikan";"Pendidikan Bahasa Inggris";"3 (Semester 5 - Semester 6)";"3,1 jt – 4 jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";1,31126922216441;3;1;2;1;1;1
+"528";128;"Laki-Laki";22;"Fakultas Teknik";"Teknik Sipil";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";0;0;0;"Kendaraan Bermotor (menumpang dengan keluarga/teman)";"Kos Sendiri";0,177691507133403;2;1;1;2;1;2
+"529";129;"Laki-Laki";20;"Fakultas Ekonomi dan Bisnis";"Manajemen";"3 (Semester 5 - Semester 6)";"2,1 jt – 3 jt";0;1;0;"Sepeda Motor Pribadi";"Rumah mengontrak bersama-sama";1,40351247975686;4;2;3;5;5;1
+"530";130;"Perempuan";18;"Fakultas Ekonomi dan Bisnis";"Akuntansi";"1 (Semester 1 – Semester 2)";"1 jt – 2 jt";0;1;0;"Sepeda Motor Pribadi";"Rumah bersama saudara";1,40351247975686;5;6;2;2;1;2
+"531";131;"Laki-Laki";21;"Fakultas Ekonomi dan Bisnis";"Manajemen";"3 (Semester 5 - Semester 6)";"1 jt – 2 jt";0;1;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";2,66043281955003;4;1;3;4;1;1
+"532";132;"Laki-Laki";21;"Fakultas Keguruan dan Ilmu Pendidikan";"Pendidikan Bahasa Inggris";"3 (Semester 5 - Semester 6)";"2,1 jt – 3 jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";1,31126922216441;1;3;1;2;2;1
+"533";133;"Perempuan";22;"Fakultas Keguruan dan Ilmu Pendidikan";"Pendidikan Bahasa Inggris";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";0;0;0;"Transportasi Online";"Kos Sendiri";0,0635167614127157;3;1;1;1;1;3
+"534";134;"Laki-Laki";21;"Fakultas Hukum";"Ilmu Hukum";"3 (Semester 5 - Semester 6)";"2,1 jt – 3 jt";1;2;1;"Berjalan Kaki";"Kos Sendiri";0,421196876042652;3;2;2;2;1;1
+"535";135;"Perempuan";21;"Fakultas Hukum";"Ilmu Hukum";"3 (Semester 5 - Semester 6)";"1 jt – 2 jt";0;0;1;"Berjalan Kaki";"Kos Sendiri";0,421196876042652;3;4;3;2;2;2
+"536";136;"Perempuan";22;"Fakultas Ekonomi dan Bisnis";"Manajemen";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";1;3;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";3,11339008175118;2;3;5;2;2;1
+"537";137;"Perempuan";20;"Fakultas Ekonomi dan Bisnis";"Manajemen";"2 (Semester 3 – Semester 4)";"1 jt – 2 jt";2;2;0;"Mobil Pribadi";"Rumah pribadi/rumah keluarga";0,53838810646892;4;2;1;2;1;1
+"538";138;"Perempuan";22;"Fakultas Ekonomi dan Bisnis";"Manajemen";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";1;2;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";5,90182775999962;1;3;2;3;1;1
+"539";139;"Perempuan";22;"Fakultas Ekonomi dan Bisnis";"Manajemen";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";1;2;0;"Mobil Pribadi";"Rumah pribadi/rumah keluarga";3,68562405974408;1;4;1;2;2;1
+"540";140;"Laki-Laki";19;"Fakultas Hukum";"Ilmu Hukum";"1 (Semester 1 – Semester 2)";"1 jt – 2 jt";2;1;0;"Berjalan Kaki";"Kos Sendiri";0,421196876042652;4;3;2;2;1;2
+"541";141;"Perempuan";19;"Fakultas Hukum";"Ilmu Hukum";"1 (Semester 1 – Semester 2)";"1 jt – 2 jt";0;0;0;"Berjalan Kaki";"Kos Sendiri";0,421196876042652;4;3;2;1;4;1
+"542";142;"Perempuan";21;"Fakultas Ilmu Sosial dan Politik";"Administrasi Bisnis";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";2;2;0;"Mobil Pribadi";"Rumah pribadi/rumah keluarga";4,60088203928593;3;2;1;4;2;1
+"543";143;"Perempuan";22;"Fakultas Ekonomi dan Bisnis";"Manajemen";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";2;0;0;"Mobil Pribadi";"Rumah pribadi/rumah keluarga";5,80557830991947;4;2;1;1;2;1
+"544";144;"Laki-Laki";22;"Fakultas Hukum";"Ilmu Hukum";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";1;3;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";5,83070684351622;1;1;3;2;1;1
+"545";145;"Perempuan";22;"Fakultas Ekonomi dan Bisnis";"Manajemen";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";1;2;1;"Sepeda Motor Pribadi";"Rumah bersama saudara";1,86940120403529;1;1;4;2;1;1
+"546";146;"Perempuan";20;"Fakultas Ilmu Sosial dan Politik";"Administrasi Bisnis";"3 (Semester 5 - Semester 6)";"1 jt – 2 jt";1;1;1;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";2,77823329013446;1;3;2;1;2;1
+"547";147;"Laki-Laki";21;"Fakultas Ilmu Sosial dan Politik";"Administrasi Bisnis";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";1;3;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";5,28749526074541;1;1;1;1;2;2
+"548";148;"Laki-Laki";19;"Fakultas Ekonomi dan Bisnis";"Manajemen";"1 (Semester 1 – Semester 2)";"1 jt – 2 jt";3;2;1;"Kendaraan Bermotor (menumpang dengan keluarga/teman)";"Rumah pribadi/rumah keluarga";5,01051687671436;4;1;2;1;2;1
+"549";149;"Laki-Laki";22;"Fakultas Hukum";"Ilmu Hukum";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";1;2;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";5,6913103864937;2;2;1;1;2;1
+"550";150;"Perempuan";20;"Fakultas Hukum";"Ilmu Hukum";"3 (Semester 5 - Semester 6)";"< 1 jt";0;1;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";4,69459332800295;1;1;1;1;1;1
+"551";151;"Perempuan";19;"Fakultas Hukum";"Ilmu Hukum";"3 (Semester 5 - Semester 6)";"1 jt – 2 jt";1;0;3;"Mobil Pribadi";"Rumah mengontrak pribadi";2,34363547004408;1;1;1;1;1;1
+"552";152;"Laki-Laki";21;"Fakultas Hukum";"Ilmu Hukum";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";2;2;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";3,71326027597757;1;3;2;2;4;1
+"553";153;"Laki-Laki";19;"Fakultas Ekonomi dan Bisnis";"Manajemen";"2 (Semester 3 – Semester 4)";"1 jt – 2 jt";2;1;1;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";2,10489705968612;2;2;1;3;4;1
+"554";154;"Laki-Laki";19;"Fakultas Ekonomi dan Bisnis";"Manajemen";"2 (Semester 3 – Semester 4)";"1 jt – 2 jt";1;0;1;"Mobil Pribadi";"Rumah pribadi/rumah keluarga";5,41934912818663;1;1;1;1;1;1
+"555";155;"Perempuan";19;"Fakultas Ekonomi dan Bisnis";"Manajemen";"2 (Semester 3 – Semester 4)";"1 jt – 2 jt";1;0;3;"Mobil Pribadi";"Rumah bersama saudara";5,03605199061739;1;1;1;1;1;1
+"556";156;"Laki-Laki";21;"Fakultas Ekonomi dan Bisnis";"Akuntansi";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";3;3;0;"Mobil Pribadi";"Rumah pribadi/rumah keluarga";4,62121967984168;4;1;3;3;2;1
+"557";157;"Perempuan";22;"Fakultas Ekonomi dan Bisnis";"Manajemen";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";2;2;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";3,31521293795373;2;1;1;2;1;1
+"558";158;"Perempuan";19;"Fakultas Ekonomi dan Bisnis";"Manajemen";"2 (Semester 3 – Semester 4)";"2,1 jt – 3 jt";1;2;1;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";1,16796893443574;2;3;5;1;2;1
+"559";159;"Perempuan";22;"Fakultas Hukum";"Ilmu Hukum";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";0;1;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";3,09624851222118;1;1;1;1;1;1
+"560";160;"Perempuan";22;"Fakultas Ekonomi dan Bisnis";"Manajemen";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";1;3;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";4,02041497962684;3;4;2;2;3;1
+"561";161;"Perempuan";22;"Fakultas Ekonomi dan Bisnis";"Manajemen";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";1;2;1;"Mobil Pribadi";"Rumah pribadi/rumah keluarga";3,3549131262983;2;2;2;4;2;1
+"562";162;"Perempuan";21;"Fakultas Ekonomi dan Bisnis";"Manajemen";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";3;1;1;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";3,22285555314561;2;3;4;3;1;1
+"563";163;"Perempuan";21;"Fakultas Ekonomi dan Bisnis";"Manajemen";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";0;0;0;"Berjalan Kaki";"Kos Sendiri";0,421196876042652;4;2;1;2;1;1
+"564";164;"Laki-Laki";22;"Fakultas Ekonomi dan Bisnis";"Manajemen";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";3;2;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";4,51840270032261;2;2;5;1;1;1
+"565";165;"Laki-Laki";18;"Fakultas Hukum";"Ilmu Hukum";"1 (Semester 1 – Semester 2)";"2,1 jt – 3 jt";0;1;0;"Mobil Pribadi";"Rumah pribadi/rumah keluarga";3,54853721790982;1;1;1;1;1;1
+"566";166;"Laki-Laki";21;"Fakultas Hukum";"Ilmu Hukum";"3 (Semester 5 - Semester 6)";"1 jt – 2 jt";1;0;0;"Mobil Pribadi";"Rumah pribadi/rumah keluarga";4,29027830148797;1;1;1;1;1;1
+"567";167;"Laki-Laki";22;"Fakultas Ekonomi dan Bisnis";"Manajemen";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";1;0;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";2,36438695683741;1;1;1;1;1;1
+"568";168;"Laki-Laki";22;"Fakultas Ekonomi dan Bisnis";"Manajemen";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";0;1;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";2,69036960647402;1;1;1;1;1;1
+"569";169;"Perempuan";21;"Fakultas Hukum";"Ilmu Hukum";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";0;1;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";2,52024588177392;1;1;1;1;1;1
+"570";170;"Perempuan";20;"Fakultas Hukum";"Ilmu Hukum";"3 (Semester 5 - Semester 6)";"1 jt – 2 jt";0;1;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";2,90296928714027;2;1;2;1;1;1
+"571";171;"Perempuan";22;"Fakultas Hukum";"Ilmu Hukum";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";0;1;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";2,5302443405975;1;2;2;1;2;3
+"572";172;"Laki-Laki";22;"Fakultas Ekonomi dan Bisnis";"Manajemen";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";0;1;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";2,23731591829439;1;2;2;1;1;3
+"573";173;"Perempuan";21;"Fakultas Ekonomi dan Bisnis";"Manajemen";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";1;0;0;"Mobil Pribadi";"Rumah pribadi/rumah keluarga";2,1905415207702;1;1;1;1;1;1
+"574";174;"Perempuan";19;"Fakultas Ilmu Sosial dan Politik";"Ilmu Komunikasi";"2 (Semester 3 – Semester 4)";"1 jt – 2 jt";2;2;0;"Sepeda Motor Pribadi";"Rumah mengontrak pribadi";4,3157864710415;3;1;2;2;2;2
+"575";175;"Laki-Laki";20;"Fakultas Ilmu Sosial dan Politik";"Administrasi Bisnis";"2 (Semester 3 – Semester 4)";"2,1 jt – 3 jt";2;5;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";6,03057586755856;2;4;1;4;2;2
+"576";176;"Laki-Laki";18;"Fakultas Teknik";"Arsitektur";"1 (Semester 1 – Semester 2)";"1 jt – 2 jt";2;1;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";3,79874775692325;1;2;4;3;2;2
+"577";177;"Laki-Laki";22;"Fakultas Teknik";"Teknik Mesin";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";2;1;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";2,2532805652265;1;4;2;2;1;1
+"578";178;"Laki-Laki";18;"Fakultas Teknik";"Informatika";"1 (Semester 1 – Semester 2)";"1 jt – 2 jt";2;4;1;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";7,3429395829609;3;2;3;1;2;2
+"579";179;"Laki-Laki";21;"Fakultas Ilmu Sosial dan Politik";"Ilmu Komunikasi";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";2;2;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";6,21665294938248;3;1;4;4;2;2
+"580";180;"Laki-Laki";22;"Fakultas Teknik";"Teknik Mesin";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";1;3;0;"Kendaraan Bermotor (menumpang dengan keluarga/teman)";"Rumah pribadi/rumah keluarga";1,6413427439535;2;1;2;4;2;1
+"581";181;"Perempuan";22;"Fakultas Ekonomi dan Bisnis";"Akuntansi";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";2;2;0;"Transportasi Online";"Rumah pribadi/rumah keluarga";2,26199162285136;4;3;2;1;3;1
+"582";182;"Laki-Laki";22;"Fakultas Ekonomi dan Bisnis";"Manajemen";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";0;1;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";2,90768916628795;2;2;1;1;2;3
+"583";183;"Laki-Laki";21;"Fakultas Hukum";"Ilmu Hukum";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";0;1;0;"Sepeda Motor Pribadi";"Rumah bersama saudara";0,93343268060346;2;2;2;1;1;1
+"584";184;"Laki-Laki";22;"Fakultas Ekonomi dan Bisnis";"Manajemen";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";0;1;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";0,869150687968318;2;2;2;2;1;1
+"585";185;"Perempuan";22;"Fakultas Ekonomi dan Bisnis";"Manajemen";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";0;1;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";7,49391617426097;2;2;2;2;2;1
+"586";186;"Perempuan";22;"Fakultas Hukum";"Ilmu Hukum";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";0;1;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";0,733135598828025;2;2;2;1;1;3
+"587";187;"Perempuan";21;"Fakultas Ekonomi dan Bisnis";"Manajemen";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";0;1;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";3,23911680552316;2;2;1;2;1;1
+"588";188;"Perempuan";21;"Fakultas Hukum";"Ilmu Hukum";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";0;1;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";2,06850083240276;2;1;1;2;1;1
+"589";189;"Perempuan";21;"Fakultas Hukum";"Ilmu Hukum";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";0;1;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";2,62945567866268;2;2;2;2;1;2
+"590";190;"Laki-Laki";22;"Fakultas Hukum";"Ilmu Hukum";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";0;1;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";4,8104887310875;2;2;2;2;2;3
+"591";191;"Perempuan";22;"Fakultas Ekonomi dan Bisnis";"Manajemen";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";0;1;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";0,73432437614556;2;2;2;1;1;3
+"592";192;"Laki-Laki";22;"Fakultas Ekonomi dan Bisnis";"Manajemen";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";0;1;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";2,34017798700332;2;2;2;2;1;1
+"593";193;"Perempuan";21;"Fakultas Ekonomi dan Bisnis";"Manajemen";"4 (Semester 7 - Semester 8)";"3,1 jt – 4 jt";0;1;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";2,01228614923451;2;2;2;1;1;3
+"594";194;"Perempuan";21;"Fakultas Ekonomi dan Bisnis";"Manajemen";"4 (Semester 7 - Semester 8)";"3,1 jt – 4 jt";1;1;0;"Mobil Pribadi";"Rumah pribadi/rumah keluarga";3,27763167861903;4;4;4;4;1;3
+"595";195;"Perempuan";21;"Fakultas Hukum";"Ilmu Hukum";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";0;0;0;"Berjalan Kaki";"Kos Sendiri";0,592361663757643;2;1;4;2;2;2
+"596";196;"Laki-Laki";19;"Fakultas Teknik";"Arsitektur";"2 (Semester 3 – Semester 4)";"< 1 jt";1;2;0;"Transportasi Online";"Rumah pribadi/rumah keluarga";0,991739714575563;2;1;2;2;4;1
+"597";197;"Perempuan";19;"Fakultas Teknik";"Arsitektur";"2 (Semester 3 – Semester 4)";"1 jt – 2 jt";2;2;1;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";1,44809818490875;1;2;2;2;4;1
+"598";198;"Laki-Laki";20;"Fakultas Ilmu Sosial dan Politik";"Ilmu Komunikasi";"3 (Semester 5 - Semester 6)";"1 jt – 2 jt";1;2;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";2,9581606646217;2;3;1;1;1;1
+"599";199;"Laki-Laki";21;"Fakultas Ilmu Sosial dan Politik";"Ilmu Komunikasi";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";0;1;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";4,4995216271663;2;2;1;1;1;1
+"600";200;"Perempuan";21;"Fakultas Teknik";"Informatika";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";1;2;1;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";0,287605437711695;2;2;1;2;2;1
+"601";201;"Laki-Laki";22;"Fakultas Hukum";"Ilmu Hukum";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";0;1;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";2,62945567866268;2;2;2;1;1;1
+"602";202;"Laki-Laki";21;"Fakultas Ekonomi dan Bisnis";"Manajemen";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";1;2;0;"Sepeda Motor Pribadi";"Kos bersama-sama";1,57289304154694;4;4;2;2;2;3
+"603";203;"Laki-Laki";18;"Fakultas Ilmu Sosial dan Politik";"Administrasi Bisnis";"1 (Semester 1 – Semester 2)";"1 jt – 2 jt";1;3;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";5,82423166281212;2;2;1;1;4;1
+"604";204;"Perempuan";20;"Fakultas Ekonomi dan Bisnis";"Akuntansi";"3 (Semester 5 - Semester 6)";"1 jt – 2 jt";1;2;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";5,23007848897095;4;2;2;3;3;2
+"605";205;"Laki-Laki";22;"Fakultas Ilmu Komputer";"Informatika";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";2;4;0;"Mobil Pribadi";"Rumah pribadi/rumah keluarga";4,21238052784241;2;1;2;2;4;3
+"606";206;"Perempuan";21;"Fakultas Ekonomi dan Bisnis";"Manajemen";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";2;1;0;"Transportasi Online";"Kos bersama-sama";2,22148131081372;2;2;2;1;1;1
+"607";207;"Perempuan";21;"Fakultas Hukum";"Ilmu Hukum";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";1;2;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";7,93878829406218;4;1;1;1;1;3
+"608";208;"Laki-Laki";21;"Fakultas Ekonomi dan Bisnis";"Manajemen";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";1;3;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";7,93878829406218;2;2;2;3;1;1
+"609";209;"Laki-Laki";22;"Fakultas Hukum";"Ilmu Hukum";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";2;2;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";2,44072808084243;2;2;2;2;1;3
+"610";210;"Laki-Laki";21;"Fakultas Hukum";"Ilmu Hukum";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";2;1;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";2,75145959518203;2;2;2;1;1;1
+"611";211;"Perempuan";21;"Fakultas Hukum";"Ilmu Hukum";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";1;2;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";3,83976407407925;1;2;2;1;2;1
+"612";212;"Laki-Laki";22;"Fakultas Ilmu Sosial dan Politik";"Ilmu Komunikasi";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";2;1;1;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";3,5218688990744;2;2;2;2;1;1
+"613";213;"Perempuan";22;"Fakultas Ekonomi dan Bisnis";"Manajemen";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";1;1;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";1,7877243455895;2;2;2;1;2;2
+"614";214;"Laki-Laki";22;"Fakultas Ekonomi dan Bisnis";"Manajemen";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";1;1;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";4,081306557494;3;3;3;1;3;1
+"615";215;"Laki-Laki";21;"Fakultas Ekonomi dan Bisnis";"Manajemen";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";1;1;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";3,56941826472392;2;2;2;1;1;1
+"616";216;"Laki-Laki";21;"Fakultas Hukum";"Ilmu Hukum";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";0;2;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";2,21998133192824;1;1;1;1;1;1
+"617";217;"Laki-Laki";21;"Fakultas Hukum";"Ilmu Hukum";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";2;1;0;"Mobil Pribadi";"Rumah pribadi/rumah keluarga";8,6800990961475;1;1;4;2;2;1
+"618";218;"Perempuan";22;"Fakultas Hukum";"Ilmu Hukum";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";1;3;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";5,98616875595896;1;1;1;1;1;1
+"619";219;"Laki-Laki";22;"Fakultas Hukum";"Ilmu Hukum";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";1;1;1;"Mobil Pribadi";"Rumah pribadi/rumah keluarga";8,52183671564306;1;4;1;2;2;1
+"620";220;"Laki-Laki";21;"Fakultas Hukum";"Ilmu Hukum";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";0;3;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";3,82979371242631;1;1;1;1;1;1
+"621";221;"Perempuan";22;"Fakultas Ekonomi dan Bisnis";"Manajemen";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";1;2;1;"Mobil Pribadi";"Rumah pribadi/rumah keluarga";4,97481079647668;1;4;2;1;2;1
+"622";222;"Laki-Laki";21;"Fakultas Hukum";"Ilmu Hukum";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";1;1;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";5,98616875595896;1;1;1;1;1;3
+"623";223;"Perempuan";21;"Fakultas Hukum";"Ilmu Hukum";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";1;3;0;"Mobil Pribadi";"Rumah pribadi/rumah keluarga";4,9576423266778;1;2;4;2;1;2
+"624";224;"Perempuan";22;"Fakultas Hukum";"Ilmu Hukum";"4 (Semester 7 - Semester 8)";"3,1 jt – 4 jt";3;2;3;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";4,80210026388243;1;1;1;1;1;1
+"625";225;"Perempuan";21;"Fakultas Hukum";"Ilmu Hukum";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";2;1;0;"Mobil Pribadi";"Rumah pribadi/rumah keluarga";5,24101067634401;1;1;2;2;2;3
+"626";226;"Laki-Laki";20;"Fakultas Teknik";"Teknik Sipil";"3 (Semester 5 - Semester 6)";"1 jt – 2 jt";0;0;0;"Berjalan Kaki";"Kos Sendiri";0,421196876042652;3;4;3;3;2;1
+"627";227;"Laki-Laki";20;"Fakultas Teknik";"Teknik Sipil";"3 (Semester 5 - Semester 6)";"1 jt – 2 jt";1;2;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";1,36445840099812;2;2;4;5;5;1
+"628";228;"Perempuan";22;"Fakultas Ilmu Sosial dan Politik";"Ilmu Komunikasi";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";3;3;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";1,87880856764451;2;2;4;3;2;1
+"629";229;"Perempuan";18;"Fakultas Ekonomi dan Bisnis";"Akuntansi";"1 (Semester 1 – Semester 2)";"1 jt – 2 jt";2;2;1;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";1,06933170432313;2;2;2;1;1;1
+"630";230;"Perempuan";18;"Fakultas Ekonomi dan Bisnis";"Akuntansi";"1 (Semester 1 – Semester 2)";"1 jt – 2 jt";2;2;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";7,15481504291521;4;2;2;1;1;1
+"631";231;"Laki-Laki";22;"Fakultas Hukum";"Ilmu Hukum";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";1;3;1;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";4,38575545209998;4;2;1;4;2;1
+"632";232;"Laki-Laki";19;"Fakultas Ekonomi dan Bisnis";"Akuntansi";"2 (Semester 3 – Semester 4)";"1 jt – 2 jt";0;0;0;"Transportasi Online";"Rumah pribadi/rumah keluarga";1,92685893214486;2;2;2;2;1;2
+"633";233;"Laki-Laki";19;"Fakultas Ilmu Komputer";"Informatika";"2 (Semester 3 – Semester 4)";"1 jt – 2 jt";1;2;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";3,09849578362235;2;2;2;1;2;1
+"634";234;"Perempuan";21;"Fakultas Ilmu Sosial dan Politik";"Administrasi Bisnis";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";2;3;1;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";4,20679331256355;1;2;1;2;1;1
+"635";235;"Laki-Laki";21;"Fakultas Ilmu Sosial dan Politik";"Administrasi Bisnis";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";2;2;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";6,2192756419172;2;2;2;1;2;1
+"636";236;"Laki-Laki";21;"Fakultas Ekonomi dan Bisnis";"Manajemen";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";1;2;0;"Sepeda Motor Pribadi";"Rumah bersama saudara";1,65691855592193;2;2;2;4;4;2
+"637";237;"Laki-Laki";21;"Fakultas Hukum";"Ilmu Hukum";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";1;2;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";2,11284711018817;1;2;1;2;1;3
+"638";238;"Laki-Laki";22;"Fakultas Hukum";"Ilmu Hukum";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";1;3;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";0,892853671878555;1;2;4;3;1;1
+"639";239;"Perempuan";21;"Fakultas Hukum";"Ilmu Hukum";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";2;1;0;"Sepeda Motor Pribadi";"Rumah bersama saudara";1,65691855592193;4;2;1;3;1;1
+"640";240;"Laki-Laki";22;"Fakultas Hukum";"Ilmu Hukum";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";2;3;1;"Sepeda Motor Pribadi";"Kos Sendiri";0,976674195205679;4;3;4;4;3;2
+"641";241;"Perempuan";21;"Fakultas Ekonomi dan Bisnis";"Manajemen";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";NA;1;0;"Mobil Pribadi";"Rumah pribadi/rumah keluarga";4,50526295934487;1;1;1;1;1;1
+"642";242;"Perempuan";21;"Fakultas Ekonomi dan Bisnis";"Akuntansi";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";2;3;0;"Mobil Pribadi";"Rumah pribadi/rumah keluarga";1,35683146960935;2;2;1;1;2;3
+"643";243;"Perempuan";21;"Fakultas Ekonomi dan Bisnis";"Manajemen";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";2;2;0;"Mobil Pribadi";"Rumah pribadi/rumah keluarga";4,50526295934487;1;1;1;1;1;1
+"644";244;"Perempuan";22;"Fakultas Ekonomi dan Bisnis";"Manajemen";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";3;1;1;"Mobil Pribadi";"Rumah pribadi/rumah keluarga";1,83938915701691;2;2;2;2;2;1
+"645";245;"Perempuan";21;"Fakultas Hukum";"Ilmu Hukum";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";2;1;0;"Mobil Pribadi";"Rumah pribadi/rumah keluarga";1,35683146960935;1;1;1;2;1;2
+"646";246;"Perempuan";21;"Fakultas Ekonomi dan Bisnis";"Manajemen";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";1;3;0;"Mobil Pribadi";"Rumah pribadi/rumah keluarga";1,53992405947858;2;2;2;2;2;1
+"647";247;"Perempuan";22;"Fakultas Hukum";"Ilmu Hukum";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";1;3;0;"Mobil Pribadi";"Rumah pribadi/rumah keluarga";1,65623891394122;1;2;1;2;2;1
+"648";248;"Perempuan";21;"Fakultas Hukum";"Ilmu Hukum";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";2;1;0;"Mobil Pribadi";"Rumah pribadi/rumah keluarga";0,501244847836841;2;2;2;2;2;3
+"649";249;"Perempuan";21;"Fakultas Hukum";"Ilmu Hukum";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";3;2;0;"Mobil Pribadi";"Rumah pribadi/rumah keluarga";1,77525613539769;1;1;1;1;1;1
+"650";250;"Perempuan";22;"Fakultas Ekonomi dan Bisnis";"Manajemen";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";3;1;0;"Mobil Pribadi";"Rumah pribadi/rumah keluarga";1,12215267257349;2;2;2;2;2;3
+"651";251;"Perempuan";21;"Fakultas Ekonomi dan Bisnis";"Manajemen";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";0;2;0;"Transportasi Online";"Rumah bersama saudara";1,04567968495766;2;2;2;2;2;1
+"652";252;"Perempuan";22;"Fakultas Hukum";"Ilmu Hukum";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";0;2;0;"Transportasi Online";"Rumah pribadi/rumah keluarga";1,35428618956611;2;1;2;2;2;3
+"653";253;"Laki-Laki";21;"Fakultas Hukum";"Ilmu Hukum";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";2;3;0;"Mobil Pribadi";"Rumah pribadi/rumah keluarga";4,061345130097;1;1;1;1;1;1
+"654";254;"Perempuan";21;"Fakultas Ekonomi dan Bisnis";"Manajemen";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";1;1;0;"Transportasi Online";"Rumah pribadi/rumah keluarga";1,23477067425275;2;2;2;2;2;3
+"655";255;"Perempuan";22;"Fakultas Hukum";"Ilmu Hukum";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";1;2;0;"Transportasi Online";"Rumah bersama saudara";1,35428618956611;2;2;2;2;2;1
+"656";256;"Laki-Laki";21;"Fakultas Ekonomi dan Bisnis";"Manajemen";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";2;1;0;"Mobil Pribadi";"Rumah pribadi/rumah keluarga";4,36346167501718;1;1;1;1;1;1
+"657";257;"Perempuan";21;"Fakultas Ekonomi dan Bisnis";"Manajemen";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";1;1;0;"Transportasi Online";"Rumah pribadi/rumah keluarga";3,24992931482921;2;2;2;1;2;3
+"658";258;"Perempuan";22;"Fakultas Hukum";"Ilmu Hukum";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";1;2;0;"Transportasi Online";"Rumah pribadi/rumah keluarga";3,17161738737685;2;1;2;2;2;1
+"659";259;"Laki-Laki";22;"Fakultas Hukum";"Ilmu Hukum";"4 (Semester 7 - Semester 8)";"3,1 jt – 4 jt";4;2;0;"Mobil Pribadi";"Rumah pribadi/rumah keluarga";4,49800921444061;2;1;2;2;1;3
+"660";260;"Perempuan";21;"Fakultas Ekonomi dan Bisnis";"Manajemen";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";1;1;0;"Transportasi Online";"Rumah pribadi/rumah keluarga";1,1839313807962;2;2;2;1;2;1
+"661";261;"Perempuan";21;"Fakultas Ekonomi dan Bisnis";"Manajemen";"4 (Semester 7 - Semester 8)";"3,1 jt – 4 jt";1;1;0;"Transportasi Online";"Rumah pribadi/rumah keluarga";1,1839313807962;2;2;2;1;2;2
+"662";262;"Laki-Laki";22;"Fakultas Hukum";"Ilmu Hukum";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";2;1;0;"Mobil Pribadi";"Rumah pribadi/rumah keluarga";5,26377483240911;1;1;1;1;1;1
+"663";263;"Perempuan";21;"Fakultas Hukum";"Ilmu Hukum";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";1;2;0;"Transportasi Online";"Rumah pribadi/rumah keluarga";1,17939814259007;2;2;2;1;1;1
+"664";264;"Perempuan";22;"Fakultas Hukum";"Ilmu Hukum";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";2;1;0;"Transportasi Online";"Rumah pribadi/rumah keluarga";1,43905607389799;2;2;2;1;2;1
+"665";265;"Laki-Laki";22;"Fakultas Hukum";"Ilmu Hukum";"4 (Semester 7 - Semester 8)";"3,1 jt – 4 jt";2;2;0;"Mobil Pribadi";"Rumah pribadi/rumah keluarga";4,44893035223097;1;1;1;1;1;1
+"666";266;"Laki-Laki";22;"Fakultas Ekonomi dan Bisnis";"Manajemen";"4 (Semester 7 - Semester 8)";"< 1 jt";1;1;0;"Sepeda";"Rumah bersama saudara";5,36242713408075;1;1;1;3;3;4
+"667";267;"Perempuan";22;"Fakultas Ekonomi dan Bisnis";"Akuntansi";"4 (Semester 7 - Semester 8)";"< 1 jt";0;1;0;"Sepeda Motor Pribadi";"Rumah bersama saudara";3,30858486471076;1;1;1;1;1;1
+"668";268;"Perempuan";22;"Fakultas Ekonomi dan Bisnis";"Manajemen";"4 (Semester 7 - Semester 8)";"< 1 jt";1;1;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";1,99391689793145;4;1;1;3;1;1
+"669";269;"Perempuan";22;"Fakultas Ilmu Komputer";"Informatika";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";1;1;1;"Mobil Pribadi";"Rumah pribadi/rumah keluarga";1,69077307920231;2;3;2;2;3;2
+"670";270;"Laki-Laki";21;"Fakultas Hukum";"Ilmu Hukum";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";2;1;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";2,36438695683741;2;2;2;2;2;1
+"671";271;"Laki-Laki";22;"Fakultas Ekonomi dan Bisnis";"Manajemen";"4 (Semester 7 - Semester 8)";"< 1 jt";1;1;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";4,20820730096355;2;3;1;4;1;1
+"672";272;"Perempuan";22;"Fakultas Ekonomi dan Bisnis";"Manajemen";"4 (Semester 7 - Semester 8)";"< 1 jt";0;1;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";2,1311689062525;1;3;1;1;2;1
+"673";273;"Perempuan";19;"Fakultas Ekonomi dan Bisnis";"Manajemen";"2 (Semester 3 – Semester 4)";"3,1 jt – 4 jt";2;1;0;"Mobil Pribadi";"Rumah pribadi/rumah keluarga";3,11925697943133;3;3;3;3;2;3
+"674";274;"Perempuan";20;"Fakultas Hukum";"Ilmu Hukum";"3 (Semester 5 - Semester 6)";"1 jt – 2 jt";1;2;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";1,84241041434341;2;2;2;2;2;1
+"675";275;"Laki-Laki";22;"Fakultas Hukum";"Ilmu Hukum";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";2;1;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";2,72511416770343;2;2;2;2;2;3
+"676";276;"Laki-Laki";19;"Fakultas Ekonomi dan Bisnis";"Manajemen";"3 (Semester 5 - Semester 6)";"2,1 jt – 3 jt";0;4;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";1,24440370700775;6;6;1;1;1;1
+"677";277;"Laki-Laki";20;"Fakultas Ekonomi dan Bisnis";"Manajemen";"3 (Semester 5 - Semester 6)";"1 jt – 2 jt";1;1;0;"Mobil Pribadi";"Rumah pribadi/rumah keluarga";7,55293846024098;2;1;2;2;1;1
+"678";278;"Laki-Laki";22;"Fakultas Ekonomi dan Bisnis";"Manajemen";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";2;2;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";2,72511416770343;1;1;1;1;1;1
+"679";279;"Perempuan";19;"Fakultas Ilmu Sosial dan Politik";"Administrasi Publik";"2 (Semester 3 – Semester 4)";"2,1 jt – 3 jt";0;0;0;"Transportasi Online";"Kos Sendiri";0,421196876042652;2;2;1;2;1;1
+"680";280;"Laki-Laki";21;"Fakultas Hukum";"Ilmu Hukum";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";2;1;1;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";3,1167706837109;3;1;1;5;2;2
+"681";281;"Laki-Laki";18;"Fakultas Ekonomi dan Bisnis";"Manajemen";"4 (Semester 7 - Semester 8)";"3,1 jt – 4 jt";3;4;1;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";2,84258726615557;1;4;1;4;2;2
+"682";282;"Laki-Laki";21;"Fakultas Ekonomi dan Bisnis";"Manajemen";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";2;3;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";3,75679620772303;3;3;1;1;2;2
+"683";283;"Perempuan";22;"Fakultas Ilmu Sosial dan Politik";"Administrasi Bisnis";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";0;0;0;"Transportasi Online";"Kos Sendiri";0,421196876042652;3;3;2;2;2;1
+"684";284;"Laki-Laki";21;"Fakultas Hukum";"Ilmu Hukum";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";1;3;0;"Sepeda Motor Pribadi";"Rumah bersama saudara";2,1311689062525;1;1;1;1;1;1
+"685";285;"Laki-Laki";18;"Fakultas Ilmu Komputer";"Sistem Informasi";"1 (Semester 1 – Semester 2)";"1 jt – 2 jt";2;2;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";4,80199702609362;2;4;4;2;2;3
+"686";286;"Perempuan";21;"Fakultas Ilmu Sosial dan Politik";"Ilmu Komunikasi";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";1;2;1;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";1,19698084960908;4;1;3;1;2;1
+"687";287;"Perempuan";19;"Fakultas Ekonomi dan Bisnis";"Akuntansi";"2 (Semester 3 – Semester 4)";"2,1 jt – 3 jt";3;2;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";5,48212140155688;2;3;4;3;1;1
+"688";288;"Laki-Laki";18;"Fakultas Ekonomi dan Bisnis";"Akuntansi";"1 (Semester 1 – Semester 2)";"1 jt – 2 jt";1;1;0;"Mobil Pribadi";"Rumah pribadi/rumah keluarga";4,68439432234469;1;2;1;1;2;2
+"689";289;"Laki-Laki";22;"Fakultas Ilmu Komputer";"Informatika";"4 (Semester 7 - Semester 8)";"3,1 jt – 4 jt";4;3;1;"Mobil Pribadi";"Rumah pribadi/rumah keluarga";5,65453261540912;2;2;2;2;1;2
+"690";290;"Perempuan";21;"Fakultas Ekonomi dan Bisnis";"Manajemen";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";2;2;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";2,71397066364127;2;2;1;2;2;1
+"691";291;"Perempuan";18;"Fakultas Ilmu Sosial dan Politik";"Administrasi Bisnis";"1 (Semester 1 – Semester 2)";"2,1 jt – 3 jt";2;2;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";3,02553843317727;1;2;2;3;1;1
+"692";292;"Laki-Laki";21;"Fakultas Teknik";"Teknik Sipil";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";2;1;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";1,97739076110086;2;2;2;1;1;1
+"693";293;"Laki-Laki";19;"Fakultas Ilmu Sosial dan Politik";"Administrasi Bisnis";"2 (Semester 3 – Semester 4)";"2,1 jt – 3 jt";3;3;1;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";4,76606018766101;4;2;4;2;1;2
+"694";294;"Perempuan";19;"Fakultas Hukum";"Ilmu Hukum";"2 (Semester 3 – Semester 4)";"2,1 jt – 3 jt";1;3;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";3,10891386512865;1;1;1;1;1;1
+"695";295;"Perempuan";20;"Fakultas Hukum";"Ilmu Hukum";"3 (Semester 5 - Semester 6)";"3,1 jt – 4 jt";NA;2;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";1,63616018113827;4;4;1;1;2;1
+"696";296;"Laki-Laki";21;"Fakultas Hukum";"Ilmu Hukum";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";1;3;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";1,63616018113827;2;2;1;2;1;1
+"697";297;"Laki-Laki";21;"Fakultas Hukum";"Ilmu Hukum";"3 (Semester 5 - Semester 6)";"1 jt – 2 jt";1;1;0;"Mobil Pribadi";"Rumah pribadi/rumah keluarga";6,16881833833984;2;1;2;2;2;1
+"698";298;"Perempuan";21;"Fakultas Ekonomi dan Bisnis";"Manajemen";"3 (Semester 5 - Semester 6)";"1 jt – 2 jt";0;0;0;"Transportasi Online";"Kos Sendiri";2,33776262687752;2;4;2;2;1;1
+"699";299;"Perempuan";21;"Fakultas Ilmu Sosial dan Politik";"Ilmu Komunikasi";"3 (Semester 5 - Semester 6)";"1 jt – 2 jt";0;0;0;"Transportasi Online";"Kos Sendiri";1,07822866558255;4;2;2;3;1;1
+"700";300;"Laki-Laki";21;"Fakultas Ilmu Komputer";"Informatika";"3 (Semester 5 - Semester 6)";"1 jt – 2 jt";1;1;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";2,71347395189323;2;2;4;2;2;2
+"701";301;"Perempuan";21;"Fakultas Ekonomi dan Bisnis";"Akuntansi";"3 (Semester 5 - Semester 6)";"1 jt – 2 jt";0;0;0;"Transportasi Online";"Kos Sendiri";0,583639071175266;2;4;2;4;3;2
+"702";302;"Laki-Laki";19;"Fakultas Hukum";"Ilmu Hukum";"2 (Semester 3 – Semester 4)";"< 1 jt";1;2;2;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";1,09540991391915;1;1;1;1;1;1
+"703";303;"Laki-Laki";21;"Fakultas Ekonomi dan Bisnis";"Manajemen";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";2;3;2;"Mobil Pribadi";"Rumah pribadi/rumah keluarga";5,30121379931921;1;1;1;1;1;1
+"704";304;"Perempuan";18;"Fakultas Ekonomi dan Bisnis";"Manajemen";"1 (Semester 1 – Semester 2)";"1 jt – 2 jt";1;3;1;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";5,41827367335269;1;1;1;1;1;1
+"705";305;"Laki-Laki";20;"Fakultas Hukum";"Ilmu Hukum";"3 (Semester 5 - Semester 6)";"< 1 jt";1;2;1;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";4,93169122798524;1;1;1;1;1;1
+"706";306;"Perempuan";20;"Fakultas Hukum";"Ilmu Hukum";"3 (Semester 5 - Semester 6)";"1 jt – 2 jt";1;3;1;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";6,1138734062056;1;1;1;1;1;1
+"707";307;"Perempuan";21;"Fakultas Ekonomi dan Bisnis";"Manajemen";"3 (Semester 5 - Semester 6)";"1 jt – 2 jt";1;2;1;"Mobil Pribadi";"Kos Sendiri";0,997812015015302;1;1;1;1;1;1
+"708";308;"Perempuan";21;"Fakultas Hukum";"Ilmu Hukum";"3 (Semester 5 - Semester 6)";"1 jt – 2 jt";1;1;1;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";3,8251661861918;1;1;1;1;1;1
+"709";309;"Laki-Laki";21;"Fakultas Hukum";"Ilmu Hukum";"3 (Semester 5 - Semester 6)";"1 jt – 2 jt";2;3;3;"Mobil Pribadi";"Rumah pribadi/rumah keluarga";3,52011744436129;1;1;1;1;1;1
+"710";310;"Laki-Laki";19;"Fakultas Ekonomi dan Bisnis";"Manajemen";"2 (Semester 3 – Semester 4)";"2,1 jt – 3 jt";1;0;1;"Mobil Pribadi";"Rumah pribadi/rumah keluarga";5,60312978608286;1;1;1;1;1;1
+"711";311;"Perempuan";19;"Fakultas Ekonomi dan Bisnis";"Manajemen";"2 (Semester 3 – Semester 4)";"1 jt – 2 jt";2;2;1;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";3,68481447802324;1;1;1;1;1;1
+"712";312;"Perempuan";21;"Fakultas Ilmu Sosial dan Politik";"Ilmu Komunikasi";"3 (Semester 5 - Semester 6)";"1 jt – 2 jt";0;0;0;"Transportasi Online";"Kos Sendiri";0,223526852415748;2;3;2;2;2;1
+"713";313;"Laki-Laki";21;"Fakultas Ekonomi dan Bisnis";"Akuntansi";"3 (Semester 5 - Semester 6)";"1 jt – 2 jt";0;1;0;"Sepeda Motor Pribadi";"Rumah bersama saudara";2,25303567349019;2;1;3;4;2;1
+"714";314;"Perempuan";22;"Fakultas Ekonomi dan Bisnis";"Manajemen";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";0;1;0;"Sepeda Motor Pribadi";"Kos Sendiri";1,66118443363027;2;1;2;2;1;1
+"715";315;"Laki-Laki";22;"Fakultas Hukum";"Ilmu Hukum";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";1;0;0;"Mobil Pribadi";"Rumah bersama saudara";2,77064191774206;2;2;2;2;2;3
+"716";316;"Laki-Laki";21;"Fakultas Hukum";"Ilmu Hukum";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";0;3;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";2,12124626408451;3;3;3;1;1;1
+"717";317;"Perempuan";21;"Fakultas Ilmu Sosial dan Politik";"Administrasi Publik";"4 (Semester 7 - Semester 8)";"3,1 jt – 4 jt";1;3;0;"Sepeda Motor Pribadi";"Rumah bersama saudara";0,944185368124915;3;3;3;3;1;2
+"718";318;"Laki-Laki";21;"Fakultas Ekonomi dan Bisnis";"Manajemen";"4 (Semester 7 - Semester 8)";"3,1 jt – 4 jt";2;2;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";5,86943302395004;4;4;4;1;4;2
+"719";319;"Perempuan";22;"Fakultas Hukum";"Ilmu Hukum";"4 (Semester 7 - Semester 8)";"3,1 jt – 4 jt";2;2;0;"Sepeda Motor Pribadi";"Rumah bersama saudara";3,73609307589306;4;4;4;1;1;1
+"720";320;"Perempuan";18;"Fakultas Ilmu Sosial dan Politik";"Ilmu Komunikasi";"1 (Semester 1 – Semester 2)";"1 jt – 2 jt";2;2;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";3,52319658916395;2;2;4;4;2;2
+"721";321;"Perempuan";19;"Fakultas Ilmu Sosial dan Politik";"Ilmu Komunikasi";"2 (Semester 3 – Semester 4)";"< 1 jt";0;0;0;"Berjalan Kaki";"Kos Sendiri";0,421196876042652;5;2;5;4;5;4
+"722";322;"Perempuan";19;"Fakultas Ilmu Sosial dan Politik";"Administrasi Publik";"2 (Semester 3 – Semester 4)";"2,1 jt – 3 jt";2;1;0;"Mobil Pribadi";"Rumah pribadi/rumah keluarga";5,48381202705011;2;1;4;2;2;1
+"723";323;"Perempuan";19;"Fakultas Ekonomi dan Bisnis";"Manajemen";"2 (Semester 3 – Semester 4)";"1 jt – 2 jt";2;2;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";5,93415021926971;4;4;2;2;1;1
+"724";324;"Laki-Laki";22;"Fakultas Teknik";"Teknik Sipil";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";2;2;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";7,72106155786754;2;3;2;2;2;1
+"725";325;"Laki-Laki";22;"Fakultas Teknik";"Teknik Sipil";"4 (Semester 7 - Semester 8)";"< 1 jt";1;1;1;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";3,74616439368975;4;2;4;4;2;2
+"726";326;"Laki-Laki";19;"Fakultas Teknik";"Teknik Sipil";"2 (Semester 3 – Semester 4)";"1 jt – 2 jt";1;1;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";4,80476407052472;3;3;3;2;3;1
+"727";327;"Perempuan";23;"Fakultas Teknik";"Teknik Sipil";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";2;1;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";5,77542039606597;1;1;4;2;2;1
+"728";328;"Perempuan";20;"Fakultas Ilmu Sosial dan Politik";"Administrasi Publik";"2 (Semester 3 – Semester 4)";"2,1 jt – 3 jt";2;0;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";6,93740299915999;3;2;2;2;2;1
+"729";329;"Perempuan";22;"Fakultas Hukum";"Ilmu Hukum";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";1;3;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";4,69472151567341;3;3;2;2;3;2
+"730";330;"Perempuan";22;"Fakultas Ilmu Sosial dan Politik";"Ilmu Komunikasi";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";1;3;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";3,41755778242172;3;2;2;5;2;2
+"731";331;"Perempuan";21;"Fakultas Ekonomi dan Bisnis";"Manajemen";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";2;1;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";1,47018338196726;4;1;2;3;1;1
+"732";332;"Perempuan";20;"Fakultas Ilmu Sosial dan Politik";"Administrasi Bisnis";"2 (Semester 3 – Semester 4)";"1 jt – 2 jt";2;2;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";2,41265708018609;3;3;2;3;2;1
+"733";333;"Perempuan";18;"Fakultas Hukum";"Ilmu Hukum";"1 (Semester 1 – Semester 2)";"2,1 jt – 3 jt";2;1;1;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";6,21281228647315;2;4;3;1;1;1
+"734";334;"Perempuan";22;"Fakultas Hukum";"Ilmu Hukum";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";1;3;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";2,2792264998007;3;2;4;1;3;1
+"735";335;"Laki-Laki";21;"Fakultas Ilmu Sosial dan Politik";"Administrasi Publik";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";2;2;0;"Mobil Pribadi";"Rumah pribadi/rumah keluarga";2,19544251213099;2;2;2;2;2;1
+"736";336;"Perempuan";21;"Fakultas Ekonomi dan Bisnis";"Manajemen";"3 (Semester 5 - Semester 6)";"1 jt – 2 jt";1;1;0;"Mobil Pribadi";"Rumah pribadi/rumah keluarga";4,63063919806587;2;4;1;2;1;2
+"737";337;"Laki-Laki";22;"Fakultas Ilmu Komputer";"Sistem Informasi";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";0;0;0;"Transportasi Online";"Kos Sendiri";0,330821916068864;2;3;2;1;3;2
+"738";338;"Perempuan";21;"Fakultas Ekonomi dan Bisnis";"Akuntansi";"3 (Semester 5 - Semester 6)";"1 jt – 2 jt";0;1;0;"Sepeda Motor Pribadi";"Rumah bersama saudara";7,86591109554489;2;2;2;4;3;1
+"739";339;"Perempuan";21;"Fakultas Ekonomi dan Bisnis";"Manajemen";"3 (Semester 5 - Semester 6)";"1 jt – 2 jt";0;1;0;"Sepeda Motor Pribadi";"Kos bersama-sama";1,23591537162229;3;1;4;2;4;1
+"740";340;"Laki-Laki";22;"Fakultas Ilmu Komputer";"Sistem Informasi";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";1;2;1;"Mobil Pribadi";"Kos bersama-sama";0,470414021060994;2;2;2;2;1;3
+"741";341;"Perempuan";21;"Fakultas Ilmu Sosial dan Politik";"Ilmu Komunikasi";"3 (Semester 5 - Semester 6)";"1 jt – 2 jt";0;1;0;"Sepeda Motor Pribadi";"Rumah bersama saudara";3,8297135358131;2;2;2;3;1;2
+"742";342;"Laki-Laki";22;"Fakultas Teknik";"Teknik Mesin";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";1;1;0;"Mobil Pribadi";"Rumah pribadi/rumah keluarga";8,29932612398892;1;1;3;2;2;1
+"743";343;"Laki-Laki";22;"Fakultas Ilmu Komputer";"Informatika";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";1;1;1;"Mobil Pribadi";"Rumah bersama saudara";2,07135904094505;2;2;2;2;2;1
+"744";344;"Laki-Laki";22;"Fakultas Hukum";"Ilmu Hukum";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";3;3;1;"Mobil Pribadi";"Rumah pribadi/rumah keluarga";0,437019784642469;2;1;3;2;2;2
+"745";345;"Laki-Laki";22;"Fakultas Hukum";"Ilmu Hukum";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";2;2;0;"Mobil Pribadi";"Rumah pribadi/rumah keluarga";2,84940881974044;1;2;2;3;3;1
+"746";346;"Perempuan";19;"Fakultas Ilmu Sosial dan Politik";"Administrasi Publik";"2 (Semester 3 – Semester 4)";"1 jt – 2 jt";2;2;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";2,64619900289878;3;2;3;1;2;1
+"747";347;"Perempuan";20;"Fakultas Teknik";"Teknik Sipil";"3 (Semester 5 - Semester 6)";"1 jt – 2 jt";1;3;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";4,80427692600656;4;2;2;2;2;2
+"748";348;"Perempuan";22;"Fakultas Teknik";"Teknik Sipil";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";2;2;1;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";5,85514739434789;4;2;2;1;1;1
+"749";349;"Laki-Laki";20;"Fakultas Hukum";"Ilmu Hukum";"3 (Semester 5 - Semester 6)";"1 jt – 2 jt";1;3;1;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";2,74094827416031;1;3;2;1;2;1
+"750";350;"Laki-Laki";19;"Fakultas Hukum";"Ilmu Hukum";"2 (Semester 3 – Semester 4)";"1 jt – 2 jt";2;2;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";5,10973990853122;2;3;2;1;2;2
+"751";351;"Laki-Laki";22;"Fakultas Hukum";"Ilmu Hukum";"4 (Semester 7 - Semester 8)";"2,1 jt – 3 jt";1;3;1;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";8,68542698120566;3;5;1;2;3;2
+"752";352;"Laki-Laki";18;"Fakultas Ilmu Sosial dan Politik";"Administrasi Publik";"1 (Semester 1 – Semester 2)";"1 jt – 2 jt";1;4;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";3,96685999878227;3;4;2;2;1;1
+"753";353;"Perempuan";18;"Fakultas Ilmu Sosial dan Politik";"Administrasi Publik";"1 (Semester 1 – Semester 2)";"1 jt – 2 jt";1;3;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";4,83005132660311;2;3;3;2;2;1
+"754";354;"Laki-Laki";20;"Fakultas Ilmu Sosial dan Politik";"Ilmu Komunikasi";"3 (Semester 5 - Semester 6)";"1 jt – 2 jt";1;2;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";1,90883505840737;4;2;3;5;3;2
+"755";355;"Laki-Laki";19;"Fakultas Teknik";"Teknik Sipil";"2 (Semester 3 – Semester 4)";"1 jt – 2 jt";1;2;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";6,04720403843312;1;2;2;1;2;1
+"756";356;"Perempuan";20;"Fakultas Teknik";"Teknik Sipil";"3 (Semester 5 - Semester 6)";"< 1 jt";1;1;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";5,62748467283166;4;1;1;4;1;2
+"757";357;"Laki-Laki";20;"Fakultas Teknik";"Teknik Sipil";"3 (Semester 5 - Semester 6)";"1 jt – 2 jt";2;2;1;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";5,3582236613678;2;2;2;3;1;1
+"758";358;"Laki-Laki";19;"Fakultas Teknik";"Teknik Sipil";"2 (Semester 3 – Semester 4)";"1 jt – 2 jt";1;2;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";0,287605437711695;3;3;2;2;2;1
+"759";359;"Laki-Laki";23;"Fakultas Ilmu Sosial dan Politik";"Administrasi Publik";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";1;2;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";4,38095652209345;3;3;3;3;3;1
+"760";360;"Perempuan";21;"Fakultas Ilmu Sosial dan Politik";"Administrasi Publik";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";2;2;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";2,87485952782776;2;1;1;2;4;3
+"761";361;"Laki-Laki";18;"Fakultas Hukum";"Ilmu Hukum";"1 (Semester 1 – Semester 2)";"2,1 jt – 3 jt";0;2;1;"Berjalan Kaki";"Kos bersama-sama";0,140859752962515;2;4;2;2;3;1
+"762";362;"Perempuan";18;"Fakultas Ilmu Komputer";"Informatika";"1 (Semester 1 – Semester 2)";"2,1 jt – 3 jt";1;2;1;"Berjalan Kaki";"Kos Sendiri";0,421196876042652;2;2;1;2;1;1
+"763";363;"Laki-Laki";23;"Fakultas Hukum";"Ilmu Hukum";"4 (Semester 7 - Semester 8)";"< 1 jt";0;1;0;"Kendaraan Bermotor (menumpang dengan keluarga/teman)";"Rumah pribadi/rumah keluarga";6,08336672107041;3;3;2;3;1;1
+"764";364;"Perempuan";20;"Fakultas Hukum";"Ilmu Hukum";"3 (Semester 5 - Semester 6)";"2,1 jt – 3 jt";3;3;2;"Mobil Pribadi";"Rumah pribadi/rumah keluarga";5,34813285023115;1;4;2;2;3;3
+"765";365;"Laki-Laki";19;"Fakultas Hukum";"Ilmu Hukum";"2 (Semester 3 – Semester 4)";"1 jt – 2 jt";1;4;1;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";3,87710758298325;4;2;3;2;1;1
+"766";366;"Laki-Laki";18;"Fakultas Hukum";"Ilmu Hukum";"1 (Semester 1 – Semester 2)";"< 1 jt";1;2;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";3,88718340651578;2;1;1;4;2;1
+"767";367;"Perempuan";21;"Fakultas Ilmu Komputer";"Informatika";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";2;1;1;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";0,812566496396387;1;2;1;4;3;3
+"768";368;"Perempuan";22;"Fakultas Ilmu Komputer";"Informatika";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";2;3;2;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";2,14841462353716;1;3;4;2;3;2
+"769";369;"Laki-Laki";20;"Fakultas Ilmu Komputer";"Informatika";"3 (Semester 5 - Semester 6)";"1 jt – 2 jt";1;2;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";4,54460841010672;2;1;3;1;2;1
+"770";370;"Perempuan";21;"Fakultas Ilmu Komputer";"Informatika";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";0;2;1;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";2,69649973165553;1;2;1;2;2;2
+"771";371;"Laki-Laki";18;"Fakultas Hukum";"Ilmu Hukum";"1 (Semester 1 – Semester 2)";"2,1 jt – 3 jt";1;4;1;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";6,66838015069658;1;2;4;2;2;1
+"772";372;"Laki-Laki";22;"Fakultas Ilmu Komputer";"Informatika";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";2;3;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";3,66232465916736;2;2;3;2;3;3
+"773";373;"Perempuan";22;"Fakultas Ilmu Komputer";"Sistem Informasi";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";1;2;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";2,76453602674358;4;1;2;2;1;1
+"774";374;"Laki-Laki";19;"Fakultas Ilmu Komputer";"Sistem Informasi";"2 (Semester 3 – Semester 4)";"< 1 jt";2;3;1;"Mobil Pribadi";"Rumah pribadi/rumah keluarga";1,58095544225082;2;2;1;2;1;2
+"775";375;"Laki-Laki";21;"Fakultas Teknik";"Teknik Sipil";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";2;3;1;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";3,03971326698302;5;3;3;2;1;2
+"776";376;"Perempuan";22;"Fakultas Ilmu Sosial dan Politik";"Administrasi Publik";"4 (Semester 7 - Semester 8)";"1 jt – 2 jt";0;3;1;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";2,08362031896602;2;4;1;3;2;1
+"777";377;"Perempuan";20;"Fakultas Hukum";"Ilmu Hukum";"3 (Semester 5 - Semester 6)";"1 jt – 2 jt";1;2;1;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";1,13798828060679;2;2;2;4;2;1
+"778";378;"Laki-Laki";20;"Fakultas Ilmu Komputer";"Sistem Informasi";"3 (Semester 5 - Semester 6)";"< 1 jt";2;1;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";7,93460472979923;3;2;1;1;2;4
+"779";379;"Laki-Laki";19;"Fakultas Ilmu Komputer";"Informatika";"2 (Semester 3 – Semester 4)";"1 jt – 2 jt";1;3;0;"Sepeda Motor Pribadi";"Rumah pribadi/rumah keluarga";1,52515632374986;1;2;2;3;2;2

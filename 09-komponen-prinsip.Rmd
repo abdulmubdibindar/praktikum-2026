@@ -1,0 +1,258 @@
+# Modul-9: Analisis Hubungan Multivariat Interdependensi - Analisis Faktor dan PCA
+
+Setelah mempelajari modul ini, Anda diharapkan dapat menghasilkan komponen prinsip menggunakan perangkat lunak komputer **`STP-14.3`**
+
+## Pendahuluan
+
+Analisis Komponen Prinsip (*Principal Component Analysis*, PCA) dan Analisis Faktor (*Common Factor Analysis*) adalah metode analisis multivariat yang digunakan untuk meringkas atau mereduksi jumlah variabel yang banyak menjadi beberapa dimensi baru (disebut komponen atau faktor) yang lebih sedikit, namun tetap merepresentasikan informasi dari variabel asli.
+
+Kedua metode ini termasuk dalam analisis interdependensi, di mana seluruh variabel dianggap setara dan saling berhubungan satu sama lain, tanpa ada pembagian variabel independen dan dependen.
+
+## Studi Kasus
+
+Kita akan menggunakan data @bindar2022faktor, yaitu penelitian mengenai preferensi masyarakat Kota Bandung dalam mengakses lokasi *Car-Free Day* (CFD). Terdapat 12 variabel yang akan dianalisis:
+
+1.  `ongkos`: Total biaya perjalanan
+2.  `bparkir`: Biaya parkir
+3.  `durasi`: Durasi perjalanan
+4.  `bareng`: Jumlah rombongan dalam perjalanan
+5.  `toplajur`: Jumlah lajur jalan terbanyak yang dilalui
+6.  `usia`: Usia pelaku perjalanan
+7.  `jmlmotor`: Jumlah sepeda motor di rumah tangga
+8.  `jmlmobil`: Jumlah mobil di rumah tangga
+9.  `jmlsepeda`: Jumlah sepeda di rumah tangga
+10. `jmldewasa`: Jumlah orang dewasa dalam rumah tangga
+11. `jmlanak`: Jumlah anak-anak dalam rumah tangga
+12. `jarak`: Jarak tempuh dari rumah ke lokasi CFD
+
+## Memuat Pustaka *(Libraries)*
+
+Kita membutuhkan paket `tidyverse` untuk manipulasi data dan `psych` untuk melakukan uji KMO, Bartlett, serta fungsi analisis faktor dan PCA.
+
+```{r }
+library(tidyverse)
+library(psych)
+```
+
+## Asumsi Awal
+
+Sebelum melakukan analisis komponen prinsip atau analisis faktor, idealnya kita perlu memeriksa asumsi dasar, yaitu:
+
+1.  **Linearitas**: Adanya hubungan linear antarvariabel.
+2.  **Normalitas**: Variabel berdistribusi normal multivariat.
+
+Kita dapat melakukan inspeksi visual menggunakan matriks diagram pencar (*scatter plot matrix*). Di sini kita menggunakan fungsi `pairs.panels` dari paket `psych` yang memberikan informasi lengkap berupa scatter plot, histogram, dan nilai korelasi.
+
+```{r asumsi-awal, fig.width=10, fig.height=10, results='asis'}
+# Membaca data (Kita muat di sini untuk keperluan inspeksi awal)
+# Jika data belum dimuat, baris ini akan memuatnya.
+data_cfd <- read_csv2("datasets/Data Praktikum 09.csv")
+
+# Memilih 12 variabel metrik yang akan dianalisis sesuai studi kasus
+# Variabel ini sama dengan yang akan digunakan pada tahap persiapan data selanjutnya
+data_selected <- data_cfd |> 
+  select(ongkos, bparkir, durasi, bareng, toplajur, usia, 
+         jmlmotor, jmlmobil, jmlsepeda, jmldewasa, jmlanak, jarak)
+
+# Membuat Scatter Plot Matrix menggunakan psych::pairs.panels
+pairs.panels(data_selected,
+             method = "pearson", # Menggunakan korelasi Pearson
+             hist.col = "#00AFBB", # Warna histogram
+             density = FALSE,    # Tidak menampilkan garis density agar lebih bersih
+             lm.col = "red",   # Mengubah warna data points menjadi abu-abu gelap
+             ellipses = TRUE,   # Menampilkan elips korelasi untuk melihat pola linearitas
+             lm = TRUE,         # Menampilkan garis regresi linear lurus
+             main = "Scatter Plot Matrix Asumsi Awal")
+```
+
+**Penjelasan Kode dan Output:**
+
+-   **Kode**: Kita menggunakan fungsi `pairs.panels` dari paket `psych`. Argumen `method = "pearson"` digunakan untuk menghitung koefisien korelasi Pearson. `hist.col` mengatur warna histogram di diagonal utama. `ellipses = TRUE` menambahkan elips yang menggambarkan kovarians dan arah hubungan.
+-   **Output**:
+    -   **Diagonal Utama**: Menampilkan histogram distribusi frekuensi untuk setiap variabel. Kita dapat melihat apakah distribusi variabel mendekati normal (bentuk lonceng) atau menceng (*skewed*).
+    -   **Bawah Diagonal**: Menampilkan *scatter plot* (diagram pencar) untuk setiap pasangan variabel. Ini berguna untuk mendeteksi pola hubungan (apakah linear) dan adanya pencilan (*outliers*).
+    -   **Atas Diagonal**: Menampilkan nilai koefisien korelasi Pearson ($r$). Ukuran font angka korelasi menyesuaikan dengan besarnya nilai korelasi (semakin besar nilai, semakin besar font). **Interpretasi Singkat**:
+    -   **Normalitas**: Pada diagonal utama, histogram yang berbentuk lonceng menunjukkan distribusi mendekati normal. Distribusi yang menceng (*skewed*) atau tidak simetris menandakan ketidaknormalan.
+    -   **Linearitas**: Perhatikan bagian bawah diagonal (Scatter Plot).
+        -   **Garis Tren**: Indikasi linearitas dapat dilihat dari garis tren (biasanya berwarna merah) yang terbentuk di antara titik-titik data. Jika garis tersebut cenderung lurus, maka hubungan antar variabel bersifat linear.
+        -   **Elips**: Bentuk elips menunjukkan kekuatan korelasi. **Elips yang pipih (sempit)** menandakan korelasi kuat dan hubungan yang jelas. Sebaliknya, **elips yang cenderung bulat** menandakan korelasi yang lemah.
+        -   Perbesar grafik dengan membuka hasil di jendela baru atau klik 'Zoom' jika ia muncul di panel 'Plots'.
+
+**Latihan 2:**
+
+Berdasarkan *Scatter Plot Matrix* di atas:
+
+1.  Sebutkan satu variabel yang menurut Anda memiliki distribusi mendekati normal (lihat histogram diagonal)!
+2.  Sebutkan pasangan variabel yang memiliki hubungan linear cukup kuat (lihat bentuk elips/sebaran data)!
+
+## Mempersiapkan Data
+
+Kita memastikan kembali variabel yang akan digunakan dalam analisis ini.
+
+```{r}
+# Memilih variabel yang akan dianalisis
+data_analisis <- data_cfd |> 
+  select(ongkos, bparkir, durasi, bareng, toplajur, usia, 
+         jmlmotor, jmlmobil, jmlsepeda, jmldewasa, jmlanak, jarak)
+
+# Melihat sekilas data
+glimpse(data_analisis)
+```
+
+**Latihan 1:**
+
+Berdasarkan output `glimpse` di atas, jawablah pertanyaan berikut:
+
+1.  Berapa jumlah observasi (baris) atau objek dalam data tersebut?
+2.  Berapa jumlah variabel (kolom) yang aktif digunakan dalam analisis?
+
+## Uji Kelayakan Data (Asumsi)
+
+Sebelum melakukan ekstraksi dimensi, kita perlu memastikan data layak untuk dianalisis faktor/PCA. Dua indikator utama adalah **Uji Bartlett of Sphericity** dan **Measure of Sampling Adequacy (MSA)** atau **Kaiser-Meyer-Olkin (KMO)**.
+
+### Uji Bartlett of Sphericity
+
+Uji ini melihat apakah terdapat korelasi antarvariabel dalam data. Syarat: Nilai $p < 0,05$.
+
+```{r uji-bartlett}
+# Uji Bartlett
+cortest.bartlett(data_analisis)
+```
+
+**Latihan 3:**
+
+Lihat nilai $p.value$ pada output di atas. Apakah nilai tersebut $< 0.05$? Apa kesimpulan Anda mengenai korelasi antar variabel dalam data ini? (Apakah matriks korelasi berbeda secara signifikan dengan matriks identitas?)
+
+### Uji KMO dan MSA
+
+Nilai KMO keseluruhan harus $> 0,5$. Selain itu, nilai MSA per variabel (diagonal pada matriks anti-image correlation) juga harus $> 0,5$.
+
+```{r uji-kmo}
+# Uji KMO
+KMO(data_analisis)
+```
+
+Berdasarkan hasil di atas: - Nilai KMO Keseluruhan (*Overall MSA*) = 0,63 (Layak, \> 0,5). - Namun, jika dilihat per variabel (*MSA for each item*), terdapat variabel dengan nilai \< 0,5 yaitu `jmldewasa` (0,48) dan `jmlanak` (0,44).
+
+Sesuai prosedur, kita harus mengeluarkan variabel yang tidak memenuhi syarat MSA.
+
+```{r revisi-data}
+# Mengeluarkan variabel jmldewasa dan jmlanak
+data_analisis_final <- data_analisis |> 
+  select(-jmldewasa, -jmlanak)
+
+# Cek ulang KMO
+KMO(data_analisis_final)
+```
+
+Sekarang seluruh variabel memiliki MSA \> 0,5 dan KMO keseluruhan naik menjadi 0,68. Data siap diekstraksi.
+
+## Mengekstrak Dimensi Baru
+
+Langkah selanjutnya adalah menentukan berapa jumlah dimensi (faktor/komponen) yang akan dibentuk. Kita dapat menggunakan **Analisis Paralel** atau melihat **Nilai Eigen** (*Eigenvalues*) dan **Scree Plot**.
+
+### Nilai Eigen dan Total Variansi
+
+Kita akan melihat berapa banyak variansi yang bisa dijelaskan oleh setiap komponen.
+
+```{r eigen-values}
+# Melakukan PCA tanpa rotasi untuk melihat Eigenvalues
+analisis_awal <- principal(data_analisis_final, nfactors = 10, rotate = "none")
+
+# Menampilkan nilai eigen
+analisis_awal$values
+```
+
+Kriteria umum penentuan jumlah dimensi: 1. **Kaiser's Criterion**: Ambil komponen dengan nilai eigen \> 1. 2. **Cumulative Variance**: Ambil jumlah komponen yang menjelaskan total variansi \> 60%.
+
+Dari nilai eigen di atas, terdapat 4 komponen dengan nilai \> 1 (2.488, 1.650, 1.236, 1.017).
+
+### *Scree Plot*
+
+Grafik ini menunjukkan penurunan nilai eigen. Titik di mana grafik mulai melandai (siku) menunjukkan batas jumlah faktor.
+
+```{r scree-plot}
+# Membuat Scree Plot
+scree(data_analisis_final, pc=TRUE)
+```
+
+**Latihan 4:**
+
+1.  Berdasarkan **Kaiser's Criterion** (Nilai Eigen \> 1) pada sub-bab 9.7.1, berapa komponen yang sebaiknya diekstrak?
+2.  Berdasarkan **Scree Plot** di atas (lihat titik siku/ *elbow*), berapa komponen yang sebaiknya diekstrak?
+
+Berdasarkan analisis di Modul 13, kita memutuskan untuk menggunakan **4 dimensi**.
+
+## Melakukan Analisis Faktor dan Rotasi
+
+Kita akan melakukan ekstraksi 4 faktor menggunakan metode **Analisis Faktor** (untuk pengelompokan variabel) dan **PCA** (untuk pembentukan variat), kemudian melakukan **Rotasi Varimax** agar pengelompokan variabel lebih tegas (nilai *loading* kontras).
+
+### Analisis Faktor (Common Factor Analysis)
+
+Analisis ini bertujuan mengelompokkan variabel-variabel yang mirip (korelasi tinggi) ke dalam faktor laten.
+
+```{r analisis-faktor}
+# Analisis Faktor dengan 4 faktor dan rotasi Varimax
+# fm="pa" (Principal Axis) adalah metode umum untuk Common Factor Analysis di R (mirip SPSS)
+af_result <- fa(data_analisis_final, nfactors = 4, rotate = "varimax", fm = "pa")
+
+# Menampilkan hasil loading faktor
+print(af_result$loadings, cutoff = 0.3)
+```
+
+*Catatan: `cutoff = 0.3` digunakan untuk menyembunyikan nilai loading yang kecil agar tabel lebih mudah dibaca.*
+
+**Cara Membaca Output:** Perhatikan matriks komponen yang dirotasi (*Rotated Factor Matrix*). Setiap kolom (PA1, PA2, dst) merepresentasikan faktor. Nilai angka adalah *factor loading* (korelasi antara variabel dengan faktor).
+
+**Contoh Identifikasi Faktor 1 (PA1):** Lihat kolom `PA1`. Variabel dengan nilai *loading* terbesar (dan di atas 0.5) adalah: - `durasi` (0.98) - `jarak` (0.96) Maka, Faktor 1 dibentuk oleh `durasi` dan `jarak`.
+
+**Latihan 5:**
+
+Berdasarkan output di atas, tentukan variabel pembentuk faktor lainnya:
+
+1.  **Faktor 2 (PA2)**: Variabel apa saja yang memiliki *loading* tinggi di kolom ini?
+2.  **Faktor 3 (PA3)**: Variabel apa saja yang memiliki *loading* tinggi di kolom ini?
+3.  **Faktor 4 (PA4)**: Variabel apa saja yang memiliki *loading* tinggi di kolom ini?
+
+### Analisis Komponen Prinsip (PCA)
+
+Jika tujuan kita adalah mereduksi data menjadi skor komponen untuk analisis lanjutan (misal regresi), kita menggunakan PCA.
+
+```{r pca-rotasi}
+# PCA dengan 4 komponen dan rotasi Varimax
+pca_result <- principal(data_analisis_final, nfactors = 4, rotate = "varimax")
+
+# Menampilkan hasil loading komponen (untuk interpretasi)
+print(pca_result$loadings, cutoff = 0.3)
+
+# Menampilkan bobot skor komponen (weights) untuk pembentukan skor
+print(pca_result$weights, digits = 3)
+```
+
+**Identifikasi Persamaan Komponen**
+
+Komponen Prinsip (RC) adalah kombinasi linear dari variabel asal (yang sudah distandarisasi). Persamaannya dapat ditulis sebagai: $$RC_j = w_{1j}Z_1 + w_{2j}Z_2 + \dots + w_{pj}Z_p$$ Dimana $w$ adalah nilai **Component Score Coefficients (Weights)**, bukan nilai *loading*. Loading hanya menunjukkan korelasi, sedangkan weights menunjukkan bobot kontribusi setiap variabel dalam pembentukan skor komponen.
+
+**Contoh:** Misalkan kita ingin membentuk persamaan untuk **RC1**. Lihat output `Weights` pada kolom `RC1`: - `durasi`: 0.524 - `jarak`: 0.451 - Variabel lain memiliki bobot yang lebih kecil.
+
+Maka persamaannya: $$RC1 \approx 0.524(Z_{durasi}) + 0.451(Z_{jarak}) + \dots$$
+
+**Menghasilkan Component Score**
+
+Untuk mendapatkan nilai skor komponen setiap observasi secara otomatis, kita dapat mengakses objek `$scores` dari hasil PCA.
+
+```{r component-scores}
+# Menampilkan 6 baris pertama dari skor komponen
+head(pca_result$scores)
+```
+
+**Latihan 6:**
+
+Berdasarkan output weights PCA di atas, tuliskan persamaan matematis terbentuknya komponen **RC2**! (Sebutkan variabel mana saja yang memiliki kontribusi besar beserta koefisien weights-nya).
+
+## Interpretasi dan Penamaan Dimensi
+
+Langkah terakhir adalah memberi nama pada dimensi yang terbentuk berdasarkan variabel-variabel pembentuknya.
+
+**Latihan 7:** Tuliskan seluruh kelompok dari analisis faktor dan juga seluruh persamaan komponen yang dihasilkan dari PCA!
+
