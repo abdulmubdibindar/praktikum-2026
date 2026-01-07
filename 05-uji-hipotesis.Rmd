@@ -91,20 +91,7 @@ Jika dimisalkan suatu nilai tersebut adalah 4 km, maka hipotesis yang diujinya m
 
 Pertama, mari kita buat sebuah fungsi di R untuk menghitung nilai statistik uji. Dengan adanya fungsi ini, kita tidak perlu lagi melakukan perhitungan manual setiap kali menguji hipotesis. Fungsi ini akan menerima masukan berupa rata-rata sampel, rata-rata hipotesis, simpangan baku, dan ukuran sampel, kemudian menghasilkan nilai statistik uji Z.
 
-``` r
-# Membuat fungsi uji hipotesis (hypothesis testing, ht) untuk rata-rata (mean)
-# dengan 1 populasi (1pop)
-# Keterangan input:
-#   - xbar : statistik rata-rata
-#   - mu   : parameter rata-rata
-#   - sd   : statistik simpangan baku
-#   - n    : ukuran sampel
-ht_mean_1pop <- function(xbar, mu, sd, n) {
-  se <- sd/sqrt(n) # menghitung standard error untuk rata-rata
-  Z_hitung <- (xbar - mu)/se # menghitung nilai Z dari statistik
-  return(Z_hitung)
-}
-```
+
 
 ```{r membuat-fungsi-mean1pop}
 # Membuat fungsi uji hipotesis (hypothesis testing, ht) untuk rata-rata (mean)
@@ -125,23 +112,7 @@ ht_mean_1pop <- function(xbar, mu, sd, n) {
 
 Setelah fungsi dibuat, kita deklarasikan variabel-variabel yang akan digunakan. Variabel-variabel ini akan dipakai langsung sebagai input fungsi uji hipotesis. Dengan mendeklarasikannya lebih dulu, kita memastikan semua nilai yang diperlukan untuk perhitungan sudah tersedia dengan jelas dan proses penghitungan menjadi lebih rapi.
 
-``` r
-# Mendeklarasikan variabel-variabel yang akan diuji
-sample_mean <- mean(data_mahasiswa$jarak_km)
-pop_mean <- 4.0
-sample_sd <- sd(data_mahasiswa$jarak_km)
-# Menghasilkan data frame ringkasan dataset dengan menghitung jumlah mahasiswa sebagai ukuran sampel
-ukuran_sampel <- data_mahasiswa |>
-  summarize(ukuran_sampel = n())
-# Menyimpan angka jumlah mahasiswa sebagai variabel n
-ukuran_sampel <- ukuran_sampel$ukuran_sampel
 
-# Menampilkan variabel-variabel yang akan diuji
-cat("Rata-rata jarak sampel adalah", sample_mean, "km.",
-    "\nParameter rata-rata jarak yang diuji adalah", pop_mean, "km.",
-    "\nSimpangan baku jarak sampel adalah", sample_sd, "km.",
-    "\nUkuran sampel adalah", ukuran_sampel, "orang.")
-```
 
 ```{r mendeklarasikan-variabel-uji-mean1pop}
 # Mendeklarasikan variabel-variabel yang akan diuji
@@ -169,10 +140,7 @@ Uji dua arah (two-tailed test) adalah salah satu bentuk pengujian hipotesis stat
 
 Langkah pertama adalah merumuskan hipotesis. Di sini kita mendefinisikan dua kemungkinan: hipotesis nol (H0) dan hipotesis alternatif (H1). H0 biasanya menyatakan bahwa “tidak ada perbedaan” atau “nilai parameter sama dengan nilai tertentu”. Sebaliknya, H1 menyatakan adanya perbedaan yang signifikan. Pada uji ini, Hipotesis nol menyatakan bahwa rata-rata sama dengan 4 km, sedangkan hipotesis alternatif menyatakan bahwa rata-rata tidak sama dengan 4 km. Dengan demikian, kita sedang menguji apakah terdapat perbedaan nyata dari nilai acuan tersebut.
 
-``` r
-cat("H0 : rata-rata jarak = 4 km",
-    "\n\nH1 : rata-rata jarak != 4 km")
-```
+
 
 ```{r merumuskan-hipotesis-mean1poptt}
 cat("H0 : rata-rata jarak = 4 km", # fungsi "cat()" digunakan untuk mecetak teks ke console dengan format yang bisa kita atur sendiri.
@@ -183,13 +151,7 @@ cat("H0 : rata-rata jarak = 4 km", # fungsi "cat()" digunakan untuk mecetak teks
 
 Setelah hipotesis dirumuskan, kita perlu menentukan distribusi sampling dan titik kritis. Distribusi sampling adalah distribusi dari nilai rata-rata sampel jika kita mengambil banyak sampel dari populasi. Titik kritis adalah nilai ambang yang menentukan wilayah penolakan hipotesis nol. Dalam uji dua arah, daerah kritis terletak di kedua ujung distribusi normal dengan luas masing-masing sebesar α/2. Misalnya, dengan α = 0,05, maka masing-masing sisi memiliki 0,025. Artinya, hanya jika nilai uji berada jauh di salah satu sisi, kita akan menolak H0.
 
-``` r
-# Hipotesis yang dipakai tidak berarah, maka wilayah kritis adalah alpha/2
-alpha <- 0.05
-Z.crit_2tail <- abs(qnorm(alpha/2)) # Nilai yang digunakan adalah nilai absolut, karena dibagi 2, tanda tidak berpengaruh
 
-cat("Titik kritis uji two-tailed:",Z.crit_2tail)
-```
 
 ```{r memilih-distribusi-sampling-wil-titik-kritis-mean1poptt}
 # Hipotesis yang dipakai tidak berarah, maka wilayah kritis adalah alpha/2
@@ -203,12 +165,7 @@ cat("Titik kritis uji two-tailed:",Z.crit_2tail)
 
 Setelah menentukan titik kritis, kita menghitung nilai statistik uji menggunakan data yang kita miliki. Nilai ini menunjukkan seberapa jauh rata-rata sampel menyimpang dari nilai hipotesis populasi, dalam satuan standar error. Jika nilai ini berada di luar batas kritis, maka penyimpangan tersebut dianggap terlalu besar untuk hanya terjadi karena kebetulan.
 
-``` r
-# hasil perhitungan statistik uji diabsolutkan untuk mengambil nilainya saja tanpa tandanya
-Z_meanJarak <- abs(ht_mean_1pop(sample_mean, pop_mean, sample_sd, ukuran_sampel))
 
-cat("Hasil statistik uji rata-rata:", Z_meanJarak)
-```
 
 ```{r menghitung-stat-uji-mean1poptt}
 # hasil perhitungan statistik uji diabsolutkan untuk mengambil nilainya saja tanpa tandanya
@@ -221,15 +178,7 @@ cat("Hasil statistik uji rata-rata:", Z_meanJarak)
 
 Langkah terakhir adalah menarik kesimpulan berdasarkan perbandingan antara nilai statistik uji dan titik kritis. Jika nilai statistik uji (absolut) lebih kecil dari titik kritis, maka kita gagal menolak H₀, artinya perbedaan yang terlihat kemungkinan hanya kebetulan sampel. Jika lebih besar atau sama, kita menolak H₀, artinya ada bukti yang cukup bahwa rata-rata jarak tidak sama dengan 4.
 
-``` r
-if (Z_meanJarak < Z.crit_2tail) {
-  tolak_h0 <- FALSE
-  cat("Hipotesis kosong gagal ditolak. Perbedaan rata-rata sampel 3,9 dengan 4,0 hanyalah kebetulan")
-} else {
-  tolak_h0 <- TRUE  
-  cat("Hipotesis kosong ditolak. Rata-rata jarak pada sampel mahasiswa sebesar 3,9 km menunjukkan perbedaan yang signifikan")
-}
-```
+
 
 ```{r menarik-kesimpulan-mean1poptt}
 if (Z_meanJarak < Z.crit_2tail) {
@@ -249,10 +198,7 @@ Uji satu arah (one-tailed test) digunakan ketika kita memiliki dugaan arah perbe
 
 Untuk uji satu arah, hipotesis alternatif ditentukan dengan arah tertentu. Misalnya, jika kita menduga rata-rata jarak lebih kecil dari 4 km, maka:
 
-``` r
-cat("H0 : rata-rata jarak = 4 km",
-    "\n\nH1 : rata-rata jarak < 4 km")
-```
+
 
 Dengan cara ini, kita hanya akan menolak H0 jika bukti menunjukkan bahwa rata-rata memang lebih kecil. Jika ternyata rata-rata lebih besar, maka hal itu tidak mendukung H1.
 
@@ -265,17 +211,7 @@ cat("H0 : rata-rata jarak = 4 km",
 
 Karena hipotesis alternatif hanya mengarah ke satu sisi, maka daerah kritis hanya ditetapkan di sisi kiri atau kanan distribusi normal. Jika H1 menyatakan rata-rata lebih kecil, maka titik kritis ditentukan pada sisi kiri. Sebaliknya, jika H1 menyatakan rata-rata lebih besar, maka titik kritis ada di sisi kanan. Dengan α = 0,05, seluruh probabilitas kesalahan ditempatkan di satu sisi distribusi.
 
-``` r
-tail <- "kiri" # Sebelumnya H₁ menyatakan lebih kecil dari (left-tailed), sehingga daerah kritis berada di kiri.
 
-if (tail == "kiri") {
-  Z.crit_1tail <- qnorm(alpha)
-} else {
-  Z.crit_1tail <- qnorm(1-alpha)
-}
-
-cat("Titik kritis uji one-tailed:",Z.crit_1tail)
-```
 
 ```{r memilih-distribusi-sampling-wil-titik-kritis-mean1popot}
 tail <- "kiri" # H1 menyatakan lebih kecil dari (left-tailed)
@@ -293,12 +229,7 @@ cat("Titik kritis uji one-tailed:", Z.crit_1tail)
 
 Setelah titik kritis ditentukan, kita menghitung nilai statistik uji. Pada uji satu arah, tanda dari nilai Z menjadi sangat penting. Hal ini karena nilai negatif atau positif menunjukkan arah penyimpangan rata-rata sampel dari nilai populasi.
 
-``` r
-# hasil perhitungan statistik uji TIDAK diabsolutkan sehingga melibatkan tanda
-Z_meanJarak <- ht_mean_1pop(sample_mean, pop_mean, sample_sd, ukuran_sampel)
 
-cat("Hasil statistik uji rata-rata:", Z_meanJarak)
-```
 
 ```{r menghitung-stat-uji-mean1popot}
 # Hasil perhitungan statistik uji TIDAK diabsolutkan
@@ -311,15 +242,7 @@ cat("Hasil statistik uji rata-rata:", Z_meanJarak)
 
 Langkah terakhir adalah membandingkan nilai statistik uji dengan titik kritis. Jika nilai uji lebih kecil dari titik kritis atau jatuh ke dalam daerah kritis, maka H0 ditolak, artinya perbedaan rata-rata kemungkinan hanyalah kebetulan. Sebaliknya, jika nilai uji lebih besar, maka H0 gagal ditolak yang berarti tidak ada bukti cukup untuk menyatakan adanya perbedaan.
 
-``` r
-if (Z_meanJarak < Z.crit_1tail) {
-  tolak_h0 <- TRUE
-  cat("Hipotesis kosong ditolak. Rata-rata jarak pada sampel mahasiswa sebesar 3,9 km menunjukkan perbedaan yang signifikan")
-} else {
-  tolak_h0 <- FALSE  
-  cat("Hipotesis kosong gagal ditolak. Perbedaan rata-rata sampel 3,9 dengan 4,0 hanyalah kebetulan")
-}
-```
+
 
 ```{r menarik-kesimpulan-mean1popot}
 if (Z_meanJarak < Z.crit_1tail) {
@@ -341,20 +264,7 @@ Pengujian proporsi bermanfaat ketika kita ingin menguji apakah proporsi sampel y
 
 Untuk memudahkan proses, kita membuat sebuah fungsi di R yang dapat menghitung statistik uji Z untuk proporsi satu populasi. Fungsi ini akan menerima input berupa:
 
-``` r
-# Membuat fungsi uji hipotesis (hypothesis testing, ht) untuk proporsi (prop)
-# dengan 1 populasi (1pop)
-# Keterangan input:
-#   - p_hat : statistik proporsi
-#   - P     : parameter proporsi
-#   - n     : ukuran sampel
 
-ht_prop_1pop <- function(p_hat, P, n) {
-  se <- sqrt((p_hat * (1-p_hat))/n) # menghitung standard error untuk rata-rata
-  Z_hitung <- (p_hat - P)/se # menghitung nilai Z dari statistik
-  return(Z_hitung)
-}
-```
 
 ```{r membuat-fungsi-prop1pop}
 ht_prop_1pop <- function(p_hat, P, n) {
@@ -368,14 +278,7 @@ ht_prop_1pop <- function(p_hat, P, n) {
 
 Sebelum melakukan uji hipotesis, kita perlu mengetahui berapa proporsi mahasiswa yang tinggal di masing-masing tipe tempat tinggal. Kita bisa gunakan fungsi group_by() dan summarize() untuk menghitung jumlah mahasiswa berdasarkan tipe tempat tinggal, lalu menambahkan kolom proporsi. Dengan cara ini, kita mendapatkan ringkasan data yang memperlihatkan distribusi tempat tinggal mahasiswa.
 
-``` r
-summarize_tempatTinggal <- data_mahasiswa |> 
-  group_by("Tipe tinggal" = tipe_tinggal_baku) |> 
-  summarize("Jumlah" = n()) |> 
-  mutate("proporsi" = Jumlah/sum(Jumlah)) # mutate() digunakan untuk menambahkan kolom baru atau mengubah kolom yang sudah ada dalam sebuah data frame.
 
-summarize_tempatTinggal
-```
 
 ```{r meringkas-data-1}
 summarize_tempatTinggal <- data_mahasiswa |> 
@@ -390,10 +293,7 @@ summarize_tempatTinggal
 
 Setelah kita memperoleh ringkasan data, kita simpan nilai proporsi mahasiswa yang tinggal di kos atau asrama ke dalam sebuah variabel. Dengan cara ini, nilai tersebut dapat digunakan dengan mudah dalam perhitungan selanjutnya tanpa harus menghitung ulang.
 
-``` r
-proporsi_kosAsrama <- summarize_tempatTinggal$proporsi[1]
-proporsi_kosAsrama
-```
+
 
 ```{r menyimpan-nilai-proporsi-2}
 proporsi_kosAsrama <- summarize_tempatTinggal$proporsi[1]
@@ -404,22 +304,7 @@ proporsi_kosAsrama
 
 Pada tahap ini, kita menentukan variabel-variabel utama yang akan digunakan dalam uji hipotesis. Semua variabel inilah yang nantinya akan dimasukkan ke dalam fungsi uji hipotesis yang telah dibuat.
 
-``` r
-# Mendeklarasikan variabel-variabel yang akan diuji
-sample_prop <- proporsi_kosAsrama
-pop_prop <- 0.5
 
-# Menghasilkan data frame ringkasan dataset dengan menghitung jumlah mahasiswa sebagai ukuran sampel
-ukuran_sampel <- data_mahasiswa |>
-  summarize(ukuran_sampel = n())
-# Menyimpan angka jumlah mahasiswa sebagai variabel n
-ukuran_sampel <- ukuran_sampel$ukuran_sampel
-
-# Menampilkan variabel-variabel yang akan diuji
-cat("Proporsi penghuni Kos/Asrama sampel adalah", sample_prop,
-    "\nParameter proporsi penghuni Kos/Asrama yang diuji adalah", pop_prop,
-    "\nUkuran sampel adalah", ukuran_sampel, "orang.")
-```
 
 ```{r mendeklarasikan-variabel-uji-3}
 # Mendeklarasikan variabel-variabel yang akan diuji
@@ -446,10 +331,7 @@ Pada pengujian hipotesis proporsi dengan two-tailed test, kita ingin mengetahui 
 
 Sama seperti uji dua arah pada rata-rata, uji dua arah pada proporsi diawali dengan merumuskan hipotesis. Di sini kita mendefinisikan dua kemungkinan: hipotesis nol (H0) dan hipotesis alternatif (H1). H0 biasanya menyatakan bahwa “tidak ada perbedaan” atau “nilai parameter sama dengan nilai tertentu”. Sebaliknya, H1 menyatakan adanya perbedaan yang signifikan. Dalam uji dua arah, rumus hipotesis ditulis sebagai:
 
-``` r
-cat("H0 : prop. Kos/Asrama = 0,5",
-    "\n\nH1 : prop. Kos/Asrama != 0,5")
-```
+
 
 ```{r merumuskan-hipotesis-4}
 cat("H0 : prop. Kos/Asrama = 0,5",
@@ -460,13 +342,7 @@ cat("H0 : prop. Kos/Asrama = 0,5",
 
 Sama seperti sebelumnya, setelah hipotesis ditetapkan, kita perlu menentukan distribusi yang digunakan. Untuk kasus proporsi dengan ukuran sampel besar, digunakan distribusi normal. Kemudian, karena kita menggunakan uji dua arah, wilayah kritis akan terbagi dua, masing-masing di ekor kiri dan kanan distribusi. Kali ini, kita menggunakan taraf signifikansi α=0.10.
 
-``` r
-# Hipotesis yang dipakai tidak berarah, maka wilayah kritis adalah alpha/2
-alpha <- 0.10 # (tingkat signifikansi 10%)
-Z.crit_2tail <- abs(qnorm(alpha/2)) # Nilai yang digunakan adalah nilai absolut, karena dibagi 2, tanda tidak berpengaruh
 
-cat("Titik kritis uji two-tailed:",Z.crit_2tail)
-```
 
 ```{r memilih-distribusi-sampling-wil-titik-kritis-5}
 # Hipotesis yang dipakai tidak berarah, maka wilayah kritis adalah alpha/2
@@ -480,12 +356,7 @@ cat("Titik kritis uji two-tailed:", Z.crit_2tail)
 
 Setelah titik kritis ditentukan, kita menghitung nilai statistik uji Z berdasarkan proporsi sampel dan proporsi populasi yang diuji.
 
-``` r
-# hasil perhitungan statistik uji diabsolutkan untuk mengambil nilainya saja tanpa tandanya
-Z_propKos <- abs(ht_prop_1pop(sample_prop, pop_prop, ukuran_sampel))
 
-Z_propKos
-```
 
 ```{r menghitung-stat-uji-6}
 # Hasil perhitungan statistik uji diabsolutkan
@@ -498,15 +369,7 @@ Z_propKos
 
 Langkah terakhir adalah membandingkan nilai statistik uji dengan titik kritis. Dari sini kita bisa menarik kesimpulan apakah hipotesis nol ditolak atau gagal ditolak. Jika nilai statistik uji (absolut) lebih kecil dari titik kritis, maka H₀ gagal ditolak, artinya perbedaan yang terlihat kemungkinan hanya kebetulan sampel. Jika lebih besar atau sama, maka H₀ ditolak, artinya ada bukti yang cukup bahwa proporsi tidak sama dengan 0,5.
 
-``` r
-if (Z_propKos < Z.crit_2tail) {
-  tolak_h0 <- FALSE
-  cat("Hipotesis kosong gagal ditolak. Perbedaan proporsi penghuni Kos/Asrama sebanyak 0,417 dari 0,5 hanyalah kebetulan")
-} else {
-  tolak_h0 <- TRUE  
-  cat("Hipotesis kosong ditolak. Perbedaan proporsi penghuni Kos/Asrama sebanyak 0,417 dari 0,5 adalah signifikan")
-}
-```
+
 
 ```{r menarik-kesimpulan-7}
 if (Z_propKos < Z.crit_2tail) {
@@ -526,10 +389,7 @@ Pada uji hipotesis proporsi satu arah, kita hanya berfokus dengan satu sisi dist
 
 Hipotesis dirumuskan sebagai berikut:
 
-``` r
-cat("H0 : prop. Kos/Asrama = 0,5",
-    "\n\nH1 : prop. Kos/Asrama < 0,5")
-```
+
 
 ```{r merumuskan-hipotesis-8}
 cat("H0 : prop. Kos/Asrama = 0,5",
@@ -540,21 +400,7 @@ cat("H0 : prop. Kos/Asrama = 0,5",
 
 Distribusi sampling yang digunakan tetap distribusi normal. Namun, karena ini uji satu arah, maka seluruh α ditempatkan pada salah satu sisi. Jika hipotesis alternatifnya menyatakan lebih besar, maka daerah kritis ada di sebelah kanan. Jika menyatakan lebih kecil, maka daerah kritis ada di sebelah kiri. Dengan taraf signifikansi α, titik kritis dihitung dengan qnorm(1 - alpha) untuk sisi kanan atau qnorm(alpha) untuk sisi kiri.
 
-``` r
-# Untuk hipotesis berarah (lebih besar/lebih kecil) kita perlu
-# menentukan sendiri di sisi mana wilayah kritis kita ditempatkan
-# dengan menggunakan `alpha` atau `1 - alpha`
 
-tail <- "kiri"
-
-if (tail == "kiri") {
-  Z.crit_1tail <- qnorm(alpha)
-} else {
-  Z.crit_1tail <- qnorm(1-alpha)
-}
-
-cat("Titik kritis uji one-tailed:",Z.crit_1tail)
-```
 
 ```{r memilih-distribusi-sampling-wil-titik-kritis-9}
 tail <- "kiri"
@@ -572,12 +418,7 @@ cat("Titik kritis uji one-tailed:", Z.crit_1tail)
 
 Sama seperti pada uji dua arah, kita menghitung nilai statistik uji Z dengan fungsi yang sudah dibuat sebelumnya tetapi kali ini kita tidak mengambil nilai absolut karena tanda statistik memberi informasi arah.
 
-``` r
-# hasil perhitungan statistik uji TIDAK diabsolutkan sehingga melibatkan tanda
-Z_propKos <- ht_prop_1pop(sample_prop, pop_prop, ukuran_sampel)
 
-Z_propKos
-```
 
 ```{r menghitung-stat-uji-10}
 # Hasil perhitungan statistik uji TIDAK diabsolutkan
@@ -590,15 +431,7 @@ Z_propKos
 
 Kesimpulan diambil dengan membandingkan nilai statistik uji (Z_propKos) dengan titik kritis (Z.crit_1tail). Untuk uji satu arah (kiri), kita menolak H₀ jika nilai statistik uji lebih kecil dari titik kritis. Jika tidak, kita gagal menolak H₀. Kesimpulan ini menjelaskan apakah ada cukup bukti untuk menyatakan proporsi memang lebih kecil dari nilai acuan.
 
-``` r
-if (Z_propKos < Z.crit_1tail) {
-  tolak_h0 <- TRUE
-  cat("Hipotesis kosong ditolak. Perbedaan proporsi penghuni Kos/Asrama sebanyak 0,417 dari 0,5 adalah signifikan")
-} else {
-  tolak_h0 <- FALSE  
-  cat("Hipotesis kosong gagal ditolak. Perbedaan proporsi penghuni Kos/Asrama sebanyak 0,417 dari 0,5 hanyalah kebetulan")
-}
-```
+
 
 ```{r menarik-kesimpulan-11}
 if (Z_propKos < Z.crit_1tail) {
@@ -620,29 +453,7 @@ Dua populasi dikatakan independen apabila tidak ada pengaruh antara populasi 1 d
 
 Pada langkah ini, kita akan membuat fungsi uji hipotesis rata-rata untuk dua populasi independen. Fungsi ini diperlukan karena kita ingin menghitung nilai statistik uji (Z) berdasarkan data ringkasan dari dua sampel Dengan fungsi ini, kita bisa langsung memasukkan nilai-nilai statistik dari kedua populasi dan mendapatkan nilai Z yang akan dibandingkan dengan titik kritis.
 
-``` r
-# Membuat fungsi uji hipotesis (hypothesis testing, ht) untuk rata-rata (mean)
-# dengan 1 populasi (2pop) Independen (In)
-# Keterangan input:
-#   - xbar1 : statistik rata-rata populasi #1
-#   - xbar2 : statistik rata-rata populasi #2
-#   - sd1   : statistik simpangan baku populasi #1
-#   - sd2   : statistik simpangan baku populasi #2
-#   - n1    : ukuran sampel dari populasi #1
-#   - n2    : ukuran sampel dari populasi #2
 
-ht_mean_2popIn <- function(xbar1, xbar2, sd1, sd2, n1, n2) {
-  se <- sqrt(             # Indentasi diberikan untuk memudahkan
-    (                     # pembacaan karena banyaknya tanda kurung
-      (sd1^2)/(n1 - 1)
-    ) + (
-      (sd2^2)/(n2 - 1)
-    )
-  )
-  Z_hitung <- (xbar1 - xbar2)/se # menghitung nilai Z dari statistik
-  return(Z_hitung)
-}
-```
 
 ```{r merumuskan-fungsi-12}
 ht_mean_2popIn <- function(xbar1, xbar2, sd1, sd2, n1, n2) {
@@ -662,16 +473,7 @@ ht_mean_2popIn <- function(xbar1, xbar2, sd1, sd2, n1, n2) {
 
 Sebelum menjalankan uji hipotesis, kita perlu mendapatkan data ringkasan berupa rata-rata, simpangan baku, dan jumlah sampel dari masing-masing populasi. Pada tahap ini, kita akan membuat tabel ringkasan jarak mahasiswa dari rumah ke kampus berdasarkan kelompok kampus. Data ini nantinya akan menjadi input untuk fungsi yang sudah kita buat di langkah sebelumnya. Dengan cara ini, kita bisa lebih mudah membandingkan dua populasi secara langsung.
 
-``` r
-# Menghasilkan tabel ringkasan jarak antarkampus
-summarize_Jarak2Pop <- data_mahasiswa |> # Operator |> adalah pipe untuk                                                   # meneruskan hasil ke fungsi berikutnya.
-  group_by(Kampus = kampus) |> # mengelompokkan data berdasarkan kolom kampus.
-  summarize(`Rata-rata` = mean(jarak_km),
-            `Simpangan baku` = sd(jarak_km),
-            Jumlah = n())
 
-summarize_Jarak2Pop
-```
 
 ```{r menghitung-mean-2-populasi-12}
 summarize_Jarak2Pop <- data_mahasiswa |>
@@ -687,14 +489,7 @@ summarize_Jarak2Pop
 
 Setelah mendapatkan ringkasan data, kita harus menyimpan nilai rata-rata, simpangan baku, dan ukuran sampel ke dalam variabel khusus. Variabel-variabel ini akan dipakai langsung sebagai input fungsi uji hipotesis. Dengan mendeklarasikannya lebih dulu, proses penghitungan menjadi lebih rapi dan mudah diikuti.
 
-``` r
-mean_jarakUINRIL <- summarize_Jarak2Pop$`Rata-rata`[3] # Tanda [ ] dipakai untuk  mean_jarakITERA <- summarize_Jarak2Pop$`Rata-rata`[1]  # memilih baris tertentu                                                          # dari tabel ringkasan.
-sd_jarakUINRIL <- summarize_Jarak2Pop$`Simpangan baku`[3]
-sd_jarakITERA <- summarize_Jarak2Pop$`Simpangan baku`[1]
 
-n_jarakUINRIL <- summarize_Jarak2Pop$Jumlah[3]
-n_jarakITERA <- summarize_Jarak2Pop$Jumlah[1]
-```
 
 ```{r mendeklarasikan-variabel-uji-13s}
 mean_jarakUINRIL <- summarize_Jarak2Pop$`Rata-rata`[3]
@@ -713,10 +508,7 @@ n_jarakITERA <- summarize_Jarak2Pop$Jumlah[1]
 
 Sama seerti sebelumnya, langkah pertama dalam uji hipotesis adalah menyusun hipotesis nol (H0) dan hipotesis alternatif (H1). Untuk kasus two-tailed test, hipotesis alternatif menyatakan adanya perbedaan rata-rata tanpa menyebutkan arah (lebih besar atau lebih kecil). Artinya, kita hanya ingin tahu apakah terdapat perbedaan signifikan atau tidak, tanpa peduli siapa yang lebih besar. Hipotesis nol menyatakan tidak ada perbedaan, atau selisih rata-rata sama dengan nol.
 
-``` r
-cat("H0: mu_jarakUINRIL - mu_jarakITERA = 0",
-    "\n\nH1: mu_jarakUINRIL - mu_jarakITERA != 0")
-```
+
 
 ```{r merumuskan-hipotesis-15}
 cat("H0: mu_jarakUINRIL - mu_jarakITERA = 0",
@@ -727,14 +519,7 @@ cat("H0: mu_jarakUINRIL - mu_jarakITERA = 0",
 
 Setelah hipotesis dirumuskan, kita harus menentukan distribusi sampling yang dipakai serta wilayah kritisnya. Karena ukuran sampel cukup besar, distribusi normal standar (Z) digunakan sebagai acuan. Untuk two-tailed test, wilayah kritis terbagi dua sama besar di kedua sisi kurva distribusi. Nilai kritis diperoleh dari tabel distribusi normal pada α/2, lalu dibuat dalam bentuk absolut karena titik kritis simetris di kedua sisi.
 
-``` r
-# Hipotesis yang dipakai tidak berarah, maka wilayah kritis adalah alpha/2
-alpha <- 0.001
 
-Z.crit_2tail <- abs(qnorm(alpha/2)) # Nilai yang digunakan adalah nilai absolut, karena dibagi 2, tanda tidak berpengaruh
-
-cat("Titik kritis uji two-tailed:",Z.crit_2tail)
-```
 
 ```{r memilih-distribusi-sampling-wil-titik-kritis-15}
 # Hipotesis yang dipakai tidak berarah, maka wilayah kritis adalah alpha/2
@@ -749,14 +534,7 @@ cat("Titik kritis uji two-tailed:", Z.crit_2tail)
 
 Setelah mengetahui titik kritis, kita hitung nilai statistik uji (Z) dari data yang dimiliki. Nilai ini diperoleh dengan memasukkan rata-rata, simpangan baku, dan ukuran sampel ke fungsi ht_mean_2popIn. Karena pengujian dilakukan dua sisi, nilai Z hasil perhitungan diabsolutkan agar bisa dibandingkan langsung dengan titik kritis.
 
-``` r
-# hasil perhitungan statistik uji diabsolutkan untuk mengambil nilainya saja tanpa tandanya
-Z_meanJarak2Pop <- abs(ht_mean_2popIn(mean_jarakUINRIL, mean_jarakITERA,
-                                      sd_jarakUINRIL, sd_jarakITERA,
-                                      n_jarakUINRIL, n_jarakITERA))
 
-Z_meanJarak2Pop
-```
 
 ```{r menghitung-stat-uji-a}
 # Hasil perhitungan statistik uji diabsolutkan
@@ -771,15 +549,7 @@ Z_meanJarak2Pop
 
 Langkah terakhir adalah membandingkan nilai statistik uji dengan titik kritis. Jika Z hitung lebih kecil dari Z kritis, maka H0 gagal ditolak, artinya perbedaan rata-rata jarak antara dua populasi kemungkinan hanyalah kebetulan. Jika Z hitung lebih besar, maka H0 ditolak, yang berarti terdapat cukup bukti untuk menyatakan adanya perbedaan.
 
-``` r
-if (Z_meanJarak2Pop < Z.crit_2tail) {
-  tolak_h0 <- FALSE
-  cat("Hipotesis kosong gagal ditolak. Perbedaan rata-rata jarak mahasiswa UINRIL dengan ITERA dari sampel hanyalah kebetulan, tidak signifikan. Mahasiswa UINRIL dan ITERA tinggal dengan jarak yang sama dari tempat tinggal ke kampus")
-} else {
-  tolak_h0 <- TRUE  
-  cat("Hipotesis kosong ditolak. Perbedaan rata-rata jarak mahasiswa UINRIL dengan ITERA dari sampel signifikan. Mahasiswa UINRIL dan ITERA tinggal dengan jarak yang berbeda dari tempat tinggal ke kampus")
-}
-```
+
 
 ```{r menarik-kesimpulan-b}
 if (Z_meanJarak2Pop < Z.crit_2tail) {
@@ -797,10 +567,7 @@ if (Z_meanJarak2Pop < Z.crit_2tail) {
 
 Untuk one-tailed test, hipotesis alternatif (H1) menyebutkan arah perbedaan yang spesifik, misalnya rata-rata populasi 1 lebih kecil dari populasi 2. Berbeda dengan two-tailed test yang hanya memeriksa “ada perbedaan”, one-tailed test lebih fokus untuk mengetahui apakah perbedaan itu terjadi sesuai arah yang dihipotesiskan. Hipotesis nol (H0) tetap menyatakan tidak ada perbedaan, tetapi pengujian difokuskan hanya pada satu sisi distribusi.
 
-``` r
-cat("H0: mu_jarakUINRIL - mu_jarakITERA = 0",
-    "\n\nH1: mu_jarakUINRIL - mu_jarakITERA < 0")
-```
+
 
 ```{r merumuskan-hipotesis-c}
 cat("H0: mu_jarakUINRIL - mu_jarakITERA = 0",
@@ -811,21 +578,7 @@ cat("H0: mu_jarakUINRIL - mu_jarakITERA = 0",
 
 Dalam pengujian one-tailed, kita perlu menentukan sisi mana yang akan digunakan sebagai wilayah kritis. Jika hipotesis alternatif menyebutkan “lebih kecil”, maka wilayah kritis berada di sisi kiri distribusi. Sebaliknya, jika hipotesis menyebutkan “lebih besar”, wilayah kritis diletakkan di sisi kanan.
 
-``` r
-# Untuk hipotesis berarah (lebih besar/lebih kecil) kita perlu
-# menentukan sendiri di sisi mana wilayah kritis kita ditempatkan
-# dengan menggunakan alpha atau 1 - alpha
 
-tail <- "kiri"
-
-if (tail == "kiri") {
-  Z.crit_1tail <- qnorm(alpha)
-} else {
-  Z.crit_1tail <- qnorm(1-alpha)
-}
-
-cat("Titik kritis uji one-tailed:",Z.crit_1tail)
-```
 
 ```{r memilih-distribusi-sampling-wil-titik-kritis-a}
 tail <- "kiri"
@@ -843,14 +596,7 @@ cat("Titik kritis uji one-tailed:", Z.crit_1tail)
 
 Selanjutnya, kita menghitung nilai statistik uji menggunakan fungsi ht_mean_2popIn. Berbeda dengan two-tailed test, pada one-tailed test nilai Z tidak diabsolutkan karena arah perbedaan menjadi penting.
 
-``` r
-# hasil perhitungan statistik uji TIDAK diabsolutkan sehingga melibatkan tanda
-Z_meanJarak2Pop <- ht_mean_2popIn(mean_jarakUINRIL, mean_jarakITERA,
-                                  sd_jarakUINRIL, sd_jarakITERA,
-                                  n_jarakUINRIL, n_jarakITERA)
 
-Z_meanJarak2Pop
-```
 
 ```{r menghitung-stat-uji-d}
 # Hasil perhitungan statistik uji TIDAK diabsolutkan
@@ -865,15 +611,7 @@ Z_meanJarak2Pop
 
 Tahap terakhir adalah menarik kesimpulan dengan cara membandingkan nilai statistik uji terhadap titik kritis. Jika nilai Z hitung jatuh pada wilayah kritis (misalnya lebih kecil dari Z kritis kiri), maka hipotesis nol ditolak. Artinya, ada bukti cukup untuk menyatakan rata-rata jarak mahasiswa ITERA memang lebih kecil dari mahasiswa UINRIL sesuai hipotesis arah. Jika tidak, maka hipotesis nol gagal ditolak, dan kita simpulkan bahwa arah perbedaan yang diduga tidak terbukti secara signifikan.
 
-``` r
-if (Z_meanJarak2Pop < Z.crit_1tail) {
-  tolak_h0 <- TRUE
-  cat("Hipotesis kosong ditolak. Rata-rata jarak pada sampel mahasiswa UINRIL dengan ITERA menunjukkan perbedaan yang signifikan. Mahasiswa ITERA secara rata-rata tinggal lebih jauh dari kampus dibandingkan mahasiswa UINRIL")
-} else {
-  tolak_h0 <- FALSE  
-  cat("Hipotesis kosong gagal ditolak. Rata-rata jarak pada sampel mahasiswa UINRIL dengan ITERA tidak menunjukkan perbedaan yang signifikan. Baik mahasiswa ITERA maupun UINRIL rata-rata jarak tempat tinggalnya ke kampus tidak ada yang lebih jauh atau lebih dekat")
-}
-```
+
 
 ```{r menarik-kesimpulan-c}
 if (Z_meanJarak2Pop < Z.crit_1tail) {
