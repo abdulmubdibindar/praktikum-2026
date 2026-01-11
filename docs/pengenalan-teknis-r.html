@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Page not found | Praktikum-01 Pengenalan Data Terstruktur</title>
-  <meta name="description" content="Page not found | Praktikum-01 Pengenalan Data Terstruktur" />
+  <title>Pengenalan Teknis R | Praktikum-01 Pengenalan Data Terstruktur</title>
+  <meta name="description" content="Pengenalan Teknis R | Praktikum-01 Pengenalan Data Terstruktur" />
   <meta name="generator" content="bookdown 0.46 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Page not found | Praktikum-01 Pengenalan Data Terstruktur" />
+  <meta property="og:title" content="Pengenalan Teknis R | Praktikum-01 Pengenalan Data Terstruktur" />
   <meta property="og:type" content="book" />
   
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Page not found | Praktikum-01 Pengenalan Data Terstruktur" />
+  <meta name="twitter:title" content="Pengenalan Teknis R | Praktikum-01 Pengenalan Data Terstruktur" />
   
   
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-
+<link rel="prev" href="pengenalan-r-rstudio-dan-r-markdown.html"/>
+<link rel="next" href="modul-1-pengolahan-data-terstruktur.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -397,19 +397,119 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="page-not-found" class="section level1">
-<h1>Page not found</h1>
-<p>The page you requested cannot be found (perhaps it was moved or renamed).</p>
-<p>You may want to try searching to find the page's new location, or use
-the table of contents to find the page you are looking for.</p>
+<div id="pengenalan-teknis-r" class="section level1 unnumbered hasAnchor">
+<h1>Pengenalan Teknis R<a href="pengenalan-teknis-r.html#pengenalan-teknis-r" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Sebelum memulai praktikum dengan set data sesungguhnya, ada baiknya kita memahami beberapa konsep teknis dasar dalam bahasa pemrograman R. Bagian ini merangkum keterampilan-keterampilan dasar yang akan kalian temui tersebar di modul-modul praktikum.</p>
+<div id="sintaks-dasar" class="section level2 hasAnchor" number="0.4">
+<h2><span class="header-section-number">0.4</span> Sintaks Dasar<a href="pengenalan-teknis-r.html#sintaks-dasar" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="komentar" class="section level3 hasAnchor" number="0.4.1">
+<h3><span class="header-section-number">0.4.1</span> Komentar<a href="pengenalan-teknis-r.html#komentar" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Di R, segala sesuatu yang ditulis setelah tanda pagar (<code>#</code>) dianggap sebagai komentar dan tidak akan dieksekusi oleh komputer. Komentar berguna untuk memberikan catatan pada kode kita.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="pengenalan-teknis-r.html#cb1-1" tabindex="-1"></a><span class="co"># Ini adalah komentar</span></span>
+<span id="cb1-2"><a href="pengenalan-teknis-r.html#cb1-2" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span> <span class="co"># Kode ini akan menghitung 1 + 1</span></span></code></pre></div>
+</div>
+<div id="assignment-pemberian-nilai" class="section level3 hasAnchor" number="0.4.2">
+<h3><span class="header-section-number">0.4.2</span> <em>Assignment</em> (Pemberian Nilai)<a href="pengenalan-teknis-r.html#assignment-pemberian-nilai" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Untuk menyimpan nilai ke dalam variabel/objek, kita menggunakan tanda panah kiri (<code>&lt;-</code>). Kalian juga bisa menggunakan tanda sama dengan (<code>=</code>), namun <code>&lt;-</code> adalah standar yang lebih disarankan di komunitas R.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="pengenalan-teknis-r.html#cb2-1" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="dv">10</span></span>
+<span id="cb2-2"><a href="pengenalan-teknis-r.html#cb2-2" tabindex="-1"></a>nama <span class="ot">&lt;-</span> <span class="st">&quot;Budi&quot;</span></span></code></pre></div>
+</div>
+<div id="case-sensitivity" class="section level3 hasAnchor" number="0.4.3">
+<h3><span class="header-section-number">0.4.3</span> <em>Case Sensitivity</em><a href="pengenalan-teknis-r.html#case-sensitivity" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>R membedakan huruf besar dan huruf kecil (<em>case sensitive</em>). Variabel <code>Data</code> dianggap berbeda dengan <code>data</code>.</p>
+</div>
+</div>
+<div id="paket-packages" class="section level2 hasAnchor" number="0.5">
+<h2><span class="header-section-number">0.5</span> Paket (<em>Packages</em>)<a href="pengenalan-teknis-r.html#paket-packages" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>R memiliki ribuan paket tambahan yang menyediakan fungsi-fungsi khusus.</p>
+<ul>
+<li><strong><code>install.packages("nama_paket")</code></strong>: Digunakan untuk mengunduh dan menginstal paket dari internet ke komputer kita. Ini cukup dilakukan satu kali saja.</li>
+<li><strong><code>library(nama_paket)</code></strong>: Digunakan untuk memuat paket yang sudah terinstal ke dalam sesi kerja kita agar isinya bisa digunakan. Ini harus dilakukan setiap kali kita membuka RStudio baru.</li>
+</ul>
+<p>Paket utama yang akan sering kita gunakan adalah:</p>
+<ul>
+<li><strong><code>tidyverse</code></strong>: Kumpulan paket untuk pengolahan data modern.</li>
+<li><strong><code>openxlsx</code></strong>: Untuk membaca dan menulis file Excel.</li>
+</ul>
+</div>
+<div id="fungsi-functions" class="section level2 hasAnchor" number="0.6">
+<h2><span class="header-section-number">0.6</span> Fungsi (<em>Functions</em>)<a href="pengenalan-teknis-r.html#fungsi-functions" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Fungsi adalah serangkaian instruksi yang dibungkus menjadi satu perintah untuk melakukan tugas tertentu. R memiliki banyak fungsi bawaan, dan kita juga bisa membuat fungsi sendiri.</p>
+<div id="menggunakan-fungsi" class="section level3 hasAnchor" number="0.6.1">
+<h3><span class="header-section-number">0.6.1</span> Menggunakan Fungsi<a href="pengenalan-teknis-r.html#menggunakan-fungsi" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Untuk menggunakan fungsi, kita memanggil namanya diikuti dengan tanda kurung <code>()</code>. Di dalam tanda kurung, kita bisa memasukkan <strong>argumen</strong> (input).</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="pengenalan-teknis-r.html#cb3-1" tabindex="-1"></a><span class="co"># Contoh fungsi bawaan: mean (rata-rata)</span></span>
+<span id="cb3-2"><a href="pengenalan-teknis-r.html#cb3-2" tabindex="-1"></a>nilai <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">10</span>, <span class="dv">20</span>, <span class="dv">30</span>)</span>
+<span id="cb3-3"><a href="pengenalan-teknis-r.html#cb3-3" tabindex="-1"></a>rata_rata <span class="ot">&lt;-</span> <span class="fu">mean</span>(nilai) <span class="co"># Hasil: 20</span></span></code></pre></div>
+</div>
+<div id="membuat-fungsi-sendiri" class="section level3 hasAnchor" number="0.6.2">
+<h3><span class="header-section-number">0.6.2</span> Membuat Fungsi Sendiri<a href="pengenalan-teknis-r.html#membuat-fungsi-sendiri" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Kita dapat membuat fungsi kustom menggunakan perintah <code>function()</code>. Struktur dasarnya adalah:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="pengenalan-teknis-r.html#cb4-1" tabindex="-1"></a>nama_fungsi <span class="ot">&lt;-</span> <span class="cf">function</span>(input) {</span>
+<span id="cb4-2"><a href="pengenalan-teknis-r.html#cb4-2" tabindex="-1"></a>  <span class="co"># Proses yang dilakukan</span></span>
+<span id="cb4-3"><a href="pengenalan-teknis-r.html#cb4-3" tabindex="-1"></a>  hasil <span class="ot">&lt;-</span> input <span class="sc">*</span> <span class="dv">2</span></span>
+<span id="cb4-4"><a href="pengenalan-teknis-r.html#cb4-4" tabindex="-1"></a>  <span class="fu">return</span>(hasil)</span>
+<span id="cb4-5"><a href="pengenalan-teknis-r.html#cb4-5" tabindex="-1"></a>}</span></code></pre></div>
+<p>Ini akan sangat berguna ketika kita ingin melakukan perhitungan yang sama berulang kali, seperti pada perhitungan IQV di Modul 2.</p>
+</div>
+</div>
+<div id="struktur-data-dasar" class="section level2 hasAnchor" number="0.7">
+<h2><span class="header-section-number">0.7</span> Struktur Data Dasar<a href="pengenalan-teknis-r.html#struktur-data-dasar" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="vektor" class="section level3 hasAnchor" number="0.7.1">
+<h3><span class="header-section-number">0.7.1</span> Vektor<a href="pengenalan-teknis-r.html#vektor" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Vektor adalah struktur data paling dasar di R yang menampung deretan nilai dengan tipe yang sama. Kita membuatnya dengan fungsi <code>c()</code> (<em>combine</em>).</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="pengenalan-teknis-r.html#cb5-1" tabindex="-1"></a>angka <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>)</span>
+<span id="cb5-2"><a href="pengenalan-teknis-r.html#cb5-2" tabindex="-1"></a>huruf <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;a&quot;</span>, <span class="st">&quot;b&quot;</span>, <span class="st">&quot;c&quot;</span>)</span></code></pre></div>
+</div>
+<div id="tipe-data" class="section level3 hasAnchor" number="0.7.2">
+<h3><span class="header-section-number">0.7.2</span> Tipe Data<a href="pengenalan-teknis-r.html#tipe-data" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Saat mengolah data, kalian akan sering menemukan singkatan tipe data berikut:</p>
+<ul>
+<li><strong><code>dbl</code> (Double)</strong>: Angka numerik (bisa desimal).</li>
+<li><strong><code>chr</code> (Character)</strong>: Teks atau <em>string</em>. Ditandai dengan tanda kutip.</li>
+<li><strong><code>fct</code> (Factor)</strong>: Data kategorik (bisa nominal atau ordinal). Factor menyimpan nilai sebagai angka di belakang layar namun menampilkan label teks, yang berguna untuk analisis statistik dan plot.</li>
+</ul>
+</div>
+<div id="data-frame-dan-tibble" class="section level3 hasAnchor" number="0.7.3">
+<h3><span class="header-section-number">0.7.3</span> Data Frame dan Tibble<a href="pengenalan-teknis-r.html#data-frame-dan-tibble" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Data dalam R biasanya disimpan dalam bentuk tabel yang disebut <em>Data Frame</em>. Di era modern (tidyverse), kita sering menggunakan versi yang lebih canggih disebut <strong>Tibble</strong>. Strukturnya mirip spreadsheet: baris mewakili observasi, kolom mewakili variabel.</p>
+</div>
+</div>
+<div id="operator-pipa" class="section level2 hasAnchor" number="0.8">
+<h2><span class="header-section-number">0.8</span> Operator Pipa (<code>|&gt;</code>)<a href="pengenalan-teknis-r.html#operator-pipa" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Dalam <code>tidyverse</code>, kita sering menggunakan operator pipa (<code>|&gt;</code>) untuk merangkai beberapa perintah sekaligus. Bayangkan ini sebagai penyambung proses:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="pengenalan-teknis-r.html#cb6-1" tabindex="-1"></a><span class="co"># Tanpa pipa</span></span>
+<span id="cb6-2"><a href="pengenalan-teknis-r.html#cb6-2" tabindex="-1"></a>hasil <span class="ot">&lt;-</span> <span class="fu">fungsi_2</span>(<span class="fu">fungsi_1</span>(data))</span>
+<span id="cb6-3"><a href="pengenalan-teknis-r.html#cb6-3" tabindex="-1"></a></span>
+<span id="cb6-4"><a href="pengenalan-teknis-r.html#cb6-4" tabindex="-1"></a><span class="co"># Dengan pipa (lebih mudah dibaca)</span></span>
+<span id="cb6-5"><a href="pengenalan-teknis-r.html#cb6-5" tabindex="-1"></a>data <span class="sc">|&gt;</span> </span>
+<span id="cb6-6"><a href="pengenalan-teknis-r.html#cb6-6" tabindex="-1"></a>  <span class="fu">fungsi_1</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb6-7"><a href="pengenalan-teknis-r.html#cb6-7" tabindex="-1"></a>  <span class="fu">fungsi_2</span>()</span></code></pre></div>
+<p>Artinya: “Ambil <code>data</code>, lalu <code>fungsi_1</code>, kemudian hasilnya dimasukkan ke <code>fungsi_2</code>.”</p>
+</div>
+<div id="manajemen-data-inputoutput" class="section level2 hasAnchor" number="0.9">
+<h2><span class="header-section-number">0.9</span> Manajemen Data (Input/Output)<a href="pengenalan-teknis-r.html#manajemen-data-inputoutput" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="membaca-data" class="section level3 hasAnchor" number="0.9.1">
+<h3><span class="header-section-number">0.9.1</span> Membaca Data<a href="pengenalan-teknis-r.html#membaca-data" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Kita sering menggunakan <code>read.xlsx()</code> dari paket <code>openxlsx</code> untuk membaca file Excel.</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="pengenalan-teknis-r.html#cb7-1" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">read.xlsx</span>(<span class="st">&quot;folder/nama_file.xlsx&quot;</span>, <span class="at">sheet =</span> <span class="st">&quot;nama_sheet&quot;</span>)</span></code></pre></div>
+</div>
+<div id="menyimpan-data" class="section level3 hasAnchor" number="0.9.2">
+<h3><span class="header-section-number">0.9.2</span> Menyimpan Data<a href="pengenalan-teknis-r.html#menyimpan-data" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Setelah diolah, data bisa disimpan kembali ke Excel atau CSV.</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="pengenalan-teknis-r.html#cb8-1" tabindex="-1"></a><span class="fu">write.xlsx</span>(data, <span class="st">&quot;folder/nama_file_baru.xlsx&quot;</span>)</span>
+<span id="cb8-2"><a href="pengenalan-teknis-r.html#cb8-2" tabindex="-1"></a><span class="fu">write.csv2</span>(data, <span class="st">&quot;folder/nama_file_baru.csv&quot;</span>) <span class="co"># Format CSV Excel Indonesia (pemisah titik koma)</span></span></code></pre></div>
+
+</div>
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-
+<a href="pengenalan-r-rstudio-dan-r-markdown.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="modul-1-pengolahan-data-terstruktur.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

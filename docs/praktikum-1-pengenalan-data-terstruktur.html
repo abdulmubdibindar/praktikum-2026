@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Page not found | Praktikum-01 Pengenalan Data Terstruktur</title>
-  <meta name="description" content="Page not found | Praktikum-01 Pengenalan Data Terstruktur" />
+  <title>10 Praktikum-1: Pengenalan Data Terstruktur | Praktikum-01 Pengenalan Data Terstruktur</title>
+  <meta name="description" content="10 Praktikum-1: Pengenalan Data Terstruktur | Praktikum-01 Pengenalan Data Terstruktur" />
   <meta name="generator" content="bookdown 0.46 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Page not found | Praktikum-01 Pengenalan Data Terstruktur" />
+  <meta property="og:title" content="10 Praktikum-1: Pengenalan Data Terstruktur | Praktikum-01 Pengenalan Data Terstruktur" />
   <meta property="og:type" content="book" />
   
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Page not found | Praktikum-01 Pengenalan Data Terstruktur" />
+  <meta name="twitter:title" content="10 Praktikum-1: Pengenalan Data Terstruktur | Praktikum-01 Pengenalan Data Terstruktur" />
   
   
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-
+<link rel="prev" href="modul-9-analisis-hubungan-multivariat-interdependensi---analisis-faktor-dan-pca.html"/>
+<link rel="next" href="heading-1.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -397,19 +397,81 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="page-not-found" class="section level1">
-<h1>Page not found</h1>
-<p>The page you requested cannot be found (perhaps it was moved or renamed).</p>
-<p>You may want to try searching to find the page's new location, or use
-the table of contents to find the page you are looking for.</p>
+<div id="praktikum-1-pengenalan-data-terstruktur" class="section level1 hasAnchor" number="10">
+<h1><span class="header-section-number">10</span> Praktikum-1: Pengenalan Data Terstruktur<a href="praktikum-1-pengenalan-data-terstruktur.html#praktikum-1-pengenalan-data-terstruktur" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<blockquote>
+<p>Setelah mempelajari praktikum ini mahasiswa diharapkan dapat:</p>
+<ol style="list-style-type: decimal">
+<li>menganalisis variabel dan objek dalam sebuah format data terstruktur <strong><code>STP-1.3</code></strong></li>
+<li>mengelola data terstruktur dengan tepat menggunakan perangkat komputer <strong><code>STP-1.4</code></strong></li>
+</ol>
+</blockquote>
+<hr />
+<p>Sebelum masuk ke inti pembahasan mengenai data terstruktur, kita akan mempelajari terlebih dahulu dasar-dasar R, RStudio, dan juga R Markdown.</p>
+<div id="pengenalan-r-rstudio-dan-r-markdown-1" class="section level2 hasAnchor" number="10.1">
+<h2><span class="header-section-number">10.1</span> 1. Pengenalan R, RStudio, dan R Markdown<a href="praktikum-1-pengenalan-data-terstruktur.html#pengenalan-r-rstudio-dan-r-markdown-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="r" class="section level3 hasAnchor" number="10.1.1">
+<h3><span class="header-section-number">10.1.1</span> 1.1. R<a href="praktikum-1-pengenalan-data-terstruktur.html#r" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Selamat datang di dokumen R pertama Anda! Anda sekarang sedang menggunakan bahasa <a href="https://www.r-project.org/">R, bahasa pemrograman khusus analisis statistik</a> yang saat ini banyak digunakan dan populer di kalangan <em>data analyst</em> dan <em>data engineers</em>.</p>
+<p>Ibarat masakan dan resep. R itu berbasis teks/<em>character</em>, ibarat kalau memasak menuliskan resep. Jadi bisa ditiru. Sementara, <em>software</em> lain yang berbasis graphical seperti SPSS atau ArcGIS itu ibarat menceritakan saja, jadi tidak mudah ditiru. Istilah lainnya mempunyai reproduksibilitas.</p>
+</div>
+<div id="rstudio" class="section level3 hasAnchor" number="10.1.2">
+<h3><span class="header-section-number">10.1.2</span> 1.2. RStudio<a href="praktikum-1-pengenalan-data-terstruktur.html#rstudio" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Perangkat lunak yang sedang Anda gunakan bernama <a href="https://posit.co/downloads/"><strong>RStudio</strong></a>, sebuah IDE <em>(integrated development environment)</em>, tempat Anda mengembangkan kode, menjalankan perintah, dan melihat hasil dari kode Anda.</p>
+<p>Bayangkan RStudio seperti sebuah dapur yang sangat lengkap. Bahan-bahan makanan tersimpan di kulkas. Peralatan memasak seperti pisau, alas memotong, panci, semua tersusun pada raknya masing-masing. Untuk dapat memasak, Anda bisa menyuruh koki Anda untuk melakukannya. Tetapi, koki Anda itu hanya mengerti satu bahasa saja: bahasa R. Untuk itu, Anda harus bisa menguasai bahasa tersebut untuk memintanya membuat masakan yang Anda kehendaki.</p>
+<p>Gambar berikut memberikan penjelasan singkat tentang tampilan jendela RStudio yang terdiri atas 4 panel.</p>
+<div class="float">
+<img src="jendela_rstudio.png" alt="Bagian-bagian Jendela RStudio" />
+<div class="figcaption">Bagian-bagian Jendela RStudio</div>
+</div>
+<ol style="list-style-type: decimal">
+<li>Panel <em>Environment</em> yang menampilkan daftar data atau variabel yang telah kita impor atau buat.</li>
+<li>Panel <em>Files, Plots, dan Help</em>, tempat kita melihat daftar <em>file</em> yang tersedia, grafik yang dihasilkan, dan menemukan dokumen bantuan untuk berbagai bagian dari R.</li>
+<li>Panel <em>Console</em>, digunakan untuk menjalankan kode.</li>
+<li>Panel <em>Script</em>, digunakan untuk menulis kode. Di sinilah kita akan menghabiskan sebagian besar waktu kerja kita.</li>
+</ol>
+</div>
+<div id="r-markdown" class="section level3 hasAnchor" number="10.1.3">
+<h3><span class="header-section-number">10.1.3</span> 1.3. R Markdown<a href="praktikum-1-pengenalan-data-terstruktur.html#r-markdown" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>R Markdown adalah format <em>file</em> yang menggabungkan <em>script</em> R dan juga <a href="https://www.markdownguide.org/getting-started/">Markdown</a>. Singkatnya, Markdown adalah bahasa penulisan ringan yang digunakan untuk membuat teks lebih terstruktur tanpa perlu software rumit. Dengan Markdown, Anda bisa menambahkan judul, daftar, tautan, atau menebalkan teks hanya dengan simbol sederhana seperti # atau *. Bahasa ini sering dipakai untuk menulis dokumentasi, catatan, dan konten web karena mudah dibaca dalam bentuk asli maupun setelah diubah ke HTML.</p>
+<p>Dengan menggunakan R Markdown, Anda bisa membuat <em>script</em> kode yang berisi keterangan penggunaannya dengan sejelas mungkin karena formatnya bisa bervariasi dan tidak sekaku <em>script</em> kode R biasa.</p>
+</div>
+<div id="mulai-menggunakan-r-markdown" class="section level3 hasAnchor" number="10.1.4">
+<h3><span class="header-section-number">10.1.4</span> 1.4. Mulai Menggunakan R Markdown<a href="praktikum-1-pengenalan-data-terstruktur.html#mulai-menggunakan-r-markdown" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Markdown memiliki “sintaks” (aturan penulisan) untuk memformat teks. Berikut ini dipaparkan sintaks-sintaks yang penting digunakan. Pelajarilah masing-masing sintaks di bawah untuk masing-masing keperluannya. Untuk sisanya, silakan pelajari sendiri di <a href="https://rmarkdown.rstudio.com/authoring_basics.html">tautan ini</a>.</p>
+<blockquote>
+<p>⚠️<strong>Penting</strong></p>
+<p>Untuk dapat mencoba teks di dalam kotak-kotak berikut pindahkan terlebih dahulu mode <strong>Visual</strong> ke mode <strong>Source</strong> di bagian kiri atas kotak Editor ini baru ketikkan sintaksnya.</p>
+</blockquote>
+<div id="tebalmiring" class="section level4 hasAnchor" number="10.1.4.1">
+<h4><span class="header-section-number">10.1.4.1</span> 1.4.1. Tebal/Miring<a href="praktikum-1-pengenalan-data-terstruktur.html#tebalmiring" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<div class="sourceCode" id="cb963"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb963-1"><a href="praktikum-1-pengenalan-data-terstruktur.html#cb963-1" tabindex="-1"></a>*miring* atau _miring_</span>
+<span id="cb963-2"><a href="praktikum-1-pengenalan-data-terstruktur.html#cb963-2" tabindex="-1"></a></span>
+<span id="cb963-3"><a href="praktikum-1-pengenalan-data-terstruktur.html#cb963-3" tabindex="-1"></a>**tebal** atau __tebal__</span></code></pre></div>
+<p><em>miring</em> atau <em>miring</em></p>
+<p>menghasilkan:</p>
+<p><em>miring</em> atau <em>miring</em></p>
+<p><strong>tebal</strong> atau <strong>tebal</strong></p>
+</div>
+<div id="tajukheading" class="section level4 hasAnchor" number="10.1.4.2">
+<h4><span class="header-section-number">10.1.4.2</span> 1.4.2. Tajuk/<em>Heading</em><a href="praktikum-1-pengenalan-data-terstruktur.html#tajukheading" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<div class="sourceCode" id="cb964"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb964-1"><a href="praktikum-1-pengenalan-data-terstruktur.html#cb964-1" tabindex="-1"></a><span class="fu"># Heading 1</span></span>
+<span id="cb964-2"><a href="praktikum-1-pengenalan-data-terstruktur.html#cb964-2" tabindex="-1"></a></span>
+<span id="cb964-3"><a href="praktikum-1-pengenalan-data-terstruktur.html#cb964-3" tabindex="-1"></a><span class="fu">## Heading 2</span></span>
+<span id="cb964-4"><a href="praktikum-1-pengenalan-data-terstruktur.html#cb964-4" tabindex="-1"></a></span>
+<span id="cb964-5"><a href="praktikum-1-pengenalan-data-terstruktur.html#cb964-5" tabindex="-1"></a><span class="fu">### Heading 3, dan seterusnya hingga Heading 6</span></span></code></pre></div>
+<p>menghasilkan</p>
+</div>
+</div>
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-
+<a href="modul-9-analisis-hubungan-multivariat-interdependensi---analisis-faktor-dan-pca.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="heading-1.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

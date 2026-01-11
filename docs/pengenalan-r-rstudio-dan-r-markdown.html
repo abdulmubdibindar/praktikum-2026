@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Page not found | Praktikum-01 Pengenalan Data Terstruktur</title>
-  <meta name="description" content="Page not found | Praktikum-01 Pengenalan Data Terstruktur" />
+  <title>Pengenalan R, RStudio, dan R Markdown | Praktikum-01 Pengenalan Data Terstruktur</title>
+  <meta name="description" content="Pengenalan R, RStudio, dan R Markdown | Praktikum-01 Pengenalan Data Terstruktur" />
   <meta name="generator" content="bookdown 0.46 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Page not found | Praktikum-01 Pengenalan Data Terstruktur" />
+  <meta property="og:title" content="Pengenalan R, RStudio, dan R Markdown | Praktikum-01 Pengenalan Data Terstruktur" />
   <meta property="og:type" content="book" />
   
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Page not found | Praktikum-01 Pengenalan Data Terstruktur" />
+  <meta name="twitter:title" content="Pengenalan R, RStudio, dan R Markdown | Praktikum-01 Pengenalan Data Terstruktur" />
   
   
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-
+<link rel="prev" href="index.html"/>
+<link rel="next" href="pengenalan-teknis-r.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -397,19 +397,79 @@ div.csl-indent {
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="page-not-found" class="section level1">
-<h1>Page not found</h1>
-<p>The page you requested cannot be found (perhaps it was moved or renamed).</p>
-<p>You may want to try searching to find the page's new location, or use
-the table of contents to find the page you are looking for.</p>
+<div id="pengenalan-r-rstudio-dan-r-markdown" class="section level1 unnumbered hasAnchor">
+<h1>Pengenalan R, RStudio, dan R Markdown<a href="pengenalan-r-rstudio-dan-r-markdown.html#pengenalan-r-rstudio-dan-r-markdown" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Selamat datang di dunia pengolahan data yang lebih canggih! Dalam praktikum ini, kalian akan berkenalan dengan teknik pengolahan dan analisis data yang lebih canggih, yakni dengan menggunakan bahasa pemrograman bernama R. R adalah bahasa pemrograman yang dibuat khusus untuk keperluan analisis statistik.</p>
+<div id="apa-itu-r" class="section level2 hasAnchor" number="0.1">
+<h2><span class="header-section-number">0.1</span> Apa itu R?<a href="pengenalan-r-rstudio-dan-r-markdown.html#apa-itu-r" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>R adalah lingkungan perangkat lunak (<em>software environment</em>) dan bahasa pemrograman yang digunakan untuk komputasi statistik dan grafik. R dikembangkan oleh Ross Ihaka dan Robert Gentleman di Universitas Auckland, Selandia Baru, pada awal tahun 1990-an sebagai evolusi dari bahasa S yang sebelumnya dikembangkan di Bell Laboratories <span class="citation">(<a href="#ref-history_overview_r">Peng 2026</a>)</span>. R bersifat <em>open-source</em> (berlisensi GNU GPL), yang berarti dapat digunakan secara gratis dan dikembangkan secara kolaboratif oleh komunitas global <span class="citation">(<a href="#ref-r_wikipedia">Wikipedia contributors 2026</a>)</span>.</p>
+<p>Keunggulan utama R dalam konteks perencanaan dan pemerintahan meliputi:</p>
+<ol style="list-style-type: decimal">
+<li><strong>Ekosistem Paket yang Luas</strong>: R memiliki puluhan ribu paket (<em>packages</em>) di CRAN untuk berbagai keperluan, mulai dari manipulasi data, pemodelan statistik, hingga analisis geospasial menggunakan <code>sf</code> dan <code>terra</code> <span class="citation">(<a href="#ref-spatial_r_sf">UVA Library 2026</a>; <a href="#ref-spatial_data_science_terra">R Spatial 2026</a>)</span>.</li>
+<li><strong>Visualisasi Data</strong>: Dengan paket seperti <code>ggplot2</code> dan <code>Shiny</code>, R memungkinkan pembuatan grafik berkualitas tinggi dan dashboard interaktif yang informatif <span class="citation">(<a href="#ref-shiny_gallery">Posit 2026b</a>)</span>.</li>
+<li><strong>Dukungan Kebijakan Berbasis Data</strong>: R mendukung implementasi kebijakan “Satu Data Indonesia” dengan kemampuan standardisasi, interoperabilitas, dan transparansi metode analisis yang dapat diaudit <span class="citation">(<a href="#ref-satu_data_local_govt">ResearchGate 2026b</a>)</span>. R memfasilitasi proses ETL (<em>Extract-Transform-Load</em>) otomatis untuk membersihkan data dari berbagai instansi <span class="citation">(<a href="#ref-r_public_data">Romanian Statistical Review 2026</a>)</span>.</li>
+</ol>
+<p>Dalam bidang perencanaan wilayah, R digunakan untuk:
+* <strong>Analisis Geospasial</strong>: Mengelola data vektor dan raster untuk pemetaan dan pemodelan lingkungan <span class="citation">(<a href="#ref-spatial_data_science_terra">R Spatial 2026</a>)</span>.
+* <strong>Perencanaan Transportasi</strong>: Menggunakan paket seperti <code>stplanr</code> untuk analisis jaringan, rute, dan pemodelan transportasi berkelanjutan <span class="citation">(<a href="#ref-stplanr_cran">CRAN 2026</a>; <a href="#ref-sustainable_transport_stplanr">rOpenSci 2026</a>)</span>.
+* <strong>Simulasi Kebijakan</strong>: Melakukan simulasi dampak kebijakan publik, seperti perubahan penggunaan lahan atau intervensi sosial, sebelum diterapkan secara nyata <span class="citation">(<a href="#ref-simulation_public_policies">ResearchGate 2026a</a>)</span>.</p>
+</div>
+<div id="apa-itu-rstudio" class="section level2 hasAnchor" number="0.2">
+<h2><span class="header-section-number">0.2</span> Apa itu RStudio?<a href="pengenalan-r-rstudio-dan-r-markdown.html#apa-itu-rstudio" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>RStudio (yang kini bertransformasi menjadi <strong>Posit</strong>) adalah <em>Integrated Development Environment</em> (IDE) untuk R. Diluncurkan pertama kali pada tahun 2009, RStudio menyediakan antarmuka visual yang lebih ramah pengguna dibandingkan antarmuka baris perintah (<em>command line</em>) asli R <span class="citation">(<a href="#ref-about_posit">Posit 2026a</a>)</span>. Fitur-fitur seperti penyorotan sintaksis (<em>syntax highlighting</em>), <em>auto-completion</em>, dan manajemen <em>workspace</em> membuat pengguna baru lebih mudah mempelajari dan menggunakan R. Transformasi menjadi Posit mencerminkan komitmen terhadap ekosistem <em>data science</em> modern yang lebih luas, termasuk dukungan untuk Python <span class="citation">(<a href="#ref-goodbye_rstudio">Irorere 2026</a>)</span>.</p>
+</div>
+<div id="apa-itu-r-markdown" class="section level2 hasAnchor" number="0.3">
+<h2><span class="header-section-number">0.3</span> Apa itu R Markdown?<a href="pengenalan-r-rstudio-dan-r-markdown.html#apa-itu-r-markdown" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>R Markdown adalah format dokumen yang memungkinkan pengguna untuk menggabungkan kode R, hasil analisis (seperti tabel dan grafik), serta narasi teks dalam satu dokumen yang dinamis. Prinsip ini mendukung <em>reproducible data science</em>, di mana seluruh proses dari data mentah hingga laporan akhir dapat dilacak dan diulang. R Markdown sangat berguna untuk otomatisasi pelaporan di instansi pemerintahan, memungkinkan pembuatan laporan rutin yang efisien dan konsisten <span class="citation">(<a href="#ref-bindar2026analisis"><strong>bindar2026analisis?</strong></a>)</span>.</p>
+<hr />
+</div>
+</div>
+<h3> Selesai. Alhamdulillah.<a href="selesai.-alhamdulillah..html#selesai.-alhamdulillah." class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="refs" class="references csl-bib-body hanging-indent" entry-spacing="0">
+<div id="ref-stplanr_cran" class="csl-entry">
+CRAN. 2026. <span>“Stplanr: A Package for Transport Planning.”</span> <a href="https://cran.r-project.org/web/packages/stplanr/vignettes/stplanr-paper.html">https://cran.r-project.org/web/packages/stplanr/vignettes/stplanr-paper.html</a>.
+</div>
+<div id="ref-goodbye_rstudio" class="csl-entry">
+Irorere, D. 2026. <span>“Goodbye Rstudio, Welcome Positron.”</span> <a href="https://denniseirorere.com/posts/goodbye-rstudio-welcome-positron/">https://denniseirorere.com/posts/goodbye-rstudio-welcome-positron/</a>.
+</div>
+<div id="ref-history_overview_r" class="csl-entry">
+Peng, R. D. 2026. <span>“2 History and Overview of r | r Programming for Data Science.”</span> <a href="https://bookdown.org/rdpeng/rprogdatascience/history-and-overview-of-r.html">https://bookdown.org/rdpeng/rprogdatascience/history-and-overview-of-r.html</a>.
+</div>
+<div id="ref-about_posit" class="csl-entry">
+Posit. 2026a. <span>“About.”</span> <a href="https://posit.co/about/">https://posit.co/about/</a>.
+</div>
+<div id="ref-shiny_gallery" class="csl-entry">
+———. 2026b. <span>“Shiny for r Gallery.”</span> <a href="https://shiny.posit.co/r/gallery/">https://shiny.posit.co/r/gallery/</a>.
+</div>
+<div id="ref-spatial_data_science_terra" class="csl-entry">
+R Spatial. 2026. <span>“Spatial Data Science with r and <span>‘Terra’</span>.”</span> <a href="https://rspatial.org/">https://rspatial.org/</a>.
+</div>
+<div id="ref-simulation_public_policies" class="csl-entry">
+ResearchGate. 2026a. <span>“SIMULATION: A TOOL FOR DECISION MAKING IN PUBLIC POLICIES FIELD.”</span> <a href="https://www.researchgate.net/publication/305639581_SIMULATION_A_TOOL_FOR_DECISION_MAKING_IN_PUBLIC_POLICIES_FIELD">https://www.researchgate.net/publication/305639581_SIMULATION_A_TOOL_FOR_DECISION_MAKING_IN_PUBLIC_POLICIES_FIELD</a>.
+</div>
+<div id="ref-satu_data_local_govt" class="csl-entry">
+———. 2026b. <span>“Structuration in Implementing Satu Data Indonesia Policy in Local Government.”</span> <a href="https://www.researchgate.net/publication/393695746_Structuration_in_implementing_Satu_Data_Indonesia_policy_in_local_government">https://www.researchgate.net/publication/393695746_Structuration_in_implementing_Satu_Data_Indonesia_policy_in_local_government</a>.
+</div>
+<div id="ref-r_public_data" class="csl-entry">
+Romanian Statistical Review. 2026. <span>“Using r to Get Value Out of Public Data.”</span> <a href="https://www.revistadestatistica.ro/wp-content/uploads/2014/07/RRS_2_2014_a10.pdf">https://www.revistadestatistica.ro/wp-content/uploads/2014/07/RRS_2_2014_a10.pdf</a>.
+</div>
+<div id="ref-sustainable_transport_stplanr" class="csl-entry">
+rOpenSci. 2026. <span>“Sustainable Transport Planning • Stplanr.”</span> <a href="https://docs.ropensci.org/stplanr/">https://docs.ropensci.org/stplanr/</a>.
+</div>
+<div id="ref-spatial_r_sf" class="csl-entry">
+UVA Library. 2026. <span>“Spatial r: Using the Sf Package.”</span> <a href="https://library.virginia.edu/data/articles/spatial-r-using-sf-package">https://library.virginia.edu/data/articles/spatial-r-using-sf-package</a>.
+</div>
+<div id="ref-r_wikipedia" class="csl-entry">
+Wikipedia contributors. 2026. <span>“R (Programming Language).”</span> <a href="https://en.wikipedia.org/wiki/R_(programming_language)">https://en.wikipedia.org/wiki/R_(programming_language)</a>.
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="pengenalan-teknis-r.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
