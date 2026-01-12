@@ -1,6 +1,7 @@
+fig:jendela-rstudio
 apa-itu-r
 apa-itu-rstudio
-apa-itu-r-markdown
+cara-menjalankan-r
 sintaks-dasar
 komentar
 assignment-pemberian-nilai

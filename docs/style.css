@@ -22,13 +22,13 @@
   color: #2c3e50;
 }
 
-/* 3. Penting (Important) - Ungu */
+/* 3. Penting (Important) - Merah Bata */
 .rmdimportant {
   padding: 1em;
   margin: 1em 0;
   padding-left: 15px;
-  background-color: #f3e5f5;
-  border-left: 6px solid #9c27b0;
+  background-color: #fbe9e7;
+  border-left: 6px solid #ff5722;
   border-radius: 4px;
   color: #2c3e50;
 }
@@ -44,13 +44,13 @@
   color: #2c3e50;
 }
 
-/* 5. Soal Latihan (Exercise) - Merah Bata */
+/* 5. Soal Latihan (Exercise) - Ungu */
 .rmdexercise {
   padding: 1em;
   margin: 1em 0;
   padding-left: 15px;
-  background-color: #fbe9e7;
-  border-left: 6px solid #ff5722;
+  background-color: #f3e5f5;
+  border-left: 6px solid #9c27b0;
   border-radius: 4px;
   color: #2c3e50;
   font-weight: 500;
