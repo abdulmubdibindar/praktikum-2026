@@ -180,3 +180,4 @@ melakukan-analisis-faktor-dan-rotasi
 analisis-faktor-common-factor-analysis
 analisis-komponen-prinsip-pca
 interpretasi-dan-penamaan-dimensi
+referensi

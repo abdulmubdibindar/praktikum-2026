@@ -353,7 +353,7 @@ div.csl-indent {
 </ul></li>
 <li class="chapter" data-level="9.9" data-path="modul-9-analisis-hubungan-multivariat-interdependensi---analisis-faktor-dan-pca.html"><a href="modul-9-analisis-hubungan-multivariat-interdependensi---analisis-faktor-dan-pca.html#interpretasi-dan-penamaan-dimensi"><i class="fa fa-check"></i><b>9.9</b> Interpretasi dan Penamaan Dimensi</a></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="referensi.html"><a href="referensi.html"><i class="fa fa-check"></i>Referensi</a></li>
+<li class="chapter" data-level="10" data-path="referensi.html"><a href="referensi.html"><i class="fa fa-check"></i><b>10</b> Referensi</a></li>
 </ul>
 
       </nav>
@@ -375,8 +375,8 @@ div.csl-indent {
 <h1><span class="header-section-number">1</span> Modul-1: Pengolahan Data Terstruktur<a href="modul-1-pengolahan-data-terstruktur.html#modul-1-pengolahan-data-terstruktur" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>Setelah mempelajari modul ini Anda diharapkan dapat:</p>
 <ol style="list-style-type: decimal">
-<li>menganalisis variabel dan objek dalam sebuah format data terstruktur <strong><code>STP-1.3</code></strong></li>
-<li>mengelola data terstruktur dengan tepat menggunakan perangkat komputer <strong><code>STP-1.4</code></strong></li>
+<li>menganalisis variabel dan objek dalam sebuah format data terstruktur <span class="capaian">STP-1.3</span></li>
+<li>mengelola data terstruktur dengan tepat menggunakan perangkat komputer <span class="capaian">STP-1.4</span></li>
 </ol>
 <hr />
 <p>Kita akan mempelajari cara pengolahan data terstruktur atau <em>dataset</em>/set data dari hasil kuesioner kepada mahasiswa-mahasiswa Universitas Islam Negeri Raden Intan Lampung (UINRIL) dan Universitas Bandar Lampung (UBL) tentang pola perjalanan mereka.</p>
@@ -399,224 +399,53 @@ div.csl-indent {
 <div id="mengimpor-set-data-dataset-dari-excel" class="section level2 hasAnchor" number="1.1">
 <h2><span class="header-section-number">1.1</span> Mengimpor set data <em>(dataset)</em> dari Excel<a href="modul-1-pengolahan-data-terstruktur.html#mengimpor-set-data-dataset-dari-excel" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Untuk membuat set data di lingkungan kerja R kita, gunakan fungsi <code>read.xlsx()</code> seperti berikut. Fungsi <code>read.xlsx()</code> mempunyai atribut utama berupa <em>file path</em> lokasi file yang ditempatkan di dalam tanda kurung.</p>
+<div class="rmdwarning">
+<p>⚠️ <strong>Penting</strong></p>
+<p>Pastikan file Excel yang akan diimpor sudah tertutup, karena mengimpor file yang sedang terbuka akan menghasilkan <em>error</em>.</p>
+</div>
 <div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="modul-1-pengolahan-data-terstruktur.html#cb11-1" tabindex="-1"></a><span class="co"># Memuat dataset dari file Excel &quot;Data Gabungan.xlsx&quot; yang terletak di folder yang sama dengan file R Markdown ini.</span></span>
 <span id="cb11-2"><a href="modul-1-pengolahan-data-terstruktur.html#cb11-2" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">read.xlsx</span>(<span class="st">&quot;datasets/Data Praktikum 01.xlsx&quot;</span>)</span>
 <span id="cb11-3"><a href="modul-1-pengolahan-data-terstruktur.html#cb11-3" tabindex="-1"></a></span>
-<span id="cb11-4"><a href="modul-1-pengolahan-data-terstruktur.html#cb11-4" tabindex="-1"></a><span class="co"># Menampilkan dataset</span></span>
-<span id="cb11-5"><a href="modul-1-pengolahan-data-terstruktur.html#cb11-5" tabindex="-1"></a>data</span></code></pre></div>
-<pre><code>##    Kampus_PT Nomor.urut Jenis.Kelamin Umur                   Fakultas                                 Prodi            Tingkat.Semester
-## 1     UINRIL          1     Laki-laki   22                    Syariah                        Hukum Keluarga 4 (Semester 7 - Semester 8)
-## 2     UINRIL          2     Laki-laki   25                    Syariah                        Hukum Keluarga 4 (Semester 7 - Semester 8)
-## 3     UINRIL          3     Perempuan   24      Tarbiyah dan Keguruan                Pendidikan Agama Islam 4 (Semester 7 - Semester 8)
-## 4     UINRIL          4     Laki-laki   19 Dakwah dan Ilmu Komunikasi        Komunikasi dan Penyiaran Islam 1 (Semester 1 - Semester 2)
-## 5     UINRIL          5     Laki-laki   23      Tarbiyah dan Keguruan            Manajemen Pendidikan Islam 4 (Semester 7 - Semester 8)
-## 6     UINRIL          6     Laki-laki   21                       Adab Ilmu Perpustakaan dan Informasi Islam 4 (Semester 7 - Semester 8)
-## 7     UINRIL          7     Laki-laki   22 Dakwah dan Ilmu Komunikasi        Komunikasi dan Penyiaran Islam 4 (Semester 7 - Semester 8)
-## 8     UINRIL          8     Laki-laki   21 Dakwah dan Ilmu Komunikasi         Pengembangan Masyarakat Islam 4 (Semester 7 - Semester 8)
-## 9     UINRIL          9     Perempuan   21 Dakwah dan Ilmu Komunikasi        Komunikasi dan Penyiaran Islam 4 (Semester 7 - Semester 8)
-## 10    UINRIL         10     Perempuan   21      Tarbiyah dan Keguruan                Pendidikan Agama Islam 4 (Semester 7 - Semester 8)
-## 11    UINRIL         11     Perempuan   19   Ekonomi dan Bisnis Islam              Manajemen Bisnis Syariah 2 (Semester 3 - Semester 4)
-## 12    UINRIL         12     Perempuan   19 Dakwah dan Ilmu Komunikasi             Bimbingan Konseling Islam 4 (Semester 7 - Semester 8)
-## 13    UINRIL         13     Perempuan   19   Ekonomi dan Bisnis Islam              Manajemen Bisnis Syariah 2 (Semester 3 - Semester 4)
-## 14    UINRIL         14     Perempuan   19   Ekonomi dan Bisnis Islam              Manajemen Bisnis Syariah 2 (Semester 3 - Semester 4)
-## 15    UINRIL         15     Laki-laki   19 Dakwah dan Ilmu Komunikasi        Komunikasi dan Penyiaran Islam 2 (Semester 3 - Semester 4)
-## 16    UINRIL         16     Perempuan   20                    Syariah                     Hukum Tata Negara 4 (Semester 7 - Semester 8)
-## 17    UINRIL         17     Perempuan   19      Tarbiyah dan Keguruan             Pendidikan Bahasa Inggris 1 (Semester 1 - Semester 2)
-## 18    UINRIL         18     Laki-laki   21   Ekonomi dan Bisnis Islam              Manajemen Bisnis Syariah 2 (Semester 3 - Semester 4)
-## 19    UINRIL         19     Perempuan   20   Ekonomi dan Bisnis Islam              Manajemen Bisnis Syariah 2 (Semester 3 - Semester 4)
-## 20    UINRIL         20     Laki-laki   20   Ekonomi dan Bisnis Islam              Manajemen Bisnis Syariah 2 (Semester 3 - Semester 4)
-## 21    UINRIL         21     Perempuan   20      Tarbiyah dan Keguruan                Pendidikan Agama Islam 3 (Semester 5 - Semester 6)
-## 22    UINRIL         22     Perempuan   20   Ekonomi dan Bisnis Islam              Manajemen Bisnis Syariah 2 (Semester 3 - Semester 4)
-## 23    UINRIL         23     Perempuan   20                    Syariah                        Hukum Keluarga 4 (Semester 7 - Semester 8)
-## 24    UINRIL         24     Laki-laki   19      Tarbiyah dan Keguruan                Pendidikan Agama Islam 2 (Semester 3 - Semester 4)
-## 25    UINRIL         25     Laki-laki   20   Ekonomi dan Bisnis Islam              Manajemen Bisnis Syariah 2 (Semester 3 - Semester 4)
-## 26    UINRIL         26     Laki-laki   22      Tarbiyah dan Keguruan             Pendidikan Anak Usia Dini 4 (Semester 7 - Semester 8)
-## 27    UINRIL         27     Perempuan   22                    Syariah                        Hukum Keluarga 4 (Semester 7 - Semester 8)
-## 28    UINRIL         28     Laki-laki   22   Ekonomi dan Bisnis Islam                       Ekonomi Syariah 4 (Semester 7 - Semester 8)
-## 29    UINRIL         29     Perempuan   21   Ekonomi dan Bisnis Islam                       Ekonomi Syariah 4 (Semester 7 - Semester 8)
-## 30    UINRIL         30     Perempuan   20   Ekonomi dan Bisnis Islam              Manajemen Bisnis Syariah 2 (Semester 3 - Semester 4)
-## 31    UINRIL         31     Laki-laki   21      Tarbiyah dan Keguruan                 Pendidikan Matematika 3 (Semester 5 - Semester 6)
-## 32    UINRIL         32     Laki-laki   21                    Syariah                        Hukum Keluarga 4 (Semester 7 - Semester 8)
-## 33    UINRIL         33     Laki-laki   20   Ekonomi dan Bisnis Islam              Manajemen Bisnis Syariah 2 (Semester 3 - Semester 4)
-## 34    UINRIL         34     Perempuan   21 Ushuluddin dan Studi Agama                       Psikologi Islam 3 (Semester 5 - Semester 6)
-## 35    UINRIL         35     Perempuan   20 Ushuluddin dan Studi Agama                       Psikologi Islam 3 (Semester 5 - Semester 6)
-## 36    UINRIL         36     Perempuan   21      Tarbiyah dan Keguruan                Pendidikan Agama Islam 4 (Semester 7 - Semester 8)
-## 37    UINRIL         37     Laki-laki   24                    Syariah                         Hukum Ekonomi 4 (Semester 7 - Semester 8)
-## 38    UINRIL         38     Laki-laki   22      Tarbiyah dan Keguruan            Manajemen Pendidikan Islam 4 (Semester 7 - Semester 8)
-## 39    UINRIL         39     Laki-laki   21      Tarbiyah dan Keguruan                      Sistem Informasi 3 (Semester 5 - Semester 6)
-## 40    UINRIL         40     Perempuan   24      Tarbiyah dan Keguruan               Bimbingan dan Konseling 4 (Semester 7 - Semester 8)
-##      Uang.Saku kepemilikan.mobil kepemilikan.motor kepemilikan.sepedan                kendaraan.utama      kelurahan
-## 1   1Jt - 2 Jt                 0                 1                   0           Sepeda Motor Pribadi         Wiyono
-## 2       &lt; 1 Jt                 1                 4                   0           Sepeda Motor Pribadi       Sukarame
-## 3       &lt; 1 Jt                 0                 0                   0                  Berjalan Kaki       Sukarame
-## 4       &lt; 1 Jt                 0                 1                   0           Sepeda Motor Pribadi   Harapan Jaya
-## 5       &lt; 1 Jt                 0                 1                   0           Sepeda Motor Pribadi    Korpri Raya
-## 6       &lt; 1 Jt                 0                 1                   0           Sepeda Motor Pribadi      Rajabasa 
-## 7       &lt; 1 Jt                 1                 1                   0           Sepeda Motor Pribadi   Campang Raya
-## 8       &lt; 1 Jt                 1                 4                   0           Sepeda Motor Pribadi   Campang Raya
-## 9   1Jt - 2 Jt                 1                 4                   1           Sepeda Motor Pribadi       Way Dadi
-## 10      &lt; 1 Jt                 0                 1                   0           Sepeda Motor Pribadi       Kaliawi 
-## 11  1Jt - 2 Jt                 0                 0                   0 Kendaraan Bermotor (menumpang)       Sukarame
-## 12      &lt; 1 Jt                 0                 1                   0           Sepeda Motor Pribadi       Sukarame
-## 13  1Jt - 2 Jt                 0                 3                   1           Sepeda Motor Pribadi   Harapan Jaya
-## 14  1Jt - 2 Jt                 0                 1                   0           Sepeda Motor Pribadi       Sukabumi
-## 15      &lt; 1 Jt                 0                 0                   0 Kendaraan Bermotor (menumpang)       Sukarame
-## 16      &lt; 1 Jt                 0                 0                   0                  Berjalan Kaki   Harapan Jaya
-## 17      &lt; 1 Jt                 0                 1                   0           Sepeda Motor Pribadi       Sukarame
-## 18      &lt; 1 Jt                 0                 2                   0           Sepeda Motor Pribadi       Kangkung
-## 19      &lt; 1 Jt                 0                 2                   0           Sepeda Motor Pribadi    Way Kandis 
-## 20      &lt; 1 Jt                 0                 1                   1           Sepeda Motor Pribadi    Jati Mulyo 
-## 21      &lt; 1 Jt                 0                 0                   0                  Berjalan Kaki       Sukarame
-## 22      &lt; 1 Jt                 0                 0                   0 Kendaraan Bermotor (menumpang)       Sukarame
-## 23 2 Jt - 3 Jt                 0                 1                   0           Sepeda Motor Pribadi       Way Dadi
-## 24      &lt; 1 Jt                 0                 0                   1                         Sepeda       Sukarame
-## 25      &lt; 1 Jt                 0                 1                   0           Sepeda Motor Pribadi       Way Huwi
-## 26  1Jt - 2 Jt                 1                 3                   1           Sepeda Motor Pribadi     Langkapura
-## 27  1Jt - 2 Jt                 1                 2                   0           Sepeda Motor Pribadi  Bilabong Jaya
-## 28      &lt; 1 Jt                 1                 2                   3           Sepeda Motor Pribadi       Sukarame
-## 29      &lt; 1 Jt                 0                 0                   0                  Berjalan Kaki       Sukarame
-## 30      &lt; 1 Jt                 0                 1                   0           Sepeda Motor Pribadi       Sukarame
-## 31  1Jt - 2 Jt                 0                 1                   0           Sepeda Motor Pribadi      Kedamaian
-## 32      &lt; 1 Jt                 0                 1                   0           Sepeda Motor Pribadi       Sukarame
-## 33      &lt; 1 Jt                 1                 2                   4           Sepeda Motor Pribadi       Sukabumi
-## 34  1Jt - 2 Jt                 0                 1                   0           Sepeda Motor Pribadi   Ganjar Agung
-## 35      &lt; 1 Jt                 0                 1                   0           Sepeda Motor Pribadi       Sukarame
-## 36      &lt; 1 Jt                 0                 0                   0            Transportasi Online       Rajabasa
-## 37  1Jt - 2 Jt                 0                 0                   0                  Berjalan Kaki       Sukarame
-## 38  1Jt - 2 Jt                 1                 2                   0           Sepeda Motor Pribadi       Sukarame
-## 39      &lt; 1 Jt                 0                 3                   1           Sepeda Motor Pribadi    Sepang Jaya
-## 40      &lt; 1 Jt                 0                 2                   0           Sepeda Motor Pribadi Sukabumi Indah
-##             jenis.tempat.tinggal                                                          nama.jalan.tempat.tinggal
-## 1          Rumah Bersama Saudara                                                                       Pasar Wiyono
-## 2                    Kos Sendiri                                                                jln endro suratmin 
-## 3                    Kos Sendiri                                                                    Jl. Pulau ambon
-## 4                    Kos Sendiri                                                      Jl.pulau pisang, gg way pesai
-## 5  Rumah Mengontrak Bersama-sama                                                                         Jl. Durian
-## 6   Rumah Pribadi/Rumah Keluarga                                            Jln Nunyai Gg. Hi. Ismail Blok B NO 22E
-## 7   Rumah Pribadi/Rumah Keluarga                                                 Jalan Alimudin Umar, campang raya 
-## 8   Rumah Pribadi/Rumah Keluarga                                                        Jl. Kicau, nusantara permai
-## 9                    Kos Sendiri                                                                Jl. sentot alibasya
-## 10  Rumah Pribadi/Rumah Keluarga                                                                 Jalan Raden Fatah 
-## 11              Kos Bersama-sama                                                       jalan terusan pulau bawean 1
-## 12                   Kos Sendiri                                             jl. terusan bawean 2 rt 07 kosan hijau
-## 13      Rumah Mengontrak Pribadi                                                                   jl Pandawa raya 
-## 14  Rumah Pribadi/Rumah Keluarga                                                                 Jln. Pulau Singkep
-## 15              Kos Bersama-sama                                                    Jl. Pulau Legundi jl. hj hayati
-## 16                   Kos Sendiri                                                                       Jl. Matahari
-## 17 Rumah Mengontrak Bersama-sama                                             Jl. Pandawa 4,sukarame ,Bandar Lampung
-## 18  Rumah Pribadi/Rumah Keluarga                             Jl. Cumi-cumi No. 34 Gg. Cempaka, Teluk Betung Selatan
-## 19  Rumah Pribadi/Rumah Keluarga                                                                 Jl. M Yunus Ujung 
-## 20         Rumah Bersama Saudara                                                                      jl. cendana 1
-## 21              Kos Bersama-sama                                                                            Jl. Lia
-## 22              Kos Bersama-sama                                                                        Jl. Pandawa
-## 23                   Kos Sendiri                                                                 way dadi, sukarame
-## 24                   Kos Sendiri                                                                    Jl. Pulau ambon
-## 25  Rumah Pribadi/Rumah Keluarga                                                      Jalan airan raya gang andalas
-## 26  Rumah Pribadi/Rumah Keluarga                                        perumahan bukit alam permai 3 block c no 3 
-## 27  Rumah Pribadi/Rumah Keluarga Perum Bukit Bilabong Jaya, Kec.Langkapura, Kel. Bilabong Jaya, Kota Bandar Lampung
-## 28  Rumah Pribadi/Rumah Keluarga                                               Jl. Padjajaran gg boy 37 jagabaya 2 
-## 29                   Kos Sendiri                                                                     jl.hi madang 2
-## 30 Rumah Mengontrak Bersama-sama                            Jl. Endro Suratmin GG H20, bedeng asrama 27 no.33 balam
-## 31         Rumah Bersama Saudara                                                              Jl. Sadar I Antasari 
-## 32                   Kos Sendiri                                                                   Jl.pulau sebesi 
-## 33  Rumah Pribadi/Rumah Keluarga                                                                   Jalan Tirtayasa 
-## 34  Rumah Pribadi/Rumah Keluarga                                                                 jln piagam jakarta
-## 35                   Kos Sendiri                                                           jln nakulo 2 pembangunan
-## 36  Rumah Pribadi/Rumah Keluarga                                                                        Jl. Pramuka
-## 37 Rumah Mengontrak Bersama-sama Jl. Pulau Tegal No.13, Way Dadi, Kec. Sukarame, Kota Bandar Lampung, Lampung 35133
-## 38  Rumah Pribadi/Rumah Keluarga                                                                     jl. kemuning 1
-## 39  Rumah Pribadi/Rumah Keluarga                                                                        jl. harapan
-## 40  Rumah Pribadi/Rumah Keluarga                        Perum. Karunia indah blok o no.17, Sukabumi bandara lampung
-##    alasan.pemilihan.lokasi.tempat.tinggal jarak.(km) biaya.dalam.ribu2 Jumlah.Perjalanan.Senin Jumlah.Perjalanan.Selasa
-## 1                               Lain-lain      19.27               100                       3                        3
-## 2                     Dekat dengan kampus       0.58                80                       3                        3
-## 3                     Dekat dengan kampus       0.56                 0                       3                        0
-## 4                     Dekat dengan kampus       1.05                50                       0                        2
-## 5                     Dekat dengan kampus       1.69                50                       4                        4
-## 6                     Dekat dengan kampus       7.91                50                       0                        2
-## 7          Bersama keluarga/saudara/teman       2.58                35                       3                        0
-## 8          Bersama keluarga/saudara/teman       2.32                50                       4                        4
-## 9                     Dekat dengan kampus       0.77                40                       2                        0
-## 10         Bersama keluarga/saudara/teman       6.56                50                       3                        2
-## 11                    Dekat dengan kampus       0.63                 0                       4                        4
-## 12                    Dekat dengan kampus       0.53                50                       2                        2
-## 13             Biaya tempat tinggal murah       0.91                50                       3                        2
-## 14         Bersama keluarga/saudara/teman       2.52                40                       2                        2
-## 15             Biaya tempat tinggal murah       1.31                 0                       3                        3
-## 16                    Dekat dengan kampus       0.83                 0                       2                        2
-## 17                              Lain-lain       0.95                30                       2                        2
-## 18         Bersama keluarga/saudara/teman       7.67                50                       2                        2
-## 19             Lingkungan aman dan nyaman       4.34                60                       3                        3
-## 20             Biaya tempat tinggal murah       4.46                15                       2                        0
-## 21                    Dekat dengan kampus       0.71                 0                       0                        0
-## 22                    Dekat dengan kampus       0.92                 0                       2                        0
-## 23             Lingkungan aman dan nyaman       1.37                40                       0                        2
-## 24             Biaya tempat tinggal murah       0.56                15                       3                        0
-## 25         Bersama keluarga/saudara/teman       3.02                37                       3                        0
-## 26         Bersama keluarga/saudara/teman       8.56                25                       2                        2
-## 27         Bersama keluarga/saudara/teman       8.49                60                       3                        3
-## 28             Lingkungan aman dan nyaman       4.77                60                       1                        1
-## 29                    Dekat dengan kampus       0.34                 0                       2                        0
-## 30             Lingkungan aman dan nyaman       2.40                15                       2                        2
-## 31         Bersama keluarga/saudara/teman       4.30                70                       3                        3
-## 32                    Dekat dengan kampus       0.27                25                       2                        2
-## 33         Bersama keluarga/saudara/teman       2.45                70                       2                        3
-## 34         Bersama keluarga/saudara/teman      26.14                70                       1                        2
-## 35                    Dekat dengan kampus       1.27                70                       4                        2
-## 36             Lingkungan aman dan nyaman       9.09                60                       0                        2
-## 37                    Dekat dengan kampus       1.39                 0                       5                        5
-## 38         Bersama keluarga/saudara/teman       0.63                65                       2                        2
-## 39             Lingkungan aman dan nyaman       4.56                50                       5                        0
-## 40                    Dekat dengan kampus       2.06                50                       2                        4
-##    Jumlah.Perjalanan.Rabu Jumlah.Perjalanan.Kamis Jumlah.Perjalanan.Jumat Jumlah.Perjalanan.Sabtu Jumlah.Perjalanan.Ahad
-## 1                       0                       0                       0                       0                      0
-## 2                       0                       3                       0                       0                      0
-## 3                       3                       0                       0                       0                      0
-## 4                       0                       2                       2                       0                      2
-## 5                       0                       0                       3                       2                      0
-## 6                       2                       0                       2                       2                      2
-## 7                       3                       0                       2                       2                      2
-## 8                       4                       4                       4                       2                      2
-## 9                       3                       0                       0                       2                      2
-## 10                      2                       2                       0                       0                      0
-## 11                      4                       2                       2                       2                      2
-## 12                      2                       2                       2                       2                      2
-## 13                      2                       2                       2                       0                      0
-## 14                      2                       2                       2                       0                      2
-## 15                      2                       0                       2                       0                      2
-## 16                      2                       3                       0                       0                      0
-## 17                      2                       2                       2                       0                      0
-## 18                      0                       2                       2                       2                      1
-## 19                      3                       2                       0                       0                      2
-## 20                      2                       2                       2                       2                      0
-## 21                      2                       2                       2                       0                      0
-## 22                      2                       2                       2                       0                      2
-## 23                      2                       2                       2                       0                      2
-## 24                      3                       3                       2                       0                      2
-## 25                      3                       2                       2                       0                      0
-## 26                      0                       2                       2                       2                      0
-## 27                      2                       3                       3                       2                      0
-## 28                      2                       2                       3                       2                      0
-## 29                      0                       2                       0                       0                      0
-## 30                      4                       4                       0                       0                      0
-## 31                      3                       3                       4                       2                      0
-## 32                      2                       2                       2                       2                      0
-## 33                      2                       2                       2                       0                      2
-## 34                      2                       2                       1                       0                      0
-## 35                      4                       4                       1                       0                      0
-## 36                      0                       0                       0                       0                      0
-## 37                      5                       5                       5                       5                      5
-## 38                      3                       3                       2                       2                      0
-## 39                      5                       2                       2                       4                      2
-## 40                      4                       2                       2                       2                      2
-##  [ reached &#39;max&#39; / getOption(&quot;max.print&quot;) -- omitted 360 rows ]</code></pre>
-<p>Fungsi tersebut akan mengimpor seluruh isi dari file Excel “<code>Data Gabungan.xlsx</code>” pada <em>sheet</em> pertama saja.</p>
-<p>Apabila kita ingin mengimpor set data dari <em>sheet</em> lainnya, kita harus menyertakan detil nama sheet yang kita ingin impor pada atribut “<code>sheet</code>”.</p>
+<span id="cb11-4"><a href="modul-1-pengolahan-data-terstruktur.html#cb11-4" tabindex="-1"></a><span class="co"># Menampilkan 6 baris pertama dataset</span></span>
+<span id="cb11-5"><a href="modul-1-pengolahan-data-terstruktur.html#cb11-5" tabindex="-1"></a><span class="fu">head</span>(data)</span></code></pre></div>
+<pre><code>##   Kampus_PT Nomor.urut Jenis.Kelamin Umur                   Fakultas                                 Prodi            Tingkat.Semester
+## 1    UINRIL          1     Laki-laki   22                    Syariah                        Hukum Keluarga 4 (Semester 7 - Semester 8)
+## 2    UINRIL          2     Laki-laki   25                    Syariah                        Hukum Keluarga 4 (Semester 7 - Semester 8)
+## 3    UINRIL          3     Perempuan   24      Tarbiyah dan Keguruan                Pendidikan Agama Islam 4 (Semester 7 - Semester 8)
+## 4    UINRIL          4     Laki-laki   19 Dakwah dan Ilmu Komunikasi        Komunikasi dan Penyiaran Islam 1 (Semester 1 - Semester 2)
+## 5    UINRIL          5     Laki-laki   23      Tarbiyah dan Keguruan            Manajemen Pendidikan Islam 4 (Semester 7 - Semester 8)
+## 6    UINRIL          6     Laki-laki   21                       Adab Ilmu Perpustakaan dan Informasi Islam 4 (Semester 7 - Semester 8)
+##    Uang.Saku kepemilikan.mobil kepemilikan.motor kepemilikan.sepedan      kendaraan.utama    kelurahan          jenis.tempat.tinggal
+## 1 1Jt - 2 Jt                 0                 1                   0 Sepeda Motor Pribadi       Wiyono         Rumah Bersama Saudara
+## 2     &lt; 1 Jt                 1                 4                   0 Sepeda Motor Pribadi     Sukarame                   Kos Sendiri
+## 3     &lt; 1 Jt                 0                 0                   0        Berjalan Kaki     Sukarame                   Kos Sendiri
+## 4     &lt; 1 Jt                 0                 1                   0 Sepeda Motor Pribadi Harapan Jaya                   Kos Sendiri
+## 5     &lt; 1 Jt                 0                 1                   0 Sepeda Motor Pribadi  Korpri Raya Rumah Mengontrak Bersama-sama
+## 6     &lt; 1 Jt                 0                 1                   0 Sepeda Motor Pribadi    Rajabasa   Rumah Pribadi/Rumah Keluarga
+##                 nama.jalan.tempat.tinggal alasan.pemilihan.lokasi.tempat.tinggal jarak.(km) biaya.dalam.ribu2 Jumlah.Perjalanan.Senin
+## 1                            Pasar Wiyono                              Lain-lain      19.27               100                       3
+## 2                     jln endro suratmin                     Dekat dengan kampus       0.58                80                       3
+## 3                         Jl. Pulau ambon                    Dekat dengan kampus       0.56                 0                       3
+## 4           Jl.pulau pisang, gg way pesai                    Dekat dengan kampus       1.05                50                       0
+## 5                              Jl. Durian                    Dekat dengan kampus       1.69                50                       4
+## 6 Jln Nunyai Gg. Hi. Ismail Blok B NO 22E                    Dekat dengan kampus       7.91                50                       0
+##   Jumlah.Perjalanan.Selasa Jumlah.Perjalanan.Rabu Jumlah.Perjalanan.Kamis Jumlah.Perjalanan.Jumat Jumlah.Perjalanan.Sabtu
+## 1                        3                      0                       0                       0                       0
+## 2                        3                      0                       3                       0                       0
+## 3                        0                      3                       0                       0                       0
+## 4                        2                      0                       2                       2                       0
+## 5                        4                      0                       0                       3                       2
+## 6                        2                      2                       0                       2                       2
+##   Jumlah.Perjalanan.Ahad
+## 1                      0
+## 2                      0
+## 3                      0
+## 4                      2
+## 5                      0
+## 6                      2</code></pre>
+<p>Fungsi tersebut akan mengimpor seluruh isi dari file Excel <code>Data Gabungan.xlsx</code> pada <em>sheet</em> pertama saja.</p>
+<p>Apabila kita ingin mengimpor set data dari <em>sheet</em> lainnya, kita harus menyertakan detil nama sheet yang kita ingin impor pada atribut <code>sheet</code>.</p>
 <p><em>Dataset</em> yang kita impor akan menjadi objek dengan jenis <em>tibble</em>.</p>
-<blockquote>
-<p>⚠️<strong>Penting</strong></p>
-<p>Jangan mengimpor data dari file Excel yang sedang terbuka karena akan menghasilkan pesan error.</p>
-</blockquote>
 <div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="modul-1-pengolahan-data-terstruktur.html#cb13-1" tabindex="-1"></a><span class="co"># Menyimpan file sebagai variabel tersendiri sehingga lebih fleksibel</span></span>
 <span id="cb13-2"><a href="modul-1-pengolahan-data-terstruktur.html#cb13-2" tabindex="-1"></a>file_dibaca <span class="ot">&lt;-</span> <span class="st">&quot;datasets/Data Praktikum 01.xlsx&quot;</span> <span class="co"># nama variabel bukan &#39;file&#39; saja karena sudah ada fungsi R tersendiri dengan nama tersebut</span></span>
 <span id="cb13-3"><a href="modul-1-pengolahan-data-terstruktur.html#cb13-3" tabindex="-1"></a></span>
@@ -624,320 +453,42 @@ div.csl-indent {
 <span id="cb13-5"><a href="modul-1-pengolahan-data-terstruktur.html#cb13-5" tabindex="-1"></a>data_ubl <span class="ot">&lt;-</span> <span class="fu">read.xlsx</span>(file_dibaca, <span class="at">sheet =</span> <span class="st">&quot;DataUtama_mhsUBL&quot;</span>)</span>
 <span id="cb13-6"><a href="modul-1-pengolahan-data-terstruktur.html#cb13-6" tabindex="-1"></a></span>
 <span id="cb13-7"><a href="modul-1-pengolahan-data-terstruktur.html#cb13-7" tabindex="-1"></a><span class="co"># Melihat data tersebut</span></span>
-<span id="cb13-8"><a href="modul-1-pengolahan-data-terstruktur.html#cb13-8" tabindex="-1"></a>data_ubl</span></code></pre></div>
-<pre><code>##    Timestamp Kampus_PT Nomor.urut Jenis.Kelamin Umur                         Fakultas               Prodi            Tingkat.Semester
-## 1   45413.83       UBL          1     Perempuan   21 Fakultas Ilmu Sosial dan Politik     Ilmu Komunikasi 4 (Semester 7 - Semester 8)
-## 2   45413.83       UBL          2     Laki-Laki   20                   Fakultas Hukum          Ilmu Hukum 3 (Semester 5 - Semester 6)
-## 3   45413.85       UBL          3     Laki-Laki   21      Fakultas Ekonomi dan Bisnis           Manajemen 4 (Semester 7 - Semester 8)
-## 4   45413.85       UBL          4     Laki-Laki   22      Fakultas Ekonomi dan Bisnis           Akuntansi 4 (Semester 7 - Semester 8)
-## 5   45413.88       UBL          5     Laki-Laki   21      Fakultas Ekonomi dan Bisnis           Manajemen 4 (Semester 7 - Semester 8)
-## 6   45413.92       UBL          6     Perempuan   21      Fakultas Ekonomi dan Bisnis           Akuntansi 4 (Semester 7 - Semester 8)
-## 7   45413.93       UBL          7     Perempuan   22 Fakultas Ilmu Sosial dan Politik Administrasi Publik 4 (Semester 7 - Semester 8)
-## 8   45413.93       UBL          8     Perempuan   22 Fakultas Ilmu Sosial dan Politik Administrasi Publik 4 (Semester 7 - Semester 8)
-## 9   45413.93       UBL          9     Laki-Laki   22      Fakultas Ekonomi dan Bisnis           Manajemen 4 (Semester 7 - Semester 8)
-## 10  45413.94       UBL         10     Perempuan   22 Fakultas Ilmu Sosial dan Politik Administrasi Publik 4 (Semester 7 - Semester 8)
-## 11  45414.00       UBL         11     Laki-Laki   21                   Fakultas Hukum          Ilmu Hukum 4 (Semester 7 - Semester 8)
-## 12  45414.01       UBL         12     Laki-Laki   22                   Fakultas Hukum          Ilmu Hukum 4 (Semester 7 - Semester 8)
-## 13  45414.01       UBL         13     Laki-Laki   22                   Fakultas Hukum          Ilmu Hukum 4 (Semester 7 - Semester 8)
-## 14  45414.02       UBL         14     Perempuan   22 Fakultas Ilmu Sosial dan Politik Administrasi Publik 4 (Semester 7 - Semester 8)
-## 15  45414.22       UBL         15     Laki-Laki   19      Fakultas Ekonomi dan Bisnis Administrasi Bisnis 3 (Semester 5 - Semester 6)
-## 16  45414.30       UBL         16     Perempuan   22      Fakultas Ekonomi dan Bisnis           Manajemen 4 (Semester 7 - Semester 8)
-## 17  45414.31       UBL         17     Perempuan   23      Fakultas Ekonomi dan Bisnis Administrasi Bisnis 4 (Semester 7 - Semester 8)
-## 18  45414.38       UBL         18     Perempuan   22      Fakultas Ekonomi dan Bisnis           Akuntansi 4 (Semester 7 - Semester 8)
-## 19  45414.39       UBL         19     Laki-Laki   23                   Fakultas Hukum          Ilmu Hukum 4 (Semester 7 - Semester 8)
-## 20  45414.44       UBL         20     Perempuan   22      Fakultas Ekonomi dan Bisnis           Manajemen 4 (Semester 7 - Semester 8)
-## 21  45414.46       UBL         21     Laki-Laki   20                  Fakultas Teknik        Teknik Sipil 3 (Semester 5 - Semester 6)
-## 22  45414.46       UBL         22     Laki-Laki   19           Fakultas Ilmu Komputer    Sistem Informasi 2 (Semester 3 – Semester 4)
-## 23  45414.46       UBL         23     Laki-Laki   21           Fakultas Ilmu Komputer    Sistem Informasi 2 (Semester 3 – Semester 4)
-## 24  45414.48       UBL         24     Laki-Laki   22      Fakultas Ekonomi dan Bisnis           Manajemen 4 (Semester 7 - Semester 8)
-## 25  45414.48       UBL         25     Laki-Laki   18      Fakultas Ekonomi dan Bisnis           Manajemen 1 (Semester 1 – Semester 2)
-## 26  45414.53       UBL         26     Perempuan   20      Fakultas Ekonomi dan Bisnis           Manajemen 2 (Semester 3 – Semester 4)
-## 27  45414.57       UBL         27     Perempuan   22      Fakultas Ekonomi dan Bisnis           Manajemen 4 (Semester 7 - Semester 8)
-## 28  45414.59       UBL         28     Laki-Laki   21      Fakultas Ekonomi dan Bisnis Administrasi Bisnis 3 (Semester 5 - Semester 6)
-## 29  45414.60       UBL         29     Laki-Laki   20      Fakultas Ekonomi dan Bisnis           Manajemen 2 (Semester 3 – Semester 4)
-## 30  45414.62       UBL         30     Laki-Laki   20                   Fakultas Hukum          Ilmu Hukum 4 (Semester 7 - Semester 8)
-## 31  45414.63       UBL         31     Perempuan   22                  Fakultas Teknik          Arsitektur 4 (Semester 7 - Semester 8)
-## 32  45414.63       UBL         32     Laki-Laki   21                  Fakultas Teknik        Teknik Sipil 3 (Semester 5 - Semester 6)
-## 33  45414.65       UBL         33     Laki-Laki   21                   Fakultas Hukum          Ilmu Hukum 4 (Semester 7 - Semester 8)
-## 34  45414.69       UBL         34     Laki-Laki   22                  Fakultas Teknik        Teknik Sipil 2 (Semester 3 – Semester 4)
-## 35  45414.70       UBL         35     Perempuan   22      Fakultas Ekonomi dan Bisnis           Manajemen 2 (Semester 3 – Semester 4)
-## 36  45414.71       UBL         36     Laki-Laki   23                  Fakultas Teknik        Teknik Mesin 3 (Semester 5 - Semester 6)
-## 37  45414.71       UBL         37     Perempuan   23                  Fakultas Teknik        Teknik Mesin 4 (Semester 7 - Semester 8)
-## 38  45414.71       UBL         38     Perempuan   19                   Fakultas Hukum          Ilmu Hukum 2 (Semester 3 – Semester 4)
-##        Uang.Saku kepemilikan.mobil kepemilikan.motor kepemilikan.sepeda                                      kendaraan.utama
-## 1         &lt; 1 jt                 1                 2                  1                                 Sepeda Motor Pribadi
-## 2    1 jt – 2 jt                 2                 1                  1                                        Mobil Pribadi
-## 3    1 jt – 2 jt                 1                 2                  2                                 Sepeda Motor Pribadi
-## 4    1 jt – 2 jt                 1                 4                  1 Kendaraan Bermotor (menumpang dengan keluarga/teman)
-## 5  2,1 jt – 3 jt                 4                 4                  1                                        Mobil Pribadi
-## 6    1 jt – 2 jt                 1                 2                  1                                  Transportasi Online
-## 7    1 jt – 2 jt                 1                 1                  1                                  Transportasi Online
-## 8         &lt; 1 jt                 1                 1                  1                                 Sepeda Motor Pribadi
-## 9    1 jt – 2 jt                 1                 1                  1                                 Sepeda Motor Pribadi
-## 10   1 jt – 2 jt                 1                 1                  1                                 Sepeda Motor Pribadi
-## 11   1 jt – 2 jt                NA                 1                 NA                                 Sepeda Motor Pribadi
-## 12   1 jt – 2 jt                 0                 2                  0                                 Sepeda Motor Pribadi
-## 13   1 jt – 2 jt                 0                 0                  0                                        Berjalan Kaki
-## 14   1 jt – 2 jt                 1                 1                  0                                 Sepeda Motor Pribadi
-## 15        &lt; 1 jt                 0                 1                  0                                 Sepeda Motor Pribadi
-## 16        &lt; 1 jt                 0                 1                  0                                 Sepeda Motor Pribadi
-## 17   1 jt – 2 jt                 0                 0                  0                                        Berjalan Kaki
-## 18 2,1 jt – 3 jt                 0                 1                  0                                 Sepeda Motor Pribadi
-## 19        &lt; 1 jt                 1                 0                  0                                 Sepeda Motor Pribadi
-## 20 2,1 jt – 3 jt                 1                 2                  0                                 Sepeda Motor Pribadi
-## 21 2,1 jt – 3 jt                 1                 2                  3                                 Sepeda Motor Pribadi
-## 22        &lt; 1 jt                 2                 1                  1                                 Sepeda Motor Pribadi
-## 23        &lt; 1 jt                 0                 1                  0                                 Sepeda Motor Pribadi
-## 24        &lt; 1 jt                 0                 0                  0 Kendaraan Bermotor (menumpang dengan keluarga/teman)
-## 25        &lt; 1 jt                 0                 1                  1                                 Sepeda Motor Pribadi
-## 26   1 jt – 2 jt                 0                 0                  0                                 Sepeda Motor Pribadi
-## 27   1 jt – 2 jt                 0                 1                  0                                 Sepeda Motor Pribadi
-## 28 2,1 jt – 3 jt                 2                 3                  3                                 Sepeda Motor Pribadi
-## 29   1 jt – 2 jt                 1                 1                  1                                 Sepeda Motor Pribadi
-## 30 2,1 jt – 3 jt                 1                 3                  0                                        Mobil Pribadi
-## 31 2,1 jt – 3 jt                 2                 2                  0                                 Sepeda Motor Pribadi
-## 32   1 jt – 2 jt                 1                 2                  0                                 Sepeda Motor Pribadi
-## 33   1 jt – 2 jt                 2                 2                  0                                        Mobil Pribadi
-## 34   1 jt – 2 jt                 1                 2                  0                                 Sepeda Motor Pribadi
-## 35 2,1 jt – 3 jt                 3                 2                  0                                        Mobil Pribadi
-## 36   1 jt – 2 jt                 2                 2                  1                                 Sepeda Motor Pribadi
-## 37 2,1 jt – 3 jt                 2                 3                  1                                 Sepeda Motor Pribadi
-## 38   1 jt – 2 jt                 1                 2                  2                                  Transportasi Online
-##                                         kelurahan          jenis.tempat.tinggal
-## 1                               Kalibalau Kencana  Rumah pribadi/rumah keluarga
-## 2                                    Gunung sulah  Rumah pribadi/rumah keluarga
-## 3                                      langkapura  Rumah pribadi/rumah keluarga
-## 4                         Bilabong JAYA JAYA JAYA  Rumah pribadi/rumah keluarga
-## 5                                        sukarame  Rumah pribadi/rumah keluarga
-## 6                                       Way halim  Rumah pribadi/rumah keluarga
-## 7                                    Segala Mider  Rumah pribadi/rumah keluarga
-## 8                                          pidada  Rumah pribadi/rumah keluarga
-## 9                                        Sukarame  Rumah pribadi/rumah keluarga
-## 10                                    kupang kota  Rumah pribadi/rumah keluarga
-## 11                                  Labuhan dalam      Rumah mengontrak pribadi
-## 12                                  Labuhan dalam Rumah mengontrak bersama-sama
-## 13                                  Labuhan dalam      Rumah mengontrak pribadi
-## 14                                       Sukaraja  Rumah pribadi/rumah keluarga
-## 15                                 Labuhan dalam       Rumah mengontrak pribadi
-## 16                                 Seputih Banyak                   Kos Sendiri
-## 17                                      Wah Areng                   Kos Sendiri
-## 18                                        waydadi              Kos bersama-sama
-## 19                                         natar          Rumah bersama saudara
-## 20                                 Gang harapan 1                   Kos Sendiri
-## 21                                       Kalianda              Kos bersama-sama
-## 22                                  Gunung terang              Kos bersama-sama
-## 23                 Gunung terang gang swadaya IV                    Kos Sendiri
-## 24        Jl BDN 2 TANJUNG SENANG BANDAR LAMPUNG               Kos bersama-sama
-## 25                                  Sawah Brebes   Rumah pribadi/rumah keluarga
-## 26                                      pringsewu                        Asrama
-## 27                                  labuhan dalam              Kos bersama-sama
-## 28                         dempo 1 , labuhan ratu                   Kos Sendiri
-## 29 Tanjung harapan kec.sep banyak Lampung tengah   Rumah pribadi/rumah keluarga
-## 30                                  gunung terang  Rumah pribadi/rumah keluarga
-## 31                           Kedaton Belakang Ubl                   Kos Sendiri
-## 32                                    sukamenanti  Rumah pribadi/rumah keluarga
-## 33                                Langkapura Baru  Rumah pribadi/rumah keluarga
-## 34                                       Rajabasa  Rumah pribadi/rumah keluarga
-## 35                                  Gotong royong  Rumah pribadi/rumah keluarga
-## 36                               Kelurahan talang  Rumah pribadi/rumah keluarga
-## 37                                        pahoman  Rumah pribadi/rumah keluarga
-## 38                      Jatiagung Lampung selatan  Rumah pribadi/rumah keluarga
-##                                                             nama.jalan.tempat.tinggal jarak.(km)
-## 1                                                                        eLBe Loundry  4.2237967
-## 2                                                             Jl.Urip Sumoharjo no 88  2.7033310
-## 3                                                      JL DARUSSALAM GG LANGGAR LK II  3.2370722
-## 4                                     Jl Darussalam bilabong bila bolong di jait dong  3.0023362
-## 5                                              jl.cendrawasih sukarame bandar lampung  5.9619250
-## 6                                                                Jl P tabuan nomor 26  2.9253306
-## 7                                                                         Jalan Blora  2.0588294
-## 8                                   jl.teluk ambon LK.III Panjang,kota bandar lampung 12.0078709
-## 9                                                            Jl. Pembangunan A5 ujung  4.7355783
-## 10                                                                    jl. drs warsito  6.7413074
-## 11                                                       Gang demokrasi jl Flamboyan   2.4239314
-## 12                                                                      Jl flyamboyan  2.4118160
-## 13                                                                        Jl Cendana   2.7787467
-## 14                                                                    Jl. Yos Sudarso 12.7777211
-## 15                                                                      Jl Flamboyan   2.4118160
-## 16                                                         Jl. Harapan I Labuhan Ratu  0.7819544
-## 17                                                 Jl.Z.A Pagar Alam, Gg Harapan III   0.3231065
-## 18                                                     jl untung suropati gg rukun 1   1.9110358
-## 19                                                     jln,moh ali,pemanggilan,natar   6.8909558
-## 20                                       Jl.ZA Pagar Alam gang harapan 1 labuhan ratu  0.1092263
-## 21                                                           Gunung terang langkapura 43.5451922
-## 22                                                                    gang suadaya IV  1.9653510
-## 23                                                    Gang sawadaya IV gunung terang   1.9653510
-## 24                                                                          Jl BDN 2   2.5078988
-## 25                                                                         Pasar Tugu  3.7533554
-## 26                                                                  Jl.jalan aja dulu 30.5272138
-## 27                                                                          Gg. BDN 2  2.5078988
-## 28                                                                            dempo 1  0.2986108
-## 29 Zainal Abidin pagar alam, Rajabasa perumahan Kenzo residence, samping deler wuling  3.0204809
-## 30                                                                                iya  1.2517151
-## 31                                                               Jl. Palapa IV no.31   0.3299862
-## 32                                                                  Gg. beruang no 73  1.7784158
-## 33                                                    Jl. Darussalam Gg.langgar no.21  3.2370722
-## 34                                                                   jl. nunyai no.64  2.1408915
-## 35                                                             Jl.Amir Hamzah 3 no.73  5.2967552
-## 36                                              Jl. w.r Supratman gg beringin 2 no.43  7.2033834
-## 37                                                             jl way pengubuan no 23  5.6545326
-## 38                                             Sidodadiasri jayiagung Lampung selatan 24.0211211
-##            alasan.pemilihan.lokasi.tempat.tinggal
-## 1                  Bersama keluarga/saudara/teman
-## 2  Mudahnya akses berpergian dari tempat tinggal 
-## 3                  Bersama keluarga/saudara/teman
-## 4     Lingkungan nyaman karna aman dari kejahatan
-## 5                     Dekat dengan fasilitas umum
-## 6                  Bersama keluarga/saudara/teman
-## 7                  Bersama keluarga/saudara/teman
-## 8                  Bersama keluarga/saudara/teman
-## 9                  Bersama keluarga/saudara/teman
-## 10                 Bersama keluarga/saudara/teman
-## 11                    Dekat dengan fasilitas umum
-## 12    Lingkungan nyaman karna aman dari kejahatan
-## 13    Lingkungan nyaman karna aman dari kejahatan
-## 14                 Bersama keluarga/saudara/teman
-## 15                                     Lain-lain 
-## 16                            Dekat dengan kampus
-## 17                            Dekat dengan kampus
-## 18    Lingkungan nyaman karna aman dari kejahatan
-## 19                 Bersama keluarga/saudara/teman
-## 20                            Dekat dengan kampus
-## 21 Mudahnya akses berpergian dari tempat tinggal 
-## 22                    Dekat dengan fasilitas umum
-## 23                    Dekat dengan fasilitas umum
-## 24                                     Lain-lain 
-## 25                 Bersama keluarga/saudara/teman
-## 26    Lingkungan nyaman karna aman dari kejahatan
-## 27    Lingkungan nyaman karna aman dari kejahatan
-## 28                            Dekat dengan kampus
-## 29                    Dekat dengan fasilitas umum
-## 30                 Bersama keluarga/saudara/teman
-## 31                            Dekat dengan kampus
-## 32                 Bersama keluarga/saudara/teman
-## 33                 Bersama keluarga/saudara/teman
-## 34                 Bersama keluarga/saudara/teman
-## 35                 Bersama keluarga/saudara/teman
-## 36                 Bersama keluarga/saudara/teman
-## 37                 Bersama keluarga/saudara/teman
-## 38                 Bersama keluarga/saudara/teman
-##                                                                                                                                 biaya.dalam.seminggu
-## 1                                                                                                                                            25 ribu
-## 2                                                                                                                                                200
-## 3                                                                                                                 50rb menggunakan kendaraan pribadi
-## 4                                                                                                                                      Sminggu 20 rb
-## 5                                                                                                                                     20 JUTA RUPIAH
-## 6                                                                                                                                              40 rb
-## 7                                                                                                                                              70 rb
-## 8                                                                                                                                              35 rb
-## 9                                                                                                                                       50 rb bensin
-## 10                                                                                                                                             350rb
-## 11                                                                                                                    Biaya bensin dalam seminggu 50
-## 12                                                                                                                                             50 rb
-## 13                                                                                                                                             30 rb
-## 14                                                                                                                                             30 rb
-## 15                                                                                                                                           35 ribu
-## 16                                                                                                                                              50rb
-## 17                                                                                                                                  Seminggu 200 rb 
-## 18                                                                                                                                    40 rb seminggu
-## 19                                                                                                                                            100rb 
-## 20                                                                                                                       Biaya dalam seminggu 600 rb
-## 21                                                                                                                                             50 rb
-## 22                                                                                                                      motor menumpang dengan teman
-## 23                                                                                                                                             50rb 
-## 24                                                                                                                                               5rb
-## 25                                                                                                                              50.000 rb perminggu 
-## 26                                                                                                                                               50k
-## 27                                                                                             menggunakan sepeda motor bensin 30rb sekitar seminggu
-## 28                                                                                                                                                50
-## 29                                                                                                                                          19 menit
-## 30 jika di akumulasikan untuk bensin mobil saja bisa 500ribu seminggu, untuk makan 50ribu 1hari, jika 7hari maka 350ribu jadi total seminggu 850ribu
-## 31                                                                                                                                             50 rb
-## 32                                                                                                                                              70rb
-## 33                                                                                                                                             300rb
-## 34                                                                                                                                            100 rb
-## 35                                                                                                                                            400 rb
-## 36                                                                                                                                            150 rb
-## 37                                                                                                                                             100rb
-## 38                                                                                                                                               150
-##    Jumlah.perjalanan.Senin Jumlah.Perjalanan.Selasa Jumlah.Perjalanan.Rabu Jumlah.Perjalanan.Kamis Jumlah.Perjalanan.Jumat
-## 1                        2                        3                      2                       3                       2
-## 2                        3                        3                      3                       3                       3
-## 3                        1                        1                      1                       1                       1
-## 4                        2                        2                      2                       2                       2
-## 5                        1                        1                      1                       1                       1
-## 6                        3                        3                      1                       1                       1
-## 7                        2                        2                      2                       2                       2
-## 8                        4                        4                      4                       4                       4
-## 9                        4                        4                      4                       4                       3
-## 10                       3                        3                      3                       3                       3
-## 11             Tidak Valid                        3                      1                       1                       1
-## 12                       2                        1                      2                       1                       2
-## 13             Tidak Valid                        1                      1                       1                       1
-## 14                       4                        4                      4                       4                       4
-## 15                       2                        1                      3                       3                       3
-## 16                       2                        3                      2                       2                       2
-## 17                       2                        3                      4                       2                       3
-## 18                       1                        1                      1                       1                       1
-## 19                       1                        1                      1                       1                       1
-## 20                       4                        3                      3                       3                       3
-## 21                       4                        1                      1                       1                       1
-## 22             Tidak Valid                        1                      1                       1                       1
-## 23             Tidak Valid                        1                      1                       1                       1
-## 24                       4                        3                      3                       3                       3
-## 25                       2                        4                      3                       3                       3
-## 26             Tidak Valid                        1                      1                       1                       1
-## 27                       5                        5                      5                       5                       5
-## 28             Tidak Valid                        1                      1                       1                       1
-## 29             Tidak Valid                        1                      1                       2                       1
-## 30                       4                        3                      3                       3                       3
-## 31                       2                        3                      2                       1                       1
-## 32                       3                        3                      3                       2                       1
-## 33                       3                        3                      1                       4                       1
-## 34                       3                        4                      3                       2                       3
-## 35                       4                        3                      2                       3                       2
-## 36                       2                        4                      3                       1                       5
-## 37                       4                        1                      1                       1                       1
-## 38                       1                        1                      1                       1                       1
-##    Jumlah.Perjalanan.Sabtu Jumlah.Perjalanan.Ahad
-## 1                        2                      2
-## 2                        3                      3
-## 3                        1                      1
-## 4                        2                      2
-## 5                        1                      1
-## 6                        1                      1
-## 7                        2                      2
-## 8                        3                      3
-## 9                        4                      4
-## 10                       2                      1
-## 11                       1                      1
-## 12                       1                      1
-## 13                       1                      1
-## 14                       1                      1
-## 15                       1                      1
-## 16                       2                      1
-## 17                       1                      2
-## 18                       1                      1
-## 19                       1                      1
-## 20                       3                      3
-## 21                       1                      1
-## 22                       1                      1
-## 23                       1                      1
-## 24                       3                      3
-## 25                       3                      3
-## 26                       1                      1
-## 27                       3                      3
-## 28                       1                      1
-## 29                       1                      1
-## 30                       3                      1
-## 31                       1                      1
-## 32                       4                      1
-## 33                       3                      1
-## 34                       3                      1
-## 35                       2                      1
-## 36                       3                      1
-## 37                       2                      1
-## 38                       1                      1
-##  [ reached &#39;max&#39; / getOption(&quot;max.print&quot;) -- omitted 341 rows ]</code></pre>
+<span id="cb13-8"><a href="modul-1-pengolahan-data-terstruktur.html#cb13-8" tabindex="-1"></a><span class="fu">head</span>(data_ubl)</span></code></pre></div>
+<pre><code>##   Timestamp Kampus_PT Nomor.urut Jenis.Kelamin Umur                         Fakultas           Prodi            Tingkat.Semester
+## 1  45413.83       UBL          1     Perempuan   21 Fakultas Ilmu Sosial dan Politik Ilmu Komunikasi 4 (Semester 7 - Semester 8)
+## 2  45413.83       UBL          2     Laki-Laki   20                   Fakultas Hukum      Ilmu Hukum 3 (Semester 5 - Semester 6)
+## 3  45413.85       UBL          3     Laki-Laki   21      Fakultas Ekonomi dan Bisnis       Manajemen 4 (Semester 7 - Semester 8)
+## 4  45413.85       UBL          4     Laki-Laki   22      Fakultas Ekonomi dan Bisnis       Akuntansi 4 (Semester 7 - Semester 8)
+## 5  45413.88       UBL          5     Laki-Laki   21      Fakultas Ekonomi dan Bisnis       Manajemen 4 (Semester 7 - Semester 8)
+## 6  45413.92       UBL          6     Perempuan   21      Fakultas Ekonomi dan Bisnis       Akuntansi 4 (Semester 7 - Semester 8)
+##       Uang.Saku kepemilikan.mobil kepemilikan.motor kepemilikan.sepeda                                      kendaraan.utama
+## 1        &lt; 1 jt                 1                 2                  1                                 Sepeda Motor Pribadi
+## 2   1 jt – 2 jt                 2                 1                  1                                        Mobil Pribadi
+## 3   1 jt – 2 jt                 1                 2                  2                                 Sepeda Motor Pribadi
+## 4   1 jt – 2 jt                 1                 4                  1 Kendaraan Bermotor (menumpang dengan keluarga/teman)
+## 5 2,1 jt – 3 jt                 4                 4                  1                                        Mobil Pribadi
+## 6   1 jt – 2 jt                 1                 2                  1                                  Transportasi Online
+##                 kelurahan         jenis.tempat.tinggal                       nama.jalan.tempat.tinggal jarak.(km)
+## 1       Kalibalau Kencana Rumah pribadi/rumah keluarga                                    eLBe Loundry   4.223797
+## 2            Gunung sulah Rumah pribadi/rumah keluarga                         Jl.Urip Sumoharjo no 88   2.703331
+## 3              langkapura Rumah pribadi/rumah keluarga                  JL DARUSSALAM GG LANGGAR LK II   3.237072
+## 4 Bilabong JAYA JAYA JAYA Rumah pribadi/rumah keluarga Jl Darussalam bilabong bila bolong di jait dong   3.002336
+## 5                sukarame Rumah pribadi/rumah keluarga          jl.cendrawasih sukarame bandar lampung   5.961925
+## 6               Way halim Rumah pribadi/rumah keluarga                            Jl P tabuan nomor 26   2.925331
+##           alasan.pemilihan.lokasi.tempat.tinggal               biaya.dalam.seminggu Jumlah.perjalanan.Senin Jumlah.Perjalanan.Selasa
+## 1                 Bersama keluarga/saudara/teman                            25 ribu                       2                        3
+## 2 Mudahnya akses berpergian dari tempat tinggal                                 200                       3                        3
+## 3                 Bersama keluarga/saudara/teman 50rb menggunakan kendaraan pribadi                       1                        1
+## 4    Lingkungan nyaman karna aman dari kejahatan                      Sminggu 20 rb                       2                        2
+## 5                    Dekat dengan fasilitas umum                     20 JUTA RUPIAH                       1                        1
+## 6                 Bersama keluarga/saudara/teman                              40 rb                       3                        3
+##   Jumlah.Perjalanan.Rabu Jumlah.Perjalanan.Kamis Jumlah.Perjalanan.Jumat Jumlah.Perjalanan.Sabtu Jumlah.Perjalanan.Ahad
+## 1                      2                       3                       2                       2                      2
+## 2                      3                       3                       3                       3                      3
+## 3                      1                       1                       1                       1                      1
+## 4                      2                       2                       2                       2                      2
+## 5                      1                       1                       1                       1                      1
+## 6                      1                       1                       1                       1                      1</code></pre>
 <p>Kita juga dapat melihat <em>dataset</em> kita secara lengkap dengan perintah <code>View()</code></p>
 <div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="modul-1-pengolahan-data-terstruktur.html#cb15-1" tabindex="-1"></a><span class="co"># Melihat set data UINRIL</span></span>
 <span id="cb15-2"><a href="modul-1-pengolahan-data-terstruktur.html#cb15-2" tabindex="-1"></a><span class="fu">View</span>(data)</span>
@@ -1330,8 +881,8 @@ Salbina; 21</code></pre>
 <div id="soal-latihan" class="section level2 hasAnchor" number="1.4">
 <h2><span class="header-section-number">1.4</span> Soal Latihan<a href="modul-1-pengolahan-data-terstruktur.html#soal-latihan" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <ol style="list-style-type: decimal">
-<li><p>Dari fail <em>(file)</em> “<code>Data Praktikum 01.xlsx</code>” terdapat dua <em>sheet</em> lagi yang merupakan hasil kuesioner mahasiswa ITERA dan UNILA. Untuk hasil kuesioner mahasiswa ITERA terletak pada <em>sheet</em> bernama <code>DataUtama_mhsITERA</code> dan hasil kuesioner mahasiswa UNILA pada <code>DataUtama_mhsUNILA</code>. Tentukan sebanyak mungkin kolom yang bisa digabungkan, yakni yang tipenya sama. Gabungkan dua set data tersebut seperti yang sudah kalian pelajari dan simpan menjadi fail dengan nama <strong><code>Prak1_[NIM1]_[NIM2].xlsx</code></strong>. <strong><code>STP-1.4</code></strong>.</p></li>
-<li><p>Berapa variabel objek yang kalian hasilkan dalam data gabungan? Tunjukkan beserta buktinya <strong><code>STP-1.3</code></strong>.</p></li>
+<li><p>Dari fail <em>(file)</em> “<code>Data Praktikum 01.xlsx</code>” terdapat dua <em>sheet</em> lagi yang merupakan hasil kuesioner mahasiswa ITERA dan UNILA. Untuk hasil kuesioner mahasiswa ITERA terletak pada <em>sheet</em> bernama <code>DataUtama_mhsITERA</code> dan hasil kuesioner mahasiswa UNILA pada <code>DataUtama_mhsUNILA</code>. Tentukan sebanyak mungkin kolom yang bisa digabungkan, yakni yang tipenya sama. Gabungkan dua set data tersebut seperti yang sudah kalian pelajari dan simpan menjadi fail dengan nama <strong><code>Prak1_[NIM1]_[NIM2].xlsx</code></strong>. <span class="capaian">STP-1.4</span>.</p></li>
+<li><p>Berapa variabel objek yang kalian hasilkan dalam data gabungan? Tunjukkan beserta buktinya <span class="capaian">STP-1.3</span>.</p></li>
 </ol>
 <hr />
 
@@ -1385,7 +936,7 @@ gitbook.start({
     "link": null,
     "text": null
   },
-  "download": null,
+  "download": ["_main.pdf"],
   "search": {
     "engine": "fuse",
     "options": null

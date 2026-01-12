@@ -1,6 +1,6 @@
 # Modul-2: Analisis Statistika Deskriptif
 
-Setelah mempelajari modul ini, Anda diharapkan dapat mengoperasikan perhitungan persentase/proporsi, rasio, laju, ukuran pemusatan, dan ukuran penyebaran untuk suatu data kuantitatif dengan menggunakan perangkat lunak **`STP-2.4`**
+Setelah mempelajari modul ini, Anda diharapkan dapat mengoperasikan perhitungan persentase/proporsi, rasio, laju, ukuran pemusatan, dan ukuran penyebaran untuk suatu data kuantitatif dengan menggunakan perangkat lunak [STP-2.4]{.capaian}
 
 ---
 
@@ -125,7 +125,7 @@ Pengecekan *missing values* dilakukan dengan perintah `is.na()` yang menghasilka
 ```{r}
 checkMV_ubl <- is.na(data.ubl)
 
-checkMV_ubl
+head(checkMV_ubl)
 
 colSums(checkMV_ubl)
 ```
@@ -405,7 +405,7 @@ digits = list(kepemilikan.motor ~ 0, kepemilikan.mobil ~ 0)
 
 ## Soal Latihan
 
-Impor dataset UIN RIL dan lakukan analisis statistik deskriptif untuk data-data yang ada di dalamnya **`STP-2.4`**:
+Impor dataset UIN RIL dan lakukan analisis statistik deskriptif untuk data-data yang ada di dalamnya [STP-2.4]{.capaian}:
 
 a.  Persentase mahasiswa berdasarkan uang saku
 

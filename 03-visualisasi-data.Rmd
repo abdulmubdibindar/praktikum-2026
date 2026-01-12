@@ -3,10 +3,10 @@
 
 Setelah mempelajari modul ini, Anda diharapkan dapat:
 
-1. memilih visualiasi yang tepat sesuai dengan variabel yang akan disajikan dan informasi yang ingin disampaikan **`STP-3.1`**
-2. menginterpretasikan suatu visualiasi data kuantitatif secara mendalam **`STP-3.2`**
-3. menjelaskan pentingnya menentukan tingkat pengukuran untuk sebuah variabel dari kaitannya dengan analisis statistik deskriptif dan diagram yang dipilih untuk menyajikan informasi **`STP-3.4`**
-4. menghasilkan grafik yang tepat sesuai variabel yang akan disajikan **`STP-3.3`**
+1. memilih visualiasi yang tepat sesuai dengan variabel yang akan disajikan dan informasi yang ingin disampaikan [STP-3.1]{.capaian}
+2. menginterpretasikan suatu visualiasi data kuantitatif secara mendalam [STP-3.2]{.capaian}
+3. menjelaskan pentingnya menentukan tingkat pengukuran untuk sebuah variabel dari kaitannya dengan analisis statistik deskriptif dan diagram yang dipilih untuk menyajikan informasi [STP-3.4]{.capaian}
+4. menghasilkan grafik yang tepat sesuai variabel yang akan disajikan [STP-3.3]{.capaian}
 
 
 ---
@@ -494,8 +494,8 @@ scatter_plot
 
 ## Soal Praktikum
 
-1.  Kumpulkan kembali fail modul ini yang sudah lengkap dengan hasil pengerjaannya. **`STP-3.3`**
-2.  Tuliskan interpretasi kalian terhadap setiap diagram yang dihasilkan dalam modul ini. **`STP-3.2`**
-3.  Buatlah diagram yang tepat untuk variabel `biaya.dalam.sepekan`. **`STP-3.1`**
-4.  Mengapa Anda memilih diagram seperti yang Anda lakukan di nomor 3? Perhatikan tingkat pengukuran variabel dan jenis nilai dari variabel tersebut! **`STP-3.4`**
+1.  Kumpulkan kembali fail modul ini yang sudah lengkap dengan hasil pengerjaannya. [STP-3.3]{.capaian}
+2.  Tuliskan interpretasi kalian terhadap setiap diagram yang dihasilkan dalam modul ini. [STP-3.2]{.capaian}
+3.  Buatlah diagram yang tepat untuk variabel `biaya.dalam.sepekan`. [STP-3.1]{.capaian}
+4.  Mengapa Anda memilih diagram seperti yang Anda lakukan di nomor 3? Perhatikan tingkat pengukuran variabel dan jenis nilai dari variabel tersebut! [STP-3.4]{.capaian}
 

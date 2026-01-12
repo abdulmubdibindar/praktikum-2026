@@ -6,10 +6,22 @@ output:
     bookdown::gitbook:
         css: style.css
         split_bib: false
+    bookdown::pdf_book:
+        latex_engine: xelatex
+        citation_package: natbib
+        keep_tex: true
+        pandoc_args: ["--lua-filter=capaian.lua"]
+        includes:
+            in_header: preamble.tex
 bibliography: referensi.bib
 biblio-title: "Referensi"
 link-citations: true
 ---
+
+```{r setup, include=FALSE}
+# Opsi ini penting untuk mencegah error LaTeX karena karakter khusus dari pesan warning/error
+options(cli.hyperlink = FALSE)
+```
 
 # Pengantar {-}
 

@@ -1,0 +1,15 @@
+\usepackage{tcolorbox}
+\usepackage{xcolor}
+
+% Define custom colors matching style.css
+\definecolor{capaianbg}{HTML}{e3f2fd}
+\definecolor{capaianfg}{HTML}{1565c0}
+\definecolor{capaianborder}{HTML}{90caf9}
+
+% Define the \capaian command using tcbox (tcolorbox for inline content)
+\newtcbox{\capaian}{on line, 
+  boxsep=1pt, left=2pt, right=2pt, top=1pt, bottom=1pt,
+  colframe=capaianborder, colback=capaianbg, text only,
+  fontupper=\ttfamily\footnotesize\color{capaianfg},
+  boxrule=0.5pt, arc=2pt
+}

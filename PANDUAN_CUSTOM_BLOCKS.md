@@ -8,7 +8,7 @@ Dalam R Markdown / Bookdown, kita bisa membuat kotak khusus (blocks) menggunakan
 
 **Sintaks:**
 
-```markdown
+``` markdown
 ::: nama-kelas
 Isi teks di sini...
 :::
@@ -20,14 +20,14 @@ Berikut adalah daftar gaya blok yang direkomendasikan untuk modul praktikum Anda
 
 ### A. Catatan (Note)
 
-Digunakan untuk informasi tambahan atau klarifikasi yang _nice to know_ tapi bukan inti materi.
+Digunakan untuk informasi tambahan atau klarifikasi yang *nice to know* tapi bukan inti materi.
 
-- **Warna**: Biru
-- **Kode**: `::: rmdnote` (Sudah ada di `style.css` Anda)
+-   **Warna**: Biru
+-   **Kode**: `::: rmdnote` (Sudah ada di `style.css` Anda)
 
 **Contoh Penggunaan:**
 
-```markdown
+``` markdown
 ::: rmdnote
 **Catatan:** R bersifat _case-sensitive_, artinya huruf besar dan kecil dianggap berbeda.
 :::
@@ -35,14 +35,14 @@ Digunakan untuk informasi tambahan atau klarifikasi yang _nice to know_ tapi buk
 
 ### B. Tips (Tip)
 
-Digunakan untuk memberikan saran praktis, jalan pintas (_shortcut_), atau _best practice_.
+Digunakan untuk memberikan saran praktis, jalan pintas (*shortcut*), atau *best practice*.
 
-- **Warna**: Hijau
-- **Kode**: `::: rmdtip`
+-   **Warna**: Hijau
+-   **Kode**: `::: rmdtip`
 
 **Contoh Penggunaan:**
 
-```markdown
+``` markdown
 ::: rmdtip
 **Tip:** Gunakan tombol `Tab` untuk melengkapi nama fungsi secara otomatis di RStudio.
 :::
@@ -52,12 +52,12 @@ Digunakan untuk memberikan saran praktis, jalan pintas (_shortcut_), atau _best 
 
 Digunakan untuk konsep kunci yang **harus** dipahami mahasiswa sebelum melanjutkan.
 
-- **Warna**: Ungu
-- **Kode**: `::: rmdimportant`
+-   **Warna**: Ungu
+-   **Kode**: `::: rmdimportant`
 
 **Contoh Penggunaan:**
 
-```markdown
+``` markdown
 ::: rmdimportant
 **Penting:** Selalu pastikan data Anda sudah bersih (clean) sebelum melakukan analisis statistik.
 :::
@@ -67,12 +67,12 @@ Digunakan untuk konsep kunci yang **harus** dipahami mahasiswa sebelum melanjutk
 
 Digunakan untuk memperingatkan tentang potensi error atau kesalahan umum.
 
-- **Warna**: Kuning/Oranye
-- **Kode**: `::: rmdwarning`
+-   **Warna**: Kuning/Oranye
+-   **Kode**: `::: rmdwarning`
 
 **Contoh Penggunaan:**
 
-```markdown
+``` markdown
 ::: rmdwarning
 **Hati-hati:** Fungsi ini akan menghapus semua variabel di memori Anda.
 :::
@@ -82,25 +82,25 @@ Digunakan untuk memperingatkan tentang potensi error atau kesalahan umum.
 
 Digunakan untuk menunujukkan soal latihan yang harus dikerjakan.
 
-- **Warna**: Abu-abu / Netral dengan border tebal
-- **Kode**: `::: rmdexercise`
+-   **Warna**: Abu-abu / Netral dengan border tebal
+-   **Kode**: `::: rmdexercise`
 
 **Contoh Penggunaan:**
 
-```markdown
+``` markdown
 ::: rmdexercise
 **Latihan 1:**
 Buatlah sebuah vektor yang berisi 5 nama kota di Indonesia!
 :::
 ```
 
----
+------------------------------------------------------------------------
 
 ## 3. Cara Mengaktifkan (Copy-Paste CSS)
 
 Agar blok-blok di atas (selain `rmdnote` yang sudah ada) berfungsi, salin kode di bawah ini dan tempelkan ke bagian paling bawah file **`style.css`** Anda.
 
-```css
+``` css
 /* --- MULAI CUSTOM BLOCKS --- */
 
 /* 1. Catatan (Sudah ada, ini versi update yang lebih rapi jika mau) */
@@ -175,7 +175,7 @@ Agar blok-blok di atas (selain `rmdnote` yang sudah ada) berfungsi, salin kode d
 
 ## 4. Tips Tambahan
 
-- **Kombinasi dengan Emoji**: Anda bisa menambahkan emoji di judul blok agar lebih menarik.
-  - `::: rmdtip` 💡 **Tips Pro:** ... `:::`
-  - `::: rmdwarning` ⚠️ **Awas:** ... `:::`
-- **Indentasi**: Pastikan isi blok menjorok (indent) atau berada di baris baru agar Markdown di dalamnya (seperti _bold_, link, atau kode) tetap terbaca/dirender dengan benar.
+-   **Kombinasi dengan Emoji**: Anda bisa menambahkan emoji di judul blok agar lebih menarik.
+    -   `::: rmdtip` 💡 **Tips Pro:** ... `:::`
+    -   `::: rmdwarning` ⚠️ **Awas:** ... `:::`
+-   **Indentasi**: Pastikan isi blok menjorok (indent) atau berada di baris baru agar Markdown di dalamnya (seperti *bold*, link, atau kode) tetap terbaca/dirender dengan benar.

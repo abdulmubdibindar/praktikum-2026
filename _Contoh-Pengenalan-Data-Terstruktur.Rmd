@@ -2,8 +2,8 @@
 
 > Setelah mempelajari praktikum ini mahasiswa diharapkan dapat:
 >
-> 1.  menganalisis variabel dan objek dalam sebuah format data terstruktur **`STP-1.3`**
-> 2.  mengelola data terstruktur dengan tepat menggunakan perangkat komputer **`STP-1.4`**
+> 1.  menganalisis variabel dan objek dalam sebuah format data terstruktur [STP-1.3]{.capaian}
+> 2.  mengelola data terstruktur dengan tepat menggunakan perangkat komputer [STP-1.4]{.capaian}
 
 ------------------------------------------------------------------------
 
@@ -718,9 +718,9 @@ write.xlsx(data_gabungan, "Data UINRIL & UBL.xlsx")
 
 ## 4. Soal Praktikum
 
-1.  Dari fail *(file)* "`Data Praktikum 01.xlsx`" terdapat dua *sheet* lagi yang merupakan hasil kuesioner mahasiswa ITERA dan UNILA. Untuk hasil kuesioner mahasiswa ITERA terletak pada *sheet* bernama `DataUtama_mhsITERA` dan hasil kuesioner mahasiswa UNILA pada `DataUtama_mhsUNILA`. Tentukan sebanyak mungkin kolom yang bisa digabungkan, yakni yang tipenya sama. Gabungkan dua set data tersebut seperti yang sudah kalian pelajari dan simpan menjadi fail dengan nama **`Prak1_[NIM1]_[NIM2].xlsx`**. **`STP-1.4`**.
+1.  Dari fail *(file)* "`Data Praktikum 01.xlsx`" terdapat dua *sheet* lagi yang merupakan hasil kuesioner mahasiswa ITERA dan UNILA. Untuk hasil kuesioner mahasiswa ITERA terletak pada *sheet* bernama `DataUtama_mhsITERA` dan hasil kuesioner mahasiswa UNILA pada `DataUtama_mhsUNILA`. Tentukan sebanyak mungkin kolom yang bisa digabungkan, yakni yang tipenya sama. Gabungkan dua set data tersebut seperti yang sudah kalian pelajari dan simpan menjadi fail dengan nama **`Prak1_[NIM1]_[NIM2].xlsx`**. [STP-1.4]{.capaian}.
 
-2.  Berapa variabel objek yang kalian hasilkan dalam data gabungan? Tunjukkan beserta buktinya **`STP-1.3`**.
+2.  Berapa variabel objek yang kalian hasilkan dalam data gabungan? Tunjukkan beserta buktinya [STP-1.3]{.capaian}.
 
 ------------------------------------------------------------------------
 

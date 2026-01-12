@@ -2,8 +2,8 @@
 
 Setelah mempelajari modul ini, Anda diharapkan dapat:
 
-1. mampu menghasilkan koefisien korelasi variabel di tingkat nominal dengan perangkat lunak komputer **`STP-9.2`**
-2. mampu menghasilkan koefisien korelasi variabel di tingkat ordinal dengan perangkat lunak komputer **`STP-10.2`**
+1. mampu menghasilkan koefisien korelasi variabel di tingkat nominal dengan perangkat lunak komputer [STP-9.2]{.capaian}
+2. mampu menghasilkan koefisien korelasi variabel di tingkat ordinal dengan perangkat lunak komputer [STP-10.2]{.capaian}
 
 
 ---

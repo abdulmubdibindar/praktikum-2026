@@ -2,8 +2,8 @@
 
 Setelah mempelajari modul ini, Anda diharapkan dapat:
 
-1. menghasilkan distribusi statistik sampel dan menghitung standard error-nya **`STP-4.3`**
-2. menghasilkan interval kepercayaan dengan menggunaan perangkat lunak komputer **`STP-5.2`**
+1. menghasilkan distribusi statistik sampel dan menghitung standard error-nya [STP-4.3]{.capaian}
+2. menghasilkan interval kepercayaan dengan menggunaan perangkat lunak komputer [STP-5.2]{.capaian}
 
 
 ---
