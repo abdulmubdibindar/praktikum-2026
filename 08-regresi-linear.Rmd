@@ -422,14 +422,14 @@ Variabel-variabel *dummy* yang 5 buah ini hanya akan bernilai 1 atau 0 sesuai de
 
 Tabel berikut merangkum nilai-nilai variabel *dummy* untuk setiap kategori nilai variabel `jenis tempat tinggal`.
 
-| Kategori | `lingKos sendiri` | `lingRumah mengontrak bersama` | `lingRumah mengontrak pribadi` | `lingRumah pribadi` | `lingRumah saudara` |
-|----|----|----|----|----|----|
-| Kos sendiri | 1 | 0 | 0 | 0 | 0 |
-| Rumah mengontrak bersama | 0 | 1 | 0 | 0 | 0 |
-| Rumah mengontrak pribadi | 0 | 0 | 1 | 0 | 0 |
-| Rumah pribadi | 0 | 0 | 0 | 1 | 0 |
-| Rumah saudara | 0 | 0 | 0 | 0 | 1 |
-| Kos bersama | 0 | 0 | 0 | 0 | 0 |
+| Kategori                 | `lingKos sendiri` | `lingRumah mengontrak bersama` | `lingRumah mengontrak pribadi` | `lingRumah pribadi` | `lingRumah saudara` |
+| ------------------------ | ----------------- | ------------------------------ | ------------------------------ | ------------------- | ------------------- |
+| Kos sendiri              | 1                 | 0                              | 0                              | 0                   | 0                   |
+| Rumah mengontrak bersama | 0                 | 1                              | 0                              | 0                   | 0                   |
+| Rumah mengontrak pribadi | 0                 | 0                              | 1                              | 0                   | 0                   |
+| Rumah pribadi            | 0                 | 0                              | 0                              | 1                   | 0                   |
+| Rumah saudara            | 0                 | 0                              | 0                              | 0                   | 1                   |
+| Kos bersama              | 0                 | 0                              | 0                              | 0                   | 0                   |
 
 : Nilai variabel dummy untuk setiap kategori
 
@@ -459,5 +459,28 @@ predict(mdl, mhs)
 > b.  Tafsirlah kualitas model kita, mulai uji kualitas model ($F$), $R^2$, serta uji kualitas setiap variabel
 > c.  Apa saja yang meningkatkan dan menurunkan biaya perjalanan sepekan mahasiswa?
 
+::: {.rmdexercise}
+**Aktivitas Mandiri 4: Analisis Regresi Komprehensif [STP-13.3, STP-14.3]**
 
+**A. Regresi Linear Sederhana [STP-13.3]:**
 
+Model: `jumlah perjalanan weekdays` vs `jarak`
+1. Buat model sederhana
+2. Tuliskan persamaan regresi
+3. Interpretasikan intercept dan slope
+4. Uji kualitas model (F-statistic, R²)
+
+**B. Regresi Linear Berganda [STP-14.3]:**
+
+Model: `jumlah perjalanan weekdays` ~ `jarak` + `umur` + `jenis tempat tinggal`
+1. Buat model berganda
+2. Tuliskan persamaan lengkap
+3. Identifikasi variabel signifikan
+4. Bandingkan R²
+
+**C. Interpretasi:**
+- Faktor yang meningkatkan/menurunkan jumlah perjalanan?
+- Proporsi variansi yang dijelaskan?
+:::
+
+------------------------------------------------------------------------

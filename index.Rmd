@@ -107,7 +107,7 @@ Cara (paling) utama untuk menjalankan perintah bahasa pemrograman R adalah denga
 Misalnya, jika Anda mengetikkan `1 + 1` di Console lalu menekan **Enter**, R akan langsung memberikan jawabannya.
 
 ::: rmdexercise
-**Latihan: Halo Dunia**
+**Aktivitas Mandiri: Halo Dunia**
 
 Cobalah ketik perintah berikut di Console, lalu tekan Enter:
 
@@ -118,24 +118,55 @@ Selamat! Anda baru saja menjalankan kode R pertama Anda.
 
 Namun, mengetik satu per satu di Console akan melelahkan jika perintahnya banyak. Oleh karena itu, kita biasanya menulis kode dalam sebuah file *source code* (ekstensi `.R`).
 
-Untuk menjalankan kode dari file `.R` ke Console tanpa mengetik ulang: 1. Sorot (blok) baris kode yang ingin dijalankan di panel *Script* (jendela kiri atas). 2. Tekan kombinasi tombol **Ctrl + Enter** (Windows/Linux) atau **Cmd + Enter** (Mac).
+### Membuat File Kode Sumber R (`.R`)
 
-Kode yang disorot akan otomatis dikirim ke *Console* dan dijalankan. Ini adalah cara kerja standar yang efisien dalam menggunakan R.
+File kode sumber R (berekstensi `.R`) adalah dokumen teks yang berisi rangkaian perintah R yang dapat disimpan, diedit, dan dijalankan berulang kali. Ini adalah cara profesional dalam bekerja dengan R, karena kode kita menjadi **terdokumentasi**, **dapat direproduksi**, dan **mudah dibagikan**.
+
+**Langkah-langkah membuat file `.R` baru:**
+
+1. Di RStudio, pilih menu **File → New File → R Script** (atau tekan **Ctrl + Shift + N** di Windows/Linux, **Cmd + Shift + N** di Mac)
+2. Sebuah tab baru akan muncul di panel *Script* (jendela kiri atas)
+3. Ketikkan kode R Anda di dalam tab tersebut
+4. Simpan file dengan memilih **File → Save** (atau **Ctrl + S** / **Cmd + S**)
+5. Beri nama file dengan ekstensi `.R`, misalnya `kode_R_pertama_saya.R`
+
+**Menjalankan kode dari file `.R`:**
+
+Untuk menjalankan kode dari file `.R` ke Console tanpa mengetik ulang:
+
+1. Sorot (blok) baris kode yang ingin dijalankan di panel *Script*
+2. Tekan kombinasi tombol **Ctrl + Enter** (Windows/Linux) atau **Cmd + Enter** (Mac)
+3. Kode yang disorot akan otomatis dikirim ke *Console* dan dijalankan
+
+Ini adalah cara kerja standar yang efisien dalam menggunakan R. Dengan cara ini, kita bisa:
+
+- **Menyimpan pekerjaan** untuk digunakan di lain waktu
+- **Menjalankan ulang** analisis dengan mudah
+- **Berbagi kode** dengan rekan kerja atau asisten praktikum
+- **Mendokumentasikan** setiap langkah analisis kita
 
 ::: rmdexercise
-**Latihan: Membuat Kode Sumber R**
+**Aktivitas Mandiri: Membuat Kode Sumber R**
 
-1.  Buatlah dokumen baru dalam RStudio bernama `kode_R_pertama_saya.R`
-2.  Isikan di dalamnya baris-baris berikut
+1. Buatlah file R Script baru melalui menu **File → New File → R Script**
+2. Ketikkan kode berikut di dalam file tersebut:
 
 ``` r
+# File kode R pertama saya
+# Dibuat pada: [isi dengan tanggal hari ini]
+
 print("Halo dunia!")
 print("Hari ini saya mulai belajar R!")
+
+# Operasi matematika sederhana
+2 + 2
+10 * 5
 ```
 
-3.  Sorot kedua baris tersebut, tekan **Ctrl + Enter**
-4.  Perhatikan jendela *Console*.
-5.  Selamat, Anda baru saja membuat file kode sumber R pertama Anda!
+3. Simpan file dengan nama `kode_R_pertama_saya.R` di dalam folder **Praktikum STP 2026**
+4. Sorot semua baris kode (kecuali komentar jika mau), lalu tekan **Ctrl + Enter** (Windows/Linux) atau **Cmd + Enter** (Mac)
+5. Perhatikan jendela *Console* - Anda akan melihat hasil eksekusi kode Anda
+6. Selamat! Anda baru saja membuat file kode sumber R pertama Anda yang dapat disimpan dan dijalankan kapan saja.
 :::
 
 ------------------------------------------------------------------------
@@ -268,7 +299,7 @@ Paket utama yang akan sering kita gunakan adalah:
 -   **`openxlsx`**: Untuk membaca dan menulis file Excel.
 
 ::: rmdexercise
-**Latihan: Instalasi Paket**
+**Aktivitas Mandiri: Instalasi Paket**
 
 Cobalah untuk menginstal paket `tidyverse` dan `openxlsx` di komputer Anda dengan mengetikkan perintah berikut di *Console*:
 

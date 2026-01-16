@@ -367,3 +367,24 @@ print(G_uangSaku_tingkatSemester$C)
 print(G_uangSaku_tingkatSemester$D)
 ```
 
+::: {.rmdexercise}
+**Aktivitas Mandiri 3: Analisis Korelasi Komprehensif [STP-9.2, STP-10.2]**
+
+**A. Korelasi Nominal [STP-9.2]:**
+
+1. **Fakultas vs Prodi:**
+   - Hitung V Cramer dan Lambda
+   - Interpretasikan kekuatan hubungan
+
+2. **Jenis Kelamin vs Kendaraan Utama:**
+   - Hitung kedua koefisien
+   - Bandingkan dengan hubungan Fak ultas-Prodi
+  
+**B. Korelasi Ordinal [STP-10.2]:**
+
+3. **Tingkat Semester vs Uang Saku:**
+   - Hitung koefisien Gamma
+   - Interpretasikan arah dan kekuatan hubungan
+:::
+
+------------------------------------------------------------------------

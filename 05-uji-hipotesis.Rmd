@@ -132,6 +132,152 @@ cat("Rata-rata jarak sampel adalah", sample_mean, "km.",
     "\nUkuran sampel adalah", ukuran_sampel, "orang.")
 ```
 
+### Memahami Distribusi Normal dan Area Kritis
+Dalam uji hipotesis, kita menggunakan distribusi normal standar (kurva Z) untuk menentukan apakah statistik uji kita jatuh pada area "tidak biasa" (area kritis/penolakan) atau area "biasa" (area penerimaan H₀).
+
+#### Visualisasi Two-Tailed Test (α = 0.05)
+
+Untuk memahami konsep area kritis, perhatikan Gambar \@ref(fig:dist-normal-two-tailed). Gambar tersebut menunjukkan bahwa untuk uji two-tailed dengan α = 0.05, area kritis terbagi menjadi dua bagian (masing-masing 2.5%) di kedua ekor distribusi.
+
+```{r dist-normal-two-tailed, echo=FALSE, fig.cap=\"Distribusi Normal dengan Area Kritis Two-Tailed (α = 0.05)\", fig.align='center', fig.width=8, fig.height=5}
+library(ggplot2)
+# Data untuk kurva normal
+x <- seq(-4, 4, length.out = 1000)
+y <- dnorm(x)
+df_normal <- data.frame(x = x, y = y)
+# Z kritis untuk alpha = 0.05 two-tailed
+z_kritis <- qnorm(0.975)  # 1.96
+ggplot(df_normal, aes(x = x, y = y)) +
+  # Kurva normal
+  geom_line(size = 1, color = "darkblue") +
+  
+  # Area penerimaan H0 (tengah)
+  geom_area(data = subset(df_normal, x >= -z_kritis & x <= z_kritis),
+            aes(x = x, y = y), fill = "lightblue", alpha = 0.5) +
+  
+  # Area kritis kiri
+  geom_area(data = subset(df_normal, x <= -z_kritis),
+            aes(x = x, y = y), fill = "red", alpha = 0.3) +
+  
+  # Area kritis kanan
+  geom_area(data = subset(df_normal, x >= z_kritis),
+            aes(x = x, y = y), fill = "red", alpha = 0.3) +
+  
+  # Garis vertikal untuk Z kritis
+  geom_vline(xintercept = c(-z_kritis, z_kritis), 
+             linetype = "dashed", color = "red", size = 0.8) +
+  
+  # Anotasi
+  annotate("text", x = -z_kritis, y = -0.02, 
+           label = paste("-", round(z_kritis, 2)), size = 4, color = "red") +
+  annotate("text", x = z_kritis, y = -0.02, 
+           label = paste("+", round(z_kritis, 2)), size = 4, color = "red") +
+  annotate("text", x = -2.7, y = 0.05, 
+           label = "Area Kritis\n(2.5%)", size = 3.5, color = "darkred") +
+  annotate("text", x = 2.7, y = 0.05, 
+           label = "Area Kritis\n(2.5%)", size = 3.5, color = "darkred") +
+  annotate("text", x = 0, y = 0.2, 
+           label = "Area Penerimaan H₀\n(95%)", size = 4, color = "darkblue") +
+  
+  # Tema
+  labs(title = "Distribusi Normal Standar: Two-Tailed Test (α = 0.05)",
+       x = "Nilai Z",
+       y = "Densitas") +
+  theme_minimal() +
+  theme(plot.title = element_text(hjust = 0.5, face = "bold"))
+```
+
+**Penjelasan:**
+
+- Area biru (tengah): Area penerimaan H₀ sebesar 95%
+- Area merah (kiri & kanan): Area kritis total 5% (2.5% + 2.5%)
+- Jika |Z hitung| > 1.96 → Tolak H₀ (jatuh di area merah)
+- Fungsi `qnorm(0.025)` = -1.96 dan `qnorm(0.975)` = +1.96
+
+#### Visualisasi Left-Tailed Test (α = 0.05)
+
+```{r dist-normal-left-tailed, echo=FALSE, fig.cap=\"Distribusi Normal dengan Area Kritis Left-Tailed (α = 0.05)\", fig.align='center', fig.width=8, fig.height=5}
+# Z kritis untuk left-tailed
+z_kritis_left <- qnorm(0.05)  # -1.64
+ggplot(df_normal, aes(x = x, y = y)) +
+  geom_line(size = 1, color = "darkblue") +
+  
+  # Area penerimaan H0 (kanan)
+  geom_area(data = subset(df_normal, x >= z_kritis_left),
+            aes(x = x, y = y), fill = "lightblue", alpha = 0.5) +
+  
+  # Area kritis kiri
+  geom_area(data = subset(df_normal, x <= z_kritis_left),
+            aes(x = x, y = y), fill = "red", alpha = 0.3) +
+  
+  # Garis vertikal
+  geom_vline(xintercept = z_kritis_left, 
+             linetype = "dashed", color = "red", size = 0.8) +
+  
+  # Anotasi
+  annotate("text", x = z_kritis_left, y = -0.02, 
+           label = round(z_kritis_left, 2), size = 4, color = "red") +
+  annotate("text", x = -2.5, y = 0.05, 
+           label = "Area Kritis\n(5%)", size = 3.5, color = "darkred") +
+  annotate("text", x = 1, y = 0.2, 
+           label = "Area Penerimaan H₀\n(95%)", size = 4, color = "darkblue") +
+  
+  labs(title = "Distribusi Normal Standar: Left-Tailed Test (α = 0.05)",
+       x = "Nilai Z",
+       y = "Densitas") +
+  theme_minimal() +
+  theme(plot.title = element_text(hjust = 0.5, face = "bold"))
+```
+**Catatan:** Untuk left-tailed test, seluruh α (5%) berada di ekor kiri. Z kritis = `qnorm(0.05)` = -1.64
+
+#### Visualisasi Right-Tailed Test (α = 0.05)
+
+```{r dist-normal-right-tailed, echo=FALSE, fig.cap=\"Distribusi Normal dengan Area Kritis Right-Tailed (α = 0.05)\", fig.align='center', fig.width=8, fig.height=5}
+# Z kritis untuk right-tailed
+z_kritis_right <- qnorm(0.95)  # 1.64
+ggplot(df_normal, aes(x = x, y = y)) +
+  geom_line(size = 1, color = "darkblue") +
+  
+  # Area penerimaan H0 (kiri)
+  geom_area(data = subset(df_normal, x <= z_kritis_right),
+            aes(x = x, y = y), fill = "lightblue", alpha = 0.5) +
+  
+  # Area kritis kanan
+  geom_area(data = subset(df_normal, x >= z_kritis_right),
+            aes(x = x, y = y), fill = "red", alpha = 0.3) +
+  
+  # Garis vertikal
+  geom_vline(xintercept = z_kritis_right, 
+             linetype = "dashed", color = "red", size = 0.8) +
+  
+  # Anotasi
+  annotate("text", x = z_kritis_right, y = -0.02, 
+           label = paste("+", round(z_kritis_right, 2)), size = 4, color = "red") +
+  annotate("text", x = 2.5, y = 0.05, 
+           label = "Area Kritis\n(5%)", size = 3.5, color = "darkred") +
+  annotate("text", x = -1, y = 0.2, 
+           label = "Area Penerimaan H₀\n(95%)", size = 4, color = "darkblue") +
+  
+  labs(title = "Distribusi Normal Standar: Right-Tailed Test (α = 0.05)",
+       x = "Nilai Z",
+       y = "Densitas") +
+  theme_minimal() +
+  theme(plot.title = element_text(hjust = 0.5, face = "bold"))
+```
+
+**Catatan:** Untuk right-tailed test, seluruh α (5%) berada di ekor kanan. Z kritis = `qnorm(0.95)` = 1.64
+
+#### Hubungan dengan Fungsi `qnorm()`
+Tiga visualisasi di atas menunjukkan bagaimana fungsi `qnorm()` bekerja:
+
+- **Two-tailed:** `qnorm(alpha/2)` dan `qnorm(1 - alpha/2)` → ±1.96
+- **Left-tailed:** `qnorm(alpha)` → -1.64
+- **Right-tailed:** `qnorm(1 - alpha)` → +1.64
+
+**Interpretasi Keputusan:**
+- Jika Z hitung jatuh di area merah → **Tolak H₀**
+- Jika Z hitung jatuh di area biru → **Gagal tolak H₀**
+
 #### *Two-tailed Test* (Tidak Berarah)
 
 Uji dua arah (two-tailed test) adalah salah satu bentuk pengujian hipotesis statistik yang digunakan ketika peneliti ingin mengetahui apakah nilai rata-rata populasi berbeda secara signifikan dari suatu nilai tertentu (nilai hipotesis, biasanya dilambangkan μ₀), tanpa memandang arah perbedaan tersebut. Artinya, kita tidak hanya mempertanyakan apakah rata-rata lebih besar atau lebih kecil, tetapi fokus pada apakah terdapat perbedaan yang cukup signifikan ke salah satu arah. Dalam uji ini, kita ingin mengetahui apakah rata-rata jarak tempuh mahasiswa menuju kampus berbeda secara signifikan dari 4 km, tanpa menentukan apakah lebih besar atau lebih kecil.

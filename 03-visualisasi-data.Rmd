@@ -246,6 +246,19 @@ diagram_btTumpuk100
 
 -   **SCALE**: `scale_y_continuous(labels = scales::percent)` adalah lapisan tambahan yang mengontrol **SKALA** pada sumbu y. Fungsi `scales::percent` digunakan untuk memformat label sumbu dari angka desimal (misal: 0.5) menjadi format persentase (misal: 50%) agar lebih mudah dibaca.
 
+::: {.rmdexercise}
+**Aktivitas Mandiri 1: Membuat dan Menginterpretasikan Diagram Batang [STP-3.2, STP-3.3]**
+
+Buatlah diagram batang untuk variabel `Fakultas`:
+
+1. **Diagram batang sederhana** - gunakan `geom_bar()`
+2. **Diagram batang bertumpuk** dengan `Uang.Saku` sebagai fill
+3. **Diagram batang berkelompok** dengan `position = "dodge"` dan interpretasikan hasilnya:
+   - Fakultas mana yang paling banyak mahasiswa dengan uang saku >2jt?
+   - Bagaimana pola distribusi uang saku antar fakultas?
+   - Apakah ada fakultas yang dominan memiliki mahasiswa dengan uang saku tertentu?
+:::
+
 ### Diagram Lollipop
 
 Diagram lolipop adalah alternatif dari diagram batang yang dapat mengurangi tinta visual dan memberikan penekanan lebih pada nilai data. Grafik ini menggunakan segmen garis dan titik untuk merepresentasikan nilai. Ini sangat efektif untuk menampilkan data kategoris yang banyak kategorinya.
@@ -492,10 +505,75 @@ scatter_plot
 -   **MAPPING**: `mapping = aes(x = Umur, y = \`jarak.(km)\`)`memetakan dua variabel,`Umur`ke sumbu x dan`jarak.(km)\` ke sumbu y. Setiap baris data akan menjadi satu titik pada plot.
 -   `alpha = 0.6` dan `color = "darkblue"` adalah pengaturan properti visual untuk semua titik.
 
-## Soal Praktikum
+Penting untuk menjaga konteks dalam interpretasi. Scatter plot kita menunjukkan bahwa mahasiswa yang lebih tua cenderung tinggal lebih jauh dari kampus. Namun, untuk benar-benar memahami kekuatan hubungan ini, kita perlu menggunakan statistik korelasi (akan dipelajari di modul selanjutnya).
 
-1.  Kumpulkan kembali fail modul ini yang sudah lengkap dengan hasil pengerjaannya. [STP-3.3]{.capaian}
-2.  Tuliskan interpretasi kalian terhadap setiap diagram yang dihasilkan dalam modul ini. [STP-3.2]{.capaian}
-3.  Buatlah diagram yang tepat untuk variabel `biaya.dalam.sepekan`. [STP-3.1]{.capaian}
-4.  Mengapa Anda memilih diagram seperti yang Anda lakukan di nomor 3? Perhatikan tingkat pengukuran variabel dan jenis nilai dari variabel tersebut! [STP-3.4]{.capaian}
+::: {.rmdexercise}
+**Aktivitas Mandiri 2: Histogram dan Boxplot untuk Variabel Numerik [STP-3.2, STP-3.3]**
+
+Gunakan variabel `jarak` (jarak tempat tinggal dari kampus):
+
+1. **Buat histogram** dengan `binwidth = 2` dan interpretasikan:
+   - Apakah distribusi jarak simetris atau menceng (skewed)?
+   - Pada rentang jarak berapa frekuensi mahasiswa paling tinggi?
+   - Apakah ada pola tertentu dalam distribusi jarak?
+
+2. **Buat boxplot** yang membandingkan `jarak` berdasarkan `Tingkat.Semester` dan interpretasikan:
+   - Tingkat semester mana yang rata-rata (median) tinggal paling jauh dari kampus?
+   - Apakah ada outlier? Jika ada, pada tingkat semester mana?
+   - Bagaimana variabilitas jarak pada setiap tingkat semester?
+:::
+
+::: {.rmdexercise}
+**Aktivitas Mandiri 3: Visualisasi Komprehensif untuk `biaya.dalam.sepekan` [STP-3.1, STP-3.2, STP-3.3, STP-3.4]**
+
+**A. Menghasilkan Grafik [STP-3.3]:**
+
+1. Buat **histogram** untuk `biaya.dalam.sepekan`
+   - Coba beberapa nilai `binwidth` (misal: 20, 50, atau 100) dan pilih yang paling informatif
+   - Tambahkan judul dan label sumbu yang jelas
+
+2. Buat **boxplot** untuk `biaya.dalam.sepekan` berdasarkan `kendaraan.utama`
+   - Gunakan `geom_boxplot()` dengan `fill` berdasarkan kendaraan
+   - Tambahkan label yang jelas
+
+3. Buat **scatter plot** untuk `Umur` vs `biaya.dalam.sepekan`
+   - Tambahkan `geom_point()` dengan `alpha = 0.5` untuk transparansi
+   - Pertimbangkan menambahkan `geom_smooth(method = "lm")` untuk melihat trend
+
+**B. Pemilihan Visualisasi dan Tingkat Pengukuran [STP-3.1, STP-3.4]:**
+
+4. **Mengapa histogram cocok untuk `biaya.dalam.sepekan`?**
+   - Jelaskan kaitannya dengan tingkat pengukuran variabel (metrik/rasio)
+   - Informasi apa yang bisa diperoleh dari histogram? (distribusi, spread, outlier)
+
+5. **Apakah scatter plot cocok untuk `Jenis.Kelamin` vs `Umur`? Mengapa tidak?**
+   - Jelaskan kaitannya dengan tingkat pengukuran variabel
+   - Diagram apa yang lebih sesuai untuk membandingkan umur berdasarkan jenis kelamin?
+
+**C. Interpretasi Mendalam [STP-3.2]:**
+
+6. **Dari histogram no.1:**
+   - Berapa rentang biaya yang paling sering muncul (modus)?
+   - Apakah distribusinya simetris, menceng kanan, atau menceng kiri?
+   - Apakah ada outlier (nilai ekstrem)?
+
+7. **Dari boxplot no.2:**
+   - Kendaraan apa yang memiliki median biaya tertinggi?
+   - Kendaraan apa yang paling bervariasi biayanya (IQR terbesar)?
+   - Apakah ada outlier? Pada jenis kendaraan apa?
+
+8. **Dari scatter plot no.3:**
+   - Apakah ada pola hubungan antara umur dan biaya transportasi?
+   - Jika ada trend line, apakah slopenya positif atau negatif?
+   - Apa interpretasi kontekstualnya?
+
+**D. Dokumentasi [STP-3.3]:**
+
+9. Kumpulkan file modul ini dengan:
+   - Seluruh kode diagram yang sudah Anda buat di modul ini
+   - Seluruh interpretasi dan analisis untuk setiap diagram
+   - Screenshot atau output grafik yang sudah dihasilkan
+:::
+
+------------------------------------------------------------------------
 

@@ -155,6 +155,19 @@ df_sampling <- data.frame(rataan_sampel)
 head(df_sampling)
 ```
 
+::: {.rmdexercise}
+**Aktivitas Mandiri 1: Simulasi dengan Parameter Berbeda [STP-4.3]**
+
+Modifikasi kode simulasi di atas:
+1. Ubah `ukuran_sampel` menjadi 30 (dari 50)
+2. Ubah `jumlah_simulasi` menjadi 500 (dari 1000)
+3. Hitung ulang SE empiris dan teoritis
+4. Buat histogram distribusi sampling yang baru
+5. Bandingkan:
+   - Bagaimana bentuk distribusi berubah dengan n=30 vs n=50?
+   - Apakah SE empiris dan teoritis masih dekat?
+:::
+
 ### Visualisasi Distribusi Sampling
 
 Kumpulan dari 1000 rata-rata sampel inilah yang membentuk **distribusi sampling**. Mari kita visualisasikan dalam bentuk histogram.
@@ -332,12 +345,38 @@ Berapakah rentang kepercayaan untuk proporsi mahasiswa yang tinggal di kos/asram
 # Tidak banyak mahasiswa yang tinggal di kos/asrama, karena rentang kepercayaan parameter proporsi mahasiswa yang tinggal di kos/asrama adalah 37% hingga 56% saja.
 ```
 
-## Soal Latihan
+::: {.rmdexercise}
+**Aktivitas Mandiri 2: Interval Kepercayaan 99% [STP-5.2]**
 
-Hasilkan rentang kepercayaan untuk rata-rata jarak tempuh dan proporsi penghuni kos/asrama dengan tingkat kepercayaan **97%.**
+Untuk proporsi mahasiswa di Kos/Asrama:
+1. Hitung interval kepercayaan 99% (`conf.level = 0.99`)
+2. Bandingkan dengan hasil 95%
+3. Mana yang lebih lebar? Mengapa?
 
-1.  Berapakah rentang kepercayaan untuk rata-rata jarak?
-2.  Berapakah rentang kepercayaan untuk proporsi penghuni kos/asrama?
+Untuk rata-rata jarak:
+1. Ambil sampel baru dengan `ukuran_sampel = 75`
+2. Hitung CI 90%
+3. Interpretasikan hasilnya
+:::
+
+::: {.rmdexercise}
+**Aktivitas Mandiri 3: Interval Kepercayaan 97% [STP-4.3, STP-5.2]**
+
+**Petunjuk:** Gunakan `conf.level = 0.97`
+
+1. **Rata-rata Jarak:**
+   - Hitung CI 97% untuk rata-rata jarak
+   - Interpretasi: "Kita 97% yakin bahwa rata-rata jarak populasi berada di rentang..."
+
+2. **Proporsi Penghuni Kos/Asrama:**
+   - Hitung CI 97% untuk proporsi
+   
+3. **Analisis Perbandingan:**
+   - Bandingkan CI 97%, 95%, dan 90%
+   - Jelaskan trade-off antara lebar interval dan tingkat kepercayaan
+:::
+
+------------------------------------------------------------------------
 
 
 

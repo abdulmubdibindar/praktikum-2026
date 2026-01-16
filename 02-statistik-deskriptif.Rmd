@@ -116,6 +116,18 @@ Berikut adalah penjelasan cara-2:
 
 :::
 
+::: {.rmdexercise}
+**Aktivitas Mandiri 1: Menguasai Pipe Operator [STP-2.4]**
+
+Dengan satu blok kode menggunakan pipe operator `|>`:
+1. Baca dataset UBL dari file dan sheet yang sudah ditentukan
+2. Ubah nama variabel `biaya.dalam.seminggu` menjadi `biaya.dalam.sepekan`
+3. Ubah nama variabel `Jumlah.perjalanan.Senin` menjadi `Jumlah.Perjalanan.Senin`
+4. Buang baris yang mengandung missing values dengan fungsi `drop_na()`
+5. Simpan hasilnya ke variabel `data_ubl_bersih`
+6. Verifikasi dengan `glimpse(data_ubl_bersih)` - pastikan tidak ada NA
+:::
+
 #### Mengecek *Missing Values*
 
 Pengecekan *missing values* dilakukan dengan perintah `is.na()` yang menghasilkan tabel berisi nilai *boolean* `FALSE` dan `TRUE` yang berarti 'tidak kosong' dan 'kosong' secara berturut-turut.
@@ -260,6 +272,17 @@ levels(data.ubl$Tingkat.Semester)
 levels(data.ubl$Uang.Saku)
 ```
 
+::: {.rmdexercise}
+**Aktivitas Mandiri 2: Membuat Factor untuk Variabel Kategoris [STP-2.4]**
+
+Untuk dataset UBL yang sudah dibersihkan:
+1. Buat vektor `tempat_tinggal` dengan nilai-nilai jenis tempat tinggal yang ada di data
+   (Gunakan `table(data.ubl$jenis.tempat.tinggal)` untuk melihat nilai-nilainya)
+2. Gunakan `mutate()` untuk mengubah `jenis.tempat.tinggal` menjadi factor
+3. Verifikasi dengan `glimpse()` - tipe harus `<fct>`
+4. Cek level dengan `levels(data.ubl$jenis.tempat.tinggal)`
+:::
+
 ## Analisis Statistika Deskriptif
 
 Kita akan menggunakan paket `gtsummary` dan `flextable` untuk melakukan analisis statistik deskriptif dengan ringkas. Paket ini memiliki perintah `tbl_summary()` yang dapat mengeluarkan analisis statistika deskriptif secara intuitif berdasarkan jenis data yang kita masukkan.
@@ -403,15 +426,40 @@ digits = list(kepemilikan.motor ~ 0, kepemilikan.mobil ~ 0)
 -   *list* dalam pengaturan atribut `digits` berarti "atur agar nilai desimal untuk `kepemilikan.motor` adalah 0, begitu juga untuk variabel `kepemilikan.mobil`
 :::
 
-## Soal Latihan
+::: {.rmdexercise}
+**Aktivitas Mandiri 3: Analisis Statistik Deskriptif Komprehensif [STP-2.4]**
 
-Impor dataset UIN RIL dan lakukan analisis statistik deskriptif untuk data-data yang ada di dalamnya [STP-2.4]{.capaian}:
+**Persiapan:**
+Impor dataset UIN RIL dari sheet `DataUtama_mhsUINRIL` dan bersihkan seperti yang sudah dipraktikkan:
+- Rename variabel yang perlu disesuaikan
+- Gunakan `drop_na()` untuk menghapus missing values
+- Buat factor untuk variabel kategoris (minimal: `Jenis.Kelamin`, `Tingkat.Semester`, `Uang.Saku`)
 
-a.  Persentase mahasiswa berdasarkan uang saku
+**Analisis yang Diminta:**
 
-b.  Median, kuartil atas dan kuartil bawah jumlah perjalanan per hari
+a. **Persentase/Proporsi:**
+   - Hitung persentase mahasiswa berdasarkan `Uang.Saku`
+   - Gunakan `tbl_summary(include = Uang.Saku)` dan `as_flex_table()`
 
-c.  Mean dan simpangan baku biaya perjalanan per pekan
+b. **Ukuran Pemusatan (Median dan Kuartil):**
+   - Untuk variabel `Jumlah.Perjalanan.Senin` (atau hari lain jika variabel ini tidak ada)
+   - Tampilkan Median, Q1 (p25), dan Q3 (p75)
+   - Gunakan `statistic = "{median} ({p25}, {p75})"`
 
-d.  IQV alasan memilih tempat tinggal
+c. **Ukuran Pemusatan dan Penyebaran (Mean dan SD):**
+   - Untuk variabel biaya perjalanan per pekan
+   - Tampilkan Mean dan Standar Deviasi
+   - Gunakan `statistic = "{mean} ({sd})"`
+
+d. **Ukuran Variasi Nominal (IQV):**
+   - Hitung IQV untuk variabel `alasan.pemilihan.lokasi.tempat.tinggal`
+   - Gunakan fungsi `iqv()` yang sudah dipelajari
+   - Interpretasi: seberapa bervariasi alasan mahasiswa memilih tempat tinggal?
+
+**Dokumentasi:**
+- Kumpulkan semua hasil dalam file R Markdown Anda
+- Sertakan interpretasi singkat untuk setiap hasil analisis
+:::
+
+------------------------------------------------------------------------
 

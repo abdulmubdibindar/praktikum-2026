@@ -259,3 +259,16 @@ Langkah terakhir adalah memberi nama pada dimensi yang terbentuk berdasarkan var
 
 **Latihan 7:** Tuliskan seluruh kelompok dari analisis faktor dan juga seluruh persamaan komponen yang dihasilkan dari PCA!
 
+::: {.rmdexercise}
+**Aktivitas Mandiri Komprehensif: Analisis PCA Mandiri [STP-14.3]**
+
+Gunakan dataset dengan variabel metrik yang berbeda:
+
+1. **Persiapan:** Pilih variabel, cek normalitas, uji Bartlett/KMO
+2. **Ekstraksi:** Hitung eigenvalues, buat scree plot, tentukan jumlah komponen
+3. **Analisis:** Lakukan PCA dengan rotasi Varimax
+4. **Interpretasi:** Identifikasi variabel pembentuk, beri nama komponen, tuliskan persamaan
+5. **Evaluasi:** Hitung proporsi variansi yang dijelaskan
+:::
+
+------------------------------------------------------------------------

@@ -103,6 +103,17 @@ Rincian nama-nama variabel ditunjukkan pada baris keluaran yang diawali oleh sim
 
 Terlihat dalam data kita bahwa hanya ada dua tipe nilai variabel: `dbl` dan `chr` yang berarti *double* (bilangan desimal) dan *character* (huruf/*string*).
 
+::: {.rmdexercise}
+**Aktivitas Mandiri 1: Menganalisis Struktur Data [STP-1.3]**
+
+Jalankan `glimpse(data)` untuk dataset UIN RIL dan jawab:
+
+1. Berapa jumlah objek (baris) dalam dataset ini?
+2. Berapa jumlah variabel (kolom)?
+3. Sebutkan 3 variabel dengan tipe `dbl` dan 3 variabel dengan tipe `chr`
+4. Mengapa variabel `Jenis.Kelamin` bertipe `chr` bukan `dbl`? Jelaskan!
+:::
+
 ## Mengolah set data
 
 Dalam bagian ini kita akan mengolah set data kita yang bertujuan untuk memenuhi kebutuhan pengolahan data kita. Sebelum melakukan pengolahan, maka kita perlu menjawab pertanyaan terlebih dahulu "apa yang kita butuhkan untuk pengolahan data kita?"
@@ -249,6 +260,17 @@ colnames(data_ubl_selected)
 
 Hasil dari kedua perintah di atas seharusnya adalah daftar nama yang identik.
 
+::: {.rmdexercise}
+**Aktivitas Mandiri 2: Seleksi dan Rename Kolom [STP-1.4]**
+
+Gunakan dataset `data_ubl` yang sudah diimpor:
+
+1. Pilih hanya kolom: `Nomor.urut`, `Jenis.Kelamin`, `Umur`, `Fakultas`, `Prodi`
+2. Rename kolom `Jenis.Kelamin` menjadi `JK` (gunakan fungsi `rename()`)
+3. Simpan hasilnya ke variabel `data_ubl_subset`
+4. Gunakan `glimpse(data_ubl_subset)` untuk memverifikasi hanya ada 5 kolom dan nama `JK` sudah benar
+:::
+
 ### Menyatukan Kedua Set Data
 
 Ini adalah langkah terakhir kita. Karena kedua set data kini memiliki struktur kolom yang sama persis, kita bisa menyatukannya menjadi satu *data frame* besar dengan fungsi `bind_rows()`.
@@ -361,11 +383,51 @@ Sama seperti write.csv2(), fungsi write.xlsx() juga mengikuti format yang sama.
 write.xlsx(data_gabungan, "Data UINRIL & UBL.xlsx")
 ```
 
-## Soal Latihan
+::: {.rmdexercise}
+**Aktivitas Mandiri 3: Menggabungkan Data ITERA dan UNILA [STP-1.3, STP-1.4]**
 
-1.  Dari fail *(file)* "`Data Praktikum 01.xlsx`" terdapat dua *sheet* lagi yang merupakan hasil kuesioner mahasiswa ITERA dan UNILA. Untuk hasil kuesioner mahasiswa ITERA terletak pada *sheet* bernama `DataUtama_mhsITERA` dan hasil kuesioner mahasiswa UNILA pada `DataUtama_mhsUNILA`. Tentukan sebanyak mungkin kolom yang bisa digabungkan, yakni yang tipenya sama. Gabungkan dua set data tersebut seperti yang sudah kalian pelajari dan simpan menjadi fail dengan nama **`Prak1_[NIM1]_[NIM2].xlsx`**. [STP-1.4]{.capaian}.
+Dari file `Data Praktikum 01.xlsx`, terdapat dua sheet tambahan:
+- `DataUtama_mhsITERA`
+- `DataUtama_mhsUNILA`
 
-2.  Berapa variabel objek yang kalian hasilkan dalam data gabungan? Tunjukkan beserta buktinya [STP-1.3]{.capaian}.
+**Langkah-langkah:**
+
+1. **Impor data dari kedua sheet** menggunakan `read.xlsx()`
+   - Simpan sheet ITERA ke variabel `data_itera`
+   - Simpan sheet UNILA ke variabel `data_unila`
+
+2. **Identifikasi kolom yang bisa digabungkan**
+   - Gunakan `colnames()` untuk melihat nama kolom di kedua dataset
+   - Gunakan `glimpse()` untuk melihat tipe data setiap kolom
+   - Tentukan kolom mana yang tipenya sama dan bisa digabungkan
+
+3. **Seleksi kolom yang sesuai** menggunakan `select()`
+   - Pilih hanya kolom yang ada di kedua dataset dan tipenya sama
+   - Ingat menggunakan backtick (`) untuk kolom dengan karakter khusus
+
+4. **Seragamkan nama kolom**
+   - Buat vektor `kolom_final` berisi nama standar untuk semua kolom
+   - Gunakan `colnames(data_itera_selected) <- kolom_final`
+   - Lakukan hal sama untuk `data_unila_selected`
+
+5. **Gabungkan dengan `bind_rows()`**
+   - Jika ada error tipe data, periksa dengan `glimpse()` dan perbaiki
+   - Simpan hasil gabungan ke variabel `data_gabungan_iteraunila`
+
+6. **Simpan ke file**
+   - Ekspor hasil gabungan dengan `write.xlsx()`
+   - Nama file: `Prak1_[NIM1]_[NIM2].xlsx`
+
+**Analisis [STP-1.3]:**
+
+7. Berapa jumlah **variabel** (kolom) dalam data gabungan?
+8. Berapa jumlah **objek** (baris) dalam data gabungan?
+9. Tampilkan bukti dengan `glimpse(data_gabungan_iteraunila)` dan sertakan screenshot
+
+**Refleksi:**
+- Apa tantangan terbesar yang Anda hadapi dalam menggabungkan data?
+- Mengapa penting untuk mengecek tipe data sebelum menggabungkan dataset?
+:::
 
 ------------------------------------------------------------------------
 
