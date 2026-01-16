@@ -5,26 +5,22 @@ description: Kompilasi Bookdown ke format HTML (GitBook) untuk web.
 ---
 
 name: build-html
-description: Kompilasi Bookdown ke format HTML (GitBook) untuk web.
-trigger: /buildhtml
+description: Build HTML menggunakan terminal radian.
+trigger: /build-html
 
 ---
 
-# Workflow: Build Book to HTML
+# Workflow: Build Book to HTML (Radian)
 
-Step 1: **Clean & Prepare**
+Step 1: **Clean via Radian**
 
-- Use 'R Interactive' Terminal
-- Execute `bookdown::clean_book(TRUE)` in that terminal to remove old cache files.
-<!-- Penjelasan: HTML statis sangat bergantung pada tautan antar-bab. Membersihkan cache lama mencegah "broken link" atau konten hantu yang sudah dihapus tapi masih muncul di navigasi. -->
+- Execute command: `echo "bookdown::clean_book(TRUE)" | radian`
 
-Step 2: **Render to GitBook**
+Step 2: **Render GitBook via Radian**
 
-- Execute command: `bookdown::render_book('index.Rmd', 'bookdown::gitbook')`.
-<!-- Penjelasan: Kita menargetkan 'gitbook' secara eksplisit. Jika Anda menggunakan tema lain (seperti bs4_book), ganti bagian ini. Ini memisahkan proses ini dari build PDF agar tidak saling menimpa di folder output sementara. -->
+- Execute command: `echo "bookdown::render_book('index.Rmd', 'bookdown::gitbook')" | radian`
+<!-- Penjelasan: Menggunakan radian akan memberikan log yang lebih berwarna dan mudah dibaca di terminal Antigravity dibandingkan Rscript standar. -->
 
-Step 3: **Browser Verification**
+Step 3: **Preview**
 
-- Check if `_docs/index.html` exists.
-- Open the generated `index.html` file in the browser using the browser tool.
-<!-- Penjelasan: Alih-alih hanya mengecek file ada/tidak, kita menyuruh agen membuka browser internal Antigravity. Ini memungkinkan Anda langsung melihat apakah CSS atau gambar tampil dengan benar tanpa meninggalkan IDE. -->
+- Open the generated `index.Rmd` (html output) in the browser to verify.

@@ -5,33 +5,23 @@ description: Otomatisasi pengecekan TinyTeX dan kompilasi Bookdown ke PDF.
 ---
 
 name: build-pdf
-description: Otomatisasi pengecekan TinyTeX dan kompilasi Bookdown ke PDF.
-trigger: /buildpdf
+description: Build PDF menggunakan terminal radian.
+trigger: /build-pdf
 
 ---
 
-# Workflow: Build Book to PDF
+# Workflow: Build Book to PDF (Radian)
 
-Step 1: **Check & Install TinyTeX**
+Step 1: **Clean via Radian**
 
-- Use 'R Interactive' Terminal
-- Check if `tinytex` package is installed in R **using that terminal**.
-- If not, install `tinytex` and run `tinytex::install_tinytex()`.
-<!-- Penjelasan: PDF membutuhkan distribusi LaTeX. TinyTeX adalah versi ringan khusus pengguna R. Agen harus memastikan ini ada sebelum mencoba render agar tidak error di tengah jalan. -->
+- Execute command: `echo "bookdown::clean_book(TRUE)" | radian`
+<!-- Penjelasan: Kita menggunakan 'echo ... | radian' untuk mengirim perintah ke radian dan langsung mengeksekusinya tanpa masuk ke mode interaktif yang bisa memacetkan Agen. -->
 
-Step 2: **Clean Previous Builds**
+Step 2: **Render PDF via Radian**
 
-- Execute `bookdown::clean_book(TRUE)` via terminal R command.
-<!-- Penjelasan: Seringkali sisa file cache (.rds) lama menyebabkan konflik saat membuat PDF baru. Membersihkan cache menjamin "clean build". -->
+- Execute command: `echo "tinytex::install_tinytex(); bookdown::render_book('index.Rmd', 'bookdown::pdf_book')" | radian`
+<!-- Penjelasan: Memastikan tinytex siap, lalu merender PDF. Output akan tampil dengan pewarnaan syntax highlighting khas radian di terminal. -->
 
-Step 3: **Render Book**
+Step 3: **Open PDF Artifact**
 
-- Execute command: `bookdown::render_book('index.Rmd', 'bookdown::pdf_book')`.
-<!-- Penjelasan: Ini adalah fungsi inti. Kita secara spesifik memanggil format 'pdf_book' agar tidak menimpa output HTML GitHub Pages Anda secara tidak sengaja. -->
-
-Step 4: **Verify Output**
-
-- Check if the `.pdf` file exists in the `_book/` or output directory.
-- Open the PDF file artifacts for user review.
-     <!-- Penjelasan: Agen harus memverifikasi keberhasilan bukan hanya dari exit code 0, tapi dari keberadaan file fisik. -->
-  Cara Menggunakan:
+- Check for the `.pdf` file in output directory and open it with the browser tool.
