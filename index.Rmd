@@ -102,7 +102,7 @@ Sebelum memulai praktikum, kalian perlu menginstal R dan RStudio terlebih dahulu
 
 ## Cara Menjalankan R
 
-Cara (paling) utama untuk menjalankan perintah bahasa pemrograman R adalah dengan mengetikkannya langsung di **Console** (jendela nomor 3 pada Gambar\@ref(fig:jendela-rstudio)).
+Cara (paling) utama untuk menjalankan perintah bahasa pemrograman R adalah dengan mengetikkannya langsung di **Console** (jendela nomor 3 pada Gambar \@ref(fig:jendela-rstudio)).
 
 Misalnya, jika Anda mengetikkan `1 + 1` di Console lalu menekan **Enter**, R akan langsung memberikan jawabannya.
 
