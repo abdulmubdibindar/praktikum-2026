@@ -67,7 +67,19 @@ Dalam bidang perencanaan wilayah dan kota, R digunakan untuk:
 
 ## Mengapa Menggunakan R?
 
-R memiliki kelebihan yang signifikan dibandingkan dengan bahasa pemrograman lainnya. Karena R adalah bahasa pemrograman yang dirancang khusus untuk analisis data dan visualisasi, R memiliki kelebihan-kelebihan tertentu
+R memiliki kelebihan yang signifikan dibandingkan dengan alat analisis berbasis antarmuka grafis (*Graphical User Interface* - GUI) seperti SPSS atau Microsoft Excel. Berikut adalah beberapa alasan utama mengapa R menjadi standar de facto dalam sains data modern:
+
+1.  **Reproduksibilitas (*Reproducibility*)**:
+    Berbeda dengan perangkat lunak berbasis *point-and-click* di mana langkah-langkah analisis seringkali sulit dilacak kembali, R bekerja berbasis skript (*script-based*). Setiap langkah analisis, mulai dari pembersihan data hingga pembuatan model, terekam secara eksplisit dalam kode. Hal ini memungkinkan analisis untuk diverifikasi, diaudit, dan dijalankan ulang oleh orang lain (atau diri kita sendiri di masa depan) dengan hasil yang identik, sebuah prinsip fundamental dalam penelitian ilmiah yang kredibel [@peng2011reproducible; @gandrud2013reproducible].
+
+2.  **Fleksibilitas dan Kemampuan Kostumisasi**:
+    R tidak membatasi pengguna pada menu yang sudah tersedia. Sebagai bahasa pemrograman, R memungkinkan kita untuk membangun alat analisis sendiri atau memodifikasi metode yang sudah ada sesuai dengan kebutuhan spesifik penelitian, memberikan fleksibilitas yang hampir tak terbatas dibandingkan perangkat lunak tertutup (*proprietary*) [@wickham2016r].
+
+3.  **Gratis dan *Open Source***:
+    Sebagai perangkat lunak *open source*, R dapat digunakan sepenuhnya secara gratis. Ini menghilangkan hambatan biaya lisensi yang mahal yang sering ditemui pada perangkat lunak komersial, membuatnya sangat aksesibel bagi mahasiswa, peneliti, dan pemerintah daerah dengan anggaran terbatas.
+
+4.  **Komunitas yang Masif**:
+    Dukungan komunitas R sangat luar biasa melalui platform seperti StackOverflow dan R-Bloggers. Jika Anda menemui masalah, kemungkinan besar orang lain sudah pernah menghadapinya dan solusinya sudah tersedia secara daring.
 
 ## Apa itu RStudio?
 
