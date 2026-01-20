@@ -175,6 +175,8 @@ print("Halo dunia!")
 print("Hari ini saya mulai belajar R!")
 
 # Operasi matematika sederhana
+1 + 1
+2 * 3
 ```
 
 3. Simpan file dengan nama `kode_R_pertama_saya.R` di dalam folder **Praktikum STP 2026**
