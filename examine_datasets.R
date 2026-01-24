@@ -1,0 +1,33 @@
+# Script untuk memeriksa struktur ketiga dataset
+library(tidyverse)
+
+# Membaca dataset
+cat("=== Dataset ITERA ===\n")
+data.itera <- read.csv("datasets/DataUtama_mhsITERA.csv", sep = ";")
+cat("Dimensi:", nrow(data.itera), "baris x", ncol(data.itera), "kolom\n")
+cat("Nama kolom:\n")
+print(colnames(data.itera))
+cat("\nStruktur data:\n")
+glimpse(data.itera)
+cat("\nMissing values per kolom:\n")
+print(colSums(is.na(data.itera)))
+
+cat("\n\n=== Dataset UNILA ===\n")
+data.unila <- read.csv("datasets/DataUtama_mhsUNILA.csv", sep = ";")
+cat("Dimensi:", nrow(data.unila), "baris x", ncol(data.unila), "kolom\n")
+cat("Nama kolom:\n")
+print(colnames(data.unila))
+cat("\nStruktur data:\n")
+glimpse(data.unila)
+cat("\nMissing values per kolom:\n")
+print(colSums(is.na(data.unila)))
+
+cat("\n\n=== Dataset UBL ===\n")
+data.ubl <- read.csv("datasets/DataUtama_mhsUBL.csv", sep = ";")
+cat("Dimensi:", nrow(data.ubl), "baris x", ncol(data.ubl), "kolom\n")
+cat("Nama kolom:\n")
+print(colnames(data.ubl))
+cat("\nStruktur data:\n")
+glimpse(data.ubl)
+cat("\nMissing values per kolom:\n")
+print(colSums(is.na(data.ubl)))

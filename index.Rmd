@@ -290,6 +290,136 @@ Setelah itu, RStudio akan membuat file **`Praktikum STP 2026.Rproj`** di dalam f
 **Catatan Penting:** Selalu buka RStudio melalui file `.Rproj`, bukan dengan membuka RStudio terlebih dahulu lalu membuka *script*. Ini memastikan *working directory* selalu benar dan kode kalian berjalan sebagaimana mestinya.
 :::
 
+### Mengunduh Dataset Praktikum dari GitHub
+
+Setelah struktur direktori dan Project sudah siap, langkah selanjutnya adalah **mengunduh dataset-dataset praktikum** yang akan digunakan sepanjang semester. Semua dataset praktikum disimpan di repository GitHub dan dapat diunduh secara gratis.
+
+::: rmdnote
+**Mengapa Dataset Disimpan di GitHub? {.header}**
+
+Dataset praktikum disimpan di GitHub agar:
+- Semua mahasiswa mendapatkan dataset yang **sama** dan **terbaru**
+- Dataset dapat **diakses kapan saja** tanpa perlu menunggu distribusi dari asisten
+- Jika ada pembaruan dataset, kalian bisa **mengunduh ulang** dengan mudah
+- Dataset **tidak hilang** meskipun laptop rusak atau file terhapus
+:::
+
+#### Langkah-Langkah Mengunduh Dataset
+
+Ikuti langkah-langkah berikut dengan seksama untuk mengunduh folder `datasets/` dari GitHub:
+
+**1. Buka halaman GitHub repository praktikum**
+
+Klik link berikut atau copy-paste ke browser kalian:
+
+**[https://github.com/abdulmubdibindar/praktikum-r-stp](https://github.com/abdulmubdibindar/praktikum-r-stp)**
+
+Kalian akan melihat halaman repository yang berisi semua file praktikum.
+
+**2. Download seluruh repository sebagai file ZIP**
+
+- Di halaman GitHub, cari dan klik tombol hijau **"Code"** di bagian kanan atas
+- Pada menu yang muncul, pilih **"Download ZIP"**
+- Simpan file ZIP di lokasi yang mudah kalian temukan (misalnya folder **Downloads** atau **Desktop**)
+- Tunggu hingga proses download selesai
+
+**3. Ekstrak file ZIP yang sudah didownload**
+
+- Buka folder tempat kalian menyimpan file ZIP (misalnya **Downloads**)
+- Klik kanan pada file **`praktikum-r-stp-main.zip`**
+- Pilih **"Extract All..."** atau **"Extract Here"** (di Windows)
+- Atau untuk Mac/Linux: double-click file ZIP, akan otomatis ter-ekstrak
+- Setelah ekstrak selesai, akan muncul folder bernama **`praktikum-r-stp-main`**
+
+**4. Copy folder `datasets` ke dalam Project RStudio kalian**
+
+Ini adalah langkah paling penting! Ikuti dengan teliti:
+
+- Buka folder **`praktikum-r-stp-main`** yang baru diekstrak
+- Di dalam folder tersebut, cari folder bernama **`datasets`**
+- **Klik kanan** pada folder `datasets`, lalu pilih **"Copy"** (atau tekan `Ctrl + C`)
+- Buka folder **`Praktikum STP 2026`** (folder Project RStudio kalian)
+- **Klik kanan** di dalam folder tersebut, lalu pilih **"Paste"** (atau tekan `Ctrl + V`)
+- Folder `datasets` beserta seluruh isinya sekarang sudah tersalin ke Project kalian
+
+**5. Verifikasi dataset sudah tersimpan dengan benar**
+
+Untuk memastikan dataset sudah tersimpan di lokasi yang benar, buka RStudio (klik file `.Rproj` kalian), lalu jalankan kode berikut di **Console**:
+
+```{r eval=FALSE}
+# Mengecek apakah folder datasets ada di working directory
+dir.exists("datasets")
+```
+
+Jika hasilnya `TRUE`, berarti folder `datasets` sudah berada di lokasi yang benar! ✓
+
+Selanjutnya, cek isi folder `datasets` dengan kode:
+
+```{r eval=FALSE}
+# Melihat daftar file di dalam folder datasets
+list.files("datasets")
+```
+
+Kalian akan melihat daftar file-file dataset seperti `Data Praktikum 01.xlsx`, `Data Praktikum 02.xlsx`, `DataUtama_mhsUBL.csv`, dan lain-lain.
+
+::: rmdimportant
+**Struktur Folder yang Benar {.header}**
+
+Pastikan struktur folder Project kalian sekarang terlihat seperti ini:
+
+```text
+Praktikum STP 2026/           ← Folder Project kalian
+├── Praktikum STP 2026.Rproj  ← File Project RStudio
+├── datasets/                 ← Folder datasets (HARUS ada di sini!)
+│   ├── Data Praktikum 01.xlsx
+│   ├── Data Praktikum 02.xlsx
+│   ├── Data Praktikum 03.xlsx
+│   ├── DataUtama_mhsUBL.csv
+│   ├── DataUtama_mhsUINRIL.csv
+│   ├── DataUtama_mhsUNILA.csv
+│   ├── DataUtama_mhsITERA.csv
+│   ├── data_mahasiswa.csv
+│   └── ... (file-file dataset lainnya)
+├── output/                   ← Folder untuk hasil analisis
+└── ... (file .R kalian)
+```
+
+**PENTING**: Jika folder `datasets` berada di lokasi lain (misalnya di **Desktop** atau **Downloads**), kode praktikum **tidak akan bisa** membaca dataset. Pastikan folder `datasets` berada **langsung di dalam** folder `Praktikum STP 2026`.
+:::
+
+#### Alternatif: Download Dataset Satu per Satu (Tidak Disarankan)
+
+Jika kalian hanya ingin mengunduh satu atau beberapa file dataset tertentu, bisa menggunakan cara berikut:
+
+1. Buka [folder datasets di GitHub](https://github.com/abdulmubdibindar/praktikum-r-stp/tree/main/datasets)
+2. Klik nama file dataset yang ingin diunduh (misalnya `Data Praktikum 01.xlsx`)
+3. Klik tombol **"Download"** di pojok kanan atas halaman
+4. Simpan file tersebut ke dalam folder **`datasets/`** di Project RStudio kalian
+
+> **Catatan**: Cara ini lebih lambat jika kalian perlu banyak file. **Sangat disarankan** menggunakan cara download ZIP untuk mendapatkan **semua dataset sekaligus** agar tidak perlu download berulang-ulang.
+
+#### Troubleshooting: Jika Kode Tidak Bisa Membaca Dataset
+
+Jika kalian mengalami error seperti:
+
+```
+Error in file(file, "rt") : cannot open the connection
+```
+
+Kemungkinan penyebabnya:
+
+- ❌ Folder `datasets` tidak berada di lokasi yang benar
+- ❌ Nama folder salah ketik (misalnya `dataset` tanpa huruf 's' atau `Datasets` dengan huruf kapital)
+- ❌ File Project `.Rproj` tidak dibuka (sehingga *working directory* salah)
+
+**Solusi:**
+
+1. Tutup RStudio
+2. Buka **kembali** RStudio dengan cara double-click file **`Praktikum STP 2026.Rproj`**
+3. Jalankan kembali kode `dir.exists("datasets")` - harus menghasilkan `TRUE`
+4. Jika masih `FALSE`, cek kembali apakah folder `datasets` sudah benar-benar berada di dalam folder Project
+
+
 ## Sintaks Dasar Bahasa r
 
 Dalam subbab ini, kita akan membahas sintaks dasar bahasa R yang akan sering digunakan dalam praktikum ini.

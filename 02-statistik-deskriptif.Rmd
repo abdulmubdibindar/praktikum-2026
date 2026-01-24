@@ -18,7 +18,7 @@ library(tidyverse)
 library(openxlsx)
 ```
 
-### Mengimpor Dataset
+## Mengimpor Dataset
 
 Kita menggunakan data mahasiswa UBL yang sudah lengkap karena sudah diolah kembali.
 
@@ -38,7 +38,7 @@ Sebelumnya kita sudah mengenal `glimpse()` yang berasal dari *library* `dplyr`, 
 summary(data.ubl)
 ```
 
-### Merapikan Dataset *(Data Wrangling)*
+## Merapikan Dataset *(Data Wrangling)*
 
 Sering dikatakan bahwa 50% pekerjaan ilmuwan data adalah **merapikan dataset**. Ini diistilahkan dengan *wrangling*. *Data wrangling* mencakup penggantian nama variabel, pengecekan nilai yang hilang *(missing values)*, mengubah/memanipulasi variabel, dan masih banyak lagi.
 
