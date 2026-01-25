@@ -41,22 +41,24 @@ colnames(data_uinril) <- make.names(colnames(data_uinril))
 data_uinril <- data_uinril |>
     rename(
         Nomor.urut = Nomor.urut,
-        Jenis.Kelamin = Jenis.Kelamin,
+        Jenis.Kelamin = Jenis.Kelamin, # Ada spasi di nama asli -> jadi titik di akhir.
+                                       # EDIT USER: tidak ada titik di akhir setelah di-'make.names'
         Umur = Umur,
         Fakultas = Fakultas,
         Prodi = Prodi,
         Tingkat.Semester = Tingkat.Semester,
-        Uang.Saku = Uang.Saku,
+        Uang.Saku = Uang.Saku, # Ada spasi di nama asli -> jadi titik di akhir
         kepemilikan.mobil = kepemilikan.mobil,
         kepemilikan.motor = kepemilikan.motor,
-        kepemilikan.sepeda = kepemilikan.sepedan, # Typo: sepedan -> sepeda
+        kepemilikan.sepeda = kepemilikan.sepeda,
         kendaraan.utama = kendaraan.utama,
         kelurahan = kelurahan,
         jenis.tempat.tinggal = jenis.tempat.tinggal,
         nama.jalan.tempat.tinggal = nama.jalan.tempat.tinggal,
         alasan.pemilihan.lokasi.tempat.tinggal = alasan.pemilihan.lokasi.tempat.tinggal,
-        jarak = jarak..km., # Menghilangkan (km)
-        biaya.dalam.sepekan = biaya.dalam.ribu2, # Mengubah ribu2 -> sepekan
+        jarak = jarak..km.,
+        biaya.dalam.sepekan = biaya.dalam.ribu2, # Nama kolom sudah biaya.dalam.sepekan
+                                                 # EDIT USER: nama variabel lama salah didefinisikan
         Jumlah.Perjalanan.Senin = Jumlah.Perjalanan.Senin,
         Jumlah.Perjalanan.Selasa = Jumlah.Perjalanan.Selasa,
         Jumlah.Perjalanan.Rabu = Jumlah.Perjalanan.Rabu,
@@ -138,17 +140,23 @@ tingkat <- c(
 )
 
 uang_saku <- c(
-    "< 1 jt", "1 jt s.d. 2 jt", "2,1 jt s.d. 3 jt",
-    "3,1 jt s.d. 4 jt", "> 4 jt"
+    "< 1 jt", "1 jt s.d. 2 jt", "2 jt s.d. 3 jt",
+    "3 jt s.d. 4 jt", "> 4 jt"
 )
 
 # Konversi ke factor
 data_uinril <- data_uinril |>
     mutate(
         # Normalisasi simbol separator agar sesuai dengan levels
-        Tingkat.Semester = str_replace_all(Tingkat.Semester, " [-–] ", " s.d. "),
-        Uang.Saku = str_replace_all(Uang.Saku, " [-–] ", " s.d. "),
-
+        Tingkat.Semester = str_replace_all(Tingkat.Semester, " - ", " s.d. "),
+        
+        # Normalisasi format Uang.Saku untuk mencocokkan dengan levels
+        Uang.Saku = str_trim(Uang.Saku),
+        Uang.Saku = str_replace_all(Uang.Saku, "Jt", "jt"), # Jt -> jt
+        Uang.Saku = str_replace_all(Uang.Saku, " - ", " s.d. "), # - -> s.d.
+        Uang.Saku = str_replace_all(Uang.Saku, "1jt", "1 jt"), # 1jt -> 1 jt (fix spacing if needed, but '1Jt -' -> '1jt s.d.')
+        # Clean up potential mess from raw '1Jt - 2 Jt' -> '1jt s.d. 2 jt'
+        
         Jenis.Kelamin = factor(Jenis.Kelamin, levels = jk),
         Fakultas = factor(Fakultas, levels = fakultas),
         Prodi = factor(Prodi, levels = prodi),
@@ -168,7 +176,7 @@ cat("   Dimensi akhir:", nrow(data_uinril), "baris x", ncol(data_uinril), "kolom
 
 # 8. Simpan hasil (menggantikan file asli)
 cat("\n7. Menyimpan hasil ke CSV...\n")
-write.csv(data_uinril, "datasets/DataUtama_mhsUINRIL.csv", row.names = FALSE)
+write.csv2(data_uinril, "datasets/DataUtama_mhsUINRIL.csv", row.names = FALSE)
 cat("   File tersimpan: datasets/DataUtama_mhsUINRIL.csv\n")
 cat("   File asli dibackup di: datasets/_DataUtama_mhsUINRIL.csv\n")
 

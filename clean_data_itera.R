@@ -161,7 +161,7 @@ cat("   Dimensi akhir:", nrow(data.itera), "baris x", ncol(data.itera), "kolom\n
 
 # 8. Simpan hasil (menggantikan file asli)
 cat("\n7. Menyimpan hasil ke CSV...\n")
-write.csv(data.itera, "datasets/DataUtama_mhsITERA.csv", row.names = FALSE)
+write.csv2(data.itera, "datasets/DataUtama_mhsITERA.csv", row.names = FALSE)
 cat("   File tersimpan: datasets/DataUtama_mhsITERA.csv\n")
 cat("   File asli dibackup di: datasets/_DataUtama_mhsITERA.csv\n")
 

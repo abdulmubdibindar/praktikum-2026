@@ -47,20 +47,20 @@ data.unila <- data.unila |>
         Uang.Saku = Uang.Saku,
         kepemilikan.mobil = kepemilikan.mobil,
         kepemilikan.motor = Jumlah.motor, # Berbeda dari ITERA/UBL
-        kepemilikan.sepeda = Jumlah.Sepeda, # Berbeda dari ITERA/UBL
-        kendaraan.utama = endaraan.Utama, # Typo: kehilangan 'K'
+        kepemilikan.sepeda = kepemilikan.sepeda,
+        kendaraan.utama = kendaraan.utama,
         jenis.tempat.tinggal = Jenis.Tempat.Tinggal,
         nama.jalan.tempat.tinggal = Alamat,
-        alasan.pemilihan.lokasi.tempat.tinggal = Alasan.Pemilihan.Loasi, # make.names() sudah menghilangkan trailing space
-        biaya.dalam.sepekan = Biaya.perjalanan,
-        jarak = jara, # Typo: seharusnya 'jarak'
+        alasan.pemilihan.lokasi.tempat.tinggal = alasan.pemilihan.lokasi.tempat.tinggal,
+        biaya.dalam.sepekan = biaya.dalam.ribu2,
+        jarak = jarak..km.,
         Jumlah.Perjalanan.Senin = Jumlah.Perjalanan.Senin,
         Jumlah.Perjalanan.Selasa = Jumlah.Perjalanan.Selasa,
         Jumlah.Perjalanan.Rabu = Jumlah.Perjalanan.Rabu,
         Jumlah.Perjalanan.Kamis = Jumlah.Perjalanan.Kamis,
         Jumlah.Perjalanan.Jumat = Jumlah.Perjalanan.Jumat,
         Jumlah.Perjalanan.Sabtu = Jumlah.Perjalanan.Sabtu,
-        Jumlah.Perjalanan.Ahad = Jumlah.Perjalanan.Minggu # Berbeda: Minggu -> Ahad
+        Jumlah.Perjalanan.Ahad = Jumlah.Perjalanan.Minggu
     )
 cat("   Nama variabel berhasil diseragamkan (diperbaiki typo dan trailing spaces)\n")
 
@@ -74,8 +74,21 @@ get_mode <- function(x) {
     ux[which.max(tabulate(match(x_clean, ux)))]
 }
 
-# 5. Imputasi missing values
-cat("\n4. Melakukan imputasi missing values...\n")
+# 5. Preprocessing: Konversi empty strings ke NA untuk jarak
+cat("\n4. Preprocessing data...\n")
+# jarak sering berisi empty string, konversi ke NA agar bisa diimputasi
+if ("jarak" %in% colnames(data.unila)) {
+    empty_jarak_count <- sum(data.unila$jarak == "", na.rm = TRUE)
+    if (empty_jarak_count > 0) {
+        data.unila$jarak[data.unila$jarak == ""] <- NA
+        cat("   - Mengkonversi", empty_jarak_count, "empty string di kolom jarak menjadi NA\n")
+    }
+    # Konversi ke numeric jika masih character
+    data.unila$jarak <- as.numeric(data.unila$jarak)
+}
+
+# 6. Imputasi missing values
+cat("\n5. Melakukan imputasi missing values...\n")
 
 # Identifikasi kolom numerik dan kategoris
 numeric_cols <- c(
@@ -118,8 +131,8 @@ for (col in categorical_cols) {
     }
 }
 
-# 6. Konversi variabel kategoris ke factor
-cat("\n5. Mengkonversi variabel kategoris ke factor...\n")
+# 7. Konversi variabel kategoris ke factor
+cat("\n6. Mengkonversi variabel kategoris ke factor...\n")
 
 # Membuat vektor nilai-nilai kategoris
 jk <- sort(unique(data.unila$Jenis.Kelamin))
@@ -142,9 +155,18 @@ uang_saku <- c(
 # Konversi ke factor
 data.unila <- data.unila |>
     mutate(
-        # Normalisasi simbol separator agar sesuai dengan levels
-        Tingkat.Semester = str_replace_all(Tingkat.Semester, " [-–] ", " s.d. "),
-        Uang.Saku = str_replace_all(Uang.Saku, " [-–] ", " s.d. "),
+        # Normalisasi Tingkat Semester: handle berbagai variasi separator dan case
+        # Contoh: "1 (Semester 1 -  semester 2)" -> "1 (Semester 1 s.d. Semester 2)"
+        Tingkat.Semester = str_replace_all(Tingkat.Semester, " - ", " s.d. "), # single dash
+        Tingkat.Semester = str_replace_all(Tingkat.Semester, " – ", " s.d. "), # en-dash
+        Tingkat.Semester = str_replace_all(Tingkat.Semester, "\\s+", " "), # normalize multiple spaces
+        Tingkat.Semester = str_replace_all(Tingkat.Semester, "semester", "Semester"), # capitalize
+
+        # Normalisasi Uang Saku: handle berbagai variasi separator dan spasi
+        # Contoh: "1 jt - 2jt" -> "1 jt s.d. 2 jt"
+        Uang.Saku = str_replace_all(Uang.Saku, " - ", " s.d. "), # single dash
+        Uang.Saku = str_replace_all(Uang.Saku, " – ", " s.d. "), # en-dash
+        Uang.Saku = str_replace_all(Uang.Saku, "(\\d)jt", "\\1 jt"), # add space before jt if missing
 
         Jenis.Kelamin = factor(Jenis.Kelamin, levels = jk),
         Fakultas = factor(Fakultas, levels = fakultas),
@@ -157,15 +179,21 @@ data.unila <- data.unila |>
 
 cat("   Variabel kategoris berhasil dikonversi ke factor\n")
 
-# 7. Verifikasi hasil
-cat("\n6. Verifikasi hasil pembersihan...\n")
+# 8. Verifikasi hasil
+cat("\n7. Verifikasi hasil pembersihan...\n")
 mv_after <- sum(is.na(data.unila))
 cat("   Total missing values setelah imputasi:", mv_after, "\n")
 cat("   Dimensi akhir:", nrow(data.unila), "baris x", ncol(data.unila), "kolom\n")
 
-# 8. Simpan hasil (menggantikan file asli)
-cat("\n7. Menyimpan hasil ke CSV...\n")
-write.csv(data.unila, "datasets/DataUtama_mhsUNILA.csv", row.names = FALSE)
+# Tampilkan level factor untuk verifikasi
+cat("\n   Verifikasi factor levels:\n")
+cat("   - Tingkat.Semester: ", sum(is.na(data.unila$Tingkat.Semester)), "NA dari", nrow(data.unila), "rows\n")
+cat("   - Uang.Saku: ", sum(is.na(data.unila$Uang.Saku)), "NA dari", nrow(data.unila), "rows\n")
+cat("   - jarak: ", sum(is.na(data.unila$jarak)), "NA dari", nrow(data.unila), "rows\n")
+
+# 9. Simpan hasil (menggantikan file asli)
+cat("\n8. Menyimpan hasil ke CSV...\n")
+write.csv2(data.unila, "datasets/DataUtama_mhsUNILA.csv", row.names = FALSE)
 cat("   File tersimpan: datasets/DataUtama_mhsUNILA.csv\n")
 cat("   File asli dibackup di: datasets/_DataUtama_mhsUNILA.csv\n")
 

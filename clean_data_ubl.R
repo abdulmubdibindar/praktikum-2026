@@ -161,7 +161,7 @@ cat("   Dimensi akhir:", nrow(data.ubl), "baris x", ncol(data.ubl), "kolom\n")
 
 # 8. Simpan hasil (menggantikan file asli)
 cat("\n7. Menyimpan hasil ke CSV...\n")
-write.csv(data.ubl, "datasets/DataUtama_mhsUBL.csv", row.names = FALSE)
+write.csv2(data.ubl, "datasets/DataUtama_mhsUBL.csv", row.names = FALSE)
 cat("   File tersimpan: datasets/DataUtama_mhsUBL.csv\n")
 cat("   File asli dibackup di: datasets/_DataUtama_mhsUBL.csv\n")
 

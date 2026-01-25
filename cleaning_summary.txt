@@ -1,5 +1,5 @@
 LAPORAN PEMBERSIHAN DATASET
-Waktu: 2026-01-24 18:23:40 
+Waktu: 2026-01-24 22:45:22 
 ==============================================================
 
 
@@ -134,23 +134,23 @@ RINGKASAN HASIL PEMBERSIHAN
 ==============================================================
 
 1. DIMENSI DATASET
-   - ITERA : 428 baris x 26 kolom
-   - UNILA : 393 baris x 25 kolom
-   - UBL   : 379 baris x 26 kolom
-   - UINRIL: 400 baris x 25 kolom
+   - ITERA : 428 baris x 1 kolom
+   - UNILA : 393 baris x 1 kolom
+   - UBL   : 383 baris x 1 kolom
+   - UINRIL: 400 baris x 1 kolom
 
 2. VERIFIKASI MISSING VALUES
-   - ITERA : Total NA = 729 
-   - UNILA : Total NA = 649 
-   - UBL   : Total NA = 435 
-   - UINRIL: Total NA = 400 
+   - ITERA : Total NA = 0 
+   - UNILA : Total NA = 0 
+   - UBL   : Total NA = 0 
+   - UINRIL: Total NA = 0 
 
 3. STRUKTUR KOLOM
-   - ITERA: Timestamp, Kampus_PT, Nomor.urut, Jenis.Kelamin, Umur, Fakultas, Prodi, Tingkat.Semester, Uang.Saku, kepemilikan.mobil, kepemilikan.motor, kepemilikan.sepeda, kendaraan.utama, kelurahan, jenis.tempat.tinggal, nama.jalan.tempat.tinggal, alasan.pemilihan.lokasi.tempat.tinggal, jarak, biaya.dalam.sepekan, Jumlah.Perjalanan.Senin, Jumlah.Perjalanan.Selasa, Jumlah.Perjalanan.Rabu, Jumlah.Perjalanan.Kamis, Jumlah.Perjalanan.Jumat, Jumlah.Perjalanan.Sabtu, Jumlah.Perjalanan.Ahad 
+   - ITERA: Timestamp.Kampus_PT.Nomor.urut.Jenis.Kelamin.Umur.Fakultas.Prodi.Tingkat.Semester.Uang.Saku.kepemilikan.mobil.kepemilikan.motor.kepemilikan.sepeda.kendaraan.utama.kelurahan.jenis.tempat.tinggal.nama.jalan.tempat.tinggal.alasan.pemilihan.lokasi.tempat.tinggal.jarak.biaya.dalam.sepekan.Jumlah.Perjalanan.Senin.Jumlah.Perjalanan.Selasa.Jumlah.Perjalanan.Rabu.Jumlah.Perjalanan.Kamis.Jumlah.Perjalanan.Jumat.Jumlah.Perjalanan.Sabtu.Jumlah.Perjalanan.Ahad 
 
-   - UNILA: Timestamp, Kampus_PT, Nomor.urut, Umur, Jenis.Kelamin, Fakultas, Prodi, Tingkat.Semester, Uang.Saku, kepemilikan.mobil, kepemilikan.motor, kepemilikan.sepeda, kendaraan.utama, jenis.tempat.tinggal, nama.jalan.tempat.tinggal, alasan.pemilihan.lokasi.tempat.tinggal, biaya.dalam.sepekan, jarak, Jumlah.Perjalanan.Senin, Jumlah.Perjalanan.Selasa, Jumlah.Perjalanan.Rabu, Jumlah.Perjalanan.Kamis, Jumlah.Perjalanan.Jumat, Jumlah.Perjalanan.Sabtu, Jumlah.Perjalanan.Ahad 
+   - UNILA: Timestamp.Kampus_PT.Nomor.urut.Umur.Jenis.Kelamin.Fakultas.Prodi.Tingkat.Semester.Uang.Saku.kepemilikan.mobil.kepemilikan.motor.kepemilikan.sepeda.kendaraan.utama.jenis.tempat.tinggal.nama.jalan.tempat.tinggal.alasan.pemilihan.lokasi.tempat.tinggal.biaya.dalam.sepekan.jarak.Jumlah.Perjalanan.Senin.Jumlah.Perjalanan.Selasa.Jumlah.Perjalanan.Rabu.Jumlah.Perjalanan.Kamis.Jumlah.Perjalanan.Jumat.Jumlah.Perjalanan.Sabtu.Jumlah.Perjalanan.Ahad 
 
-   - UBL  : Timestamp, Kampus_PT, Nomor.urut, Jenis.Kelamin, Umur, Fakultas, Prodi, Tingkat.Semester, Uang.Saku, kepemilikan.mobil, kepemilikan.motor, kepemilikan.sepeda, kendaraan.utama, kelurahan, jenis.tempat.tinggal, nama.jalan.tempat.tinggal, jarak, alasan.pemilihan.lokasi.tempat.tinggal, biaya.dalam.sepekan, Jumlah.Perjalanan.Senin, Jumlah.Perjalanan.Selasa, Jumlah.Perjalanan.Rabu, Jumlah.Perjalanan.Kamis, Jumlah.Perjalanan.Jumat, Jumlah.Perjalanan.Sabtu, Jumlah.Perjalanan.Ahad 
+   - UBL  : Timestamp.Kampus_PT.Nomor.urut.Jenis.Kelamin.Umur.Fakultas.Prodi.Tingkat.Semester.Uang.Saku.kepemilikan.mobil.kepemilikan.motor.kepemilikan.sepeda.kendaraan.utama.kelurahan.jenis.tempat.tinggal.nama.jalan.tempat.tinggal.jarak.alasan.pemilihan.lokasi.tempat.tinggal.biaya.dalam.sepekan.Jumlah.Perjalanan.Senin.Jumlah.Perjalanan.Selasa.Jumlah.Perjalanan.Rabu.Jumlah.Perjalanan.Kamis.Jumlah.Perjalanan.Jumat.Jumlah.Perjalanan.Sabtu.Jumlah.Perjalanan.Ahad 
 
 
 4. VARIABEL KATEGORIS (FACTOR)
