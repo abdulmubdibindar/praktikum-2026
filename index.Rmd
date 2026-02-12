@@ -503,7 +503,7 @@ Variabel adalah tempat menyimpan data dan informasi di R. Variabel terdiri atas 
 
 Contoh:
 
-```{r}
+```{r mod0-assignment, echo=TRUE}
 a <- 1 # 'a' adalah nama variabel yang nilainya 1
 b <- 2 # 'b' adalah nama variabel yang nilainya 2
 ```
@@ -514,7 +514,7 @@ Meskipun kita bisa menggunakan `=` untuk meng-*assign* nilai ke variabel, prakti
 
 Variabel juga bisa dideklarasikan menggunakan operasi matematika dan variabel sebelumnya.
 
-```{r}
+```{r mod0-assignment-math, echo=TRUE
 hasil <- a + b
 
 paste("Hasil:",hasil)
@@ -522,7 +522,7 @@ paste("Hasil:",hasil)
 
 Untuk menampilkan nilai variabel tuliskan kembali nama variabelnya lalu jalankan.
 
-```{r}
+```{r mod0-var-display}
 a
 b
 hasil
