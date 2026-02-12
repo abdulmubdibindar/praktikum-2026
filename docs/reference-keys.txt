@@ -24,9 +24,7 @@ sintaks-dasar-bahasa-r
 komentar
 komentar-blok-block-comment
 variabel
-section
-section-1
-section-2
+konvensi-penamaan-dalam-r
 paket-packages
 fungsi-functions
 menggunakan-fungsi

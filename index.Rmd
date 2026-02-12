@@ -514,7 +514,7 @@ Meskipun kita bisa menggunakan `=` untuk meng-*assign* nilai ke variabel, prakti
 
 Variabel juga bisa dideklarasikan menggunakan operasi matematika dan variabel sebelumnya.
 
-```{r mod0-assignment-math, echo=TRUE
+```{r mod0-assignment-math, echo=TRUE}
 hasil <- a + b
 
 paste("Hasil:",hasil)
@@ -522,7 +522,7 @@ paste("Hasil:",hasil)
 
 Untuk menampilkan nilai variabel tuliskan kembali nama variabelnya lalu jalankan.
 
-```{r mod0-var-display}
+```{r mod0-var-display, echo=TRUE}
 a
 b
 hasil
@@ -531,8 +531,6 @@ hasil
 ### Konvensi Penamaan dalam R
 
 R mendukung beberapa gaya penamaan variabel. Penting untuk diingat bahwa **R membedakan huruf besar dan kecil** (*case-sensitive*), sehingga `data` berbeda dengan `Data`, `JenisKelamin` berbeda dengan `jeniskelamin`, dan `"Laki-Laki"` berbeda dengan `"Laki-laki"`. Kesalahan dalam kapitalisasi adalah sumber *error* yang sangat umum bagi pemula.
-
-**Konvensi Penamaan Variabel:**
 
 R mendukung beberapa gaya penamaan variabel:
 
@@ -739,13 +737,13 @@ data |>
 
 Artinya: "Ambil `data`, lalu `fungsi_1`, kemudian hasilnya dimasukkan ke `fungsi_2`."
 
-Kita akan mempelajari penggunaan operator pipa (`|>`) secara lebih praktis dalam \@ref(modul-1). 
+Kita akan mempelajari penggunaan operator pipa (`|>`) secara lebih praktis dalam Modul \@ref(modul-1). 
 
 ## Manajemen Data (Input/Output)
 
 Ini adalah kemampuan yang penting dalam pengolahan data di R karena seringkali kita perlu mengolah data dari file eksternal (seperti Excel) atau menyimpan data hasil pengolahan ke file eksternal.
 
-Kita akan mempraktikkan kemampuan ini lebih banyak mulai di \@ref(modul-1).
+Kita akan mempraktikkan kemampuan ini lebih banyak mulai di Modul \@ref(modul-1).
 
 ### Membaca Data
 

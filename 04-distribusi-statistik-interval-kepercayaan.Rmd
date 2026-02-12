@@ -18,7 +18,7 @@ Modul ini akan membahas dua konsep fundamental dalam statistika inferensial: **D
 
 Pastikan Anda telah menginstal pustaka `tidyverse` yang akan sangat membantu dalam proses manipulasi dan visualisasi data.
 
-```{r mod04-load-libraries}
+```{r mod04-load-libraries, echo=TRUE}
 library(tidyverse)
 library(readr)
 ```
@@ -27,7 +27,7 @@ library(readr)
 
 Langkah pertama adalah memuat data survei mahasiswa dari empat universitas. Kita akan menggabungkan dan membersihkan data tersebut untuk analisis. Variabel yang akan menjadi fokus kita adalah **jarak tempuh (km)** dan **jenis tempat tinggal**.
 
-```{r mod04-load-and-clean-data}
+```{r mod04-load-and-clean-data, echo=TRUE}
 # Membaca 4 file CSV
 df_uinril <- read_csv2("datasets/DataUtama_mhsUINRIL.csv")
 df_ubl <- read_csv2("datasets/DataUtama_mhsUBL.csv")
@@ -118,7 +118,7 @@ Teorema Limit Pusat (*Central Limit Theorem*) menyatakan bahwa jika kita mengamb
 
 Pertama, mari kita hitung rata-rata dan standar deviasi "populasi" kita sebagai acuan.
 
-```{r mod04-population-parameters}
+```{r mod04-population-parameters, echo=TRUE}
 # Menghitung rata-rata jarak "populasi"
 pop_mean <- mean(data_mahasiswa$jarak_km)
 # Menghitung standar deviasi jarak "populasi"
@@ -132,7 +132,7 @@ paste("Standar Deviasi Populasi (σ):", round(pop_sd, 2), "km")
 
 Sekarang, kita akan mensimulasikan proses pengambilan sampel secara berulang. Kita akan mengambil 1000 sampel acak, masing-masing berukuran 50 mahasiswa (`n=50`), lalu menghitung rata-rata jarak untuk setiap sampel.
 
-```{r mod04-simulate-sampling}
+```{r mod04-simulate-sampling, echo=TRUE}
 # Menetapkan parameter simulasi
 ukuran_sampel <- 50
 jumlah_simulasi <- 1000
@@ -167,7 +167,7 @@ Modifikasi kode simulasi di atas:
 
 Kumpulan dari 1000 rata-rata sampel inilah yang membentuk **distribusi sampling**. Mari kita visualisasikan dalam bentuk histogram.
 
-```{r mod04-visualize-sampling-distribution}
+```{r mod04-visualize-sampling-distribution, echo=TRUE}
 # Visualisasi Distribusi Sampling dengan Histogram
 ggplot(df_sampling, aes(x = rataan_sampel)) +
   geom_histogram(aes(y = ..density..), bins = 30, fill = "skyblue", color = "black", alpha = 0.7) +
@@ -196,7 +196,7 @@ Perhatikan bagaimana distribusi dari rata-rata sampel berbentuk seperti lonceng 
 
 3.  **Estimasi (dari sampel)**: Dalam praktik statistika inferensial, kita hampir tidak pernah mengetahui . Oleh karena itu, kita mengestimasinya menggunakan standar deviasi dari sampel kita sendiri (s). Rumusnya menjadi $SE=\frac{s}{\sqrt{n}}$. **Inilah nilai yang sebenarnya digunakan saat kita membuat interval kepercayaan atau melakukan uji hipotesis dari data sampel nyata.**
 
-```{r mod04-calculate-standard-error}
+```{r mod04-calculate-standard-error, echo=TRUE}
 # 1. Standard Error Empiris (dari 1000 sampel)
 se_empiris <- sd(df_sampling$rataan_sampel)
 
@@ -209,7 +209,7 @@ paste("Standard Error (Teoritis, dari populasi):", round(se_teoritis, 3))
 
 Mari kita hitung estimasi standard error dari satu sampel acak yang akan kita gunakan nanti di Bagian 4.5.
 
-```{r mod04-estimate-se-from-sample}
+```{r mod04-estimate-se-from-sample, echo=TRUE}
 # Mengambil satu sampel acak (sama seperti di Bagian 4.1)
 set.seed(42)
 sampel_tunggal_untuk_se <- sample(data_mahasiswa$jarak_km, ukuran_sampel)
@@ -228,19 +228,19 @@ Untuk bagian ini kita akan menggunakan *library* bernama `MKinfer`yang berguna u
 
 Lakukan instalasi *library* ini dengan perintah berikut.
 
-```{r mod04-install-mkinfer, eval=FALSE}
+```{r mod04-install-mkinfer, eval=FALSE, echo=TRUE}
 install.packages("MKinfer")
 ```
 
 Kemudian muat paket `MKinfer` tersebut.
 
-```{r mod04-load-mkinfer}
+```{r mod04-load-mkinfer, echo=TRUE}
 library(MKinfer)
 ```
 
 ### Mengambil Satu Sampel
 
-```{r mod04-sample-mean-sd}
+```{r mod04-sample-mean-sd, echo=TRUE}
 # Kita gunakan sampel yang sudah dibuat sebelumnya
 sampel_tunggal <- sampel_tunggal_untuk_se
 mean_sampel_tunggal <- mean(sampel_tunggal)
@@ -251,7 +251,7 @@ cat(paste("Standar Deviasi Sampel Tunggal:", round(sd_sampel_tunggal, 2), "km\n"
 
 ### Menghasilkan Interval Kepercayaan
 
-```{r mod04-confidence-interval-mean}
+```{r mod04-confidence-interval-mean, echo=TRUE}
 # Menghitung interval kepercayaan 95% menggunakan MKinfer
 hasil_ci_mean <- meanCI(sampel_tunggal, conf.level = 0.95)
 
@@ -265,7 +265,7 @@ Hasil dari fungsi `meanCI` tersebut langsung menunjukkan rentang kepercayaan yan
 
 Berapakah rentang kepercayaan untuk rata-rata jarak tempat tinggal dari kampus dari sampel kita? Tuliskan interpretasinya yang tepat. Bandingkan dengan rata-rata parameter
 
-```{r mod04-question-ci-mean}
+```{r mod04-question-ci-mean, echo=TRUE}
 # Jawablah pertanyaan di atas dengan menuliskannya sebagai komentar di chunk ini
 # Rentang kepercayaannya adalah 2,81 - 3,95 km
 
@@ -282,7 +282,7 @@ Selain rata-rata, kita juga sering tertarik untuk mengestimasi proporsi dari sua
 
 Pertama, mari kita hitung proporsi "populasi" yang sebenarnya dari data kita. Kita akan mencari proporsi mahasiswa yang tinggal di "Kos/Asrama".
 
-```{r mod04-population-proportion}
+```{r mod04-population-proportion, echo=TRUE}
 # Menghitung proporsi populasi
 tabel_populasi <- table(data_mahasiswa$tipe_tinggal_baku)
 pop_prop <- prop.table(tabel_populasi)["Kos/Asrama"]
@@ -296,7 +296,7 @@ cat(paste("\nProporsi Mahasiswa di Kos/Asrama (p):", round(pop_prop, 4)))
 
 Sekarang, kita ambil satu sampel acak (misalnya, `n=100`) dan hitung proporsi sampel $\hat{p}$ mahasiswa yang tinggal di kos/asrama.
 
-```{r mod04-sample-proportion}
+```{r mod04-sample-proportion, echo=TRUE}
 # Menetapkan ukuran sampel
 ukuran_sampel_prop <- 100
 
@@ -318,7 +318,7 @@ cat(paste("\nProporsi Sampel Mahasiswa di Kos/Asrama (p-hat):", round(prop_sampe
 
 Kita akan menggunakan fungsi `binomCI()` di R. Fungsi ini memerlukan jumlah "sukses", yakni jumlah mahasiswa di kos/asrama, dan total ukuran sampel.
 
-```{r mod04-confidence-interval-proportion}
+```{r mod04-confidence-interval-proportion, echo=TRUE}
 # Mendapatkan jumlah "sukses" dari tabel sampel
 jumlah_sukses <- tabel_sampel["Kos/Asrama"]
 total_sampel <- ukuran_sampel_prop
@@ -333,7 +333,7 @@ print(hasil_prop_test)
 
 Berapakah rentang kepercayaan untuk proporsi mahasiswa yang tinggal di kos/asrama? Tuliskan interpretasinya yang tepat. Bandingkan dengan proporsi parameter.
 
-```{r mod04-question-ci-proportion}
+```{r mod04-question-ci-proportion, echo=TRUE}
 # Jawablah pertanyaan di atas dengan menuliskannya sebagai komentar di chunk ini  # Rentang kepercayaannya adalah 0,37 hingga 0,56
 
 # Tuliskan interpretasi dari rentang tersebut
