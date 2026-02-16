@@ -1,7 +1,7 @@
 # Folder yang di-ignore
 .secrets/
-datasets/olah_ulang
-datasets/pernah_dipakai
+**/olah_ulang
+**/pernah_dipakai
 .tmp/
 kunjaw
 
