@@ -53,11 +53,10 @@ data <- read.xlsx("datasets/Data Praktikum 01.xlsx")
 head(data)
 ```
 
-Fungsi tersebut akan mengimpor seluruh isi dari file Excel `Data Gabungan.xlsx` pada *sheet* pertama saja.
+Fungsi tersebut akan mengimpor seluruh isi dari file Excel `Data Praktikum 01.xlsx` pada *sheet* pertama saja. *Dataset* yang kita impor akan menjadi objek dengan jenis **tibble**.
 
-Apabila kita ingin mengimpor set data dari *sheet* lainnya, kita harus menyertakan detil nama sheet yang kita ingin impor pada atribut `sheet`.
+Apabila kita ingin mengimpor set data dari *sheet* lainnya, kita harus menyertakan detil nama sheet yang kita ingin impor pada atribut `sheet`. Misalnya kita ingin mengimpor *sheet* UBL yang bernama "DataUtama_mhsUBL", maka perintahnya adalah: 
 
-*Dataset* yang kita impor akan menjadi objek dengan jenis *tibble*.
 
 ```{r mod01-import-ubl-sheet, echo=TRUE}
 # Menyimpan file sebagai variabel tersendiri sehingga lebih fleksibel
@@ -70,7 +69,7 @@ data_ubl <- read.xlsx(file_dibaca, sheet = "DataUtama_mhsUBL")
 head(data_ubl)
 ```
 
-Kita juga dapat melihat *dataset* kita secara lengkap dengan perintah `View()`
+Kita juga dapat melihat *dataset* kita secara lengkap dengan perintah `View()`.
 
 ```{r mod01-view-data, eval=FALSE, echo=TRUE}
 # Melihat set data UINRIL
@@ -84,11 +83,13 @@ View(data_ubl)
 
 Kita sudah mempelajari bahwa data terstruktur terdiri atas **objek**, **variabel**, dan **nilai**. Satu objek diwakili oleh satu baris, variabel oleh kolom, dan nilai berada di dalam sel-sel yang merupakan perpotongan kolom dan baris.
 
-> ⚠️ **Penting**
->
-> Di modul ini kita menggunakan istilah "variabel" untuk menyebut dua hal yang berbeda. Makna pertama mengacu pada penyimpan nilai di R, sementara yang kedua adalah elemen data terstruktur yang menjadi kolom-kolom.
->
-> Dalam modul ini kita akan menggunakan istilah yang sama untuk kedua makna, jadi pahami konteks kalimatnya terlebih dahulu ketika menemukan kata ini.
+::: rmdimportant
+⚠️ **Penting**
+
+Di modul ini kita menggunakan istilah "variabel" untuk menyebut dua hal yang berbeda. Makna pertama mengacu pada penyimpan nilai di R, sementara yang kedua adalah elemen data terstruktur yang menjadi kolom-kolom.
+
+Dalam modul ini kita akan menggunakan istilah yang sama untuk kedua makna, jadi pahami konteks kalimatnya terlebih dahulu ketika menemukan kata ini.
+:::
 
 Untuk mengetahui ringkasan struktur data, kita dapat menggunakan fungsi `glimpse()` yang membutuhkan set data yang kita simpan sebagai argumen.
 
@@ -106,7 +107,7 @@ Terlihat dalam data kita bahwa hanya ada dua tipe nilai variabel: `dbl` dan `chr
 ::: {.rmdexercise}
 **Aktivitas Mandiri 1: Menganalisis Struktur Data [STP-1.3]**
 
-Jalankan `glimpse(data)` untuk dataset UIN RIL dan jawab:
+Impor dan jalankan `glimpse(data)` untuk dataset **UIN RIL** dan jawab:
 
 1. Berapa jumlah objek (baris) dalam dataset ini?
 2. Berapa jumlah variabel (kolom)?
@@ -135,9 +136,12 @@ Algoritma yang akan kita lakukan dalam praktikum ini adalah sebagai berikut:
 5.  Mengubah nama kolom-kolom di kedua set data menjadi nama-nama yang sudah ditentukan di langkah-3.
 6.  Menyatukan kedua set data.
 
-> 💡 **Tip**
->
-> Sebisa mungkin rancang setiap langkah pada urutan kerja kita dengan rinci agar kita dapat menerjemahkan langkah-langkah tersebut dengan lebih mudah ke baris kode.
+::: rmdnote
+💡 **Tip**
+
+Sebisa mungkin rancang setiap langkah pada urutan kerja kita dengan rinci agar kita dapat menerjemahkan langkah-langkah tersebut dengan lebih mudah ke baris kode.
+:::
+
 
 ### Mengidentifikasi Nama-nama Kolom
 
@@ -162,9 +166,11 @@ length(colnames(data_ubl)) # jumlah kolom set data UBL
 
 Hasil ini menunjukkan bahwa kedua dataset memiliki jumlah kolom yang sama (25 kolom). Meskipun jumlahnya sama, kita sudah melihat bahwa ada perbedaan penamaan di antara keduanya yang perlu diseragamkan.
 
-> ⚠️ Penting!
->
-> Fungsi `length()` pada dasarnya adalah fungsi penghitung jumlah elemen dalam suatu vektor atau jenis data lain yang berupa daftar.
+
+::: rmdimportant
+⚠️ Penting!
+
+Fungsi `length()` pada dasarnya adalah fungsi penghitung jumlah elemen dalam suatu vektor atau jenis data lain yang berupa daftar.
 
 ```{r mod01-vector-length-demo, echo=TRUE}
 # Mendefinisikan suatu vektor
@@ -173,14 +179,15 @@ suatu_vektor <- c(1, 2, 3, 4, 5)
 # Mengukur panjangnya
 length(suatu_vektor)
 ```
+:::
 
-Dari kedua fungsi tersebut, kita dapat mengetahui bahwa terdapat perbedaan jumlah kolom dan juga perbedaan penamaan:
+Dari kedua fungsi tersebut, `length()` dan `colnames()`, kita dapat mengetahui bahwa terdapat perbedaan jumlah kolom dan juga perbedaan penamaan:
 
 -   `kepemilikan.sepedan` di data UIN vs `kepemilikan.sepeda` di data UBL.
 
 -   `biaya.dalam.ribu2` di data UIN vs `biaya.dalam.seminggu` di data UBL.
 
-Perbedaan-perbedaan inilah yang membuat kita tidak bisa langsung menggabungkan data. Kita harus menyeragamkannya terlebih dahulu,
+Perbedaan-perbedaan inilah yang membuat kita tidak bisa langsung menggabungkan data. Kita harus menyeragamkannya terlebih dahulu.
 
 ### Menentukan Kolom-kolom yang Akan Diambil di Set Data Baru
 
@@ -257,7 +264,7 @@ Untuk membuktikan bahwa namanya sudah berubah, kita bisa cek lagi.
 ```{r mod01-verify-rename, echo=TRUE}
 # Cek nama kolom setelah diubah
 colnames(data_uin_selected)
-print("============================================================")
+print("-----------------------------------")
 colnames(data_ubl_selected)
 ```
 
@@ -266,12 +273,12 @@ Hasil dari kedua perintah di atas seharusnya adalah daftar nama yang identik.
 ::: {.rmdexercise}
 **Aktivitas Mandiri 2: Seleksi dan Rename Kolom [STP-1.4]**
 
-Gunakan dataset `data_ubl` yang sudah diimpor:
+Gunakan dataset dari sheet UINRIL yang sudah diimpor di aktivitas sebelumnya:
 
 1. Pilih hanya kolom: `Nomor.urut`, `Jenis.Kelamin`, `Umur`, `Fakultas`, `Prodi`
 2. Rename kolom `Jenis.Kelamin` menjadi `JK` (gunakan fungsi `rename()`)
-3. Simpan hasilnya ke variabel `data_ubl_subset`
-4. Gunakan `glimpse(data_ubl_subset)` untuk memverifikasi hanya ada 5 kolom dan nama `JK` sudah benar
+3. Simpan hasilnya ke variabel `data_uinril_subset`
+4. Gunakan `glimpse(data_uinril_subset)` untuk memverifikasi hanya ada 5 kolom dan nama `JK` sudah benar
 :::
 
 ### Menyatukan Kedua Set Data
@@ -288,8 +295,6 @@ Hasil dari penggabungan tersebut menyebabkan *error* pada kolom `biaya.dalam.sep
 ```{r mod01-check-data-types, echo=TRUE}
 # Mengecek tipe data dalam set data UINRIL
 glimpse(data_uin_selected)
-
-print("=================================================================================")
 
 # Mengecek tipe data dalam set data UBL
 glimpse(data_ubl_selected)
@@ -338,30 +343,101 @@ Selesai! 🥳 Mari kita lihat hasil akhir dari kerja keras kita dengan `glimpse(
 glimpse(data_gabungan)
 ```
 
+
+
 🎉 **Selamat!** Kita telah berhasil menggabungkan dataset dari dua kampus berbeda. Dataset gabungan kita sekarang memiliki:
 
 - **779 baris** (400 dari UIN RIL + 379 dari UBL)
 - **19 kolom** yang sudah diseragamkan namanya
 - Sudah siap untuk analisis lebih lanjut!
 
+::: {.rmdexercise}
+**Aktivitas Mandiri 3: Menggabungkan Data UINRIL dan ITERA [STP-1.3, STP-1.4]**
+
+Dari file `Data Praktikum 01.xlsx`, gabungkan data responden dari UINRIL yang sudah kita impor sebelumnya dengan data ITERA.
+
+**Langkah-langkah:**
+
+1. **Impor data dari sheet ITERA** menggunakan `read.xlsx()`
+   - Simpan sheet ITERA ke variabel `data_itera_lat`
+
+2. **Identifikasi kolom yang bisa digabungkan**
+   - Gunakan `colnames()` untuk melihat nama kolom di kedua dataset
+   - Gunakan `glimpse()` untuk melihat tipe data setiap kolom
+   - Tentukan 5 kolom yang tipenya sama dan bisa digabungkan
+
+3. **Seleksi kolom yang sesuai** menggunakan `select()`
+   - Pilih hanya 5 kolom yang ada di kedua dataset dan tipenya sama
+   - Ingat menggunakan backtick (`) untuk kolom dengan karakter khusus
+
+4. **Seragamkan nama kolom**
+   - Buat vektor `kolom_final` berisi nama standar untuk semua kolom
+   - Gunakan `colnames(data_itera_selected) <- kolom_final`
+
+5. **Gabungkan dengan `bind_rows()`**
+   - Jika ada error tipe data, periksa dengan `glimpse()` dan perbaiki
+   - Simpan hasil gabungan ke variabel `data_gabungan_iteraunila`
+
+**Analisis [STP-1.3]:**
+
+1. Berapa jumlah **variabel** (kolom) dalam data gabungan?
+2. Berapa jumlah **objek** (baris) dalam data gabungan?
+3. Tampilkan bukti dengan `glimpse(data_gabungan_iteraunila)`
+
+**Refleksi:**
+- Apa tantangan terbesar yang Anda hadapi dalam menggabungkan data?
+- Mengapa penting untuk mengecek tipe data sebelum menggabungkan dataset?
+:::
+
 ### Mengekspor Set Data Hasil Pengolahan ke Fail *(File)* Terpisah
 
-Dalam dunia data sains dikenal jenis fail `.csv` yang merupakan singkatan dari *"comma-separated values."* Fail ini menyimpan nilai-nilai sehingga dapat dibaca sebagai tabel seperti contoh berikut:
+Dalam dunia data sains dikenal jenis fail `.csv` yang merupakan singkatan dari **comma-separated values*.* Fail ini menyimpan nilai-nilai dalam bentuk teks biasa yang dipisahkan oleh koma (*comma-separated*) sehingga dapat dibaca sebagai tabel. 
+
+
+::: rmdnote
+Teks biasa:
 
 ```         
-Nama; umur
-Ifna; 20
-Salbina; 21
+Nama, umur
+Ifna, 20
+Salbina, 21
 ```
 
-Hasilnya adalah:
+Ketika dibaca menjadi:
 
 | Nama    | umur |
 | ------- | ---- |
 | Ifna    | 20   |
 | Salbina | 21   |
+:::
 
-Kita dapat mengekspor set data hasil pengolahan menjadi fail dengan format data terstruktur seperti `.csv` atau Excel (`.xls`, `.xlsx`) dengan fungsi `write.csv2()` atau `write.xlsx()`.
+Selain tanda koma, tanda titik-koma (`;`) juga sering dipakai untuk menjadi pemisah nilai. Tanda ini biasanya dipakai pada fail yang menggunakan koma sebagai pemisah desimal, seperti di Indonesia, agar tanda koma tidak dibaca sebagai pemisah.
+
+::: rmdnote
+```
+Nama; jarak
+Ifna; 2,01
+Salbina; 19,7
+```
+
+Dibaca menjadi:
+
+| Nama    | jarak |
+| ------- | ----- |
+| Ifna    | 2,01  |
+| Salbina | 19,7  |
+
+:::
+
+Cara mengekspor dataset hasil pengolahan kita ke format CSV adalah dengan menggunakan perintah `write.csv()` atau `write.csv2()`.
+
+Penggunaan keduanya sangat ketat dan harus dipatuhi agar file tidak sulit dibaca oleh komputer lain ke depannya:
+
+- `write.csv()` akan menulis fail csv dengan **titik sebagai pemisah desimal** dan **koma sebagai pemisah sel**.
+
+- `write.csv2()` akan menulis fail csv dengan **koma sebagai pemisah desimal** dan **titi-koma sebagai pemisah sel**.
+
+Kita dapat mengekspor set data hasil pengolahan kita menjadi fail dengan format data terstruktur seperti `.csv` atau Excel (`.xls`, `.xlsx`) dengan fungsi `write.csv2()` atau `write.xlsx()`.
 
 Format perintah fungsi-fungsi ini adalah:
 
@@ -395,50 +471,12 @@ write.xlsx(data_gabungan, "Data UINRIL & UBL.xlsx")
 ```
 
 ::: {.rmdexercise}
-**Aktivitas Mandiri 3: Menggabungkan Data ITERA dan UNILA [STP-1.3, STP-1.4]**
+**Aktivitas Mandiri 4: Mengekspor Set Data Gabungan [STP-1.3, STP-1.4]**
 
-Dari file `Data Praktikum 01.xlsx`, terdapat dua sheet tambahan:
-- `DataUtama_mhsITERA`
-- `DataUtama_mhsUNILA`
-
-**Langkah-langkah:**
-
-1. **Impor data dari kedua sheet** menggunakan `read.xlsx()`
-   - Simpan sheet ITERA ke variabel `data_itera`
-   - Simpan sheet UNILA ke variabel `data_unila`
-
-2. **Identifikasi kolom yang bisa digabungkan**
-   - Gunakan `colnames()` untuk melihat nama kolom di kedua dataset
-   - Gunakan `glimpse()` untuk melihat tipe data setiap kolom
-   - Tentukan kolom mana yang tipenya sama dan bisa digabungkan
-
-3. **Seleksi kolom yang sesuai** menggunakan `select()`
-   - Pilih hanya kolom yang ada di kedua dataset dan tipenya sama
-   - Ingat menggunakan backtick (`) untuk kolom dengan karakter khusus
-
-4. **Seragamkan nama kolom**
-   - Buat vektor `kolom_final` berisi nama standar untuk semua kolom
-   - Gunakan `colnames(data_itera_selected) <- kolom_final`
-   - Lakukan hal sama untuk `data_unila_selected`
-
-5. **Gabungkan dengan `bind_rows()`**
-   - Jika ada error tipe data, periksa dengan `glimpse()` dan perbaiki
-   - Simpan hasil gabungan ke variabel `data_gabungan_iteraunila`
-
-6. **Simpan ke file**
+**Simpan ke file**
    - Ekspor hasil gabungan dengan `write.xlsx()`
    - Nama file: `Prak1_[NIM1]_[NIM2].xlsx`
-
-**Analisis [STP-1.3]:**
-
-7. Berapa jumlah **variabel** (kolom) dalam data gabungan?
-8. Berapa jumlah **objek** (baris) dalam data gabungan?
-9. Tampilkan bukti dengan `glimpse(data_gabungan_iteraunila)` dan sertakan screenshot
-
-**Refleksi:**
-- Apa tantangan terbesar yang Anda hadapi dalam menggabungkan data?
-- Mengapa penting untuk mengecek tipe data sebelum menggabungkan dataset?
-:::
+   - Pastikan direktori file hasil ekspor ada di 
 
 ------------------------------------------------------------------------
 
