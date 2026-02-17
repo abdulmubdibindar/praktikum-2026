@@ -4,6 +4,7 @@ datasets/olah_ulang
 datasets/pernah_dipakai
 .tmp/
 kunjaw
+directves
 
 # File sementara
 images/Cuplikan layar 2026-01-10 195525.png
@@ -13,3 +14,4 @@ images/Cuplikan layar 2026-01-10 195525.png
 credentials.json
 token.json
 
+.Rproj.user
