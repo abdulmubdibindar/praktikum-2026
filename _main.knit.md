@@ -836,48 +836,62 @@ head(data)
 ## 4    UINRIL          4     Laki-laki   19 Dakwah dan Ilmu Komunikasi
 ## 5    UINRIL          5     Laki-laki   23      Tarbiyah dan Keguruan
 ## 6    UINRIL          6     Laki-laki   21                       Adab
-##                                   Prodi            Tingkat.Semester  Uang.Saku kepemilikan.mobil
-## 1                        Hukum Keluarga 4 (Semester 7 - Semester 8) 1Jt - 2 Jt                 0
-## 2                        Hukum Keluarga 4 (Semester 7 - Semester 8)     < 1 Jt                 1
-## 3                Pendidikan Agama Islam 4 (Semester 7 - Semester 8)     < 1 Jt                 0
-## 4        Komunikasi dan Penyiaran Islam 1 (Semester 1 - Semester 2)     < 1 Jt                 0
-## 5            Manajemen Pendidikan Islam 4 (Semester 7 - Semester 8)     < 1 Jt                 0
-## 6 Ilmu Perpustakaan dan Informasi Islam 4 (Semester 7 - Semester 8)     < 1 Jt                 0
-##   kepemilikan.motor kepemilikan.sepedan      kendaraan.utama    kelurahan
-## 1                 1                   0 Sepeda Motor Pribadi       Wiyono
-## 2                 4                   0 Sepeda Motor Pribadi     Sukarame
-## 3                 0                   0        Berjalan Kaki     Sukarame
-## 4                 1                   0 Sepeda Motor Pribadi Harapan Jaya
-## 5                 1                   0 Sepeda Motor Pribadi  Korpri Raya
-## 6                 1                   0 Sepeda Motor Pribadi    Rajabasa 
-##            jenis.tempat.tinggal               nama.jalan.tempat.tinggal
-## 1         Rumah Bersama Saudara                            Pasar Wiyono
-## 2                   Kos Sendiri                     jln endro suratmin 
-## 3                   Kos Sendiri                         Jl. Pulau ambon
-## 4                   Kos Sendiri           Jl.pulau pisang, gg way pesai
-## 5 Rumah Mengontrak Bersama-sama                              Jl. Durian
-## 6  Rumah Pribadi/Rumah Keluarga Jln Nunyai Gg. Hi. Ismail Blok B NO 22E
-##   alasan.pemilihan.lokasi.tempat.tinggal jarak.(km) biaya.dalam.ribu2 Jumlah.Perjalanan.Senin
-## 1                              Lain-lain      19.27               100                       3
-## 2                    Dekat dengan kampus       0.58                80                       3
-## 3                    Dekat dengan kampus       0.56                 0                       3
-## 4                    Dekat dengan kampus       1.05                50                       0
-## 5                    Dekat dengan kampus       1.69                50                       4
-## 6                    Dekat dengan kampus       7.91                50                       0
-##   Jumlah.Perjalanan.Selasa Jumlah.Perjalanan.Rabu Jumlah.Perjalanan.Kamis Jumlah.Perjalanan.Jumat
-## 1                        3                      0                       0                       0
-## 2                        3                      0                       3                       0
-## 3                        0                      3                       0                       0
-## 4                        2                      0                       2                       2
-## 5                        4                      0                       0                       3
-## 6                        2                      2                       0                       2
-##   Jumlah.Perjalanan.Sabtu Jumlah.Perjalanan.Ahad
-## 1                       0                      0
-## 2                       0                      0
-## 3                       0                      0
-## 4                       0                      2
-## 5                       2                      0
-## 6                       2                      2
+##                                   Prodi            Tingkat.Semester
+## 1                        Hukum Keluarga 4 (Semester 7 - Semester 8)
+## 2                        Hukum Keluarga 4 (Semester 7 - Semester 8)
+## 3                Pendidikan Agama Islam 4 (Semester 7 - Semester 8)
+## 4        Komunikasi dan Penyiaran Islam 1 (Semester 1 - Semester 2)
+## 5            Manajemen Pendidikan Islam 4 (Semester 7 - Semester 8)
+## 6 Ilmu Perpustakaan dan Informasi Islam 4 (Semester 7 - Semester 8)
+##    Uang.Saku kepemilikan.mobil kepemilikan.motor kepemilikan.sepedan
+## 1 1Jt - 2 Jt                 0                 1                   0
+## 2     < 1 Jt                 1                 4                   0
+## 3     < 1 Jt                 0                 0                   0
+## 4     < 1 Jt                 0                 1                   0
+## 5     < 1 Jt                 0                 1                   0
+## 6     < 1 Jt                 0                 1                   0
+##        kendaraan.utama    kelurahan          jenis.tempat.tinggal
+## 1 Sepeda Motor Pribadi       Wiyono         Rumah Bersama Saudara
+## 2 Sepeda Motor Pribadi     Sukarame                   Kos Sendiri
+## 3        Berjalan Kaki     Sukarame                   Kos Sendiri
+## 4 Sepeda Motor Pribadi Harapan Jaya                   Kos Sendiri
+## 5 Sepeda Motor Pribadi  Korpri Raya Rumah Mengontrak Bersama-sama
+## 6 Sepeda Motor Pribadi    Rajabasa   Rumah Pribadi/Rumah Keluarga
+##                 nama.jalan.tempat.tinggal
+## 1                            Pasar Wiyono
+## 2                     jln endro suratmin 
+## 3                         Jl. Pulau ambon
+## 4           Jl.pulau pisang, gg way pesai
+## 5                              Jl. Durian
+## 6 Jln Nunyai Gg. Hi. Ismail Blok B NO 22E
+##   alasan.pemilihan.lokasi.tempat.tinggal jarak.(km) biaya.dalam.ribu2
+## 1                              Lain-lain      19.27               100
+## 2                    Dekat dengan kampus       0.58                80
+## 3                    Dekat dengan kampus       0.56                 0
+## 4                    Dekat dengan kampus       1.05                50
+## 5                    Dekat dengan kampus       1.69                50
+## 6                    Dekat dengan kampus       7.91                50
+##   Jumlah.Perjalanan.Senin Jumlah.Perjalanan.Selasa Jumlah.Perjalanan.Rabu
+## 1                       3                        3                      0
+## 2                       3                        3                      0
+## 3                       3                        0                      3
+## 4                       0                        2                      0
+## 5                       4                        4                      0
+## 6                       0                        2                      2
+##   Jumlah.Perjalanan.Kamis Jumlah.Perjalanan.Jumat Jumlah.Perjalanan.Sabtu
+## 1                       0                       0                       0
+## 2                       3                       0                       0
+## 3                       0                       0                       0
+## 4                       2                       2                       0
+## 5                       0                       3                       2
+## 6                       0                       2                       2
+##   Jumlah.Perjalanan.Ahad
+## 1                      0
+## 2                      0
+## 3                      0
+## 4                      2
+## 5                      0
+## 6                      2
 ```
 
 Fungsi tersebut akan mengimpor seluruh isi dari file Excel `Data Praktikum 01.xlsx` pada *sheet* pertama saja. *Dataset* yang kita impor akan menjadi objek dengan jenis **tibble**.
@@ -898,48 +912,76 @@ head(data_ubl)
 ```
 
 ```
-##   Timestamp Kampus_PT Nomor.urut Jenis.Kelamin Umur                         Fakultas
-## 1  45413.83       UBL          1     Perempuan   21 Fakultas Ilmu Sosial dan Politik
-## 2  45413.83       UBL          2     Laki-Laki   20                   Fakultas Hukum
-## 3  45413.85       UBL          3     Laki-Laki   21      Fakultas Ekonomi dan Bisnis
-## 4  45413.85       UBL          4     Laki-Laki   22      Fakultas Ekonomi dan Bisnis
-## 5  45413.88       UBL          5     Laki-Laki   21      Fakultas Ekonomi dan Bisnis
-## 6  45413.92       UBL          6     Perempuan   21      Fakultas Ekonomi dan Bisnis
-##             Prodi            Tingkat.Semester     Uang.Saku kepemilikan.mobil kepemilikan.motor
-## 1 Ilmu Komunikasi 4 (Semester 7 - Semester 8)        < 1 jt                 1                 2
-## 2      Ilmu Hukum 3 (Semester 5 - Semester 6)   1 jt – 2 jt                 2                 1
-## 3       Manajemen 4 (Semester 7 - Semester 8)   1 jt – 2 jt                 1                 2
-## 4       Akuntansi 4 (Semester 7 - Semester 8)   1 jt – 2 jt                 1                 4
-## 5       Manajemen 4 (Semester 7 - Semester 8) 2,1 jt – 3 jt                 4                 4
-## 6       Akuntansi 4 (Semester 7 - Semester 8)   1 jt – 2 jt                 1                 2
-##   kepemilikan.sepeda                                      kendaraan.utama               kelurahan
-## 1                  1                                 Sepeda Motor Pribadi       Kalibalau Kencana
-## 2                  1                                        Mobil Pribadi            Gunung sulah
-## 3                  2                                 Sepeda Motor Pribadi              langkapura
-## 4                  1 Kendaraan Bermotor (menumpang dengan keluarga/teman) Bilabong JAYA JAYA JAYA
-## 5                  1                                        Mobil Pribadi                sukarame
-## 6                  1                                  Transportasi Online               Way halim
-##           jenis.tempat.tinggal                       nama.jalan.tempat.tinggal jarak.(km)
-## 1 Rumah pribadi/rumah keluarga                                    eLBe Loundry   4.223797
-## 2 Rumah pribadi/rumah keluarga                         Jl.Urip Sumoharjo no 88   2.703331
-## 3 Rumah pribadi/rumah keluarga                  JL DARUSSALAM GG LANGGAR LK II   3.237072
-## 4 Rumah pribadi/rumah keluarga Jl Darussalam bilabong bila bolong di jait dong   3.002336
-## 5 Rumah pribadi/rumah keluarga          jl.cendrawasih sukarame bandar lampung   5.961925
-## 6 Rumah pribadi/rumah keluarga                            Jl P tabuan nomor 26   2.925331
-##           alasan.pemilihan.lokasi.tempat.tinggal               biaya.dalam.seminggu
-## 1                 Bersama keluarga/saudara/teman                            25 ribu
-## 2 Mudahnya akses berpergian dari tempat tinggal                                 200
-## 3                 Bersama keluarga/saudara/teman 50rb menggunakan kendaraan pribadi
-## 4    Lingkungan nyaman karna aman dari kejahatan                      Sminggu 20 rb
-## 5                    Dekat dengan fasilitas umum                     20 JUTA RUPIAH
-## 6                 Bersama keluarga/saudara/teman                              40 rb
-##   Jumlah.perjalanan.Senin Jumlah.Perjalanan.Selasa Jumlah.Perjalanan.Rabu Jumlah.Perjalanan.Kamis
-## 1                       2                        3                      2                       3
-## 2                       3                        3                      3                       3
-## 3                       1                        1                      1                       1
-## 4                       2                        2                      2                       2
-## 5                       1                        1                      1                       1
-## 6                       3                        3                      1                       1
+##   Timestamp Kampus_PT Nomor.urut Jenis.Kelamin Umur
+## 1  45413.83       UBL          1     Perempuan   21
+## 2  45413.83       UBL          2     Laki-Laki   20
+## 3  45413.85       UBL          3     Laki-Laki   21
+## 4  45413.85       UBL          4     Laki-Laki   22
+## 5  45413.88       UBL          5     Laki-Laki   21
+## 6  45413.92       UBL          6     Perempuan   21
+##                           Fakultas           Prodi
+## 1 Fakultas Ilmu Sosial dan Politik Ilmu Komunikasi
+## 2                   Fakultas Hukum      Ilmu Hukum
+## 3      Fakultas Ekonomi dan Bisnis       Manajemen
+## 4      Fakultas Ekonomi dan Bisnis       Akuntansi
+## 5      Fakultas Ekonomi dan Bisnis       Manajemen
+## 6      Fakultas Ekonomi dan Bisnis       Akuntansi
+##              Tingkat.Semester     Uang.Saku kepemilikan.mobil
+## 1 4 (Semester 7 - Semester 8)        < 1 jt                 1
+## 2 3 (Semester 5 - Semester 6)   1 jt – 2 jt                 2
+## 3 4 (Semester 7 - Semester 8)   1 jt – 2 jt                 1
+## 4 4 (Semester 7 - Semester 8)   1 jt – 2 jt                 1
+## 5 4 (Semester 7 - Semester 8) 2,1 jt – 3 jt                 4
+## 6 4 (Semester 7 - Semester 8)   1 jt – 2 jt                 1
+##   kepemilikan.motor kepemilikan.sepeda
+## 1                 2                  1
+## 2                 1                  1
+## 3                 2                  2
+## 4                 4                  1
+## 5                 4                  1
+## 6                 2                  1
+##                                        kendaraan.utama
+## 1                                 Sepeda Motor Pribadi
+## 2                                        Mobil Pribadi
+## 3                                 Sepeda Motor Pribadi
+## 4 Kendaraan Bermotor (menumpang dengan keluarga/teman)
+## 5                                        Mobil Pribadi
+## 6                                  Transportasi Online
+##                 kelurahan         jenis.tempat.tinggal
+## 1       Kalibalau Kencana Rumah pribadi/rumah keluarga
+## 2            Gunung sulah Rumah pribadi/rumah keluarga
+## 3              langkapura Rumah pribadi/rumah keluarga
+## 4 Bilabong JAYA JAYA JAYA Rumah pribadi/rumah keluarga
+## 5                sukarame Rumah pribadi/rumah keluarga
+## 6               Way halim Rumah pribadi/rumah keluarga
+##                         nama.jalan.tempat.tinggal jarak.(km)
+## 1                                    eLBe Loundry   4.223797
+## 2                         Jl.Urip Sumoharjo no 88   2.703331
+## 3                  JL DARUSSALAM GG LANGGAR LK II   3.237072
+## 4 Jl Darussalam bilabong bila bolong di jait dong   3.002336
+## 5          jl.cendrawasih sukarame bandar lampung   5.961925
+## 6                            Jl P tabuan nomor 26   2.925331
+##           alasan.pemilihan.lokasi.tempat.tinggal
+## 1                 Bersama keluarga/saudara/teman
+## 2 Mudahnya akses berpergian dari tempat tinggal 
+## 3                 Bersama keluarga/saudara/teman
+## 4    Lingkungan nyaman karna aman dari kejahatan
+## 5                    Dekat dengan fasilitas umum
+## 6                 Bersama keluarga/saudara/teman
+##                 biaya.dalam.seminggu Jumlah.perjalanan.Senin
+## 1                            25 ribu                       2
+## 2                                200                       3
+## 3 50rb menggunakan kendaraan pribadi                       1
+## 4                      Sminggu 20 rb                       2
+## 5                     20 JUTA RUPIAH                       1
+## 6                              40 rb                       3
+##   Jumlah.Perjalanan.Selasa Jumlah.Perjalanan.Rabu Jumlah.Perjalanan.Kamis
+## 1                        3                      2                       3
+## 2                        3                      3                       3
+## 3                        1                      1                       1
+## 4                        2                      2                       2
+## 5                        1                      1                       1
+## 6                        3                      1                       1
 ##   Jumlah.Perjalanan.Jumat Jumlah.Perjalanan.Sabtu Jumlah.Perjalanan.Ahad
 ## 1                       2                       2                      2
 ## 2                       3                       3                      3
@@ -983,31 +1025,31 @@ glimpse(data)
 ```
 ## Rows: 400
 ## Columns: 25
-## $ Kampus_PT                              [3m[38;5;246m<chr>[39m[23m "UINRIL"[38;5;246m, [39m"UINRIL"[38;5;246m, [39m"UINRIL"[38;5;246m, [39m"UINRIL"[38;5;246m, [39m"UINRIL"[38;5;246m, [39m…
-## $ Nomor.urut                             [3m[38;5;246m<dbl>[39m[23m 1[38;5;246m, [39m2[38;5;246m, [39m3[38;5;246m, [39m4[38;5;246m, [39m5[38;5;246m, [39m6[38;5;246m, [39m7[38;5;246m, [39m8[38;5;246m, [39m9[38;5;246m, [39m10[38;5;246m, [39m11[38;5;246m, [39m12[38;5;246m, [39m13[38;5;246m, [39m14[38;5;246m, [39m15[38;5;246m,[39m…
-## $ Jenis.Kelamin                          [3m[38;5;246m<chr>[39m[23m "Laki-laki"[38;5;246m, [39m"Laki-laki"[38;5;246m, [39m"Perempuan"[38;5;246m, [39m"Laki-laki"…
-## $ Umur                                   [3m[38;5;246m<dbl>[39m[23m 22[38;5;246m, [39m25[38;5;246m, [39m24[38;5;246m, [39m19[38;5;246m, [39m23[38;5;246m, [39m21[38;5;246m, [39m22[38;5;246m, [39m21[38;5;246m, [39m21[38;5;246m, [39m21[38;5;246m, [39m19[38;5;246m, [39m19[38;5;246m, [39m19…
-## $ Fakultas                               [3m[38;5;246m<chr>[39m[23m "Syariah"[38;5;246m, [39m"Syariah"[38;5;246m, [39m"Tarbiyah dan Keguruan"[38;5;246m, [39m"Da…
-## $ Prodi                                  [3m[38;5;246m<chr>[39m[23m "Hukum Keluarga"[38;5;246m, [39m"Hukum Keluarga"[38;5;246m, [39m"Pendidikan Ag…
-## $ Tingkat.Semester                       [3m[38;5;246m<chr>[39m[23m "4 (Semester 7 - Semester 8)"[38;5;246m, [39m"4 (Semester 7 - Se…
-## $ Uang.Saku                              [3m[38;5;246m<chr>[39m[23m "1Jt - 2 Jt"[38;5;246m, [39m"< 1 Jt"[38;5;246m, [39m"< 1 Jt"[38;5;246m, [39m"< 1 Jt"[38;5;246m, [39m"< 1 J…
-## $ kepemilikan.mobil                      [3m[38;5;246m<dbl>[39m[23m 0[38;5;246m, [39m1[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m,[39m…
-## $ kepemilikan.motor                      [3m[38;5;246m<dbl>[39m[23m 1[38;5;246m, [39m4[38;5;246m, [39m0[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m4[38;5;246m, [39m4[38;5;246m, [39m1[38;5;246m, [39m0[38;5;246m, [39m1[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m1[38;5;246m,[39m…
-## $ kepemilikan.sepedan                    [3m[38;5;246m<dbl>[39m[23m 0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m1[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m1[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m,[39m…
-## $ kendaraan.utama                        [3m[38;5;246m<chr>[39m[23m "Sepeda Motor Pribadi"[38;5;246m, [39m"Sepeda Motor Pribadi"[38;5;246m, [39m"B…
-## $ kelurahan                              [3m[38;5;246m<chr>[39m[23m "Wiyono"[38;5;246m, [39m"Sukarame"[38;5;246m, [39m"Sukarame"[38;5;246m, [39m"Harapan Jaya"[38;5;246m, [39m…
-## $ jenis.tempat.tinggal                   [3m[38;5;246m<chr>[39m[23m "Rumah Bersama Saudara"[38;5;246m, [39m"Kos Sendiri"[38;5;246m, [39m"Kos Sendi…
-## $ nama.jalan.tempat.tinggal              [3m[38;5;246m<chr>[39m[23m "Pasar Wiyono"[38;5;246m, [39m"jln endro suratmin "[38;5;246m, [39m"Jl. Pulau …
-## $ alasan.pemilihan.lokasi.tempat.tinggal [3m[38;5;246m<chr>[39m[23m "Lain-lain"[38;5;246m, [39m"Dekat dengan kampus"[38;5;246m, [39m"Dekat dengan …
-## $ `jarak.(km)`                           [3m[38;5;246m<dbl>[39m[23m 19.27[38;5;246m, [39m0.58[38;5;246m, [39m0.56[38;5;246m, [39m1.05[38;5;246m, [39m1.69[38;5;246m, [39m7.91[38;5;246m, [39m2.58[38;5;246m, [39m2.32[38;5;246m, [39m0…
-## $ biaya.dalam.ribu2                      [3m[38;5;246m<dbl>[39m[23m 100[38;5;246m, [39m80[38;5;246m, [39m0[38;5;246m, [39m50[38;5;246m, [39m50[38;5;246m, [39m50[38;5;246m, [39m35[38;5;246m, [39m50[38;5;246m, [39m40[38;5;246m, [39m50[38;5;246m, [39m0[38;5;246m, [39m50[38;5;246m, [39m50[38;5;246m,[39m…
-## $ Jumlah.Perjalanan.Senin                [3m[38;5;246m<dbl>[39m[23m 3[38;5;246m, [39m3[38;5;246m, [39m3[38;5;246m, [39m0[38;5;246m, [39m4[38;5;246m, [39m0[38;5;246m, [39m3[38;5;246m, [39m4[38;5;246m, [39m2[38;5;246m, [39m3[38;5;246m, [39m4[38;5;246m, [39m2[38;5;246m, [39m3[38;5;246m, [39m2[38;5;246m, [39m3[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m,[39m…
-## $ Jumlah.Perjalanan.Selasa               [3m[38;5;246m<dbl>[39m[23m 3[38;5;246m, [39m3[38;5;246m, [39m0[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m2[38;5;246m, [39m0[38;5;246m, [39m4[38;5;246m, [39m0[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m3[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m,[39m…
-## $ Jumlah.Perjalanan.Rabu                 [3m[38;5;246m<dbl>[39m[23m 0[38;5;246m, [39m0[38;5;246m, [39m3[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m2[38;5;246m, [39m3[38;5;246m, [39m4[38;5;246m, [39m3[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m,[39m…
-## $ Jumlah.Perjalanan.Kamis                [3m[38;5;246m<dbl>[39m[23m 0[38;5;246m, [39m3[38;5;246m, [39m0[38;5;246m, [39m2[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m4[38;5;246m, [39m0[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m0[38;5;246m, [39m3[38;5;246m, [39m2[38;5;246m,[39m…
-## $ Jumlah.Perjalanan.Jumat                [3m[38;5;246m<dbl>[39m[23m 0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m2[38;5;246m, [39m3[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m0[38;5;246m, [39m2[38;5;246m,[39m…
-## $ Jumlah.Perjalanan.Sabtu                [3m[38;5;246m<dbl>[39m[23m 0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m0[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m,[39m…
-## $ Jumlah.Perjalanan.Ahad                 [3m[38;5;246m<dbl>[39m[23m 0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m2[38;5;246m, [39m0[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m0[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m0[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m,[39m…
+## $ Kampus_PT                              <chr> "UINRIL", "UINRIL", "UINRIL",…
+## $ Nomor.urut                             <dbl> 1, 2, 3, 4, 5, 6, 7, 8, 9, 10…
+## $ Jenis.Kelamin                          <chr> "Laki-laki", "Laki-laki", "Pe…
+## $ Umur                                   <dbl> 22, 25, 24, 19, 23, 21, 22, 2…
+## $ Fakultas                               <chr> "Syariah", "Syariah", "Tarbiy…
+## $ Prodi                                  <chr> "Hukum Keluarga", "Hukum Kelu…
+## $ Tingkat.Semester                       <chr> "4 (Semester 7 - Semester 8)"…
+## $ Uang.Saku                              <chr> "1Jt - 2 Jt", "< 1 Jt", "< 1 …
+## $ kepemilikan.mobil                      <dbl> 0, 1, 0, 0, 0, 0, 1, 1, 1, 0,…
+## $ kepemilikan.motor                      <dbl> 1, 4, 0, 1, 1, 1, 1, 4, 4, 1,…
+## $ kepemilikan.sepedan                    <dbl> 0, 0, 0, 0, 0, 0, 0, 0, 1, 0,…
+## $ kendaraan.utama                        <chr> "Sepeda Motor Pribadi", "Sepe…
+## $ kelurahan                              <chr> "Wiyono", "Sukarame", "Sukara…
+## $ jenis.tempat.tinggal                   <chr> "Rumah Bersama Saudara", "Kos…
+## $ nama.jalan.tempat.tinggal              <chr> "Pasar Wiyono", "jln endro su…
+## $ alasan.pemilihan.lokasi.tempat.tinggal <chr> "Lain-lain", "Dekat dengan ka…
+## $ `jarak.(km)`                           <dbl> 19.27, 0.58, 0.56, 1.05, 1.69…
+## $ biaya.dalam.ribu2                      <dbl> 100, 80, 0, 50, 50, 50, 35, 5…
+## $ Jumlah.Perjalanan.Senin                <dbl> 3, 3, 3, 0, 4, 0, 3, 4, 2, 3,…
+## $ Jumlah.Perjalanan.Selasa               <dbl> 3, 3, 0, 2, 4, 2, 0, 4, 0, 2,…
+## $ Jumlah.Perjalanan.Rabu                 <dbl> 0, 0, 3, 0, 0, 2, 3, 4, 3, 2,…
+## $ Jumlah.Perjalanan.Kamis                <dbl> 0, 3, 0, 2, 0, 0, 0, 4, 0, 2,…
+## $ Jumlah.Perjalanan.Jumat                <dbl> 0, 0, 0, 2, 3, 2, 2, 4, 0, 0,…
+## $ Jumlah.Perjalanan.Sabtu                <dbl> 0, 0, 0, 0, 2, 2, 2, 2, 2, 0,…
+## $ Jumlah.Perjalanan.Ahad                 <dbl> 0, 0, 0, 2, 0, 2, 2, 2, 2, 0,…
 ```
 
 Hasil dari fungsi `glimpse()` tersebut menunjukkan jumlah baris, jumlah kolom, dan kolom-kolom yang ada dalam set data kita beserta rinciannya. Set data kita memiliki 400 baris yang ditunjukkan oleh **`Rows`** dan 25 kolom yang ditunjukkan oleh **`Columns`** . Ini artinya, set data kita memiliki 400 objek dan 25 variabel.
@@ -1066,18 +1108,30 @@ colnames(data)
 ```
 
 ```
-##  [1] "Kampus_PT"                              "Nomor.urut"                            
-##  [3] "Jenis.Kelamin"                          "Umur"                                  
-##  [5] "Fakultas"                               "Prodi"                                 
-##  [7] "Tingkat.Semester"                       "Uang.Saku"                             
-##  [9] "kepemilikan.mobil"                      "kepemilikan.motor"                     
-## [11] "kepemilikan.sepedan"                    "kendaraan.utama"                       
-## [13] "kelurahan"                              "jenis.tempat.tinggal"                  
-## [15] "nama.jalan.tempat.tinggal"              "alasan.pemilihan.lokasi.tempat.tinggal"
-## [17] "jarak.(km)"                             "biaya.dalam.ribu2"                     
-## [19] "Jumlah.Perjalanan.Senin"                "Jumlah.Perjalanan.Selasa"              
-## [21] "Jumlah.Perjalanan.Rabu"                 "Jumlah.Perjalanan.Kamis"               
-## [23] "Jumlah.Perjalanan.Jumat"                "Jumlah.Perjalanan.Sabtu"               
+##  [1] "Kampus_PT"                             
+##  [2] "Nomor.urut"                            
+##  [3] "Jenis.Kelamin"                         
+##  [4] "Umur"                                  
+##  [5] "Fakultas"                              
+##  [6] "Prodi"                                 
+##  [7] "Tingkat.Semester"                      
+##  [8] "Uang.Saku"                             
+##  [9] "kepemilikan.mobil"                     
+## [10] "kepemilikan.motor"                     
+## [11] "kepemilikan.sepedan"                   
+## [12] "kendaraan.utama"                       
+## [13] "kelurahan"                             
+## [14] "jenis.tempat.tinggal"                  
+## [15] "nama.jalan.tempat.tinggal"             
+## [16] "alasan.pemilihan.lokasi.tempat.tinggal"
+## [17] "jarak.(km)"                            
+## [18] "biaya.dalam.ribu2"                     
+## [19] "Jumlah.Perjalanan.Senin"               
+## [20] "Jumlah.Perjalanan.Selasa"              
+## [21] "Jumlah.Perjalanan.Rabu"                
+## [22] "Jumlah.Perjalanan.Kamis"               
+## [23] "Jumlah.Perjalanan.Jumat"               
+## [24] "Jumlah.Perjalanan.Sabtu"               
 ## [25] "Jumlah.Perjalanan.Ahad"
 ```
 
@@ -1088,19 +1142,32 @@ colnames(data_ubl)
 ```
 
 ```
-##  [1] "Timestamp"                              "Kampus_PT"                             
-##  [3] "Nomor.urut"                             "Jenis.Kelamin"                         
-##  [5] "Umur"                                   "Fakultas"                              
-##  [7] "Prodi"                                  "Tingkat.Semester"                      
-##  [9] "Uang.Saku"                              "kepemilikan.mobil"                     
-## [11] "kepemilikan.motor"                      "kepemilikan.sepeda"                    
-## [13] "kendaraan.utama"                        "kelurahan"                             
-## [15] "jenis.tempat.tinggal"                   "nama.jalan.tempat.tinggal"             
-## [17] "jarak.(km)"                             "alasan.pemilihan.lokasi.tempat.tinggal"
-## [19] "biaya.dalam.seminggu"                   "Jumlah.perjalanan.Senin"               
-## [21] "Jumlah.Perjalanan.Selasa"               "Jumlah.Perjalanan.Rabu"                
-## [23] "Jumlah.Perjalanan.Kamis"                "Jumlah.Perjalanan.Jumat"               
-## [25] "Jumlah.Perjalanan.Sabtu"                "Jumlah.Perjalanan.Ahad"
+##  [1] "Timestamp"                             
+##  [2] "Kampus_PT"                             
+##  [3] "Nomor.urut"                            
+##  [4] "Jenis.Kelamin"                         
+##  [5] "Umur"                                  
+##  [6] "Fakultas"                              
+##  [7] "Prodi"                                 
+##  [8] "Tingkat.Semester"                      
+##  [9] "Uang.Saku"                             
+## [10] "kepemilikan.mobil"                     
+## [11] "kepemilikan.motor"                     
+## [12] "kepemilikan.sepeda"                    
+## [13] "kendaraan.utama"                       
+## [14] "kelurahan"                             
+## [15] "jenis.tempat.tinggal"                  
+## [16] "nama.jalan.tempat.tinggal"             
+## [17] "jarak.(km)"                            
+## [18] "alasan.pemilihan.lokasi.tempat.tinggal"
+## [19] "biaya.dalam.seminggu"                  
+## [20] "Jumlah.perjalanan.Senin"               
+## [21] "Jumlah.Perjalanan.Selasa"              
+## [22] "Jumlah.Perjalanan.Rabu"                
+## [23] "Jumlah.Perjalanan.Kamis"               
+## [24] "Jumlah.Perjalanan.Jumat"               
+## [25] "Jumlah.Perjalanan.Sabtu"               
+## [26] "Jumlah.Perjalanan.Ahad"
 ```
 
 Kita dapat mengetahui jumlah kolom setiap set data secara langsung dengan fungsi `length()`.
@@ -1235,13 +1302,17 @@ colnames(data_uin_selected)
 ```
 
 ```
-##  [1] "nomor_urut"               "jenis_kelamin"            "umur"                    
-##  [4] "fakultas"                 "prodi"                    "tingkat_semester"        
-##  [7] "uang_saku"                "kepemilikan_mobil"        "kepemilikan_motor"       
-## [10] "kepemilikan_sepeda"       "kendaraan_utama"          "jenis_tempat_tinggal"    
-## [13] "jarak"                    "biaya_dalam_sepekan"      "jumlah_perjalanan_senin" 
-## [16] "jumlah_perjalanan_selasa" "jumlah_perjalanan_rabu"   "jumlah_perjalanan_kamis" 
-## [19] "jumlah_perjalanan_jumat"  "jumlah_perjalanan_sabtu"  "jumlah_perjalanan_ahad"
+##  [1] "nomor_urut"               "jenis_kelamin"           
+##  [3] "umur"                     "fakultas"                
+##  [5] "prodi"                    "tingkat_semester"        
+##  [7] "uang_saku"                "kepemilikan_mobil"       
+##  [9] "kepemilikan_motor"        "kepemilikan_sepeda"      
+## [11] "kendaraan_utama"          "jenis_tempat_tinggal"    
+## [13] "jarak"                    "biaya_dalam_sepekan"     
+## [15] "jumlah_perjalanan_senin"  "jumlah_perjalanan_selasa"
+## [17] "jumlah_perjalanan_rabu"   "jumlah_perjalanan_kamis" 
+## [19] "jumlah_perjalanan_jumat"  "jumlah_perjalanan_sabtu" 
+## [21] "jumlah_perjalanan_ahad"
 ```
 
 ``` r
@@ -1257,13 +1328,17 @@ colnames(data_ubl_selected)
 ```
 
 ```
-##  [1] "nomor_urut"               "jenis_kelamin"            "umur"                    
-##  [4] "fakultas"                 "prodi"                    "tingkat_semester"        
-##  [7] "uang_saku"                "kepemilikan_mobil"        "kepemilikan_motor"       
-## [10] "kepemilikan_sepeda"       "kendaraan_utama"          "jenis_tempat_tinggal"    
-## [13] "jarak"                    "biaya_dalam_sepekan"      "jumlah_perjalanan_senin" 
-## [16] "jumlah_perjalanan_selasa" "jumlah_perjalanan_rabu"   "jumlah_perjalanan_kamis" 
-## [19] "jumlah_perjalanan_jumat"  "jumlah_perjalanan_sabtu"  "jumlah_perjalanan_ahad"
+##  [1] "nomor_urut"               "jenis_kelamin"           
+##  [3] "umur"                     "fakultas"                
+##  [5] "prodi"                    "tingkat_semester"        
+##  [7] "uang_saku"                "kepemilikan_mobil"       
+##  [9] "kepemilikan_motor"        "kepemilikan_sepeda"      
+## [11] "kendaraan_utama"          "jenis_tempat_tinggal"    
+## [13] "jarak"                    "biaya_dalam_sepekan"     
+## [15] "jumlah_perjalanan_senin"  "jumlah_perjalanan_selasa"
+## [17] "jumlah_perjalanan_rabu"   "jumlah_perjalanan_kamis" 
+## [19] "jumlah_perjalanan_jumat"  "jumlah_perjalanan_sabtu" 
+## [21] "jumlah_perjalanan_ahad"
 ```
 
 Hasil dari kedua perintah di atas seharusnya adalah daftar nama yang identik.
@@ -1300,27 +1375,27 @@ glimpse(data_uin_selected)
 ```
 ## Rows: 400
 ## Columns: 21
-## $ nomor_urut               [3m[38;5;246m<dbl>[39m[23m 1[38;5;246m, [39m2[38;5;246m, [39m3[38;5;246m, [39m4[38;5;246m, [39m5[38;5;246m, [39m6[38;5;246m, [39m7[38;5;246m, [39m8[38;5;246m, [39m9[38;5;246m, [39m10[38;5;246m, [39m11[38;5;246m, [39m12[38;5;246m, [39m13[38;5;246m, [39m14[38;5;246m, [39m15[38;5;246m, [39m16[38;5;246m, [39m17[38;5;246m, [39m18[38;5;246m, [39m1…
-## $ jenis_kelamin            [3m[38;5;246m<chr>[39m[23m "Laki-laki"[38;5;246m, [39m"Laki-laki"[38;5;246m, [39m"Perempuan"[38;5;246m, [39m"Laki-laki"[38;5;246m, [39m"Laki-laki"[38;5;246m,[39m…
-## $ umur                     [3m[38;5;246m<dbl>[39m[23m 22[38;5;246m, [39m25[38;5;246m, [39m24[38;5;246m, [39m19[38;5;246m, [39m23[38;5;246m, [39m21[38;5;246m, [39m22[38;5;246m, [39m21[38;5;246m, [39m21[38;5;246m, [39m21[38;5;246m, [39m19[38;5;246m, [39m19[38;5;246m, [39m19[38;5;246m, [39m19[38;5;246m, [39m19[38;5;246m, [39m20[38;5;246m, [39m…
-## $ fakultas                 [3m[38;5;246m<chr>[39m[23m "Syariah"[38;5;246m, [39m"Syariah"[38;5;246m, [39m"Tarbiyah dan Keguruan"[38;5;246m, [39m"Dakwah dan Ilmu …
-## $ prodi                    [3m[38;5;246m<chr>[39m[23m "Hukum Keluarga"[38;5;246m, [39m"Hukum Keluarga"[38;5;246m, [39m"Pendidikan Agama Islam"[38;5;246m, [39m"K…
-## $ tingkat_semester         [3m[38;5;246m<chr>[39m[23m "4 (Semester 7 - Semester 8)"[38;5;246m, [39m"4 (Semester 7 - Semester 8)"[38;5;246m, [39m"4…
-## $ uang_saku                [3m[38;5;246m<chr>[39m[23m "1Jt - 2 Jt"[38;5;246m, [39m"< 1 Jt"[38;5;246m, [39m"< 1 Jt"[38;5;246m, [39m"< 1 Jt"[38;5;246m, [39m"< 1 Jt"[38;5;246m, [39m"< 1 Jt"[38;5;246m, [39m…
-## $ kepemilikan_mobil        [3m[38;5;246m<dbl>[39m[23m 0[38;5;246m, [39m1[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0…
-## $ kepemilikan_motor        [3m[38;5;246m<dbl>[39m[23m 1[38;5;246m, [39m4[38;5;246m, [39m0[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m4[38;5;246m, [39m4[38;5;246m, [39m1[38;5;246m, [39m0[38;5;246m, [39m1[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m0[38;5;246m, [39m0…
-## $ kepemilikan_sepeda       [3m[38;5;246m<dbl>[39m[23m 0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m1[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m1[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m1[38;5;246m, [39m0[38;5;246m, [39m0…
-## $ kendaraan_utama          [3m[38;5;246m<chr>[39m[23m "Sepeda Motor Pribadi"[38;5;246m, [39m"Sepeda Motor Pribadi"[38;5;246m, [39m"Berjalan Kaki"[38;5;246m,[39m…
-## $ jenis_tempat_tinggal     [3m[38;5;246m<chr>[39m[23m "Rumah Bersama Saudara"[38;5;246m, [39m"Kos Sendiri"[38;5;246m, [39m"Kos Sendiri"[38;5;246m, [39m"Kos Send…
-## $ jarak                    [3m[38;5;246m<dbl>[39m[23m 19.27[38;5;246m, [39m0.58[38;5;246m, [39m0.56[38;5;246m, [39m1.05[38;5;246m, [39m1.69[38;5;246m, [39m7.91[38;5;246m, [39m2.58[38;5;246m, [39m2.32[38;5;246m, [39m0.77[38;5;246m, [39m6.56[38;5;246m, [39m0.6…
-## $ biaya_dalam_sepekan      [3m[38;5;246m<dbl>[39m[23m 100[38;5;246m, [39m80[38;5;246m, [39m0[38;5;246m, [39m50[38;5;246m, [39m50[38;5;246m, [39m50[38;5;246m, [39m35[38;5;246m, [39m50[38;5;246m, [39m40[38;5;246m, [39m50[38;5;246m, [39m0[38;5;246m, [39m50[38;5;246m, [39m50[38;5;246m, [39m40[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m30[38;5;246m,[39m…
-## $ jumlah_perjalanan_senin  [3m[38;5;246m<dbl>[39m[23m 3[38;5;246m, [39m3[38;5;246m, [39m3[38;5;246m, [39m0[38;5;246m, [39m4[38;5;246m, [39m0[38;5;246m, [39m3[38;5;246m, [39m4[38;5;246m, [39m2[38;5;246m, [39m3[38;5;246m, [39m4[38;5;246m, [39m2[38;5;246m, [39m3[38;5;246m, [39m2[38;5;246m, [39m3[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m3[38;5;246m, [39m2[38;5;246m, [39m0[38;5;246m, [39m2…
-## $ jumlah_perjalanan_selasa [3m[38;5;246m<dbl>[39m[23m 3[38;5;246m, [39m3[38;5;246m, [39m0[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m2[38;5;246m, [39m0[38;5;246m, [39m4[38;5;246m, [39m0[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m3[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m3[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0…
-## $ jumlah_perjalanan_rabu   [3m[38;5;246m<dbl>[39m[23m 0[38;5;246m, [39m0[38;5;246m, [39m3[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m2[38;5;246m, [39m3[38;5;246m, [39m4[38;5;246m, [39m3[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m0[38;5;246m, [39m3[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2…
-## $ jumlah_perjalanan_kamis  [3m[38;5;246m<dbl>[39m[23m 0[38;5;246m, [39m3[38;5;246m, [39m0[38;5;246m, [39m2[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m4[38;5;246m, [39m0[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m0[38;5;246m, [39m3[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2…
-## $ jumlah_perjalanan_jumat  [3m[38;5;246m<dbl>[39m[23m 0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m2[38;5;246m, [39m3[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m0[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m0[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2…
-## $ jumlah_perjalanan_sabtu  [3m[38;5;246m<dbl>[39m[23m 0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m0[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m2[38;5;246m, [39m0[38;5;246m, [39m2[38;5;246m, [39m0[38;5;246m, [39m0…
-## $ jumlah_perjalanan_ahad   [3m[38;5;246m<dbl>[39m[23m 0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m2[38;5;246m, [39m0[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m0[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m0[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m2…
+## $ nomor_urut               <dbl> 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, …
+## $ jenis_kelamin            <chr> "Laki-laki", "Laki-laki", "Perempuan", "Lak…
+## $ umur                     <dbl> 22, 25, 24, 19, 23, 21, 22, 21, 21, 21, 19,…
+## $ fakultas                 <chr> "Syariah", "Syariah", "Tarbiyah dan Kegurua…
+## $ prodi                    <chr> "Hukum Keluarga", "Hukum Keluarga", "Pendid…
+## $ tingkat_semester         <chr> "4 (Semester 7 - Semester 8)", "4 (Semester…
+## $ uang_saku                <chr> "1Jt - 2 Jt", "< 1 Jt", "< 1 Jt", "< 1 Jt",…
+## $ kepemilikan_mobil        <dbl> 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0…
+## $ kepemilikan_motor        <dbl> 1, 4, 0, 1, 1, 1, 1, 4, 4, 1, 0, 1, 3, 1, 0…
+## $ kepemilikan_sepeda       <dbl> 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0…
+## $ kendaraan_utama          <chr> "Sepeda Motor Pribadi", "Sepeda Motor Priba…
+## $ jenis_tempat_tinggal     <chr> "Rumah Bersama Saudara", "Kos Sendiri", "Ko…
+## $ jarak                    <dbl> 19.27, 0.58, 0.56, 1.05, 1.69, 7.91, 2.58, …
+## $ biaya_dalam_sepekan      <dbl> 100, 80, 0, 50, 50, 50, 35, 50, 40, 50, 0, …
+## $ jumlah_perjalanan_senin  <dbl> 3, 3, 3, 0, 4, 0, 3, 4, 2, 3, 4, 2, 3, 2, 3…
+## $ jumlah_perjalanan_selasa <dbl> 3, 3, 0, 2, 4, 2, 0, 4, 0, 2, 4, 2, 2, 2, 3…
+## $ jumlah_perjalanan_rabu   <dbl> 0, 0, 3, 0, 0, 2, 3, 4, 3, 2, 4, 2, 2, 2, 2…
+## $ jumlah_perjalanan_kamis  <dbl> 0, 3, 0, 2, 0, 0, 0, 4, 0, 2, 2, 2, 2, 2, 0…
+## $ jumlah_perjalanan_jumat  <dbl> 0, 0, 0, 2, 3, 2, 2, 4, 0, 0, 2, 2, 2, 2, 2…
+## $ jumlah_perjalanan_sabtu  <dbl> 0, 0, 0, 0, 2, 2, 2, 2, 2, 0, 2, 2, 0, 0, 0…
+## $ jumlah_perjalanan_ahad   <dbl> 0, 0, 0, 2, 0, 2, 2, 2, 2, 0, 2, 2, 0, 2, 2…
 ```
 
 ``` r
@@ -1331,27 +1406,27 @@ glimpse(data_ubl_selected)
 ```
 ## Rows: 379
 ## Columns: 21
-## $ nomor_urut               [3m[38;5;246m<dbl>[39m[23m 1[38;5;246m, [39m2[38;5;246m, [39m3[38;5;246m, [39m4[38;5;246m, [39m5[38;5;246m, [39m6[38;5;246m, [39m7[38;5;246m, [39m8[38;5;246m, [39m9[38;5;246m, [39m10[38;5;246m, [39m11[38;5;246m, [39m12[38;5;246m, [39m13[38;5;246m, [39m14[38;5;246m, [39m15[38;5;246m, [39m16[38;5;246m, [39m17[38;5;246m, [39m18[38;5;246m, [39m1…
-## $ jenis_kelamin            [3m[38;5;246m<chr>[39m[23m "Perempuan"[38;5;246m, [39m"Laki-Laki"[38;5;246m, [39m"Laki-Laki"[38;5;246m, [39m"Laki-Laki"[38;5;246m, [39m"Laki-Laki"[38;5;246m,[39m…
-## $ umur                     [3m[38;5;246m<dbl>[39m[23m 21[38;5;246m, [39m20[38;5;246m, [39m21[38;5;246m, [39m22[38;5;246m, [39m21[38;5;246m, [39m21[38;5;246m, [39m22[38;5;246m, [39m22[38;5;246m, [39m22[38;5;246m, [39m22[38;5;246m, [39m21[38;5;246m, [39m22[38;5;246m, [39m22[38;5;246m, [39m22[38;5;246m, [39m19[38;5;246m, [39m22[38;5;246m, [39m…
-## $ fakultas                 [3m[38;5;246m<chr>[39m[23m "Fakultas Ilmu Sosial dan Politik"[38;5;246m, [39m"Fakultas Hukum"[38;5;246m, [39m"Fakultas …
-## $ prodi                    [3m[38;5;246m<chr>[39m[23m "Ilmu Komunikasi"[38;5;246m, [39m"Ilmu Hukum"[38;5;246m, [39m"Manajemen"[38;5;246m, [39m"Akuntansi"[38;5;246m, [39m"Mana…
-## $ tingkat_semester         [3m[38;5;246m<chr>[39m[23m "4 (Semester 7 - Semester 8)"[38;5;246m, [39m"3 (Semester 5 - Semester 6)"[38;5;246m, [39m"4…
-## $ uang_saku                [3m[38;5;246m<chr>[39m[23m "< 1 jt"[38;5;246m, [39m"1 jt – 2 jt"[38;5;246m, [39m"1 jt – 2 jt"[38;5;246m, [39m"1 jt – 2 jt"[38;5;246m, [39m"2,1 jt –…
-## $ kepemilikan_mobil        [3m[38;5;246m<dbl>[39m[23m 1[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m4[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m[31mNA[39m[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m1[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m…
-## $ kepemilikan_motor        [3m[38;5;246m<dbl>[39m[23m 2[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m4[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m0[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m0[38;5;246m, [39m1[38;5;246m, [39m0[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m1…
-## $ kepemilikan_sepeda       [3m[38;5;246m<dbl>[39m[23m 1[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m[31mNA[39m[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m3[38;5;246m, [39m…
-## $ kendaraan_utama          [3m[38;5;246m<chr>[39m[23m "Sepeda Motor Pribadi"[38;5;246m, [39m"Mobil Pribadi"[38;5;246m, [39m"Sepeda Motor Pribadi"[38;5;246m,[39m…
-## $ jenis_tempat_tinggal     [3m[38;5;246m<chr>[39m[23m "Rumah pribadi/rumah keluarga"[38;5;246m, [39m"Rumah pribadi/rumah keluarga"[38;5;246m, [39m…
-## $ jarak                    [3m[38;5;246m<dbl>[39m[23m 4.2237967[38;5;246m, [39m2.7033310[38;5;246m, [39m3.2370722[38;5;246m, [39m3.0023362[38;5;246m, [39m5.9619250[38;5;246m, [39m2.9253306…
-## $ biaya_dalam_sepekan      [3m[38;5;246m<chr>[39m[23m "25 ribu"[38;5;246m, [39m"200"[38;5;246m, [39m"50rb menggunakan kendaraan pribadi"[38;5;246m, [39m"Sminggu…
-## $ jumlah_perjalanan_senin  [3m[38;5;246m<chr>[39m[23m "2"[38;5;246m, [39m"3"[38;5;246m, [39m"1"[38;5;246m, [39m"2"[38;5;246m, [39m"1"[38;5;246m, [39m"3"[38;5;246m, [39m"2"[38;5;246m, [39m"4"[38;5;246m, [39m"4"[38;5;246m, [39m"3"[38;5;246m, [39m"Tidak Valid"[38;5;246m,[39m…
-## $ jumlah_perjalanan_selasa [3m[38;5;246m<dbl>[39m[23m 3[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m3[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m4[38;5;246m, [39m3[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m4[38;5;246m, [39m1[38;5;246m, [39m3[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m1…
-## $ jumlah_perjalanan_rabu   [3m[38;5;246m<dbl>[39m[23m 2[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m4[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m4[38;5;246m, [39m3[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m1…
-## $ jumlah_perjalanan_kamis  [3m[38;5;246m<dbl>[39m[23m 3[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m4[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m4[38;5;246m, [39m3[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m1…
-## $ jumlah_perjalanan_jumat  [3m[38;5;246m<dbl>[39m[23m 2[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m3[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m4[38;5;246m, [39m3[38;5;246m, [39m2[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m1…
-## $ jumlah_perjalanan_sabtu  [3m[38;5;246m<dbl>[39m[23m 2[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m3[38;5;246m, [39m4[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m1…
-## $ jumlah_perjalanan_ahad   [3m[38;5;246m<dbl>[39m[23m 2[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m3[38;5;246m, [39m4[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m1…
+## $ nomor_urut               <dbl> 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, …
+## $ jenis_kelamin            <chr> "Perempuan", "Laki-Laki", "Laki-Laki", "Lak…
+## $ umur                     <dbl> 21, 20, 21, 22, 21, 21, 22, 22, 22, 22, 21,…
+## $ fakultas                 <chr> "Fakultas Ilmu Sosial dan Politik", "Fakult…
+## $ prodi                    <chr> "Ilmu Komunikasi", "Ilmu Hukum", "Manajemen…
+## $ tingkat_semester         <chr> "4 (Semester 7 - Semester 8)", "3 (Semester…
+## $ uang_saku                <chr> "< 1 jt", "1 jt – 2 jt", "1 jt – 2 jt", "1 …
+## $ kepemilikan_mobil        <dbl> 1, 2, 1, 1, 4, 1, 1, 1, 1, 1, NA, 0, 0, 1, …
+## $ kepemilikan_motor        <dbl> 2, 1, 2, 4, 4, 2, 1, 1, 1, 1, 1, 2, 0, 1, 1…
+## $ kepemilikan_sepeda       <dbl> 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, NA, 0, 0, 0, …
+## $ kendaraan_utama          <chr> "Sepeda Motor Pribadi", "Mobil Pribadi", "S…
+## $ jenis_tempat_tinggal     <chr> "Rumah pribadi/rumah keluarga", "Rumah prib…
+## $ jarak                    <dbl> 4.2237967, 2.7033310, 3.2370722, 3.0023362,…
+## $ biaya_dalam_sepekan      <chr> "25 ribu", "200", "50rb menggunakan kendara…
+## $ jumlah_perjalanan_senin  <chr> "2", "3", "1", "2", "1", "3", "2", "4", "4"…
+## $ jumlah_perjalanan_selasa <dbl> 3, 3, 1, 2, 1, 3, 2, 4, 4, 3, 3, 1, 1, 4, 1…
+## $ jumlah_perjalanan_rabu   <dbl> 2, 3, 1, 2, 1, 1, 2, 4, 4, 3, 1, 2, 1, 4, 3…
+## $ jumlah_perjalanan_kamis  <dbl> 3, 3, 1, 2, 1, 1, 2, 4, 4, 3, 1, 1, 1, 4, 3…
+## $ jumlah_perjalanan_jumat  <dbl> 2, 3, 1, 2, 1, 1, 2, 4, 3, 3, 1, 2, 1, 4, 3…
+## $ jumlah_perjalanan_sabtu  <dbl> 2, 3, 1, 2, 1, 1, 2, 3, 4, 2, 1, 1, 1, 1, 1…
+## $ jumlah_perjalanan_ahad   <dbl> 2, 3, 1, 2, 1, 1, 2, 3, 4, 1, 1, 1, 1, 1, 1…
 ```
 
 Ini adalah kasus yang tepat untuk menggambarkan bahwa dalam data terstruktur, jenis nilai harus sama persis. Untuk kesederhanaan praktikum, kita akan melewati dulu variabel `biaya.dalam.sepekan` dan `Jumlah.perjalanan.Senin` tersebut.
@@ -1373,25 +1448,25 @@ glimpse(data_uin_selected)
 ```
 ## Rows: 400
 ## Columns: 19
-## $ nomor_urut               [3m[38;5;246m<dbl>[39m[23m 1[38;5;246m, [39m2[38;5;246m, [39m3[38;5;246m, [39m4[38;5;246m, [39m5[38;5;246m, [39m6[38;5;246m, [39m7[38;5;246m, [39m8[38;5;246m, [39m9[38;5;246m, [39m10[38;5;246m, [39m11[38;5;246m, [39m12[38;5;246m, [39m13[38;5;246m, [39m14[38;5;246m, [39m15[38;5;246m, [39m16[38;5;246m, [39m17[38;5;246m, [39m18[38;5;246m, [39m1…
-## $ jenis_kelamin            [3m[38;5;246m<chr>[39m[23m "Laki-laki"[38;5;246m, [39m"Laki-laki"[38;5;246m, [39m"Perempuan"[38;5;246m, [39m"Laki-laki"[38;5;246m, [39m"Laki-laki"[38;5;246m,[39m…
-## $ umur                     [3m[38;5;246m<dbl>[39m[23m 22[38;5;246m, [39m25[38;5;246m, [39m24[38;5;246m, [39m19[38;5;246m, [39m23[38;5;246m, [39m21[38;5;246m, [39m22[38;5;246m, [39m21[38;5;246m, [39m21[38;5;246m, [39m21[38;5;246m, [39m19[38;5;246m, [39m19[38;5;246m, [39m19[38;5;246m, [39m19[38;5;246m, [39m19[38;5;246m, [39m20[38;5;246m, [39m…
-## $ fakultas                 [3m[38;5;246m<chr>[39m[23m "Syariah"[38;5;246m, [39m"Syariah"[38;5;246m, [39m"Tarbiyah dan Keguruan"[38;5;246m, [39m"Dakwah dan Ilmu …
-## $ prodi                    [3m[38;5;246m<chr>[39m[23m "Hukum Keluarga"[38;5;246m, [39m"Hukum Keluarga"[38;5;246m, [39m"Pendidikan Agama Islam"[38;5;246m, [39m"K…
-## $ tingkat_semester         [3m[38;5;246m<chr>[39m[23m "4 (Semester 7 - Semester 8)"[38;5;246m, [39m"4 (Semester 7 - Semester 8)"[38;5;246m, [39m"4…
-## $ uang_saku                [3m[38;5;246m<chr>[39m[23m "1Jt - 2 Jt"[38;5;246m, [39m"< 1 Jt"[38;5;246m, [39m"< 1 Jt"[38;5;246m, [39m"< 1 Jt"[38;5;246m, [39m"< 1 Jt"[38;5;246m, [39m"< 1 Jt"[38;5;246m, [39m…
-## $ kepemilikan_mobil        [3m[38;5;246m<dbl>[39m[23m 0[38;5;246m, [39m1[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0…
-## $ kepemilikan_motor        [3m[38;5;246m<dbl>[39m[23m 1[38;5;246m, [39m4[38;5;246m, [39m0[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m4[38;5;246m, [39m4[38;5;246m, [39m1[38;5;246m, [39m0[38;5;246m, [39m1[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m0[38;5;246m, [39m0…
-## $ kepemilikan_sepeda       [3m[38;5;246m<dbl>[39m[23m 0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m1[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m1[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m1[38;5;246m, [39m0[38;5;246m, [39m0…
-## $ kendaraan_utama          [3m[38;5;246m<chr>[39m[23m "Sepeda Motor Pribadi"[38;5;246m, [39m"Sepeda Motor Pribadi"[38;5;246m, [39m"Berjalan Kaki"[38;5;246m,[39m…
-## $ jenis_tempat_tinggal     [3m[38;5;246m<chr>[39m[23m "Rumah Bersama Saudara"[38;5;246m, [39m"Kos Sendiri"[38;5;246m, [39m"Kos Sendiri"[38;5;246m, [39m"Kos Send…
-## $ jarak                    [3m[38;5;246m<dbl>[39m[23m 19.27[38;5;246m, [39m0.58[38;5;246m, [39m0.56[38;5;246m, [39m1.05[38;5;246m, [39m1.69[38;5;246m, [39m7.91[38;5;246m, [39m2.58[38;5;246m, [39m2.32[38;5;246m, [39m0.77[38;5;246m, [39m6.56[38;5;246m, [39m0.6…
-## $ jumlah_perjalanan_selasa [3m[38;5;246m<dbl>[39m[23m 3[38;5;246m, [39m3[38;5;246m, [39m0[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m2[38;5;246m, [39m0[38;5;246m, [39m4[38;5;246m, [39m0[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m3[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m3[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0…
-## $ jumlah_perjalanan_rabu   [3m[38;5;246m<dbl>[39m[23m 0[38;5;246m, [39m0[38;5;246m, [39m3[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m2[38;5;246m, [39m3[38;5;246m, [39m4[38;5;246m, [39m3[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m0[38;5;246m, [39m3[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2…
-## $ jumlah_perjalanan_kamis  [3m[38;5;246m<dbl>[39m[23m 0[38;5;246m, [39m3[38;5;246m, [39m0[38;5;246m, [39m2[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m4[38;5;246m, [39m0[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m0[38;5;246m, [39m3[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2…
-## $ jumlah_perjalanan_jumat  [3m[38;5;246m<dbl>[39m[23m 0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m2[38;5;246m, [39m3[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m0[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m0[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2…
-## $ jumlah_perjalanan_sabtu  [3m[38;5;246m<dbl>[39m[23m 0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m0[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m2[38;5;246m, [39m0[38;5;246m, [39m2[38;5;246m, [39m0[38;5;246m, [39m0…
-## $ jumlah_perjalanan_ahad   [3m[38;5;246m<dbl>[39m[23m 0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m2[38;5;246m, [39m0[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m0[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m0[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m2…
+## $ nomor_urut               <dbl> 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, …
+## $ jenis_kelamin            <chr> "Laki-laki", "Laki-laki", "Perempuan", "Lak…
+## $ umur                     <dbl> 22, 25, 24, 19, 23, 21, 22, 21, 21, 21, 19,…
+## $ fakultas                 <chr> "Syariah", "Syariah", "Tarbiyah dan Kegurua…
+## $ prodi                    <chr> "Hukum Keluarga", "Hukum Keluarga", "Pendid…
+## $ tingkat_semester         <chr> "4 (Semester 7 - Semester 8)", "4 (Semester…
+## $ uang_saku                <chr> "1Jt - 2 Jt", "< 1 Jt", "< 1 Jt", "< 1 Jt",…
+## $ kepemilikan_mobil        <dbl> 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0…
+## $ kepemilikan_motor        <dbl> 1, 4, 0, 1, 1, 1, 1, 4, 4, 1, 0, 1, 3, 1, 0…
+## $ kepemilikan_sepeda       <dbl> 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0…
+## $ kendaraan_utama          <chr> "Sepeda Motor Pribadi", "Sepeda Motor Priba…
+## $ jenis_tempat_tinggal     <chr> "Rumah Bersama Saudara", "Kos Sendiri", "Ko…
+## $ jarak                    <dbl> 19.27, 0.58, 0.56, 1.05, 1.69, 7.91, 2.58, …
+## $ jumlah_perjalanan_selasa <dbl> 3, 3, 0, 2, 4, 2, 0, 4, 0, 2, 4, 2, 2, 2, 3…
+## $ jumlah_perjalanan_rabu   <dbl> 0, 0, 3, 0, 0, 2, 3, 4, 3, 2, 4, 2, 2, 2, 2…
+## $ jumlah_perjalanan_kamis  <dbl> 0, 3, 0, 2, 0, 0, 0, 4, 0, 2, 2, 2, 2, 2, 0…
+## $ jumlah_perjalanan_jumat  <dbl> 0, 0, 0, 2, 3, 2, 2, 4, 0, 0, 2, 2, 2, 2, 2…
+## $ jumlah_perjalanan_sabtu  <dbl> 0, 0, 0, 0, 2, 2, 2, 2, 2, 0, 2, 2, 0, 0, 0…
+## $ jumlah_perjalanan_ahad   <dbl> 0, 0, 0, 2, 0, 2, 2, 2, 2, 0, 2, 2, 0, 2, 2…
 ```
 
 ``` r
@@ -1399,12 +1474,15 @@ colnames(data_uin_selected)
 ```
 
 ```
-##  [1] "nomor_urut"               "jenis_kelamin"            "umur"                    
-##  [4] "fakultas"                 "prodi"                    "tingkat_semester"        
-##  [7] "uang_saku"                "kepemilikan_mobil"        "kepemilikan_motor"       
-## [10] "kepemilikan_sepeda"       "kendaraan_utama"          "jenis_tempat_tinggal"    
-## [13] "jarak"                    "jumlah_perjalanan_selasa" "jumlah_perjalanan_rabu"  
-## [16] "jumlah_perjalanan_kamis"  "jumlah_perjalanan_jumat"  "jumlah_perjalanan_sabtu" 
+##  [1] "nomor_urut"               "jenis_kelamin"           
+##  [3] "umur"                     "fakultas"                
+##  [5] "prodi"                    "tingkat_semester"        
+##  [7] "uang_saku"                "kepemilikan_mobil"       
+##  [9] "kepemilikan_motor"        "kepemilikan_sepeda"      
+## [11] "kendaraan_utama"          "jenis_tempat_tinggal"    
+## [13] "jarak"                    "jumlah_perjalanan_selasa"
+## [15] "jumlah_perjalanan_rabu"   "jumlah_perjalanan_kamis" 
+## [17] "jumlah_perjalanan_jumat"  "jumlah_perjalanan_sabtu" 
 ## [19] "jumlah_perjalanan_ahad"
 ```
 
@@ -1421,25 +1499,25 @@ glimpse(data_ubl_selected)
 ```
 ## Rows: 379
 ## Columns: 19
-## $ nomor_urut               [3m[38;5;246m<dbl>[39m[23m 1[38;5;246m, [39m2[38;5;246m, [39m3[38;5;246m, [39m4[38;5;246m, [39m5[38;5;246m, [39m6[38;5;246m, [39m7[38;5;246m, [39m8[38;5;246m, [39m9[38;5;246m, [39m10[38;5;246m, [39m11[38;5;246m, [39m12[38;5;246m, [39m13[38;5;246m, [39m14[38;5;246m, [39m15[38;5;246m, [39m16[38;5;246m, [39m17[38;5;246m, [39m18[38;5;246m, [39m1…
-## $ jenis_kelamin            [3m[38;5;246m<chr>[39m[23m "Perempuan"[38;5;246m, [39m"Laki-Laki"[38;5;246m, [39m"Laki-Laki"[38;5;246m, [39m"Laki-Laki"[38;5;246m, [39m"Laki-Laki"[38;5;246m,[39m…
-## $ umur                     [3m[38;5;246m<dbl>[39m[23m 21[38;5;246m, [39m20[38;5;246m, [39m21[38;5;246m, [39m22[38;5;246m, [39m21[38;5;246m, [39m21[38;5;246m, [39m22[38;5;246m, [39m22[38;5;246m, [39m22[38;5;246m, [39m22[38;5;246m, [39m21[38;5;246m, [39m22[38;5;246m, [39m22[38;5;246m, [39m22[38;5;246m, [39m19[38;5;246m, [39m22[38;5;246m, [39m…
-## $ fakultas                 [3m[38;5;246m<chr>[39m[23m "Fakultas Ilmu Sosial dan Politik"[38;5;246m, [39m"Fakultas Hukum"[38;5;246m, [39m"Fakultas …
-## $ prodi                    [3m[38;5;246m<chr>[39m[23m "Ilmu Komunikasi"[38;5;246m, [39m"Ilmu Hukum"[38;5;246m, [39m"Manajemen"[38;5;246m, [39m"Akuntansi"[38;5;246m, [39m"Mana…
-## $ tingkat_semester         [3m[38;5;246m<chr>[39m[23m "4 (Semester 7 - Semester 8)"[38;5;246m, [39m"3 (Semester 5 - Semester 6)"[38;5;246m, [39m"4…
-## $ uang_saku                [3m[38;5;246m<chr>[39m[23m "< 1 jt"[38;5;246m, [39m"1 jt – 2 jt"[38;5;246m, [39m"1 jt – 2 jt"[38;5;246m, [39m"1 jt – 2 jt"[38;5;246m, [39m"2,1 jt –…
-## $ kepemilikan_mobil        [3m[38;5;246m<dbl>[39m[23m 1[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m4[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m[31mNA[39m[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m1[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m…
-## $ kepemilikan_motor        [3m[38;5;246m<dbl>[39m[23m 2[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m4[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m0[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m0[38;5;246m, [39m1[38;5;246m, [39m0[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m1…
-## $ kepemilikan_sepeda       [3m[38;5;246m<dbl>[39m[23m 1[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m[31mNA[39m[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m3[38;5;246m, [39m…
-## $ kendaraan_utama          [3m[38;5;246m<chr>[39m[23m "Sepeda Motor Pribadi"[38;5;246m, [39m"Mobil Pribadi"[38;5;246m, [39m"Sepeda Motor Pribadi"[38;5;246m,[39m…
-## $ jenis_tempat_tinggal     [3m[38;5;246m<chr>[39m[23m "Rumah pribadi/rumah keluarga"[38;5;246m, [39m"Rumah pribadi/rumah keluarga"[38;5;246m, [39m…
-## $ jarak                    [3m[38;5;246m<dbl>[39m[23m 4.2237967[38;5;246m, [39m2.7033310[38;5;246m, [39m3.2370722[38;5;246m, [39m3.0023362[38;5;246m, [39m5.9619250[38;5;246m, [39m2.9253306…
-## $ jumlah_perjalanan_selasa [3m[38;5;246m<dbl>[39m[23m 3[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m3[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m4[38;5;246m, [39m3[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m4[38;5;246m, [39m1[38;5;246m, [39m3[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m1…
-## $ jumlah_perjalanan_rabu   [3m[38;5;246m<dbl>[39m[23m 2[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m4[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m4[38;5;246m, [39m3[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m1…
-## $ jumlah_perjalanan_kamis  [3m[38;5;246m<dbl>[39m[23m 3[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m4[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m4[38;5;246m, [39m3[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m1…
-## $ jumlah_perjalanan_jumat  [3m[38;5;246m<dbl>[39m[23m 2[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m3[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m4[38;5;246m, [39m3[38;5;246m, [39m2[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m1…
-## $ jumlah_perjalanan_sabtu  [3m[38;5;246m<dbl>[39m[23m 2[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m3[38;5;246m, [39m4[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m1…
-## $ jumlah_perjalanan_ahad   [3m[38;5;246m<dbl>[39m[23m 2[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m3[38;5;246m, [39m4[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m1…
+## $ nomor_urut               <dbl> 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, …
+## $ jenis_kelamin            <chr> "Perempuan", "Laki-Laki", "Laki-Laki", "Lak…
+## $ umur                     <dbl> 21, 20, 21, 22, 21, 21, 22, 22, 22, 22, 21,…
+## $ fakultas                 <chr> "Fakultas Ilmu Sosial dan Politik", "Fakult…
+## $ prodi                    <chr> "Ilmu Komunikasi", "Ilmu Hukum", "Manajemen…
+## $ tingkat_semester         <chr> "4 (Semester 7 - Semester 8)", "3 (Semester…
+## $ uang_saku                <chr> "< 1 jt", "1 jt – 2 jt", "1 jt – 2 jt", "1 …
+## $ kepemilikan_mobil        <dbl> 1, 2, 1, 1, 4, 1, 1, 1, 1, 1, NA, 0, 0, 1, …
+## $ kepemilikan_motor        <dbl> 2, 1, 2, 4, 4, 2, 1, 1, 1, 1, 1, 2, 0, 1, 1…
+## $ kepemilikan_sepeda       <dbl> 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, NA, 0, 0, 0, …
+## $ kendaraan_utama          <chr> "Sepeda Motor Pribadi", "Mobil Pribadi", "S…
+## $ jenis_tempat_tinggal     <chr> "Rumah pribadi/rumah keluarga", "Rumah prib…
+## $ jarak                    <dbl> 4.2237967, 2.7033310, 3.2370722, 3.0023362,…
+## $ jumlah_perjalanan_selasa <dbl> 3, 3, 1, 2, 1, 3, 2, 4, 4, 3, 3, 1, 1, 4, 1…
+## $ jumlah_perjalanan_rabu   <dbl> 2, 3, 1, 2, 1, 1, 2, 4, 4, 3, 1, 2, 1, 4, 3…
+## $ jumlah_perjalanan_kamis  <dbl> 3, 3, 1, 2, 1, 1, 2, 4, 4, 3, 1, 1, 1, 4, 3…
+## $ jumlah_perjalanan_jumat  <dbl> 2, 3, 1, 2, 1, 1, 2, 4, 3, 3, 1, 2, 1, 4, 3…
+## $ jumlah_perjalanan_sabtu  <dbl> 2, 3, 1, 2, 1, 1, 2, 3, 4, 2, 1, 1, 1, 1, 1…
+## $ jumlah_perjalanan_ahad   <dbl> 2, 3, 1, 2, 1, 1, 2, 3, 4, 1, 1, 1, 1, 1, 1…
 ```
 
 ### Menyatukan Kedua Set Data Setelah Diperbaiki
@@ -1465,25 +1543,25 @@ glimpse(data_gabungan)
 ```
 ## Rows: 779
 ## Columns: 19
-## $ nomor_urut               [3m[38;5;246m<dbl>[39m[23m 1[38;5;246m, [39m2[38;5;246m, [39m3[38;5;246m, [39m4[38;5;246m, [39m5[38;5;246m, [39m6[38;5;246m, [39m7[38;5;246m, [39m8[38;5;246m, [39m9[38;5;246m, [39m10[38;5;246m, [39m11[38;5;246m, [39m12[38;5;246m, [39m13[38;5;246m, [39m14[38;5;246m, [39m15[38;5;246m, [39m16[38;5;246m, [39m17[38;5;246m, [39m18[38;5;246m, [39m1…
-## $ jenis_kelamin            [3m[38;5;246m<chr>[39m[23m "Laki-laki"[38;5;246m, [39m"Laki-laki"[38;5;246m, [39m"Perempuan"[38;5;246m, [39m"Laki-laki"[38;5;246m, [39m"Laki-laki"[38;5;246m,[39m…
-## $ umur                     [3m[38;5;246m<dbl>[39m[23m 22[38;5;246m, [39m25[38;5;246m, [39m24[38;5;246m, [39m19[38;5;246m, [39m23[38;5;246m, [39m21[38;5;246m, [39m22[38;5;246m, [39m21[38;5;246m, [39m21[38;5;246m, [39m21[38;5;246m, [39m19[38;5;246m, [39m19[38;5;246m, [39m19[38;5;246m, [39m19[38;5;246m, [39m19[38;5;246m, [39m20[38;5;246m, [39m…
-## $ fakultas                 [3m[38;5;246m<chr>[39m[23m "Syariah"[38;5;246m, [39m"Syariah"[38;5;246m, [39m"Tarbiyah dan Keguruan"[38;5;246m, [39m"Dakwah dan Ilmu …
-## $ prodi                    [3m[38;5;246m<chr>[39m[23m "Hukum Keluarga"[38;5;246m, [39m"Hukum Keluarga"[38;5;246m, [39m"Pendidikan Agama Islam"[38;5;246m, [39m"K…
-## $ tingkat_semester         [3m[38;5;246m<chr>[39m[23m "4 (Semester 7 - Semester 8)"[38;5;246m, [39m"4 (Semester 7 - Semester 8)"[38;5;246m, [39m"4…
-## $ uang_saku                [3m[38;5;246m<chr>[39m[23m "1Jt - 2 Jt"[38;5;246m, [39m"< 1 Jt"[38;5;246m, [39m"< 1 Jt"[38;5;246m, [39m"< 1 Jt"[38;5;246m, [39m"< 1 Jt"[38;5;246m, [39m"< 1 Jt"[38;5;246m, [39m…
-## $ kepemilikan_mobil        [3m[38;5;246m<dbl>[39m[23m 0[38;5;246m, [39m1[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0…
-## $ kepemilikan_motor        [3m[38;5;246m<dbl>[39m[23m 1[38;5;246m, [39m4[38;5;246m, [39m0[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m4[38;5;246m, [39m4[38;5;246m, [39m1[38;5;246m, [39m0[38;5;246m, [39m1[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m0[38;5;246m, [39m0…
-## $ kepemilikan_sepeda       [3m[38;5;246m<dbl>[39m[23m 0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m1[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m1[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m1[38;5;246m, [39m0[38;5;246m, [39m0…
-## $ kendaraan_utama          [3m[38;5;246m<chr>[39m[23m "Sepeda Motor Pribadi"[38;5;246m, [39m"Sepeda Motor Pribadi"[38;5;246m, [39m"Berjalan Kaki"[38;5;246m,[39m…
-## $ jenis_tempat_tinggal     [3m[38;5;246m<chr>[39m[23m "Rumah Bersama Saudara"[38;5;246m, [39m"Kos Sendiri"[38;5;246m, [39m"Kos Sendiri"[38;5;246m, [39m"Kos Send…
-## $ jarak                    [3m[38;5;246m<dbl>[39m[23m 19.27[38;5;246m, [39m0.58[38;5;246m, [39m0.56[38;5;246m, [39m1.05[38;5;246m, [39m1.69[38;5;246m, [39m7.91[38;5;246m, [39m2.58[38;5;246m, [39m2.32[38;5;246m, [39m0.77[38;5;246m, [39m6.56[38;5;246m, [39m0.6…
-## $ jumlah_perjalanan_selasa [3m[38;5;246m<dbl>[39m[23m 3[38;5;246m, [39m3[38;5;246m, [39m0[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m2[38;5;246m, [39m0[38;5;246m, [39m4[38;5;246m, [39m0[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m3[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m3[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0…
-## $ jumlah_perjalanan_rabu   [3m[38;5;246m<dbl>[39m[23m 0[38;5;246m, [39m0[38;5;246m, [39m3[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m2[38;5;246m, [39m3[38;5;246m, [39m4[38;5;246m, [39m3[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m0[38;5;246m, [39m3[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2…
-## $ jumlah_perjalanan_kamis  [3m[38;5;246m<dbl>[39m[23m 0[38;5;246m, [39m3[38;5;246m, [39m0[38;5;246m, [39m2[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m4[38;5;246m, [39m0[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m0[38;5;246m, [39m3[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2…
-## $ jumlah_perjalanan_jumat  [3m[38;5;246m<dbl>[39m[23m 0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m2[38;5;246m, [39m3[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m0[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m0[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2…
-## $ jumlah_perjalanan_sabtu  [3m[38;5;246m<dbl>[39m[23m 0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m0[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m2[38;5;246m, [39m0[38;5;246m, [39m2[38;5;246m, [39m0[38;5;246m, [39m0…
-## $ jumlah_perjalanan_ahad   [3m[38;5;246m<dbl>[39m[23m 0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m2[38;5;246m, [39m0[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m0[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m0[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m2…
+## $ nomor_urut               <dbl> 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, …
+## $ jenis_kelamin            <chr> "Laki-laki", "Laki-laki", "Perempuan", "Lak…
+## $ umur                     <dbl> 22, 25, 24, 19, 23, 21, 22, 21, 21, 21, 19,…
+## $ fakultas                 <chr> "Syariah", "Syariah", "Tarbiyah dan Kegurua…
+## $ prodi                    <chr> "Hukum Keluarga", "Hukum Keluarga", "Pendid…
+## $ tingkat_semester         <chr> "4 (Semester 7 - Semester 8)", "4 (Semester…
+## $ uang_saku                <chr> "1Jt - 2 Jt", "< 1 Jt", "< 1 Jt", "< 1 Jt",…
+## $ kepemilikan_mobil        <dbl> 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0…
+## $ kepemilikan_motor        <dbl> 1, 4, 0, 1, 1, 1, 1, 4, 4, 1, 0, 1, 3, 1, 0…
+## $ kepemilikan_sepeda       <dbl> 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0…
+## $ kendaraan_utama          <chr> "Sepeda Motor Pribadi", "Sepeda Motor Priba…
+## $ jenis_tempat_tinggal     <chr> "Rumah Bersama Saudara", "Kos Sendiri", "Ko…
+## $ jarak                    <dbl> 19.27, 0.58, 0.56, 1.05, 1.69, 7.91, 2.58, …
+## $ jumlah_perjalanan_selasa <dbl> 3, 3, 0, 2, 4, 2, 0, 4, 0, 2, 4, 2, 2, 2, 3…
+## $ jumlah_perjalanan_rabu   <dbl> 0, 0, 3, 0, 0, 2, 3, 4, 3, 2, 4, 2, 2, 2, 2…
+## $ jumlah_perjalanan_kamis  <dbl> 0, 3, 0, 2, 0, 0, 0, 4, 0, 2, 2, 2, 2, 2, 0…
+## $ jumlah_perjalanan_jumat  <dbl> 0, 0, 0, 2, 3, 2, 2, 4, 0, 0, 2, 2, 2, 2, 2…
+## $ jumlah_perjalanan_sabtu  <dbl> 0, 0, 0, 0, 2, 2, 2, 2, 2, 0, 2, 2, 0, 0, 0…
+## $ jumlah_perjalanan_ahad   <dbl> 0, 0, 0, 2, 0, 2, 2, 2, 2, 0, 2, 2, 0, 2, 2…
 ```
 
 
@@ -1621,7 +1699,9 @@ write.xlsx(data_gabungan, "Data UINRIL & UBL.xlsx")
 **Simpan ke file**
    - Ekspor hasil gabungan dengan `write.xlsx()`
    - Nama file: `Prak1_[NIM1]_[NIM2].xlsx`
-   - Pastikan direktori file hasil ekspor ada di 
+   - Pastikan direktori file hasil ekspor ada di
+
+:::
 
 ------------------------------------------------------------------------
 
@@ -1674,53 +1754,77 @@ summary(data_ubl)
 ```
 
 ```
-##    Timestamp      Kampus_PT           Nomor.urut    Jenis.Kelamin           Umur      
-##  Min.   :45414   Length:379         Min.   :  1.0   Length:379         Min.   :18.00  
-##  1st Qu.:45416   Class :character   1st Qu.: 95.5   Class :character   1st Qu.:20.00  
-##  Median :45423   Mode  :character   Median :190.0   Mode  :character   Median :21.00  
-##  Mean   :45420                      Mean   :190.0                      Mean   :20.78  
-##  3rd Qu.:45423                      3rd Qu.:284.5                      3rd Qu.:22.00  
-##  Max.   :45424                      Max.   :379.0                      Max.   :23.00  
-##                                                                                       
-##    Fakultas            Prodi           Tingkat.Semester    Uang.Saku         kepemilikan.mobil
-##  Length:379         Length:379         Length:379         Length:379         Min.   :0.0000   
-##  Class :character   Class :character   Class :character   Class :character   1st Qu.:0.0000   
-##  Mode  :character   Mode  :character   Mode  :character   Mode  :character   Median :1.0000   
-##                                                                              Mean   :0.9654   
-##                                                                              3rd Qu.:2.0000   
-##                                                                              Max.   :4.0000   
-##                                                                              NA's   :3        
-##  kepemilikan.motor kepemilikan.sepeda kendaraan.utama     kelurahan         jenis.tempat.tinggal
-##  Min.   :0.000     Min.   :0.0000     Length:379         Length:379         Length:379          
-##  1st Qu.:1.000     1st Qu.:0.0000     Class :character   Class :character   Class :character    
-##  Median :1.000     Median :0.0000     Mode  :character   Mode  :character   Mode  :character    
-##  Mean   :1.517     Mean   :0.2857                                                               
-##  3rd Qu.:2.000     3rd Qu.:0.0000                                                               
-##  Max.   :5.000     Max.   :3.0000                                                               
-##                    NA's   :1                                                                    
-##  nama.jalan.tempat.tinggal   jarak.(km)       alasan.pemilihan.lokasi.tempat.tinggal
-##  Length:379                Min.   : 0.06352   Length:379                            
-##  Class :character          1st Qu.: 1.31127   Class :character                      
-##  Mode  :character          Median : 2.69037   Mode  :character                      
-##                            Mean   : 3.37914                                         
-##                            3rd Qu.: 4.69466                                         
-##                            Max.   :43.54519                                         
-##                                                                                     
-##  biaya.dalam.seminggu Jumlah.perjalanan.Senin Jumlah.Perjalanan.Selasa Jumlah.Perjalanan.Rabu
-##  Min.   :  0.00       Min.   :1.000           Min.   :1.000            Min.   :1.000         
-##  1st Qu.: 50.00       1st Qu.:2.000           1st Qu.:1.000            1st Qu.:1.000         
-##  Median : 70.00       Median :2.000           Median :2.000            Median :2.000         
-##  Mean   : 93.57       Mean   :2.679           Mean   :2.264            Mean   :2.092         
-##  3rd Qu.:110.00       3rd Qu.:4.000           3rd Qu.:3.000            3rd Qu.:3.000         
-##  Max.   :600.00       Max.   :8.000           Max.   :6.000            Max.   :6.000         
-##  NA's   :2            NA's   :43                                                             
-##  Jumlah.Perjalanan.Kamis Jumlah.Perjalanan.Jumat Jumlah.Perjalanan.Sabtu Jumlah.Perjalanan.Ahad
-##  Min.   :1.000           Min.   :1.000           Min.   :1.000           Min.   :1.00          
-##  1st Qu.:1.000           1st Qu.:1.000           1st Qu.:1.000           1st Qu.:1.00          
-##  Median :2.000           Median :2.000           Median :2.000           Median :1.00          
-##  Mean   :2.092           Mean   :2.032           Mean   :1.749           Mean   :1.52          
-##  3rd Qu.:3.000           3rd Qu.:3.000           3rd Qu.:2.000           3rd Qu.:2.00          
-##  Max.   :7.000           Max.   :9.000           Max.   :5.000           Max.   :4.00          
+##    Timestamp      Kampus_PT           Nomor.urut    Jenis.Kelamin     
+##  Min.   :45414   Length:379         Min.   :  1.0   Length:379        
+##  1st Qu.:45416   Class :character   1st Qu.: 95.5   Class :character  
+##  Median :45423   Mode  :character   Median :190.0   Mode  :character  
+##  Mean   :45420                      Mean   :190.0                     
+##  3rd Qu.:45423                      3rd Qu.:284.5                     
+##  Max.   :45424                      Max.   :379.0                     
+##                                                                       
+##       Umur         Fakultas            Prodi           Tingkat.Semester  
+##  Min.   :18.00   Length:379         Length:379         Length:379        
+##  1st Qu.:20.00   Class :character   Class :character   Class :character  
+##  Median :21.00   Mode  :character   Mode  :character   Mode  :character  
+##  Mean   :20.78                                                           
+##  3rd Qu.:22.00                                                           
+##  Max.   :23.00                                                           
+##                                                                          
+##   Uang.Saku         kepemilikan.mobil kepemilikan.motor kepemilikan.sepeda
+##  Length:379         Min.   :0.0000    Min.   :0.000     Min.   :0.0000    
+##  Class :character   1st Qu.:0.0000    1st Qu.:1.000     1st Qu.:0.0000    
+##  Mode  :character   Median :1.0000    Median :1.000     Median :0.0000    
+##                     Mean   :0.9654    Mean   :1.517     Mean   :0.2857    
+##                     3rd Qu.:2.0000    3rd Qu.:2.000     3rd Qu.:0.0000    
+##                     Max.   :4.0000    Max.   :5.000     Max.   :3.0000    
+##                     NA's   :3                           NA's   :1         
+##  kendaraan.utama     kelurahan         jenis.tempat.tinggal
+##  Length:379         Length:379         Length:379          
+##  Class :character   Class :character   Class :character    
+##  Mode  :character   Mode  :character   Mode  :character    
+##                                                            
+##                                                            
+##                                                            
+##                                                            
+##  nama.jalan.tempat.tinggal   jarak.(km)      
+##  Length:379                Min.   : 0.06352  
+##  Class :character          1st Qu.: 1.31127  
+##  Mode  :character          Median : 2.69037  
+##                            Mean   : 3.37914  
+##                            3rd Qu.: 4.69466  
+##                            Max.   :43.54519  
+##                                              
+##  alasan.pemilihan.lokasi.tempat.tinggal biaya.dalam.seminggu
+##  Length:379                             Min.   :  0.00      
+##  Class :character                       1st Qu.: 50.00      
+##  Mode  :character                       Median : 70.00      
+##                                         Mean   : 93.57      
+##                                         3rd Qu.:110.00      
+##                                         Max.   :600.00      
+##                                         NA's   :2           
+##  Jumlah.perjalanan.Senin Jumlah.Perjalanan.Selasa Jumlah.Perjalanan.Rabu
+##  Min.   :1.000           Min.   :1.000            Min.   :1.000         
+##  1st Qu.:2.000           1st Qu.:1.000            1st Qu.:1.000         
+##  Median :2.000           Median :2.000            Median :2.000         
+##  Mean   :2.679           Mean   :2.264            Mean   :2.092         
+##  3rd Qu.:4.000           3rd Qu.:3.000            3rd Qu.:3.000         
+##  Max.   :8.000           Max.   :6.000            Max.   :6.000         
+##  NA's   :43                                                             
+##  Jumlah.Perjalanan.Kamis Jumlah.Perjalanan.Jumat Jumlah.Perjalanan.Sabtu
+##  Min.   :1.000           Min.   :1.000           Min.   :1.000          
+##  1st Qu.:1.000           1st Qu.:1.000           1st Qu.:1.000          
+##  Median :2.000           Median :2.000           Median :2.000          
+##  Mean   :2.092           Mean   :2.032           Mean   :1.749          
+##  3rd Qu.:3.000           3rd Qu.:3.000           3rd Qu.:2.000          
+##  Max.   :7.000           Max.   :9.000           Max.   :5.000          
+##                                                                         
+##  Jumlah.Perjalanan.Ahad
+##  Min.   :1.00          
+##  1st Qu.:1.00          
+##  Median :1.00          
+##  Mean   :1.52          
+##  3rd Qu.:2.00          
+##  Max.   :4.00          
 ## 
 ```
 
@@ -1748,19 +1852,32 @@ colnames(data_ubl)
 ```
 
 ```
-##  [1] "Timestamp"                              "Kampus_PT"                             
-##  [3] "Nomor.urut"                             "Jenis.Kelamin"                         
-##  [5] "Umur"                                   "Fakultas"                              
-##  [7] "Prodi"                                  "Tingkat.Semester"                      
-##  [9] "Uang.Saku"                              "kepemilikan.mobil"                     
-## [11] "kepemilikan.motor"                      "kepemilikan.sepeda"                    
-## [13] "kendaraan.utama"                        "kelurahan"                             
-## [15] "jenis.tempat.tinggal"                   "nama.jalan.tempat.tinggal"             
-## [17] "jarak.(km)"                             "alasan.pemilihan.lokasi.tempat.tinggal"
-## [19] "biaya.dalam.seminggu"                   "Jumlah.perjalanan.Senin"               
-## [21] "Jumlah.Perjalanan.Selasa"               "Jumlah.Perjalanan.Rabu"                
-## [23] "Jumlah.Perjalanan.Kamis"                "Jumlah.Perjalanan.Jumat"               
-## [25] "Jumlah.Perjalanan.Sabtu"                "Jumlah.Perjalanan.Ahad"
+##  [1] "Timestamp"                             
+##  [2] "Kampus_PT"                             
+##  [3] "Nomor.urut"                            
+##  [4] "Jenis.Kelamin"                         
+##  [5] "Umur"                                  
+##  [6] "Fakultas"                              
+##  [7] "Prodi"                                 
+##  [8] "Tingkat.Semester"                      
+##  [9] "Uang.Saku"                             
+## [10] "kepemilikan.mobil"                     
+## [11] "kepemilikan.motor"                     
+## [12] "kepemilikan.sepeda"                    
+## [13] "kendaraan.utama"                       
+## [14] "kelurahan"                             
+## [15] "jenis.tempat.tinggal"                  
+## [16] "nama.jalan.tempat.tinggal"             
+## [17] "jarak.(km)"                            
+## [18] "alasan.pemilihan.lokasi.tempat.tinggal"
+## [19] "biaya.dalam.seminggu"                  
+## [20] "Jumlah.perjalanan.Senin"               
+## [21] "Jumlah.Perjalanan.Selasa"              
+## [22] "Jumlah.Perjalanan.Rabu"                
+## [23] "Jumlah.Perjalanan.Kamis"               
+## [24] "Jumlah.Perjalanan.Jumat"               
+## [25] "Jumlah.Perjalanan.Sabtu"               
+## [26] "Jumlah.Perjalanan.Ahad"
 ```
 
 ``` r
@@ -1786,19 +1903,32 @@ colnames(data_ubl)
 ```
 
 ```
-##  [1] "Timestamp"                              "Kampus_PT"                             
-##  [3] "Nomor.urut"                             "Jenis.Kelamin"                         
-##  [5] "Umur"                                   "Fakultas"                              
-##  [7] "Prodi"                                  "Tingkat.Semester"                      
-##  [9] "Uang.Saku"                              "kepemilikan.mobil"                     
-## [11] "kepemilikan.motor"                      "kepemilikan.sepeda"                    
-## [13] "kendaraan.utama"                        "kelurahan"                             
-## [15] "jenis.tempat.tinggal"                   "nama.jalan.tempat.tinggal"             
-## [17] "jarak.(km)"                             "alasan.pemilihan.lokasi.tempat.tinggal"
-## [19] "biaya.dalam.seminggu"                   "Jumlah.perjalanan.Senin"               
-## [21] "Jumlah.Perjalanan.Selasa"               "Jumlah.Perjalanan.Rabu"                
-## [23] "Jumlah.Perjalanan.Kamis"                "Jumlah.Perjalanan.Jumat"               
-## [25] "Jumlah.Perjalanan.Sabtu"                "Jumlah.Perjalanan.Ahad"
+##  [1] "Timestamp"                             
+##  [2] "Kampus_PT"                             
+##  [3] "Nomor.urut"                            
+##  [4] "Jenis.Kelamin"                         
+##  [5] "Umur"                                  
+##  [6] "Fakultas"                              
+##  [7] "Prodi"                                 
+##  [8] "Tingkat.Semester"                      
+##  [9] "Uang.Saku"                             
+## [10] "kepemilikan.mobil"                     
+## [11] "kepemilikan.motor"                     
+## [12] "kepemilikan.sepeda"                    
+## [13] "kendaraan.utama"                       
+## [14] "kelurahan"                             
+## [15] "jenis.tempat.tinggal"                  
+## [16] "nama.jalan.tempat.tinggal"             
+## [17] "jarak.(km)"                            
+## [18] "alasan.pemilihan.lokasi.tempat.tinggal"
+## [19] "biaya.dalam.seminggu"                  
+## [20] "Jumlah.perjalanan.Senin"               
+## [21] "Jumlah.Perjalanan.Selasa"              
+## [22] "Jumlah.Perjalanan.Rabu"                
+## [23] "Jumlah.Perjalanan.Kamis"               
+## [24] "Jumlah.Perjalanan.Jumat"               
+## [25] "Jumlah.Perjalanan.Sabtu"               
+## [26] "Jumlah.Perjalanan.Ahad"
 ```
 
 ``` r
@@ -1867,41 +1997,55 @@ head(check_mv_ubl)
 ```
 
 ```
-##   Timestamp Kampus_PT Nomor.urut Jenis.Kelamin  Umur Fakultas Prodi Tingkat.Semester Uang.Saku
-## 1     FALSE     FALSE      FALSE         FALSE FALSE    FALSE FALSE            FALSE     FALSE
-## 2     FALSE     FALSE      FALSE         FALSE FALSE    FALSE FALSE            FALSE     FALSE
-## 3     FALSE     FALSE      FALSE         FALSE FALSE    FALSE FALSE            FALSE     FALSE
-## 4     FALSE     FALSE      FALSE         FALSE FALSE    FALSE FALSE            FALSE     FALSE
-## 5     FALSE     FALSE      FALSE         FALSE FALSE    FALSE FALSE            FALSE     FALSE
-## 6     FALSE     FALSE      FALSE         FALSE FALSE    FALSE FALSE            FALSE     FALSE
-##   kepemilikan.mobil kepemilikan.motor kepemilikan.sepeda kendaraan.utama kelurahan
-## 1             FALSE             FALSE              FALSE           FALSE     FALSE
-## 2             FALSE             FALSE              FALSE           FALSE     FALSE
-## 3             FALSE             FALSE              FALSE           FALSE     FALSE
-## 4             FALSE             FALSE              FALSE           FALSE     FALSE
-## 5             FALSE             FALSE              FALSE           FALSE     FALSE
-## 6             FALSE             FALSE              FALSE           FALSE     FALSE
-##   jenis.tempat.tinggal nama.jalan.tempat.tinggal jarak alasan.pemilihan.lokasi.tempat.tinggal
-## 1                FALSE                     FALSE FALSE                                  FALSE
-## 2                FALSE                     FALSE FALSE                                  FALSE
-## 3                FALSE                     FALSE FALSE                                  FALSE
-## 4                FALSE                     FALSE FALSE                                  FALSE
-## 5                FALSE                     FALSE FALSE                                  FALSE
-## 6                FALSE                     FALSE FALSE                                  FALSE
-##   biaya_dalam_sepekan jumlah_perjalanan_senin Jumlah.Perjalanan.Selasa Jumlah.Perjalanan.Rabu
-## 1               FALSE                   FALSE                    FALSE                  FALSE
-## 2               FALSE                   FALSE                    FALSE                  FALSE
-## 3               FALSE                   FALSE                    FALSE                  FALSE
-## 4               FALSE                   FALSE                    FALSE                  FALSE
-## 5                TRUE                   FALSE                    FALSE                  FALSE
-## 6               FALSE                   FALSE                    FALSE                  FALSE
-##   Jumlah.Perjalanan.Kamis Jumlah.Perjalanan.Jumat Jumlah.Perjalanan.Sabtu Jumlah.Perjalanan.Ahad
-## 1                   FALSE                   FALSE                   FALSE                  FALSE
-## 2                   FALSE                   FALSE                   FALSE                  FALSE
-## 3                   FALSE                   FALSE                   FALSE                  FALSE
-## 4                   FALSE                   FALSE                   FALSE                  FALSE
-## 5                   FALSE                   FALSE                   FALSE                  FALSE
-## 6                   FALSE                   FALSE                   FALSE                  FALSE
+##   Timestamp Kampus_PT Nomor.urut Jenis.Kelamin  Umur Fakultas Prodi
+## 1     FALSE     FALSE      FALSE         FALSE FALSE    FALSE FALSE
+## 2     FALSE     FALSE      FALSE         FALSE FALSE    FALSE FALSE
+## 3     FALSE     FALSE      FALSE         FALSE FALSE    FALSE FALSE
+## 4     FALSE     FALSE      FALSE         FALSE FALSE    FALSE FALSE
+## 5     FALSE     FALSE      FALSE         FALSE FALSE    FALSE FALSE
+## 6     FALSE     FALSE      FALSE         FALSE FALSE    FALSE FALSE
+##   Tingkat.Semester Uang.Saku kepemilikan.mobil kepemilikan.motor
+## 1            FALSE     FALSE             FALSE             FALSE
+## 2            FALSE     FALSE             FALSE             FALSE
+## 3            FALSE     FALSE             FALSE             FALSE
+## 4            FALSE     FALSE             FALSE             FALSE
+## 5            FALSE     FALSE             FALSE             FALSE
+## 6            FALSE     FALSE             FALSE             FALSE
+##   kepemilikan.sepeda kendaraan.utama kelurahan jenis.tempat.tinggal
+## 1              FALSE           FALSE     FALSE                FALSE
+## 2              FALSE           FALSE     FALSE                FALSE
+## 3              FALSE           FALSE     FALSE                FALSE
+## 4              FALSE           FALSE     FALSE                FALSE
+## 5              FALSE           FALSE     FALSE                FALSE
+## 6              FALSE           FALSE     FALSE                FALSE
+##   nama.jalan.tempat.tinggal jarak alasan.pemilihan.lokasi.tempat.tinggal
+## 1                     FALSE FALSE                                  FALSE
+## 2                     FALSE FALSE                                  FALSE
+## 3                     FALSE FALSE                                  FALSE
+## 4                     FALSE FALSE                                  FALSE
+## 5                     FALSE FALSE                                  FALSE
+## 6                     FALSE FALSE                                  FALSE
+##   biaya_dalam_sepekan jumlah_perjalanan_senin Jumlah.Perjalanan.Selasa
+## 1               FALSE                   FALSE                    FALSE
+## 2               FALSE                   FALSE                    FALSE
+## 3               FALSE                   FALSE                    FALSE
+## 4               FALSE                   FALSE                    FALSE
+## 5                TRUE                   FALSE                    FALSE
+## 6               FALSE                   FALSE                    FALSE
+##   Jumlah.Perjalanan.Rabu Jumlah.Perjalanan.Kamis Jumlah.Perjalanan.Jumat
+## 1                  FALSE                   FALSE                   FALSE
+## 2                  FALSE                   FALSE                   FALSE
+## 3                  FALSE                   FALSE                   FALSE
+## 4                  FALSE                   FALSE                   FALSE
+## 5                  FALSE                   FALSE                   FALSE
+## 6                  FALSE                   FALSE                   FALSE
+##   Jumlah.Perjalanan.Sabtu Jumlah.Perjalanan.Ahad
+## 1                   FALSE                  FALSE
+## 2                   FALSE                  FALSE
+## 3                   FALSE                  FALSE
+## 4                   FALSE                  FALSE
+## 5                   FALSE                  FALSE
+## 6                   FALSE                  FALSE
 ```
 
 ``` r
@@ -1994,32 +2138,32 @@ glimpse(data_ubl)
 ```
 ## Rows: 330
 ## Columns: 26
-## $ Timestamp                              [3m[38;5;246m<dbl>[39m[23m 45413.83[38;5;246m, [39m45413.83[38;5;246m, [39m45413.85[38;5;246m, [39m45413.85[38;5;246m, [39m45413.92[38;5;246m, [39m…
-## $ Kampus_PT                              [3m[38;5;246m<chr>[39m[23m "UBL"[38;5;246m, [39m"UBL"[38;5;246m, [39m"UBL"[38;5;246m, [39m"UBL"[38;5;246m, [39m"UBL"[38;5;246m, [39m"UBL"[38;5;246m, [39m"UBL"[38;5;246m, [39m"…
-## $ Nomor.urut                             [3m[38;5;246m<dbl>[39m[23m 1[38;5;246m, [39m2[38;5;246m, [39m3[38;5;246m, [39m4[38;5;246m, [39m6[38;5;246m, [39m7[38;5;246m, [39m8[38;5;246m, [39m9[38;5;246m, [39m10[38;5;246m, [39m12[38;5;246m, [39m14[38;5;246m, [39m15[38;5;246m, [39m16[38;5;246m, [39m17[38;5;246m, [39m18…
-## $ Jenis.Kelamin                          [3m[38;5;246m<chr>[39m[23m "Perempuan"[38;5;246m, [39m"Laki-Laki"[38;5;246m, [39m"Laki-Laki"[38;5;246m, [39m"Laki-Laki"…
-## $ Umur                                   [3m[38;5;246m<dbl>[39m[23m 21[38;5;246m, [39m20[38;5;246m, [39m21[38;5;246m, [39m22[38;5;246m, [39m21[38;5;246m, [39m22[38;5;246m, [39m22[38;5;246m, [39m22[38;5;246m, [39m22[38;5;246m, [39m22[38;5;246m, [39m22[38;5;246m, [39m19[38;5;246m, [39m22…
-## $ Fakultas                               [3m[38;5;246m<chr>[39m[23m "Fakultas Ilmu Sosial dan Politik"[38;5;246m, [39m"Fakultas Huku…
-## $ Prodi                                  [3m[38;5;246m<chr>[39m[23m "Ilmu Komunikasi"[38;5;246m, [39m"Ilmu Hukum"[38;5;246m, [39m"Manajemen"[38;5;246m, [39m"Aku…
-## $ Tingkat.Semester                       [3m[38;5;246m<chr>[39m[23m "4 (Semester 7 - Semester 8)"[38;5;246m, [39m"3 (Semester 5 - Se…
-## $ Uang.Saku                              [3m[38;5;246m<chr>[39m[23m "< 1 jt"[38;5;246m, [39m"1 jt – 2 jt"[38;5;246m, [39m"1 jt – 2 jt"[38;5;246m, [39m"1 jt – 2 …
-## $ kepemilikan.mobil                      [3m[38;5;246m<dbl>[39m[23m 1[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m0[38;5;246m, [39m1[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m,[39m…
-## $ kepemilikan.motor                      [3m[38;5;246m<dbl>[39m[23m 2[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m0[38;5;246m, [39m1[38;5;246m, [39m0[38;5;246m, [39m2[38;5;246m,[39m…
-## $ kepemilikan.sepeda                     [3m[38;5;246m<dbl>[39m[23m 1[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m,[39m…
-## $ kendaraan.utama                        [3m[38;5;246m<chr>[39m[23m "Sepeda Motor Pribadi"[38;5;246m, [39m"Mobil Pribadi"[38;5;246m, [39m"Sepeda M…
-## $ kelurahan                              [3m[38;5;246m<chr>[39m[23m "Kalibalau Kencana"[38;5;246m, [39m"Gunung sulah"[38;5;246m, [39m"langkapura"[38;5;246m,[39m…
-## $ jenis.tempat.tinggal                   [3m[38;5;246m<chr>[39m[23m "Rumah pribadi/rumah keluarga"[38;5;246m, [39m"Rumah pribadi/rum…
-## $ nama.jalan.tempat.tinggal              [3m[38;5;246m<chr>[39m[23m "eLBe Loundry"[38;5;246m, [39m"Jl.Urip Sumoharjo no 88"[38;5;246m, [39m"JL DAR…
-## $ jarak                                  [3m[38;5;246m<dbl>[39m[23m 4.2237967[38;5;246m, [39m2.7033310[38;5;246m, [39m3.2370722[38;5;246m, [39m3.0023362[38;5;246m, [39m2.9253…
-## $ alasan.pemilihan.lokasi.tempat.tinggal [3m[38;5;246m<chr>[39m[23m "Bersama keluarga/saudara/teman"[38;5;246m, [39m"Mudahnya akses …
-## $ biaya_dalam_sepekan                    [3m[38;5;246m<dbl>[39m[23m 25[38;5;246m, [39m200[38;5;246m, [39m50[38;5;246m, [39m20[38;5;246m, [39m40[38;5;246m, [39m70[38;5;246m, [39m35[38;5;246m, [39m50[38;5;246m, [39m350[38;5;246m, [39m50[38;5;246m, [39m30[38;5;246m, [39m35[38;5;246m, [39m…
-## $ jumlah_perjalanan_senin                [3m[38;5;246m<dbl>[39m[23m 2[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m3[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m4[38;5;246m, [39m3[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m4[38;5;246m,[39m…
-## $ Jumlah.Perjalanan.Selasa               [3m[38;5;246m<dbl>[39m[23m 3[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m3[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m4[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m4[38;5;246m, [39m1[38;5;246m, [39m3[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m3[38;5;246m,[39m…
-## $ Jumlah.Perjalanan.Rabu                 [3m[38;5;246m<dbl>[39m[23m 2[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m4[38;5;246m, [39m3[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m3[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m3[38;5;246m,[39m…
-## $ Jumlah.Perjalanan.Kamis                [3m[38;5;246m<dbl>[39m[23m 3[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m4[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m4[38;5;246m, [39m3[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m3[38;5;246m,[39m…
-## $ Jumlah.Perjalanan.Jumat                [3m[38;5;246m<dbl>[39m[23m 2[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m3[38;5;246m, [39m3[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m3[38;5;246m, [39m2[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m3[38;5;246m,[39m…
-## $ Jumlah.Perjalanan.Sabtu                [3m[38;5;246m<dbl>[39m[23m 2[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m3[38;5;246m, [39m4[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m3[38;5;246m,[39m…
-## $ Jumlah.Perjalanan.Ahad                 [3m[38;5;246m<dbl>[39m[23m 2[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m3[38;5;246m, [39m4[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m3[38;5;246m,[39m…
+## $ Timestamp                              <dbl> 45413.83, 45413.83, 45413.85,…
+## $ Kampus_PT                              <chr> "UBL", "UBL", "UBL", "UBL", "…
+## $ Nomor.urut                             <dbl> 1, 2, 3, 4, 6, 7, 8, 9, 10, 1…
+## $ Jenis.Kelamin                          <chr> "Perempuan", "Laki-Laki", "La…
+## $ Umur                                   <dbl> 21, 20, 21, 22, 21, 22, 22, 2…
+## $ Fakultas                               <chr> "Fakultas Ilmu Sosial dan Pol…
+## $ Prodi                                  <chr> "Ilmu Komunikasi", "Ilmu Huku…
+## $ Tingkat.Semester                       <chr> "4 (Semester 7 - Semester 8)"…
+## $ Uang.Saku                              <chr> "< 1 jt", "1 jt – 2 jt", "1 j…
+## $ kepemilikan.mobil                      <dbl> 1, 2, 1, 1, 1, 1, 1, 1, 1, 0,…
+## $ kepemilikan.motor                      <dbl> 2, 1, 2, 4, 2, 1, 1, 1, 1, 2,…
+## $ kepemilikan.sepeda                     <dbl> 1, 1, 2, 1, 1, 1, 1, 1, 1, 0,…
+## $ kendaraan.utama                        <chr> "Sepeda Motor Pribadi", "Mobi…
+## $ kelurahan                              <chr> "Kalibalau Kencana", "Gunung …
+## $ jenis.tempat.tinggal                   <chr> "Rumah pribadi/rumah keluarga…
+## $ nama.jalan.tempat.tinggal              <chr> "eLBe Loundry", "Jl.Urip Sumo…
+## $ jarak                                  <dbl> 4.2237967, 2.7033310, 3.23707…
+## $ alasan.pemilihan.lokasi.tempat.tinggal <chr> "Bersama keluarga/saudara/tem…
+## $ biaya_dalam_sepekan                    <dbl> 25, 200, 50, 20, 40, 70, 35, …
+## $ jumlah_perjalanan_senin                <dbl> 2, 3, 1, 2, 3, 2, 4, 4, 3, 2,…
+## $ Jumlah.Perjalanan.Selasa               <dbl> 3, 3, 1, 2, 3, 2, 4, 4, 3, 1,…
+## $ Jumlah.Perjalanan.Rabu                 <dbl> 2, 3, 1, 2, 1, 2, 4, 4, 3, 2,…
+## $ Jumlah.Perjalanan.Kamis                <dbl> 3, 3, 1, 2, 1, 2, 4, 4, 3, 1,…
+## $ Jumlah.Perjalanan.Jumat                <dbl> 2, 3, 1, 2, 1, 2, 4, 3, 3, 2,…
+## $ Jumlah.Perjalanan.Sabtu                <dbl> 2, 3, 1, 2, 1, 2, 3, 4, 2, 1,…
+## $ Jumlah.Perjalanan.Ahad                 <dbl> 2, 3, 1, 2, 1, 2, 3, 4, 1, 1,…
 ```
 
 Contoh pertama kita adalah variabel yang paling mudah: `Jenis.Kelamin`.
@@ -2040,32 +2184,32 @@ glimpse(data_ubl)
 ```
 ## Rows: 330
 ## Columns: 26
-## $ Timestamp                              [3m[38;5;246m<dbl>[39m[23m 45413.83[38;5;246m, [39m45413.83[38;5;246m, [39m45413.85[38;5;246m, [39m45413.85[38;5;246m, [39m45413.92[38;5;246m, [39m…
-## $ Kampus_PT                              [3m[38;5;246m<chr>[39m[23m "UBL"[38;5;246m, [39m"UBL"[38;5;246m, [39m"UBL"[38;5;246m, [39m"UBL"[38;5;246m, [39m"UBL"[38;5;246m, [39m"UBL"[38;5;246m, [39m"UBL"[38;5;246m, [39m"…
-## $ Nomor.urut                             [3m[38;5;246m<dbl>[39m[23m 1[38;5;246m, [39m2[38;5;246m, [39m3[38;5;246m, [39m4[38;5;246m, [39m6[38;5;246m, [39m7[38;5;246m, [39m8[38;5;246m, [39m9[38;5;246m, [39m10[38;5;246m, [39m12[38;5;246m, [39m14[38;5;246m, [39m15[38;5;246m, [39m16[38;5;246m, [39m17[38;5;246m, [39m18…
-## $ Jenis.Kelamin                          [3m[38;5;246m<fct>[39m[23m Perempuan[38;5;246m, [39m[31mNA[39m[38;5;246m, [39m[31mNA[39m[38;5;246m, [39m[31mNA[39m[38;5;246m, [39mPerempuan[38;5;246m, [39mPerempuan[38;5;246m, [39mPerem…
-## $ Umur                                   [3m[38;5;246m<dbl>[39m[23m 21[38;5;246m, [39m20[38;5;246m, [39m21[38;5;246m, [39m22[38;5;246m, [39m21[38;5;246m, [39m22[38;5;246m, [39m22[38;5;246m, [39m22[38;5;246m, [39m22[38;5;246m, [39m22[38;5;246m, [39m22[38;5;246m, [39m19[38;5;246m, [39m22…
-## $ Fakultas                               [3m[38;5;246m<chr>[39m[23m "Fakultas Ilmu Sosial dan Politik"[38;5;246m, [39m"Fakultas Huku…
-## $ Prodi                                  [3m[38;5;246m<chr>[39m[23m "Ilmu Komunikasi"[38;5;246m, [39m"Ilmu Hukum"[38;5;246m, [39m"Manajemen"[38;5;246m, [39m"Aku…
-## $ Tingkat.Semester                       [3m[38;5;246m<chr>[39m[23m "4 (Semester 7 - Semester 8)"[38;5;246m, [39m"3 (Semester 5 - Se…
-## $ Uang.Saku                              [3m[38;5;246m<chr>[39m[23m "< 1 jt"[38;5;246m, [39m"1 jt – 2 jt"[38;5;246m, [39m"1 jt – 2 jt"[38;5;246m, [39m"1 jt – 2 …
-## $ kepemilikan.mobil                      [3m[38;5;246m<dbl>[39m[23m 1[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m0[38;5;246m, [39m1[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m,[39m…
-## $ kepemilikan.motor                      [3m[38;5;246m<dbl>[39m[23m 2[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m0[38;5;246m, [39m1[38;5;246m, [39m0[38;5;246m, [39m2[38;5;246m,[39m…
-## $ kepemilikan.sepeda                     [3m[38;5;246m<dbl>[39m[23m 1[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m,[39m…
-## $ kendaraan.utama                        [3m[38;5;246m<chr>[39m[23m "Sepeda Motor Pribadi"[38;5;246m, [39m"Mobil Pribadi"[38;5;246m, [39m"Sepeda M…
-## $ kelurahan                              [3m[38;5;246m<chr>[39m[23m "Kalibalau Kencana"[38;5;246m, [39m"Gunung sulah"[38;5;246m, [39m"langkapura"[38;5;246m,[39m…
-## $ jenis.tempat.tinggal                   [3m[38;5;246m<chr>[39m[23m "Rumah pribadi/rumah keluarga"[38;5;246m, [39m"Rumah pribadi/rum…
-## $ nama.jalan.tempat.tinggal              [3m[38;5;246m<chr>[39m[23m "eLBe Loundry"[38;5;246m, [39m"Jl.Urip Sumoharjo no 88"[38;5;246m, [39m"JL DAR…
-## $ jarak                                  [3m[38;5;246m<dbl>[39m[23m 4.2237967[38;5;246m, [39m2.7033310[38;5;246m, [39m3.2370722[38;5;246m, [39m3.0023362[38;5;246m, [39m2.9253…
-## $ alasan.pemilihan.lokasi.tempat.tinggal [3m[38;5;246m<chr>[39m[23m "Bersama keluarga/saudara/teman"[38;5;246m, [39m"Mudahnya akses …
-## $ biaya_dalam_sepekan                    [3m[38;5;246m<dbl>[39m[23m 25[38;5;246m, [39m200[38;5;246m, [39m50[38;5;246m, [39m20[38;5;246m, [39m40[38;5;246m, [39m70[38;5;246m, [39m35[38;5;246m, [39m50[38;5;246m, [39m350[38;5;246m, [39m50[38;5;246m, [39m30[38;5;246m, [39m35[38;5;246m, [39m…
-## $ jumlah_perjalanan_senin                [3m[38;5;246m<dbl>[39m[23m 2[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m3[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m4[38;5;246m, [39m3[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m4[38;5;246m,[39m…
-## $ Jumlah.Perjalanan.Selasa               [3m[38;5;246m<dbl>[39m[23m 3[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m3[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m4[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m4[38;5;246m, [39m1[38;5;246m, [39m3[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m3[38;5;246m,[39m…
-## $ Jumlah.Perjalanan.Rabu                 [3m[38;5;246m<dbl>[39m[23m 2[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m4[38;5;246m, [39m3[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m3[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m3[38;5;246m,[39m…
-## $ Jumlah.Perjalanan.Kamis                [3m[38;5;246m<dbl>[39m[23m 3[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m4[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m4[38;5;246m, [39m3[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m3[38;5;246m,[39m…
-## $ Jumlah.Perjalanan.Jumat                [3m[38;5;246m<dbl>[39m[23m 2[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m3[38;5;246m, [39m3[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m3[38;5;246m, [39m2[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m3[38;5;246m,[39m…
-## $ Jumlah.Perjalanan.Sabtu                [3m[38;5;246m<dbl>[39m[23m 2[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m3[38;5;246m, [39m4[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m3[38;5;246m,[39m…
-## $ Jumlah.Perjalanan.Ahad                 [3m[38;5;246m<dbl>[39m[23m 2[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m3[38;5;246m, [39m4[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m3[38;5;246m,[39m…
+## $ Timestamp                              <dbl> 45413.83, 45413.83, 45413.85,…
+## $ Kampus_PT                              <chr> "UBL", "UBL", "UBL", "UBL", "…
+## $ Nomor.urut                             <dbl> 1, 2, 3, 4, 6, 7, 8, 9, 10, 1…
+## $ Jenis.Kelamin                          <fct> Perempuan, NA, NA, NA, Peremp…
+## $ Umur                                   <dbl> 21, 20, 21, 22, 21, 22, 22, 2…
+## $ Fakultas                               <chr> "Fakultas Ilmu Sosial dan Pol…
+## $ Prodi                                  <chr> "Ilmu Komunikasi", "Ilmu Huku…
+## $ Tingkat.Semester                       <chr> "4 (Semester 7 - Semester 8)"…
+## $ Uang.Saku                              <chr> "< 1 jt", "1 jt – 2 jt", "1 j…
+## $ kepemilikan.mobil                      <dbl> 1, 2, 1, 1, 1, 1, 1, 1, 1, 0,…
+## $ kepemilikan.motor                      <dbl> 2, 1, 2, 4, 2, 1, 1, 1, 1, 2,…
+## $ kepemilikan.sepeda                     <dbl> 1, 1, 2, 1, 1, 1, 1, 1, 1, 0,…
+## $ kendaraan.utama                        <chr> "Sepeda Motor Pribadi", "Mobi…
+## $ kelurahan                              <chr> "Kalibalau Kencana", "Gunung …
+## $ jenis.tempat.tinggal                   <chr> "Rumah pribadi/rumah keluarga…
+## $ nama.jalan.tempat.tinggal              <chr> "eLBe Loundry", "Jl.Urip Sumo…
+## $ jarak                                  <dbl> 4.2237967, 2.7033310, 3.23707…
+## $ alasan.pemilihan.lokasi.tempat.tinggal <chr> "Bersama keluarga/saudara/tem…
+## $ biaya_dalam_sepekan                    <dbl> 25, 200, 50, 20, 40, 70, 35, …
+## $ jumlah_perjalanan_senin                <dbl> 2, 3, 1, 2, 3, 2, 4, 4, 3, 2,…
+## $ Jumlah.Perjalanan.Selasa               <dbl> 3, 3, 1, 2, 3, 2, 4, 4, 3, 1,…
+## $ Jumlah.Perjalanan.Rabu                 <dbl> 2, 3, 1, 2, 1, 2, 4, 4, 3, 2,…
+## $ Jumlah.Perjalanan.Kamis                <dbl> 3, 3, 1, 2, 1, 2, 4, 4, 3, 1,…
+## $ Jumlah.Perjalanan.Jumat                <dbl> 2, 3, 1, 2, 1, 2, 4, 3, 3, 2,…
+## $ Jumlah.Perjalanan.Sabtu                <dbl> 2, 3, 1, 2, 1, 2, 3, 4, 2, 1,…
+## $ Jumlah.Perjalanan.Ahad                 <dbl> 2, 3, 1, 2, 1, 2, 3, 4, 1, 1,…
 ```
 
 Ternyata, hasil pendefinisian `factor` ke dalam data kita mengandung `NA` yang berarti data kosong atau *missing value*. Hal tersebut terjadi karena kita mendefinisikan vektor `jk` berisi `c("Laki-laki", "Perempuan")`.
@@ -2095,32 +2239,32 @@ glimpse(data_ubl)
 ```
 ## Rows: 330
 ## Columns: 26
-## $ Timestamp                              [3m[38;5;246m<dbl>[39m[23m 45413.83[38;5;246m, [39m45413.83[38;5;246m, [39m45413.85[38;5;246m, [39m45413.85[38;5;246m, [39m45413.92[38;5;246m, [39m…
-## $ Kampus_PT                              [3m[38;5;246m<chr>[39m[23m "UBL"[38;5;246m, [39m"UBL"[38;5;246m, [39m"UBL"[38;5;246m, [39m"UBL"[38;5;246m, [39m"UBL"[38;5;246m, [39m"UBL"[38;5;246m, [39m"UBL"[38;5;246m, [39m"…
-## $ Nomor.urut                             [3m[38;5;246m<dbl>[39m[23m 1[38;5;246m, [39m2[38;5;246m, [39m3[38;5;246m, [39m4[38;5;246m, [39m6[38;5;246m, [39m7[38;5;246m, [39m8[38;5;246m, [39m9[38;5;246m, [39m10[38;5;246m, [39m12[38;5;246m, [39m14[38;5;246m, [39m15[38;5;246m, [39m16[38;5;246m, [39m17[38;5;246m, [39m18…
-## $ Jenis.Kelamin                          [3m[38;5;246m<fct>[39m[23m Perempuan[38;5;246m, [39mLaki-Laki[38;5;246m, [39mLaki-Laki[38;5;246m, [39mLaki-Laki[38;5;246m, [39mPeremp…
-## $ Umur                                   [3m[38;5;246m<dbl>[39m[23m 21[38;5;246m, [39m20[38;5;246m, [39m21[38;5;246m, [39m22[38;5;246m, [39m21[38;5;246m, [39m22[38;5;246m, [39m22[38;5;246m, [39m22[38;5;246m, [39m22[38;5;246m, [39m22[38;5;246m, [39m22[38;5;246m, [39m19[38;5;246m, [39m22…
-## $ Fakultas                               [3m[38;5;246m<chr>[39m[23m "Fakultas Ilmu Sosial dan Politik"[38;5;246m, [39m"Fakultas Huku…
-## $ Prodi                                  [3m[38;5;246m<chr>[39m[23m "Ilmu Komunikasi"[38;5;246m, [39m"Ilmu Hukum"[38;5;246m, [39m"Manajemen"[38;5;246m, [39m"Aku…
-## $ Tingkat.Semester                       [3m[38;5;246m<chr>[39m[23m "4 (Semester 7 - Semester 8)"[38;5;246m, [39m"3 (Semester 5 - Se…
-## $ Uang.Saku                              [3m[38;5;246m<chr>[39m[23m "< 1 jt"[38;5;246m, [39m"1 jt – 2 jt"[38;5;246m, [39m"1 jt – 2 jt"[38;5;246m, [39m"1 jt – 2 …
-## $ kepemilikan.mobil                      [3m[38;5;246m<dbl>[39m[23m 1[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m0[38;5;246m, [39m1[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m,[39m…
-## $ kepemilikan.motor                      [3m[38;5;246m<dbl>[39m[23m 2[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m0[38;5;246m, [39m1[38;5;246m, [39m0[38;5;246m, [39m2[38;5;246m,[39m…
-## $ kepemilikan.sepeda                     [3m[38;5;246m<dbl>[39m[23m 1[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m,[39m…
-## $ kendaraan.utama                        [3m[38;5;246m<chr>[39m[23m "Sepeda Motor Pribadi"[38;5;246m, [39m"Mobil Pribadi"[38;5;246m, [39m"Sepeda M…
-## $ kelurahan                              [3m[38;5;246m<chr>[39m[23m "Kalibalau Kencana"[38;5;246m, [39m"Gunung sulah"[38;5;246m, [39m"langkapura"[38;5;246m,[39m…
-## $ jenis.tempat.tinggal                   [3m[38;5;246m<chr>[39m[23m "Rumah pribadi/rumah keluarga"[38;5;246m, [39m"Rumah pribadi/rum…
-## $ nama.jalan.tempat.tinggal              [3m[38;5;246m<chr>[39m[23m "eLBe Loundry"[38;5;246m, [39m"Jl.Urip Sumoharjo no 88"[38;5;246m, [39m"JL DAR…
-## $ jarak                                  [3m[38;5;246m<dbl>[39m[23m 4.2237967[38;5;246m, [39m2.7033310[38;5;246m, [39m3.2370722[38;5;246m, [39m3.0023362[38;5;246m, [39m2.9253…
-## $ alasan.pemilihan.lokasi.tempat.tinggal [3m[38;5;246m<chr>[39m[23m "Bersama keluarga/saudara/teman"[38;5;246m, [39m"Mudahnya akses …
-## $ biaya_dalam_sepekan                    [3m[38;5;246m<dbl>[39m[23m 25[38;5;246m, [39m200[38;5;246m, [39m50[38;5;246m, [39m20[38;5;246m, [39m40[38;5;246m, [39m70[38;5;246m, [39m35[38;5;246m, [39m50[38;5;246m, [39m350[38;5;246m, [39m50[38;5;246m, [39m30[38;5;246m, [39m35[38;5;246m, [39m…
-## $ jumlah_perjalanan_senin                [3m[38;5;246m<dbl>[39m[23m 2[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m3[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m4[38;5;246m, [39m3[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m4[38;5;246m,[39m…
-## $ Jumlah.Perjalanan.Selasa               [3m[38;5;246m<dbl>[39m[23m 3[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m3[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m4[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m4[38;5;246m, [39m1[38;5;246m, [39m3[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m3[38;5;246m,[39m…
-## $ Jumlah.Perjalanan.Rabu                 [3m[38;5;246m<dbl>[39m[23m 2[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m4[38;5;246m, [39m3[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m3[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m3[38;5;246m,[39m…
-## $ Jumlah.Perjalanan.Kamis                [3m[38;5;246m<dbl>[39m[23m 3[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m4[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m4[38;5;246m, [39m3[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m3[38;5;246m,[39m…
-## $ Jumlah.Perjalanan.Jumat                [3m[38;5;246m<dbl>[39m[23m 2[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m3[38;5;246m, [39m3[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m3[38;5;246m, [39m2[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m3[38;5;246m,[39m…
-## $ Jumlah.Perjalanan.Sabtu                [3m[38;5;246m<dbl>[39m[23m 2[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m3[38;5;246m, [39m4[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m3[38;5;246m,[39m…
-## $ Jumlah.Perjalanan.Ahad                 [3m[38;5;246m<dbl>[39m[23m 2[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m3[38;5;246m, [39m4[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m3[38;5;246m,[39m…
+## $ Timestamp                              <dbl> 45413.83, 45413.83, 45413.85,…
+## $ Kampus_PT                              <chr> "UBL", "UBL", "UBL", "UBL", "…
+## $ Nomor.urut                             <dbl> 1, 2, 3, 4, 6, 7, 8, 9, 10, 1…
+## $ Jenis.Kelamin                          <fct> Perempuan, Laki-Laki, Laki-La…
+## $ Umur                                   <dbl> 21, 20, 21, 22, 21, 22, 22, 2…
+## $ Fakultas                               <chr> "Fakultas Ilmu Sosial dan Pol…
+## $ Prodi                                  <chr> "Ilmu Komunikasi", "Ilmu Huku…
+## $ Tingkat.Semester                       <chr> "4 (Semester 7 - Semester 8)"…
+## $ Uang.Saku                              <chr> "< 1 jt", "1 jt – 2 jt", "1 j…
+## $ kepemilikan.mobil                      <dbl> 1, 2, 1, 1, 1, 1, 1, 1, 1, 0,…
+## $ kepemilikan.motor                      <dbl> 2, 1, 2, 4, 2, 1, 1, 1, 1, 2,…
+## $ kepemilikan.sepeda                     <dbl> 1, 1, 2, 1, 1, 1, 1, 1, 1, 0,…
+## $ kendaraan.utama                        <chr> "Sepeda Motor Pribadi", "Mobi…
+## $ kelurahan                              <chr> "Kalibalau Kencana", "Gunung …
+## $ jenis.tempat.tinggal                   <chr> "Rumah pribadi/rumah keluarga…
+## $ nama.jalan.tempat.tinggal              <chr> "eLBe Loundry", "Jl.Urip Sumo…
+## $ jarak                                  <dbl> 4.2237967, 2.7033310, 3.23707…
+## $ alasan.pemilihan.lokasi.tempat.tinggal <chr> "Bersama keluarga/saudara/tem…
+## $ biaya_dalam_sepekan                    <dbl> 25, 200, 50, 20, 40, 70, 35, …
+## $ jumlah_perjalanan_senin                <dbl> 2, 3, 1, 2, 3, 2, 4, 4, 3, 2,…
+## $ Jumlah.Perjalanan.Selasa               <dbl> 3, 3, 1, 2, 3, 2, 4, 4, 3, 1,…
+## $ Jumlah.Perjalanan.Rabu                 <dbl> 2, 3, 1, 2, 1, 2, 4, 4, 3, 2,…
+## $ Jumlah.Perjalanan.Kamis                <dbl> 3, 3, 1, 2, 1, 2, 4, 4, 3, 1,…
+## $ Jumlah.Perjalanan.Jumat                <dbl> 2, 3, 1, 2, 1, 2, 4, 3, 3, 2,…
+## $ Jumlah.Perjalanan.Sabtu                <dbl> 2, 3, 1, 2, 1, 2, 3, 4, 2, 1,…
+## $ Jumlah.Perjalanan.Ahad                 <dbl> 2, 3, 1, 2, 1, 2, 3, 4, 1, 1,…
 ```
 
 Kita sudah berhasil menjadikan variabel `Jenis.Kelamin` sebagai factor. Selanjutnya, kita akan mengubah variabel-variabel kategoris lain menjadi factor juga. Variabel-variabel tersebut di antaranya adalah `Prodi`, `Tingkat.Semester`, `Uang.Saku`, dan `jenis.tempat.tinggal`.
@@ -2197,10 +2341,12 @@ table(data_ubl$jenis.tempat.tinggal)
 
 ```
 ## 
-##              Kos bersama-sama                   Kos Sendiri         Rumah bersama saudara 
-##                            14                            52                            23 
-## Rumah mengontrak bersama-sama      Rumah mengontrak pribadi  Rumah pribadi/rumah keluarga 
-##                             5                             3                           233
+##              Kos bersama-sama                   Kos Sendiri 
+##                            14                            52 
+##         Rumah bersama saudara Rumah mengontrak bersama-sama 
+##                            23                             5 
+##      Rumah mengontrak pribadi  Rumah pribadi/rumah keluarga 
+##                             3                           233
 ```
 
 Kemudian kita buat vektor-vektor yang menyimpan nilai-nilai yang mungkinnya.
@@ -2252,32 +2398,32 @@ glimpse(data_ubl)
 ```
 ## Rows: 330
 ## Columns: 26
-## $ Timestamp                              [3m[38;5;246m<dbl>[39m[23m 45413.83[38;5;246m, [39m45413.83[38;5;246m, [39m45413.85[38;5;246m, [39m45413.85[38;5;246m, [39m45413.92[38;5;246m, [39m…
-## $ Kampus_PT                              [3m[38;5;246m<chr>[39m[23m "UBL"[38;5;246m, [39m"UBL"[38;5;246m, [39m"UBL"[38;5;246m, [39m"UBL"[38;5;246m, [39m"UBL"[38;5;246m, [39m"UBL"[38;5;246m, [39m"UBL"[38;5;246m, [39m"…
-## $ Nomor.urut                             [3m[38;5;246m<dbl>[39m[23m 1[38;5;246m, [39m2[38;5;246m, [39m3[38;5;246m, [39m4[38;5;246m, [39m6[38;5;246m, [39m7[38;5;246m, [39m8[38;5;246m, [39m9[38;5;246m, [39m10[38;5;246m, [39m12[38;5;246m, [39m14[38;5;246m, [39m15[38;5;246m, [39m16[38;5;246m, [39m17[38;5;246m, [39m18…
-## $ Jenis.Kelamin                          [3m[38;5;246m<fct>[39m[23m Perempuan[38;5;246m, [39mLaki-Laki[38;5;246m, [39mLaki-Laki[38;5;246m, [39mLaki-Laki[38;5;246m, [39mPeremp…
-## $ Umur                                   [3m[38;5;246m<dbl>[39m[23m 21[38;5;246m, [39m20[38;5;246m, [39m21[38;5;246m, [39m22[38;5;246m, [39m21[38;5;246m, [39m22[38;5;246m, [39m22[38;5;246m, [39m22[38;5;246m, [39m22[38;5;246m, [39m22[38;5;246m, [39m22[38;5;246m, [39m19[38;5;246m, [39m22…
-## $ Fakultas                               [3m[38;5;246m<fct>[39m[23m Fakultas Ilmu Sosial dan Politik[38;5;246m, [39mFakultas Hukum[38;5;246m, [39m…
-## $ Prodi                                  [3m[38;5;246m<fct>[39m[23m Ilmu Komunikasi[38;5;246m, [39mIlmu Hukum[38;5;246m, [39mManajemen[38;5;246m, [39mAkuntansi[38;5;246m,[39m…
-## $ Tingkat.Semester                       [3m[38;5;246m<ord>[39m[23m 4 (Semester 7 - Semester 8)[38;5;246m, [39m3 (Semester 5 - Semes…
-## $ Uang.Saku                              [3m[38;5;246m<ord>[39m[23m "< 1 jt"[38;5;246m, [39m"1 jt – 2 jt"[38;5;246m, [39m"1 jt – 2 jt"[38;5;246m, [39m"1 jt – 2 …
-## $ kepemilikan.mobil                      [3m[38;5;246m<dbl>[39m[23m 1[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m0[38;5;246m, [39m1[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m,[39m…
-## $ kepemilikan.motor                      [3m[38;5;246m<dbl>[39m[23m 2[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m0[38;5;246m, [39m1[38;5;246m, [39m0[38;5;246m, [39m2[38;5;246m,[39m…
-## $ kepemilikan.sepeda                     [3m[38;5;246m<dbl>[39m[23m 1[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m,[39m…
-## $ kendaraan.utama                        [3m[38;5;246m<chr>[39m[23m "Sepeda Motor Pribadi"[38;5;246m, [39m"Mobil Pribadi"[38;5;246m, [39m"Sepeda M…
-## $ kelurahan                              [3m[38;5;246m<chr>[39m[23m "Kalibalau Kencana"[38;5;246m, [39m"Gunung sulah"[38;5;246m, [39m"langkapura"[38;5;246m,[39m…
-## $ jenis.tempat.tinggal                   [3m[38;5;246m<chr>[39m[23m "Rumah pribadi/rumah keluarga"[38;5;246m, [39m"Rumah pribadi/rum…
-## $ nama.jalan.tempat.tinggal              [3m[38;5;246m<chr>[39m[23m "eLBe Loundry"[38;5;246m, [39m"Jl.Urip Sumoharjo no 88"[38;5;246m, [39m"JL DAR…
-## $ jarak                                  [3m[38;5;246m<dbl>[39m[23m 4.2237967[38;5;246m, [39m2.7033310[38;5;246m, [39m3.2370722[38;5;246m, [39m3.0023362[38;5;246m, [39m2.9253…
-## $ alasan.pemilihan.lokasi.tempat.tinggal [3m[38;5;246m<chr>[39m[23m "Bersama keluarga/saudara/teman"[38;5;246m, [39m"Mudahnya akses …
-## $ biaya_dalam_sepekan                    [3m[38;5;246m<dbl>[39m[23m 25[38;5;246m, [39m200[38;5;246m, [39m50[38;5;246m, [39m20[38;5;246m, [39m40[38;5;246m, [39m70[38;5;246m, [39m35[38;5;246m, [39m50[38;5;246m, [39m350[38;5;246m, [39m50[38;5;246m, [39m30[38;5;246m, [39m35[38;5;246m, [39m…
-## $ jumlah_perjalanan_senin                [3m[38;5;246m<dbl>[39m[23m 2[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m3[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m4[38;5;246m, [39m3[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m4[38;5;246m,[39m…
-## $ Jumlah.Perjalanan.Selasa               [3m[38;5;246m<dbl>[39m[23m 3[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m3[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m4[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m4[38;5;246m, [39m1[38;5;246m, [39m3[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m3[38;5;246m,[39m…
-## $ Jumlah.Perjalanan.Rabu                 [3m[38;5;246m<dbl>[39m[23m 2[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m4[38;5;246m, [39m3[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m3[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m3[38;5;246m,[39m…
-## $ Jumlah.Perjalanan.Kamis                [3m[38;5;246m<dbl>[39m[23m 3[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m4[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m4[38;5;246m, [39m3[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m3[38;5;246m,[39m…
-## $ Jumlah.Perjalanan.Jumat                [3m[38;5;246m<dbl>[39m[23m 2[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m3[38;5;246m, [39m3[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m3[38;5;246m, [39m2[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m3[38;5;246m,[39m…
-## $ Jumlah.Perjalanan.Sabtu                [3m[38;5;246m<dbl>[39m[23m 2[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m3[38;5;246m, [39m4[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m3[38;5;246m,[39m…
-## $ Jumlah.Perjalanan.Ahad                 [3m[38;5;246m<dbl>[39m[23m 2[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m3[38;5;246m, [39m4[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m3[38;5;246m,[39m…
+## $ Timestamp                              <dbl> 45413.83, 45413.83, 45413.85,…
+## $ Kampus_PT                              <chr> "UBL", "UBL", "UBL", "UBL", "…
+## $ Nomor.urut                             <dbl> 1, 2, 3, 4, 6, 7, 8, 9, 10, 1…
+## $ Jenis.Kelamin                          <fct> Perempuan, Laki-Laki, Laki-La…
+## $ Umur                                   <dbl> 21, 20, 21, 22, 21, 22, 22, 2…
+## $ Fakultas                               <fct> Fakultas Ilmu Sosial dan Poli…
+## $ Prodi                                  <fct> Ilmu Komunikasi, Ilmu Hukum, …
+## $ Tingkat.Semester                       <ord> 4 (Semester 7 - Semester 8), …
+## $ Uang.Saku                              <ord> "< 1 jt", "1 jt – 2 jt", "1 j…
+## $ kepemilikan.mobil                      <dbl> 1, 2, 1, 1, 1, 1, 1, 1, 1, 0,…
+## $ kepemilikan.motor                      <dbl> 2, 1, 2, 4, 2, 1, 1, 1, 1, 2,…
+## $ kepemilikan.sepeda                     <dbl> 1, 1, 2, 1, 1, 1, 1, 1, 1, 0,…
+## $ kendaraan.utama                        <chr> "Sepeda Motor Pribadi", "Mobi…
+## $ kelurahan                              <chr> "Kalibalau Kencana", "Gunung …
+## $ jenis.tempat.tinggal                   <chr> "Rumah pribadi/rumah keluarga…
+## $ nama.jalan.tempat.tinggal              <chr> "eLBe Loundry", "Jl.Urip Sumo…
+## $ jarak                                  <dbl> 4.2237967, 2.7033310, 3.23707…
+## $ alasan.pemilihan.lokasi.tempat.tinggal <chr> "Bersama keluarga/saudara/tem…
+## $ biaya_dalam_sepekan                    <dbl> 25, 200, 50, 20, 40, 70, 35, …
+## $ jumlah_perjalanan_senin                <dbl> 2, 3, 1, 2, 3, 2, 4, 4, 3, 2,…
+## $ Jumlah.Perjalanan.Selasa               <dbl> 3, 3, 1, 2, 3, 2, 4, 4, 3, 1,…
+## $ Jumlah.Perjalanan.Rabu                 <dbl> 2, 3, 1, 2, 1, 2, 4, 4, 3, 2,…
+## $ Jumlah.Perjalanan.Kamis                <dbl> 3, 3, 1, 2, 1, 2, 4, 4, 3, 1,…
+## $ Jumlah.Perjalanan.Jumat                <dbl> 2, 3, 1, 2, 1, 2, 4, 3, 3, 2,…
+## $ Jumlah.Perjalanan.Sabtu                <dbl> 2, 3, 1, 2, 1, 2, 3, 4, 2, 1,…
+## $ Jumlah.Perjalanan.Ahad                 <dbl> 2, 3, 1, 2, 1, 2, 3, 4, 1, 1,…
 ```
 
 Sekarang, tipe data untuk variabel-variabel kategoris kita tadi sudah menampilkan `<fct>` yang berarti "factor". Variabel ordinal diidentifikasi dengan tipe `<ord>`.
@@ -2291,8 +2437,8 @@ levels(data_ubl$Tingkat.Semester)
 ```
 
 ```
-## [1] "1 (Semester 1 – Semester 2)" "2 (Semester 3 – Semester 4)" "3 (Semester 5 - Semester 6)"
-## [4] "4 (Semester 7 - Semester 8)"
+## [1] "1 (Semester 1 – Semester 2)" "2 (Semester 3 – Semester 4)"
+## [3] "3 (Semester 5 - Semester 6)" "4 (Semester 7 - Semester 8)"
 ```
 
 ``` r
@@ -2300,7 +2446,8 @@ levels(data_ubl$Uang.Saku)
 ```
 
 ```
-## [1] "< 1 jt"        "1 jt – 2 jt"   "2,1 jt – 3 jt" "3,1 jt – 4 jt" "> 4 jt"
+## [1] "< 1 jt"        "1 jt – 2 jt"   "2,1 jt – 3 jt" "3,1 jt – 4 jt"
+## [5] "> 4 jt"
 ```
 
 ::: {.rmdexercise}
@@ -2345,7 +2492,7 @@ data_ubl |>
 ```
 
 ```{=html}
-<div class="tabwid"><style>.cl-ee74e0bc{}.cl-ee652a78{font-family:'Arial';font-size:11pt;font-weight:bold;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-ee652aa0{font-family:'Arial';font-size:6.6pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;position: relative;bottom:3.3pt;}.cl-ee652aa1{font-family:'Arial';font-size:11pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-ee6bf2ae{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:2pt;padding-top:2pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-ee6bf2c2{margin:0;text-align:center;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:2pt;padding-top:2pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-ee6bf2e0{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-ee6bf2e1{margin:0;text-align:center;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-ee6bf2f4{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:15pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-ee6bf2f5{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-ee6c3d68{width:3.18in;background-color:transparent;vertical-align: middle;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 1pt solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-ee6c3d7c{width:0.99in;background-color:transparent;vertical-align: middle;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 1pt solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-ee6c3d86{width:3.18in;background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-ee6c3d90{width:0.99in;background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-ee6c3d9a{width:3.18in;background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-ee6c3da4{width:0.99in;background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-ee6c3dae{width:3.18in;background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-ee6c3daf{width:0.99in;background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-ee6c3dc2{width:3.18in;background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-ee6c3dc3{width:0.99in;background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-ee6c3dd6{width:3.18in;background-color:transparent;vertical-align: top;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-ee6c3dea{width:0.99in;background-color:transparent;vertical-align: top;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-ee6c3deb{width:3.18in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(255, 255, 255, 0.00);border-top: 0 solid rgba(255, 255, 255, 0.00);border-left: 0 solid rgba(255, 255, 255, 0.00);border-right: 0 solid rgba(255, 255, 255, 0.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-ee6c3df4{width:0.99in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(255, 255, 255, 0.00);border-top: 0 solid rgba(255, 255, 255, 0.00);border-left: 0 solid rgba(255, 255, 255, 0.00);border-right: 0 solid rgba(255, 255, 255, 0.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}</style><table data-quarto-disable-processing='true' class='cl-ee74e0bc'><thead><tr style="overflow-wrap:break-word;"><th class="cl-ee6c3d68"><p class="cl-ee6bf2ae"><span class="cl-ee652a78">Characteristic</span></p></th><th class="cl-ee6c3d7c"><p class="cl-ee6bf2c2"><span class="cl-ee652a78">N = 330</span><span class="cl-ee652aa0">1</span></p></th></tr></thead><tbody><tr style="overflow-wrap:break-word;"><td class="cl-ee6c3d86"><p class="cl-ee6bf2e0"><span class="cl-ee652aa1">Jenis.Kelamin</span></p></td><td class="cl-ee6c3d90"><p class="cl-ee6bf2e1"><span class="cl-ee652aa1"></span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-ee6c3d9a"><p class="cl-ee6bf2f4"><span class="cl-ee652aa1">Laki-Laki</span></p></td><td class="cl-ee6c3da4"><p class="cl-ee6bf2e1"><span class="cl-ee652aa1">165 (50%)</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-ee6c3d9a"><p class="cl-ee6bf2f4"><span class="cl-ee652aa1">Perempuan</span></p></td><td class="cl-ee6c3da4"><p class="cl-ee6bf2e1"><span class="cl-ee652aa1">165 (50%)</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-ee6c3dae"><p class="cl-ee6bf2e0"><span class="cl-ee652aa1">Fakultas</span></p></td><td class="cl-ee6c3daf"><p class="cl-ee6bf2e1"><span class="cl-ee652aa1"></span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-ee6c3d9a"><p class="cl-ee6bf2f4"><span class="cl-ee652aa1">Fakultas Ekonomi dan Bisnis</span></p></td><td class="cl-ee6c3da4"><p class="cl-ee6bf2e1"><span class="cl-ee652aa1">104 (32%)</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-ee6c3d9a"><p class="cl-ee6bf2f4"><span class="cl-ee652aa1">Fakultas Hukum</span></p></td><td class="cl-ee6c3da4"><p class="cl-ee6bf2e1"><span class="cl-ee652aa1">98 (30%)</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-ee6c3d9a"><p class="cl-ee6bf2f4"><span class="cl-ee652aa1">Fakultas Ilmu Komputer</span></p></td><td class="cl-ee6c3da4"><p class="cl-ee6bf2e1"><span class="cl-ee652aa1">29 (8.8%)</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-ee6c3d9a"><p class="cl-ee6bf2f4"><span class="cl-ee652aa1">Fakultas Ilmu Sosial dan Politik</span></p></td><td class="cl-ee6c3da4"><p class="cl-ee6bf2e1"><span class="cl-ee652aa1">52 (16%)</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-ee6c3d9a"><p class="cl-ee6bf2f4"><span class="cl-ee652aa1">Fakultas Keguruan dan Ilmu Pendidikan</span></p></td><td class="cl-ee6c3da4"><p class="cl-ee6bf2e1"><span class="cl-ee652aa1">6 (1.8%)</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-ee6c3d9a"><p class="cl-ee6bf2f4"><span class="cl-ee652aa1">Fakultas Teknik</span></p></td><td class="cl-ee6c3da4"><p class="cl-ee6bf2e1"><span class="cl-ee652aa1">41 (12%)</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-ee6c3d9a"><p class="cl-ee6bf2e0"><span class="cl-ee652aa1">Tingkat.Semester</span></p></td><td class="cl-ee6c3da4"><p class="cl-ee6bf2e1"><span class="cl-ee652aa1"></span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-ee6c3d9a"><p class="cl-ee6bf2f4"><span class="cl-ee652aa1">1 (Semester 1 – Semester 2)</span></p></td><td class="cl-ee6c3da4"><p class="cl-ee6bf2e1"><span class="cl-ee652aa1">34 (10%)</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-ee6c3d9a"><p class="cl-ee6bf2f4"><span class="cl-ee652aa1">2 (Semester 3 – Semester 4)</span></p></td><td class="cl-ee6c3da4"><p class="cl-ee6bf2e1"><span class="cl-ee652aa1">50 (15%)</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-ee6c3d9a"><p class="cl-ee6bf2f4"><span class="cl-ee652aa1">3 (Semester 5 - Semester 6)</span></p></td><td class="cl-ee6c3da4"><p class="cl-ee6bf2e1"><span class="cl-ee652aa1">63 (19%)</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-ee6c3d9a"><p class="cl-ee6bf2f4"><span class="cl-ee652aa1">4 (Semester 7 - Semester 8)</span></p></td><td class="cl-ee6c3da4"><p class="cl-ee6bf2e1"><span class="cl-ee652aa1">183 (55%)</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-ee6c3d9a"><p class="cl-ee6bf2e0"><span class="cl-ee652aa1">Uang.Saku</span></p></td><td class="cl-ee6c3da4"><p class="cl-ee6bf2e1"><span class="cl-ee652aa1"></span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-ee6c3d9a"><p class="cl-ee6bf2f4"><span class="cl-ee652aa1">&lt; 1 jt</span></p></td><td class="cl-ee6c3da4"><p class="cl-ee6bf2e1"><span class="cl-ee652aa1">28 (8.5%)</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-ee6c3d9a"><p class="cl-ee6bf2f4"><span class="cl-ee652aa1">1 jt – 2 jt</span></p></td><td class="cl-ee6c3da4"><p class="cl-ee6bf2e1"><span class="cl-ee652aa1">167 (51%)</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-ee6c3d9a"><p class="cl-ee6bf2f4"><span class="cl-ee652aa1">2,1 jt – 3 jt</span></p></td><td class="cl-ee6c3da4"><p class="cl-ee6bf2e1"><span class="cl-ee652aa1">116 (35%)</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-ee6c3d9a"><p class="cl-ee6bf2f4"><span class="cl-ee652aa1">3,1 jt – 4 jt</span></p></td><td class="cl-ee6c3da4"><p class="cl-ee6bf2e1"><span class="cl-ee652aa1">18 (5.5%)</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-ee6c3d9a"><p class="cl-ee6bf2f4"><span class="cl-ee652aa1">&gt; 4 jt</span></p></td><td class="cl-ee6c3da4"><p class="cl-ee6bf2e1"><span class="cl-ee652aa1">1 (0.3%)</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-ee6c3dc2"><p class="cl-ee6bf2e0"><span class="cl-ee652aa1">jenis.tempat.tinggal</span></p></td><td class="cl-ee6c3dc3"><p class="cl-ee6bf2e1"><span class="cl-ee652aa1"></span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-ee6c3d9a"><p class="cl-ee6bf2f4"><span class="cl-ee652aa1">Kos bersama-sama</span></p></td><td class="cl-ee6c3da4"><p class="cl-ee6bf2e1"><span class="cl-ee652aa1">14 (4.2%)</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-ee6c3d9a"><p class="cl-ee6bf2f4"><span class="cl-ee652aa1">Kos Sendiri</span></p></td><td class="cl-ee6c3da4"><p class="cl-ee6bf2e1"><span class="cl-ee652aa1">52 (16%)</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-ee6c3d9a"><p class="cl-ee6bf2f4"><span class="cl-ee652aa1">Rumah bersama saudara</span></p></td><td class="cl-ee6c3da4"><p class="cl-ee6bf2e1"><span class="cl-ee652aa1">23 (7.0%)</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-ee6c3d9a"><p class="cl-ee6bf2f4"><span class="cl-ee652aa1">Rumah mengontrak bersama-sama</span></p></td><td class="cl-ee6c3da4"><p class="cl-ee6bf2e1"><span class="cl-ee652aa1">5 (1.5%)</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-ee6c3d9a"><p class="cl-ee6bf2f4"><span class="cl-ee652aa1">Rumah mengontrak pribadi</span></p></td><td class="cl-ee6c3da4"><p class="cl-ee6bf2e1"><span class="cl-ee652aa1">3 (0.9%)</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-ee6c3dd6"><p class="cl-ee6bf2f4"><span class="cl-ee652aa1">Rumah pribadi/rumah keluarga</span></p></td><td class="cl-ee6c3dea"><p class="cl-ee6bf2e1"><span class="cl-ee652aa1">233 (71%)</span></p></td></tr></tbody><tfoot><tr style="overflow-wrap:break-word;"><td  colspan="2"class="cl-ee6c3deb"><p class="cl-ee6bf2f5"><span class="cl-ee652aa0">1</span><span class="cl-ee652aa1">n (%)</span></p></td></tr></tfoot></table></div>
+<div class="tabwid"><style>.cl-9569fdfe{}.cl-9560a6e6{font-family:'Arial';font-size:11pt;font-weight:bold;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-9560a70e{font-family:'Arial';font-size:6.6pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;position: relative;bottom:3.3pt;}.cl-9560a718{font-family:'Arial';font-size:11pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-95651c12{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:2pt;padding-top:2pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-95651c26{margin:0;text-align:center;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:2pt;padding-top:2pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-95651c30{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-95651c3a{margin:0;text-align:center;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-95651c3b{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:15pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-95651c44{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-95653fbc{width:3.18in;background-color:transparent;vertical-align: middle;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 1pt solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-95653fc6{width:0.99in;background-color:transparent;vertical-align: middle;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 1pt solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-95653fda{width:3.18in;background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-95653fe4{width:0.99in;background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-95653fee{width:3.18in;background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-95654002{width:0.99in;background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-95654003{width:3.18in;background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9565400c{width:0.99in;background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-95654016{width:3.18in;background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-95654017{width:0.99in;background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-95654020{width:3.18in;background-color:transparent;vertical-align: top;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9565402a{width:0.99in;background-color:transparent;vertical-align: top;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-95654034{width:3.18in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(255, 255, 255, 0.00);border-top: 0 solid rgba(255, 255, 255, 0.00);border-left: 0 solid rgba(255, 255, 255, 0.00);border-right: 0 solid rgba(255, 255, 255, 0.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9565403e{width:0.99in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(255, 255, 255, 0.00);border-top: 0 solid rgba(255, 255, 255, 0.00);border-left: 0 solid rgba(255, 255, 255, 0.00);border-right: 0 solid rgba(255, 255, 255, 0.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}</style><table data-quarto-disable-processing='true' class='cl-9569fdfe'><thead><tr style="overflow-wrap:break-word;"><th class="cl-95653fbc"><p class="cl-95651c12"><span class="cl-9560a6e6">Characteristic</span></p></th><th class="cl-95653fc6"><p class="cl-95651c26"><span class="cl-9560a6e6">N = 330</span><span class="cl-9560a70e">1</span></p></th></tr></thead><tbody><tr style="overflow-wrap:break-word;"><td class="cl-95653fda"><p class="cl-95651c30"><span class="cl-9560a718">Jenis.Kelamin</span></p></td><td class="cl-95653fe4"><p class="cl-95651c3a"><span class="cl-9560a718"></span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-95653fee"><p class="cl-95651c3b"><span class="cl-9560a718">Laki-Laki</span></p></td><td class="cl-95654002"><p class="cl-95651c3a"><span class="cl-9560a718">165 (50%)</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-95653fee"><p class="cl-95651c3b"><span class="cl-9560a718">Perempuan</span></p></td><td class="cl-95654002"><p class="cl-95651c3a"><span class="cl-9560a718">165 (50%)</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-95654003"><p class="cl-95651c30"><span class="cl-9560a718">Fakultas</span></p></td><td class="cl-9565400c"><p class="cl-95651c3a"><span class="cl-9560a718"></span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-95653fee"><p class="cl-95651c3b"><span class="cl-9560a718">Fakultas Ekonomi dan Bisnis</span></p></td><td class="cl-95654002"><p class="cl-95651c3a"><span class="cl-9560a718">104 (32%)</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-95653fee"><p class="cl-95651c3b"><span class="cl-9560a718">Fakultas Hukum</span></p></td><td class="cl-95654002"><p class="cl-95651c3a"><span class="cl-9560a718">98 (30%)</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-95653fee"><p class="cl-95651c3b"><span class="cl-9560a718">Fakultas Ilmu Komputer</span></p></td><td class="cl-95654002"><p class="cl-95651c3a"><span class="cl-9560a718">29 (8.8%)</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-95653fee"><p class="cl-95651c3b"><span class="cl-9560a718">Fakultas Ilmu Sosial dan Politik</span></p></td><td class="cl-95654002"><p class="cl-95651c3a"><span class="cl-9560a718">52 (16%)</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-95653fee"><p class="cl-95651c3b"><span class="cl-9560a718">Fakultas Keguruan dan Ilmu Pendidikan</span></p></td><td class="cl-95654002"><p class="cl-95651c3a"><span class="cl-9560a718">6 (1.8%)</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-95653fee"><p class="cl-95651c3b"><span class="cl-9560a718">Fakultas Teknik</span></p></td><td class="cl-95654002"><p class="cl-95651c3a"><span class="cl-9560a718">41 (12%)</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-95653fee"><p class="cl-95651c30"><span class="cl-9560a718">Tingkat.Semester</span></p></td><td class="cl-95654002"><p class="cl-95651c3a"><span class="cl-9560a718"></span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-95653fee"><p class="cl-95651c3b"><span class="cl-9560a718">1 (Semester 1 – Semester 2)</span></p></td><td class="cl-95654002"><p class="cl-95651c3a"><span class="cl-9560a718">34 (10%)</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-95653fee"><p class="cl-95651c3b"><span class="cl-9560a718">2 (Semester 3 – Semester 4)</span></p></td><td class="cl-95654002"><p class="cl-95651c3a"><span class="cl-9560a718">50 (15%)</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-95653fee"><p class="cl-95651c3b"><span class="cl-9560a718">3 (Semester 5 - Semester 6)</span></p></td><td class="cl-95654002"><p class="cl-95651c3a"><span class="cl-9560a718">63 (19%)</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-95653fee"><p class="cl-95651c3b"><span class="cl-9560a718">4 (Semester 7 - Semester 8)</span></p></td><td class="cl-95654002"><p class="cl-95651c3a"><span class="cl-9560a718">183 (55%)</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-95653fee"><p class="cl-95651c30"><span class="cl-9560a718">Uang.Saku</span></p></td><td class="cl-95654002"><p class="cl-95651c3a"><span class="cl-9560a718"></span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-95653fee"><p class="cl-95651c3b"><span class="cl-9560a718">&lt; 1 jt</span></p></td><td class="cl-95654002"><p class="cl-95651c3a"><span class="cl-9560a718">28 (8.5%)</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-95653fee"><p class="cl-95651c3b"><span class="cl-9560a718">1 jt – 2 jt</span></p></td><td class="cl-95654002"><p class="cl-95651c3a"><span class="cl-9560a718">167 (51%)</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-95653fee"><p class="cl-95651c3b"><span class="cl-9560a718">2,1 jt – 3 jt</span></p></td><td class="cl-95654002"><p class="cl-95651c3a"><span class="cl-9560a718">116 (35%)</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-95653fee"><p class="cl-95651c3b"><span class="cl-9560a718">3,1 jt – 4 jt</span></p></td><td class="cl-95654002"><p class="cl-95651c3a"><span class="cl-9560a718">18 (5.5%)</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-95653fee"><p class="cl-95651c3b"><span class="cl-9560a718">&gt; 4 jt</span></p></td><td class="cl-95654002"><p class="cl-95651c3a"><span class="cl-9560a718">1 (0.3%)</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-95654016"><p class="cl-95651c30"><span class="cl-9560a718">jenis.tempat.tinggal</span></p></td><td class="cl-95654017"><p class="cl-95651c3a"><span class="cl-9560a718"></span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-95653fee"><p class="cl-95651c3b"><span class="cl-9560a718">Kos bersama-sama</span></p></td><td class="cl-95654002"><p class="cl-95651c3a"><span class="cl-9560a718">14 (4.2%)</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-95653fee"><p class="cl-95651c3b"><span class="cl-9560a718">Kos Sendiri</span></p></td><td class="cl-95654002"><p class="cl-95651c3a"><span class="cl-9560a718">52 (16%)</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-95653fee"><p class="cl-95651c3b"><span class="cl-9560a718">Rumah bersama saudara</span></p></td><td class="cl-95654002"><p class="cl-95651c3a"><span class="cl-9560a718">23 (7.0%)</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-95653fee"><p class="cl-95651c3b"><span class="cl-9560a718">Rumah mengontrak bersama-sama</span></p></td><td class="cl-95654002"><p class="cl-95651c3a"><span class="cl-9560a718">5 (1.5%)</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-95653fee"><p class="cl-95651c3b"><span class="cl-9560a718">Rumah mengontrak pribadi</span></p></td><td class="cl-95654002"><p class="cl-95651c3a"><span class="cl-9560a718">3 (0.9%)</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-95654020"><p class="cl-95651c3b"><span class="cl-9560a718">Rumah pribadi/rumah keluarga</span></p></td><td class="cl-9565402a"><p class="cl-95651c3a"><span class="cl-9560a718">233 (71%)</span></p></td></tr></tbody><tfoot><tr style="overflow-wrap:break-word;"><td  colspan="2"class="cl-95654034"><p class="cl-95651c44"><span class="cl-9560a70e">1</span><span class="cl-9560a718">n (%)</span></p></td></tr></tfoot></table></div>
 ```
 
 Untuk menghitung IQV, kita bisa memanfaatkan perintah `function` yang mengambil masukan nilai-nilai yang ada di tanda kurungnya dan memprosesnya di dalam kurung kurawal `{}`. Perintah function selalu diakhiri dengan `return()` di dalamnya untuk menunjukkan hasil yang akan menjadi keluaran fungsi tersebut.
@@ -2413,7 +2560,7 @@ data_ubl |>
 ```
 
 ```{=html}
-<div class="tabwid"><style>.cl-ef71d524{}.cl-ef64a91c{font-family:'Arial';font-size:11pt;font-weight:bold;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-ef64a926{font-family:'Arial';font-size:6.6pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;position: relative;bottom:3.3pt;}.cl-ef64a930{font-family:'Arial';font-size:11pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-ef6c1e68{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:2pt;padding-top:2pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-ef6c1e7c{margin:0;text-align:center;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:2pt;padding-top:2pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-ef6c1e86{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-ef6c1e90{margin:0;text-align:center;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-ef6c1e9a{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:15pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-ef6c1ea4{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-ef6c6dc8{width:1.499in;background-color:transparent;vertical-align: middle;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 1pt solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-ef6c6ddc{width:1.406in;background-color:transparent;vertical-align: middle;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 1pt solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-ef6c6df0{width:1.499in;background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-ef6c6df1{width:1.406in;background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-ef6c6e04{width:1.499in;background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-ef6c6e18{width:1.406in;background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-ef6c6e22{width:1.499in;background-color:transparent;vertical-align: top;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-ef6c6e2c{width:1.406in;background-color:transparent;vertical-align: top;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-ef6c6e36{width:1.499in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(255, 255, 255, 0.00);border-top: 0 solid rgba(255, 255, 255, 0.00);border-left: 0 solid rgba(255, 255, 255, 0.00);border-right: 0 solid rgba(255, 255, 255, 0.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-ef6c6e40{width:1.406in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(255, 255, 255, 0.00);border-top: 0 solid rgba(255, 255, 255, 0.00);border-left: 0 solid rgba(255, 255, 255, 0.00);border-right: 0 solid rgba(255, 255, 255, 0.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}</style><table data-quarto-disable-processing='true' class='cl-ef71d524'><thead><tr style="overflow-wrap:break-word;"><th class="cl-ef6c6dc8"><p class="cl-ef6c1e68"><span class="cl-ef64a91c">Characteristic</span></p></th><th class="cl-ef6c6ddc"><p class="cl-ef6c1e7c"><span class="cl-ef64a91c">N = 330</span><span class="cl-ef64a926">1</span></p></th></tr></thead><tbody><tr style="overflow-wrap:break-word;"><td class="cl-ef6c6df0"><p class="cl-ef6c1e86"><span class="cl-ef64a930">kepemilikan.mobil</span></p></td><td class="cl-ef6c6df1"><p class="cl-ef6c1e90"><span class="cl-ef64a930"></span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-ef6c6e04"><p class="cl-ef6c1e9a"><span class="cl-ef64a930">0</span></p></td><td class="cl-ef6c6e18"><p class="cl-ef6c1e90"><span class="cl-ef64a930">107 (32%)</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-ef6c6e04"><p class="cl-ef6c1e9a"><span class="cl-ef64a930">1</span></p></td><td class="cl-ef6c6e18"><p class="cl-ef6c1e90"><span class="cl-ef64a930">126 (38%)</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-ef6c6e04"><p class="cl-ef6c1e9a"><span class="cl-ef64a930">2</span></p></td><td class="cl-ef6c6e18"><p class="cl-ef6c1e90"><span class="cl-ef64a930">80 (24%)</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-ef6c6e04"><p class="cl-ef6c1e9a"><span class="cl-ef64a930">3</span></p></td><td class="cl-ef6c6e18"><p class="cl-ef6c1e90"><span class="cl-ef64a930">15 (4.5%)</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-ef6c6e04"><p class="cl-ef6c1e9a"><span class="cl-ef64a930">4</span></p></td><td class="cl-ef6c6e18"><p class="cl-ef6c1e90"><span class="cl-ef64a930">2 (0.6%)</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-ef6c6e22"><p class="cl-ef6c1e86"><span class="cl-ef64a930">jarak</span></p></td><td class="cl-ef6c6e2c"><p class="cl-ef6c1e90"><span class="cl-ef64a930">2.71 (1.31, 4.74)</span></p></td></tr></tbody><tfoot><tr style="overflow-wrap:break-word;"><td  colspan="2"class="cl-ef6c6e36"><p class="cl-ef6c1ea4"><span class="cl-ef64a926">1</span><span class="cl-ef64a930">n (%); Median (Q1, Q3)</span></p></td></tr></tfoot></table></div>
+<div class="tabwid"><style>.cl-95ea2984{}.cl-95e2d6ca{font-family:'Arial';font-size:11pt;font-weight:bold;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-95e2d6de{font-family:'Arial';font-size:6.6pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;position: relative;bottom:3.3pt;}.cl-95e2d6df{font-family:'Arial';font-size:11pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-95e5c2fe{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:2pt;padding-top:2pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-95e5c312{margin:0;text-align:center;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:2pt;padding-top:2pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-95e5c326{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-95e5c33a{margin:0;text-align:center;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-95e5c344{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:15pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-95e5c34e{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-95e5fdfa{width:1.499in;background-color:transparent;vertical-align: middle;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 1pt solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-95e5fe0e{width:1.406in;background-color:transparent;vertical-align: middle;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 1pt solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-95e5fe22{width:1.499in;background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-95e5fe4a{width:1.406in;background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-95e5fe54{width:1.499in;background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-95e5fe55{width:1.406in;background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-95e5fe68{width:1.499in;background-color:transparent;vertical-align: top;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-95e5fe72{width:1.406in;background-color:transparent;vertical-align: top;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-95e5fe7c{width:1.499in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(255, 255, 255, 0.00);border-top: 0 solid rgba(255, 255, 255, 0.00);border-left: 0 solid rgba(255, 255, 255, 0.00);border-right: 0 solid rgba(255, 255, 255, 0.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-95e5fe86{width:1.406in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(255, 255, 255, 0.00);border-top: 0 solid rgba(255, 255, 255, 0.00);border-left: 0 solid rgba(255, 255, 255, 0.00);border-right: 0 solid rgba(255, 255, 255, 0.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}</style><table data-quarto-disable-processing='true' class='cl-95ea2984'><thead><tr style="overflow-wrap:break-word;"><th class="cl-95e5fdfa"><p class="cl-95e5c2fe"><span class="cl-95e2d6ca">Characteristic</span></p></th><th class="cl-95e5fe0e"><p class="cl-95e5c312"><span class="cl-95e2d6ca">N = 330</span><span class="cl-95e2d6de">1</span></p></th></tr></thead><tbody><tr style="overflow-wrap:break-word;"><td class="cl-95e5fe22"><p class="cl-95e5c326"><span class="cl-95e2d6df">kepemilikan.mobil</span></p></td><td class="cl-95e5fe4a"><p class="cl-95e5c33a"><span class="cl-95e2d6df"></span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-95e5fe54"><p class="cl-95e5c344"><span class="cl-95e2d6df">0</span></p></td><td class="cl-95e5fe55"><p class="cl-95e5c33a"><span class="cl-95e2d6df">107 (32%)</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-95e5fe54"><p class="cl-95e5c344"><span class="cl-95e2d6df">1</span></p></td><td class="cl-95e5fe55"><p class="cl-95e5c33a"><span class="cl-95e2d6df">126 (38%)</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-95e5fe54"><p class="cl-95e5c344"><span class="cl-95e2d6df">2</span></p></td><td class="cl-95e5fe55"><p class="cl-95e5c33a"><span class="cl-95e2d6df">80 (24%)</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-95e5fe54"><p class="cl-95e5c344"><span class="cl-95e2d6df">3</span></p></td><td class="cl-95e5fe55"><p class="cl-95e5c33a"><span class="cl-95e2d6df">15 (4.5%)</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-95e5fe54"><p class="cl-95e5c344"><span class="cl-95e2d6df">4</span></p></td><td class="cl-95e5fe55"><p class="cl-95e5c33a"><span class="cl-95e2d6df">2 (0.6%)</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-95e5fe68"><p class="cl-95e5c326"><span class="cl-95e2d6df">jarak</span></p></td><td class="cl-95e5fe72"><p class="cl-95e5c33a"><span class="cl-95e2d6df">2.71 (1.31, 4.74)</span></p></td></tr></tbody><tfoot><tr style="overflow-wrap:break-word;"><td  colspan="2"class="cl-95e5fe7c"><p class="cl-95e5c34e"><span class="cl-95e2d6de">1</span><span class="cl-95e2d6df">n (%); Median (Q1, Q3)</span></p></td></tr></tfoot></table></div>
 ```
 
 Seperti yang kalian lihat, `tbl_summary` langsung menampilkan persentase tiap nilai yang ada di kepemilikan.mobil seolah-olah `kepemilikan.mobil` adalah variabel diskret. Hal ini terjadi karena nilai variabel `kepemilikan.mobil` adalah nilai numerik diskret, sehingga masing-masing nilai dikenali sebagai kategori.
@@ -2439,7 +2586,7 @@ data_ubl |>
 ```
 
 ```{=html}
-<div class="tabwid"><style>.cl-f0227fbe{}.cl-f0188176{font-family:'Arial';font-size:11pt;font-weight:bold;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-f0188180{font-family:'Arial';font-size:6.6pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;position: relative;bottom:3.3pt;}.cl-f018818a{font-family:'Arial';font-size:11pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-f01c6f98{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:2pt;padding-top:2pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-f01c6fac{margin:0;text-align:center;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:2pt;padding-top:2pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-f01c6fb6{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-f01c6fc0{margin:0;text-align:center;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-f01c6fca{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-f01c97ac{width:1.525in;background-color:transparent;vertical-align: middle;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 1pt solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-f01c97b6{width:1.024in;background-color:transparent;vertical-align: middle;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 1pt solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-f01c97c0{width:1.525in;background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-f01c97c1{width:1.024in;background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-f01c97ca{width:1.525in;background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-f01c97cb{width:1.024in;background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-f01c97cc{width:1.525in;background-color:transparent;vertical-align: top;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-f01c97de{width:1.024in;background-color:transparent;vertical-align: top;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-f01c97df{width:1.525in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(255, 255, 255, 0.00);border-top: 0 solid rgba(255, 255, 255, 0.00);border-left: 0 solid rgba(255, 255, 255, 0.00);border-right: 0 solid rgba(255, 255, 255, 0.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-f01c97e0{width:1.024in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(255, 255, 255, 0.00);border-top: 0 solid rgba(255, 255, 255, 0.00);border-left: 0 solid rgba(255, 255, 255, 0.00);border-right: 0 solid rgba(255, 255, 255, 0.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}</style><table data-quarto-disable-processing='true' class='cl-f0227fbe'><thead><tr style="overflow-wrap:break-word;"><th class="cl-f01c97ac"><p class="cl-f01c6f98"><span class="cl-f0188176">Characteristic</span></p></th><th class="cl-f01c97b6"><p class="cl-f01c6fac"><span class="cl-f0188176">N = 330</span><span class="cl-f0188180">1</span></p></th></tr></thead><tbody><tr style="overflow-wrap:break-word;"><td class="cl-f01c97c0"><p class="cl-f01c6fb6"><span class="cl-f018818a">kepemilikan.mobil</span></p></td><td class="cl-f01c97c1"><p class="cl-f01c6fc0"><span class="cl-f018818a">1 (0, 2)</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-f01c97ca"><p class="cl-f01c6fb6"><span class="cl-f018818a">kepemilikan.motor</span></p></td><td class="cl-f01c97cb"><p class="cl-f01c6fc0"><span class="cl-f018818a">1</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-f01c97cc"><p class="cl-f01c6fb6"><span class="cl-f018818a">jarak</span></p></td><td class="cl-f01c97de"><p class="cl-f01c6fc0"><span class="cl-f018818a">3.35 (3.54)</span></p></td></tr></tbody><tfoot><tr style="overflow-wrap:break-word;"><td  colspan="2"class="cl-f01c97df"><p class="cl-f01c6fca"><span class="cl-f0188180">1</span><span class="cl-f018818a">Median (Q1, Q3); Median; Mean (SD)</span></p></td></tr></tfoot></table></div>
+<div class="tabwid"><style>.cl-96df603e{}.cl-96d3c36e{font-family:'Arial';font-size:11pt;font-weight:bold;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-96d3c38c{font-family:'Arial';font-size:6.6pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;position: relative;bottom:3.3pt;}.cl-96d3c396{font-family:'Arial';font-size:11pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-96d8ad2a{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:2pt;padding-top:2pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-96d8ad3e{margin:0;text-align:center;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:2pt;padding-top:2pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-96d8ad48{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-96d8ad49{margin:0;text-align:center;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-96d8ad52{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-96d8eea2{width:1.525in;background-color:transparent;vertical-align: middle;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 1pt solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-96d8eeac{width:1.024in;background-color:transparent;vertical-align: middle;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 1pt solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-96d8eec0{width:1.525in;background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-96d8eeca{width:1.024in;background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-96d8eecb{width:1.525in;background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-96d8eecc{width:1.024in;background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-96d8eed4{width:1.525in;background-color:transparent;vertical-align: top;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-96d8eede{width:1.024in;background-color:transparent;vertical-align: top;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-96d8eee8{width:1.525in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(255, 255, 255, 0.00);border-top: 0 solid rgba(255, 255, 255, 0.00);border-left: 0 solid rgba(255, 255, 255, 0.00);border-right: 0 solid rgba(255, 255, 255, 0.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-96d8eef2{width:1.024in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(255, 255, 255, 0.00);border-top: 0 solid rgba(255, 255, 255, 0.00);border-left: 0 solid rgba(255, 255, 255, 0.00);border-right: 0 solid rgba(255, 255, 255, 0.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}</style><table data-quarto-disable-processing='true' class='cl-96df603e'><thead><tr style="overflow-wrap:break-word;"><th class="cl-96d8eea2"><p class="cl-96d8ad2a"><span class="cl-96d3c36e">Characteristic</span></p></th><th class="cl-96d8eeac"><p class="cl-96d8ad3e"><span class="cl-96d3c36e">N = 330</span><span class="cl-96d3c38c">1</span></p></th></tr></thead><tbody><tr style="overflow-wrap:break-word;"><td class="cl-96d8eec0"><p class="cl-96d8ad48"><span class="cl-96d3c396">kepemilikan.mobil</span></p></td><td class="cl-96d8eeca"><p class="cl-96d8ad49"><span class="cl-96d3c396">1 (0, 2)</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-96d8eecb"><p class="cl-96d8ad48"><span class="cl-96d3c396">kepemilikan.motor</span></p></td><td class="cl-96d8eecc"><p class="cl-96d8ad49"><span class="cl-96d3c396">1</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-96d8eed4"><p class="cl-96d8ad48"><span class="cl-96d3c396">jarak</span></p></td><td class="cl-96d8eede"><p class="cl-96d8ad49"><span class="cl-96d3c396">3.35 (3.54)</span></p></td></tr></tbody><tfoot><tr style="overflow-wrap:break-word;"><td  colspan="2"class="cl-96d8eee8"><p class="cl-96d8ad52"><span class="cl-96d3c38c">1</span><span class="cl-96d3c396">Median (Q1, Q3); Median; Mean (SD)</span></p></td></tr></tfoot></table></div>
 ```
 
 ``` r
@@ -2570,55 +2717,83 @@ head(data_ubl)
 ```
 
 ```
-##   Timestamp Kampus_PT Nomor.urut Jenis.Kelamin Umur                         Fakultas
-## 1  45413.83       UBL          1     Perempuan   21 Fakultas Ilmu Sosial dan Politik
-## 2  45413.83       UBL          2     Laki-Laki   20                   Fakultas Hukum
-## 3  45413.85       UBL          3     Laki-Laki   21      Fakultas Ekonomi dan Bisnis
-## 4  45413.85       UBL          4     Laki-Laki   22      Fakultas Ekonomi dan Bisnis
-## 5  45413.88       UBL          5     Laki-Laki   21      Fakultas Ekonomi dan Bisnis
-## 6  45413.92       UBL          6     Perempuan   21      Fakultas Ekonomi dan Bisnis
-##             Prodi            Tingkat.Semester     Uang.Saku kepemilikan.mobil kepemilikan.motor
-## 1 Ilmu Komunikasi 4 (Semester 7 - Semester 8)        < 1 jt                 1                 2
-## 2      Ilmu Hukum 3 (Semester 5 - Semester 6)   1 jt – 2 jt                 2                 1
-## 3       Manajemen 4 (Semester 7 - Semester 8)   1 jt – 2 jt                 1                 2
-## 4       Akuntansi 4 (Semester 7 - Semester 8)   1 jt – 2 jt                 1                 4
-## 5       Manajemen 4 (Semester 7 - Semester 8) 2,1 jt – 3 jt                 4                 4
-## 6       Akuntansi 4 (Semester 7 - Semester 8)   1 jt – 2 jt                 1                 2
-##   kepemilikan.sepeda                                      kendaraan.utama               kelurahan
-## 1                  1                                 Sepeda Motor Pribadi       Kalibalau Kencana
-## 2                  1                                        Mobil Pribadi            Gunung sulah
-## 3                  2                                 Sepeda Motor Pribadi              langkapura
-## 4                  1 Kendaraan Bermotor (menumpang dengan keluarga/teman) Bilabong JAYA JAYA JAYA
-## 5                  1                                        Mobil Pribadi                sukarame
-## 6                  1                                  Transportasi Online               Way halim
-##           jenis.tempat.tinggal                       nama.jalan.tempat.tinggal jarak.(km)
-## 1 Rumah pribadi/rumah keluarga                                    eLBe Loundry   4.223797
-## 2 Rumah pribadi/rumah keluarga                         Jl.Urip Sumoharjo no 88   2.703331
-## 3 Rumah pribadi/rumah keluarga                  JL DARUSSALAM GG LANGGAR LK II   3.237072
-## 4 Rumah pribadi/rumah keluarga Jl Darussalam bilabong bila bolong di jait dong   3.002336
-## 5 Rumah pribadi/rumah keluarga          jl.cendrawasih sukarame bandar lampung   5.961925
-## 6 Rumah pribadi/rumah keluarga                            Jl P tabuan nomor 26   2.925331
-##           alasan.pemilihan.lokasi.tempat.tinggal biaya.dalam.seminggu Jumlah.perjalanan.Senin
-## 1                 Bersama keluarga/saudara/teman                   25                       2
-## 2 Mudahnya akses berpergian dari tempat tinggal                   200                       3
-## 3                 Bersama keluarga/saudara/teman                   50                       1
-## 4    Lingkungan nyaman karna aman dari kejahatan                   20                       2
-## 5                    Dekat dengan fasilitas umum                   NA                       1
-## 6                 Bersama keluarga/saudara/teman                   40                       3
-##   Jumlah.Perjalanan.Selasa Jumlah.Perjalanan.Rabu Jumlah.Perjalanan.Kamis Jumlah.Perjalanan.Jumat
-## 1                        3                      2                       3                       2
-## 2                        3                      3                       3                       3
-## 3                        1                      1                       1                       1
-## 4                        2                      2                       2                       2
-## 5                        1                      1                       1                       1
-## 6                        3                      1                       1                       1
-##   Jumlah.Perjalanan.Sabtu Jumlah.Perjalanan.Ahad
-## 1                       2                      2
-## 2                       3                      3
-## 3                       1                      1
-## 4                       2                      2
-## 5                       1                      1
-## 6                       1                      1
+##   Timestamp Kampus_PT Nomor.urut Jenis.Kelamin Umur
+## 1  45413.83       UBL          1     Perempuan   21
+## 2  45413.83       UBL          2     Laki-Laki   20
+## 3  45413.85       UBL          3     Laki-Laki   21
+## 4  45413.85       UBL          4     Laki-Laki   22
+## 5  45413.88       UBL          5     Laki-Laki   21
+## 6  45413.92       UBL          6     Perempuan   21
+##                           Fakultas           Prodi
+## 1 Fakultas Ilmu Sosial dan Politik Ilmu Komunikasi
+## 2                   Fakultas Hukum      Ilmu Hukum
+## 3      Fakultas Ekonomi dan Bisnis       Manajemen
+## 4      Fakultas Ekonomi dan Bisnis       Akuntansi
+## 5      Fakultas Ekonomi dan Bisnis       Manajemen
+## 6      Fakultas Ekonomi dan Bisnis       Akuntansi
+##              Tingkat.Semester     Uang.Saku kepemilikan.mobil
+## 1 4 (Semester 7 - Semester 8)        < 1 jt                 1
+## 2 3 (Semester 5 - Semester 6)   1 jt – 2 jt                 2
+## 3 4 (Semester 7 - Semester 8)   1 jt – 2 jt                 1
+## 4 4 (Semester 7 - Semester 8)   1 jt – 2 jt                 1
+## 5 4 (Semester 7 - Semester 8) 2,1 jt – 3 jt                 4
+## 6 4 (Semester 7 - Semester 8)   1 jt – 2 jt                 1
+##   kepemilikan.motor kepemilikan.sepeda
+## 1                 2                  1
+## 2                 1                  1
+## 3                 2                  2
+## 4                 4                  1
+## 5                 4                  1
+## 6                 2                  1
+##                                        kendaraan.utama
+## 1                                 Sepeda Motor Pribadi
+## 2                                        Mobil Pribadi
+## 3                                 Sepeda Motor Pribadi
+## 4 Kendaraan Bermotor (menumpang dengan keluarga/teman)
+## 5                                        Mobil Pribadi
+## 6                                  Transportasi Online
+##                 kelurahan         jenis.tempat.tinggal
+## 1       Kalibalau Kencana Rumah pribadi/rumah keluarga
+## 2            Gunung sulah Rumah pribadi/rumah keluarga
+## 3              langkapura Rumah pribadi/rumah keluarga
+## 4 Bilabong JAYA JAYA JAYA Rumah pribadi/rumah keluarga
+## 5                sukarame Rumah pribadi/rumah keluarga
+## 6               Way halim Rumah pribadi/rumah keluarga
+##                         nama.jalan.tempat.tinggal jarak.(km)
+## 1                                    eLBe Loundry   4.223797
+## 2                         Jl.Urip Sumoharjo no 88   2.703331
+## 3                  JL DARUSSALAM GG LANGGAR LK II   3.237072
+## 4 Jl Darussalam bilabong bila bolong di jait dong   3.002336
+## 5          jl.cendrawasih sukarame bandar lampung   5.961925
+## 6                            Jl P tabuan nomor 26   2.925331
+##           alasan.pemilihan.lokasi.tempat.tinggal biaya.dalam.seminggu
+## 1                 Bersama keluarga/saudara/teman                   25
+## 2 Mudahnya akses berpergian dari tempat tinggal                   200
+## 3                 Bersama keluarga/saudara/teman                   50
+## 4    Lingkungan nyaman karna aman dari kejahatan                   20
+## 5                    Dekat dengan fasilitas umum                   NA
+## 6                 Bersama keluarga/saudara/teman                   40
+##   Jumlah.perjalanan.Senin Jumlah.Perjalanan.Selasa Jumlah.Perjalanan.Rabu
+## 1                       2                        3                      2
+## 2                       3                        3                      3
+## 3                       1                        1                      1
+## 4                       2                        2                      2
+## 5                       1                        1                      1
+## 6                       3                        3                      1
+##   Jumlah.Perjalanan.Kamis Jumlah.Perjalanan.Jumat Jumlah.Perjalanan.Sabtu
+## 1                       3                       2                       2
+## 2                       3                       3                       3
+## 3                       1                       1                       1
+## 4                       2                       2                       2
+## 5                       1                       1                       1
+## 6                       1                       1                       1
+##   Jumlah.Perjalanan.Ahad
+## 1                      2
+## 2                      3
+## 3                      1
+## 4                      2
+## 5                      1
+## 6                      1
 ```
 
 Kemudian kita perlu menetapkan `factor` untuk variabel-variabel kategoris kita agar data kita lebih 'bersih.'
@@ -2668,32 +2843,32 @@ Kita akan mengubah kategori `factor` pada variabel `Tingkat.Semester` dan `Uang.
 ```
 ## Rows: 330
 ## Columns: 26
-## $ Timestamp                              [3m[38;5;246m<dbl>[39m[23m 45413.83[38;5;246m, [39m45413.83[38;5;246m, [39m45413.85[38;5;246m, [39m45413.85[38;5;246m, [39m45413.92[38;5;246m, [39m…
-## $ Kampus_PT                              [3m[38;5;246m<chr>[39m[23m "UBL"[38;5;246m, [39m"UBL"[38;5;246m, [39m"UBL"[38;5;246m, [39m"UBL"[38;5;246m, [39m"UBL"[38;5;246m, [39m"UBL"[38;5;246m, [39m"UBL"[38;5;246m, [39m"…
-## $ Nomor.urut                             [3m[38;5;246m<dbl>[39m[23m 1[38;5;246m, [39m2[38;5;246m, [39m3[38;5;246m, [39m4[38;5;246m, [39m6[38;5;246m, [39m7[38;5;246m, [39m8[38;5;246m, [39m9[38;5;246m, [39m10[38;5;246m, [39m12[38;5;246m, [39m14[38;5;246m, [39m15[38;5;246m, [39m16[38;5;246m, [39m17[38;5;246m, [39m18…
-## $ Jenis.Kelamin                          [3m[38;5;246m<fct>[39m[23m Perempuan[38;5;246m, [39mLaki-Laki[38;5;246m, [39mLaki-Laki[38;5;246m, [39mLaki-Laki[38;5;246m, [39mPeremp…
-## $ Umur                                   [3m[38;5;246m<dbl>[39m[23m 21[38;5;246m, [39m20[38;5;246m, [39m21[38;5;246m, [39m22[38;5;246m, [39m21[38;5;246m, [39m22[38;5;246m, [39m22[38;5;246m, [39m22[38;5;246m, [39m22[38;5;246m, [39m22[38;5;246m, [39m22[38;5;246m, [39m19[38;5;246m, [39m22…
-## $ Fakultas                               [3m[38;5;246m<fct>[39m[23m Fakultas Ilmu Sosial dan Politik[38;5;246m, [39mFakultas Hukum[38;5;246m, [39m…
-## $ Prodi                                  [3m[38;5;246m<fct>[39m[23m Ilmu Komunikasi[38;5;246m, [39mIlmu Hukum[38;5;246m, [39mManajemen[38;5;246m, [39mAkuntansi[38;5;246m,[39m…
-## $ Tingkat.Semester                       [3m[38;5;246m<ord>[39m[23m Semester 7 & 8[38;5;246m, [39mSemester 5 & 6[38;5;246m, [39mSemester 7 & 8[38;5;246m, [39mSe…
-## $ Uang.Saku                              [3m[38;5;246m<ord>[39m[23m "< 1 jt"[38;5;246m, [39m"1 jt – 2 jt"[38;5;246m, [39m"1 jt – 2 jt"[38;5;246m, [39m"1 jt – 2 …
-## $ kepemilikan.mobil                      [3m[38;5;246m<dbl>[39m[23m 1[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m0[38;5;246m, [39m1[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m,[39m…
-## $ kepemilikan.motor                      [3m[38;5;246m<dbl>[39m[23m 2[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m0[38;5;246m, [39m1[38;5;246m, [39m0[38;5;246m, [39m2[38;5;246m,[39m…
-## $ kepemilikan.sepeda                     [3m[38;5;246m<dbl>[39m[23m 1[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m, [39m0[38;5;246m,[39m…
-## $ kendaraan.utama                        [3m[38;5;246m<chr>[39m[23m "Sepeda Motor Pribadi"[38;5;246m, [39m"Mobil Pribadi"[38;5;246m, [39m"Sepeda M…
-## $ kelurahan                              [3m[38;5;246m<chr>[39m[23m "Kalibalau Kencana"[38;5;246m, [39m"Gunung sulah"[38;5;246m, [39m"langkapura"[38;5;246m,[39m…
-## $ jenis.tempat.tinggal                   [3m[38;5;246m<chr>[39m[23m "Rumah pribadi/rumah keluarga"[38;5;246m, [39m"Rumah pribadi/rum…
-## $ nama.jalan.tempat.tinggal              [3m[38;5;246m<chr>[39m[23m "eLBe Loundry"[38;5;246m, [39m"Jl.Urip Sumoharjo no 88"[38;5;246m, [39m"JL DAR…
-## $ jarak                                  [3m[38;5;246m<dbl>[39m[23m 4.2237967[38;5;246m, [39m2.7033310[38;5;246m, [39m3.2370722[38;5;246m, [39m3.0023362[38;5;246m, [39m2.9253…
-## $ alasan.pemilihan.lokasi.tempat.tinggal [3m[38;5;246m<chr>[39m[23m "Bersama keluarga/saudara/teman"[38;5;246m, [39m"Mudahnya akses …
-## $ biaya_dalam_sepekan                    [3m[38;5;246m<dbl>[39m[23m 25[38;5;246m, [39m200[38;5;246m, [39m50[38;5;246m, [39m20[38;5;246m, [39m40[38;5;246m, [39m70[38;5;246m, [39m35[38;5;246m, [39m50[38;5;246m, [39m350[38;5;246m, [39m50[38;5;246m, [39m30[38;5;246m, [39m35[38;5;246m, [39m…
-## $ jumlah_perjalanan_senin                [3m[38;5;246m<dbl>[39m[23m 2[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m3[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m4[38;5;246m, [39m3[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m4[38;5;246m,[39m…
-## $ Jumlah.Perjalanan.Selasa               [3m[38;5;246m<dbl>[39m[23m 3[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m3[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m4[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m4[38;5;246m, [39m1[38;5;246m, [39m3[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m3[38;5;246m,[39m…
-## $ Jumlah.Perjalanan.Rabu                 [3m[38;5;246m<dbl>[39m[23m 2[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m4[38;5;246m, [39m3[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m3[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m3[38;5;246m,[39m…
-## $ Jumlah.Perjalanan.Kamis                [3m[38;5;246m<dbl>[39m[23m 3[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m4[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m4[38;5;246m, [39m3[38;5;246m, [39m2[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m3[38;5;246m,[39m…
-## $ Jumlah.Perjalanan.Jumat                [3m[38;5;246m<dbl>[39m[23m 2[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m3[38;5;246m, [39m3[38;5;246m, [39m2[38;5;246m, [39m4[38;5;246m, [39m3[38;5;246m, [39m2[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m3[38;5;246m,[39m…
-## $ Jumlah.Perjalanan.Sabtu                [3m[38;5;246m<dbl>[39m[23m 2[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m3[38;5;246m, [39m4[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m3[38;5;246m,[39m…
-## $ Jumlah.Perjalanan.Ahad                 [3m[38;5;246m<dbl>[39m[23m 2[38;5;246m, [39m3[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m3[38;5;246m, [39m4[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m2[38;5;246m, [39m1[38;5;246m, [39m1[38;5;246m, [39m3[38;5;246m,[39m…
+## $ Timestamp                              <dbl> 45413.83, 45413.83, 45413.85,…
+## $ Kampus_PT                              <chr> "UBL", "UBL", "UBL", "UBL", "…
+## $ Nomor.urut                             <dbl> 1, 2, 3, 4, 6, 7, 8, 9, 10, 1…
+## $ Jenis.Kelamin                          <fct> Perempuan, Laki-Laki, Laki-La…
+## $ Umur                                   <dbl> 21, 20, 21, 22, 21, 22, 22, 2…
+## $ Fakultas                               <fct> Fakultas Ilmu Sosial dan Poli…
+## $ Prodi                                  <fct> Ilmu Komunikasi, Ilmu Hukum, …
+## $ Tingkat.Semester                       <ord> Semester 7 & 8, Semester 5 & …
+## $ Uang.Saku                              <ord> "< 1 jt", "1 jt – 2 jt", "1 j…
+## $ kepemilikan.mobil                      <dbl> 1, 2, 1, 1, 1, 1, 1, 1, 1, 0,…
+## $ kepemilikan.motor                      <dbl> 2, 1, 2, 4, 2, 1, 1, 1, 1, 2,…
+## $ kepemilikan.sepeda                     <dbl> 1, 1, 2, 1, 1, 1, 1, 1, 1, 0,…
+## $ kendaraan.utama                        <chr> "Sepeda Motor Pribadi", "Mobi…
+## $ kelurahan                              <chr> "Kalibalau Kencana", "Gunung …
+## $ jenis.tempat.tinggal                   <chr> "Rumah pribadi/rumah keluarga…
+## $ nama.jalan.tempat.tinggal              <chr> "eLBe Loundry", "Jl.Urip Sumo…
+## $ jarak                                  <dbl> 4.2237967, 2.7033310, 3.23707…
+## $ alasan.pemilihan.lokasi.tempat.tinggal <chr> "Bersama keluarga/saudara/tem…
+## $ biaya_dalam_sepekan                    <dbl> 25, 200, 50, 20, 40, 70, 35, …
+## $ jumlah_perjalanan_senin                <dbl> 2, 3, 1, 2, 3, 2, 4, 4, 3, 2,…
+## $ Jumlah.Perjalanan.Selasa               <dbl> 3, 3, 1, 2, 3, 2, 4, 4, 3, 1,…
+## $ Jumlah.Perjalanan.Rabu                 <dbl> 2, 3, 1, 2, 1, 2, 4, 4, 3, 2,…
+## $ Jumlah.Perjalanan.Kamis                <dbl> 3, 3, 1, 2, 1, 2, 4, 4, 3, 1,…
+## $ Jumlah.Perjalanan.Jumat                <dbl> 2, 3, 1, 2, 1, 2, 4, 3, 3, 2,…
+## $ Jumlah.Perjalanan.Sabtu                <dbl> 2, 3, 1, 2, 1, 2, 3, 4, 2, 1,…
+## $ Jumlah.Perjalanan.Ahad                 <dbl> 2, 3, 1, 2, 1, 2, 3, 4, 1, 1,…
 ```
 
 Sekarang kita siap memvisualkan data kita.
@@ -4744,28 +4919,28 @@ glimpse(data_mahasiswa)
 ```
 ## Rows: 1,557
 ## Columns: 22
-## $ Kampus_PT                  <fct> ITERA, ITERA, ITERA, ITERA, ITERA, ITERA, ITERA, ITERA, ITERA,…
-## $ `Nomor urut`               <dbl> 17, 211, 342, 42, 56, 254, 267, 289, 330, 259, 48, 169, 225, 2…
-## $ `Jenis Kelamin`            <fct> Perempuan, Perempuan, Perempuan, Perempuan, Laki-laki, Perempu…
-## $ Umur                       <dbl> 20, 20, 22, 21, 22, 22, 21, 21, 20, 23, 19, 23, 21, 19, 22, 23…
-## $ Fakultas                   <fct> FTIK, FTIK, FTI, FTIK, FTIK, FTIK, FTIK, FTIK, FTI, FTIK, FTIK…
-## $ Prodi                      <fct> Perencanaan Wilayah dan Kota, Perencanaan Wilayah dan Kota, Te…
-## $ `Tingkat Semester`         <ord> Semester 3-4, Semester 5-6, Semester 7-8, Semester 7-8, Semest…
-## $ `Uang Saku`                <ord> "1 - 2 Jt", "2,1 - 3 Jt", "2,1 - 3 Jt", "2,1 - 3 Jt", "1 - 2 J…
-## $ `jumlah mobil`             <dbl> 1, 0, 3, 3, 1, 3, 3, 3, 3, 2, 1, 0, 3, 2, 2, 2, 1, 0, 2, 0, 1,…
-## $ `jumlah motor`             <dbl> 0, 1, 2, 3, 0, 2, 2, 3, 2, 2, 0, 1, 1, 2, 1, 1, 1, 1, 1, 0, 0,…
-## $ `jumlah sepeda`            <dbl> 1, 1, 3, 3, 0, 2, 3, 4, 2, 2, 1, 0, 1, 2, 1, 2, 1, 0, 0, 0, 0,…
-## $ `kendaraan utama`          <fct> Sepeda motor pribadi, Mobil pribadi, Mobil pribadi, Mobil prib…
-## $ `jenis tempat tinggal`     <fct> Kos sendiri, Rumah pribadi, Rumah pribadi, Rumah pribadi, Ruma…
-## $ jarak                      <dbl> 3.47, 4.88, 3.09, 5.46, 3.70, 6.18, 4.87, 5.08, 3.82, 7.51, 7.…
-## $ `biaya sepekan`            <dbl> 400, 280, 225, 200, 200, 200, 200, 200, 200, 180, 150, 150, 15…
-## $ `Jumlah Perjalanan Senin`  <dbl> 2, 4, 2, 0, 4, 0, 3, 4, 2, 0, 1, 4, 2, 0, 3, 2, 2, 0, 3, 2, 4,…
-## $ `Jumlah Perjalanan Selasa` <dbl> 3, 4, 2, 3, 3, 0, 4, 4, 2, 2, 1, 3, 2, 2, 2, 0, 2, 3, 4, 2, 4,…
-## $ `Jumlah Perjalanan Rabu`   <dbl> 3, 5, 0, 4, 3, 3, 4, 4, 0, 2, 1, 2, 2, 2, 4, 2, 2, 2, 3, 2, 4,…
-## $ `Jumlah Perjalanan Kamis`  <dbl> 0, 4, 2, 3, 2, 0, 4, 4, 2, 2, 1, 2, 2, 2, 2, 2, 2, 2, 4, 2, 4,…
-## $ `Jumlah Perjalanan Jumat`  <dbl> 0, 5, 0, 3, 2, 2, 4, 5, 2, 2, 1, 3, 3, 4, 4, 2, 2, 0, 4, 4, 5,…
-## $ `Jumlah Perjalanan Sabtu`  <dbl> 2, 0, 3, 0, 3, 3, 0, 2, 2, 0, 1, 2, 2, 0, 0, 2, 2, 2, 4, 0, 0,…
-## $ `Jumlah Perjalanan Ahad`   <dbl> 4, 3, 0, 2, 2, 0, 3, 2, 2, 0, 1, 2, 0, 0, 2, 0, 2, 2, 2, 2, 0,…
+## $ Kampus_PT                  <fct> ITERA, ITERA, ITERA, ITERA, ITERA, ITERA,…
+## $ `Nomor urut`               <dbl> 17, 211, 342, 42, 56, 254, 267, 289, 330,…
+## $ `Jenis Kelamin`            <fct> Perempuan, Perempuan, Perempuan, Perempua…
+## $ Umur                       <dbl> 20, 20, 22, 21, 22, 22, 21, 21, 20, 23, 1…
+## $ Fakultas                   <fct> FTIK, FTIK, FTI, FTIK, FTIK, FTIK, FTIK, …
+## $ Prodi                      <fct> Perencanaan Wilayah dan Kota, Perencanaan…
+## $ `Tingkat Semester`         <ord> Semester 3-4, Semester 5-6, Semester 7-8,…
+## $ `Uang Saku`                <ord> "1 - 2 Jt", "2,1 - 3 Jt", "2,1 - 3 Jt", "…
+## $ `jumlah mobil`             <dbl> 1, 0, 3, 3, 1, 3, 3, 3, 3, 2, 1, 0, 3, 2,…
+## $ `jumlah motor`             <dbl> 0, 1, 2, 3, 0, 2, 2, 3, 2, 2, 0, 1, 1, 2,…
+## $ `jumlah sepeda`            <dbl> 1, 1, 3, 3, 0, 2, 3, 4, 2, 2, 1, 0, 1, 2,…
+## $ `kendaraan utama`          <fct> Sepeda motor pribadi, Mobil pribadi, Mobi…
+## $ `jenis tempat tinggal`     <fct> Kos sendiri, Rumah pribadi, Rumah pribadi…
+## $ jarak                      <dbl> 3.47, 4.88, 3.09, 5.46, 3.70, 6.18, 4.87,…
+## $ `biaya sepekan`            <dbl> 400, 280, 225, 200, 200, 200, 200, 200, 2…
+## $ `Jumlah Perjalanan Senin`  <dbl> 2, 4, 2, 0, 4, 0, 3, 4, 2, 0, 1, 4, 2, 0,…
+## $ `Jumlah Perjalanan Selasa` <dbl> 3, 4, 2, 3, 3, 0, 4, 4, 2, 2, 1, 3, 2, 2,…
+## $ `Jumlah Perjalanan Rabu`   <dbl> 3, 5, 0, 4, 3, 3, 4, 4, 0, 2, 1, 2, 2, 2,…
+## $ `Jumlah Perjalanan Kamis`  <dbl> 0, 4, 2, 3, 2, 0, 4, 4, 2, 2, 1, 2, 2, 2,…
+## $ `Jumlah Perjalanan Jumat`  <dbl> 0, 5, 0, 3, 2, 2, 4, 5, 2, 2, 1, 3, 3, 4,…
+## $ `Jumlah Perjalanan Sabtu`  <dbl> 2, 0, 3, 0, 3, 3, 0, 2, 2, 0, 1, 2, 2, 0,…
+## $ `Jumlah Perjalanan Ahad`   <dbl> 4, 3, 0, 2, 2, 0, 3, 2, 2, 0, 1, 2, 0, 0,…
 ```
 
 ## Pembuatan Tabel Silang
@@ -4790,7 +4965,7 @@ data_mahasiswa |>
 ```
 
 ```{=html}
-<div class="tabwid"><style>.cl-fda8839a{}.cl-fd9a1954{font-family:'Arial';font-size:11pt;font-weight:bold;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-fd9a1972{font-family:'Arial';font-size:11pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-fd9a197c{font-family:'Arial';font-size:6.6pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;position: relative;bottom:3.3pt;}.cl-fd9febfe{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:2pt;padding-top:2pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-fd9fec08{margin:0;text-align:center;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:2pt;padding-top:2pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-fd9fec12{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-fd9fec26{margin:0;text-align:center;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-fd9fec27{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:15pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-fd9fec3a{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-fda026aa{width:2.967in;background-color:transparent;vertical-align: middle;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 1pt solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-fda026be{width:0.931in;background-color:transparent;vertical-align: middle;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 1pt solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-fda026c8{width:1.771in;background-color:transparent;vertical-align: middle;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 1pt solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-fda026c9{width:1.202in;background-color:transparent;vertical-align: middle;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 1pt solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-fda026d2{width:2.476in;background-color:transparent;vertical-align: middle;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 1pt solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-fda026d3{width:2.356in;background-color:transparent;vertical-align: middle;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 1pt solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-fda026dc{width:1.44in;background-color:transparent;vertical-align: middle;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 1pt solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-fda026e6{width:1.516in;background-color:transparent;vertical-align: middle;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 1pt solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-fda026f0{width:2.967in;background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-fda026fa{width:0.931in;background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-fda026fb{width:1.771in;background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-fda02704{width:1.202in;background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-fda0270e{width:2.476in;background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-fda02718{width:2.356in;background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-fda02719{width:1.44in;background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-fda02722{width:1.516in;background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-fda0272c{width:2.967in;background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-fda02736{width:0.931in;background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-fda02737{width:1.771in;background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-fda02740{width:1.202in;background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-fda02741{width:2.476in;background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-fda0274a{width:2.356in;background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-fda02754{width:1.44in;background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-fda02755{width:1.516in;background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-fda02768{width:2.967in;background-color:transparent;vertical-align: top;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-fda02772{width:0.931in;background-color:transparent;vertical-align: top;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-fda02773{width:1.771in;background-color:transparent;vertical-align: top;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-fda0277c{width:1.202in;background-color:transparent;vertical-align: top;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-fda0277d{width:2.476in;background-color:transparent;vertical-align: top;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-fda02786{width:2.356in;background-color:transparent;vertical-align: top;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-fda02787{width:1.44in;background-color:transparent;vertical-align: top;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-fda02790{width:1.516in;background-color:transparent;vertical-align: top;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-fda02791{width:2.967in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(255, 255, 255, 0.00);border-top: 0 solid rgba(255, 255, 255, 0.00);border-left: 0 solid rgba(255, 255, 255, 0.00);border-right: 0 solid rgba(255, 255, 255, 0.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-fda027a4{width:0.931in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(255, 255, 255, 0.00);border-top: 0 solid rgba(255, 255, 255, 0.00);border-left: 0 solid rgba(255, 255, 255, 0.00);border-right: 0 solid rgba(255, 255, 255, 0.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-fda027ae{width:1.771in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(255, 255, 255, 0.00);border-top: 0 solid rgba(255, 255, 255, 0.00);border-left: 0 solid rgba(255, 255, 255, 0.00);border-right: 0 solid rgba(255, 255, 255, 0.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-fda027b8{width:1.202in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(255, 255, 255, 0.00);border-top: 0 solid rgba(255, 255, 255, 0.00);border-left: 0 solid rgba(255, 255, 255, 0.00);border-right: 0 solid rgba(255, 255, 255, 0.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-fda027c2{width:2.476in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(255, 255, 255, 0.00);border-top: 0 solid rgba(255, 255, 255, 0.00);border-left: 0 solid rgba(255, 255, 255, 0.00);border-right: 0 solid rgba(255, 255, 255, 0.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-fda027c3{width:2.356in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(255, 255, 255, 0.00);border-top: 0 solid rgba(255, 255, 255, 0.00);border-left: 0 solid rgba(255, 255, 255, 0.00);border-right: 0 solid rgba(255, 255, 255, 0.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-fda027c4{width:1.44in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(255, 255, 255, 0.00);border-top: 0 solid rgba(255, 255, 255, 0.00);border-left: 0 solid rgba(255, 255, 255, 0.00);border-right: 0 solid rgba(255, 255, 255, 0.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-fda027cc{width:1.516in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(255, 255, 255, 0.00);border-top: 0 solid rgba(255, 255, 255, 0.00);border-left: 0 solid rgba(255, 255, 255, 0.00);border-right: 0 solid rgba(255, 255, 255, 0.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}</style><table data-quarto-disable-processing='true' class='cl-fda8839a'><thead><tr style="overflow-wrap:break-word;"><th class="cl-fda026aa"><p class="cl-fd9febfe"><span class="cl-fd9a1954">Characteristic</span></p></th><th class="cl-fda026be"><p class="cl-fd9fec08"><span class="cl-fd9a1954">Asrama</span><span class="cl-fd9a1972">  </span><br><span class="cl-fd9a1972">N = 25</span><span class="cl-fd9a197c">1</span></p></th><th class="cl-fda026c8"><p class="cl-fd9fec08"><span class="cl-fd9a1954">Kos bersama-sama</span><span class="cl-fd9a1972">  </span><br><span class="cl-fd9a1972">N = 120</span><span class="cl-fd9a197c">1</span></p></th><th class="cl-fda026c9"><p class="cl-fd9fec08"><span class="cl-fd9a1954">Kos sendiri</span><span class="cl-fd9a1972">  </span><br><span class="cl-fd9a1972">N = 468</span><span class="cl-fd9a197c">1</span></p></th><th class="cl-fda026d2"><p class="cl-fd9fec08"><span class="cl-fd9a1954">Rumah mengontrak bersama</span><span class="cl-fd9a1972">  </span><br><span class="cl-fd9a1972">N = 223</span><span class="cl-fd9a197c">1</span></p></th><th class="cl-fda026d3"><p class="cl-fd9fec08"><span class="cl-fd9a1954">Rumah mengontrak pribadi</span><span class="cl-fd9a1972">  </span><br><span class="cl-fd9a1972">N = 43</span><span class="cl-fd9a197c">1</span></p></th><th class="cl-fda026dc"><p class="cl-fd9fec08"><span class="cl-fd9a1954">Rumah pribadi</span><span class="cl-fd9a1972">  </span><br><span class="cl-fd9a1972">N = 553</span><span class="cl-fd9a197c">1</span></p></th><th class="cl-fda026e6"><p class="cl-fd9fec08"><span class="cl-fd9a1954">Rumah saudara</span><span class="cl-fd9a1972">  </span><br><span class="cl-fd9a1972">N = 125</span><span class="cl-fd9a197c">1</span></p></th></tr></thead><tbody><tr style="overflow-wrap:break-word;"><td class="cl-fda026f0"><p class="cl-fd9fec12"><span class="cl-fd9a1972">kendaraan utama</span></p></td><td class="cl-fda026fa"><p class="cl-fd9fec26"><span class="cl-fd9a1972"></span></p></td><td class="cl-fda026fb"><p class="cl-fd9fec26"><span class="cl-fd9a1972"></span></p></td><td class="cl-fda02704"><p class="cl-fd9fec26"><span class="cl-fd9a1972"></span></p></td><td class="cl-fda0270e"><p class="cl-fd9fec26"><span class="cl-fd9a1972"></span></p></td><td class="cl-fda02718"><p class="cl-fd9fec26"><span class="cl-fd9a1972"></span></p></td><td class="cl-fda02719"><p class="cl-fd9fec26"><span class="cl-fd9a1972"></span></p></td><td class="cl-fda02722"><p class="cl-fd9fec26"><span class="cl-fd9a1972"></span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-fda0272c"><p class="cl-fd9fec27"><span class="cl-fd9a1972">Berjalan kaki</span></p></td><td class="cl-fda02736"><p class="cl-fd9fec26"><span class="cl-fd9a1972">23 (92%)</span></p></td><td class="cl-fda02737"><p class="cl-fd9fec26"><span class="cl-fd9a1972">20 (17%)</span></p></td><td class="cl-fda02740"><p class="cl-fd9fec26"><span class="cl-fd9a1972">39 (8.3%)</span></p></td><td class="cl-fda02741"><p class="cl-fd9fec26"><span class="cl-fd9a1972">17 (7.6%)</span></p></td><td class="cl-fda0274a"><p class="cl-fd9fec26"><span class="cl-fd9a1972">11 (26%)</span></p></td><td class="cl-fda02754"><p class="cl-fd9fec26"><span class="cl-fd9a1972">0 (0%)</span></p></td><td class="cl-fda02755"><p class="cl-fd9fec26"><span class="cl-fd9a1972">1 (0.8%)</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-fda0272c"><p class="cl-fd9fec27"><span class="cl-fd9a1972">Layanan online</span></p></td><td class="cl-fda02736"><p class="cl-fd9fec26"><span class="cl-fd9a1972">0 (0%)</span></p></td><td class="cl-fda02737"><p class="cl-fd9fec26"><span class="cl-fd9a1972">19 (16%)</span></p></td><td class="cl-fda02740"><p class="cl-fd9fec26"><span class="cl-fd9a1972">86 (18%)</span></p></td><td class="cl-fda02741"><p class="cl-fd9fec26"><span class="cl-fd9a1972">28 (13%)</span></p></td><td class="cl-fda0274a"><p class="cl-fd9fec26"><span class="cl-fd9a1972">6 (14%)</span></p></td><td class="cl-fda02754"><p class="cl-fd9fec26"><span class="cl-fd9a1972">37 (6.7%)</span></p></td><td class="cl-fda02755"><p class="cl-fd9fec26"><span class="cl-fd9a1972">12 (9.6%)</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-fda0272c"><p class="cl-fd9fec27"><span class="cl-fd9a1972">Menumpang dengan teman/keluarga</span></p></td><td class="cl-fda02736"><p class="cl-fd9fec26"><span class="cl-fd9a1972">0 (0%)</span></p></td><td class="cl-fda02737"><p class="cl-fd9fec26"><span class="cl-fd9a1972">18 (15%)</span></p></td><td class="cl-fda02740"><p class="cl-fd9fec26"><span class="cl-fd9a1972">24 (5.1%)</span></p></td><td class="cl-fda02741"><p class="cl-fd9fec26"><span class="cl-fd9a1972">40 (18%)</span></p></td><td class="cl-fda0274a"><p class="cl-fd9fec26"><span class="cl-fd9a1972">0 (0%)</span></p></td><td class="cl-fda02754"><p class="cl-fd9fec26"><span class="cl-fd9a1972">11 (2.0%)</span></p></td><td class="cl-fda02755"><p class="cl-fd9fec26"><span class="cl-fd9a1972">4 (3.2%)</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-fda0272c"><p class="cl-fd9fec27"><span class="cl-fd9a1972">Mobil pribadi</span></p></td><td class="cl-fda02736"><p class="cl-fd9fec26"><span class="cl-fd9a1972">0 (0%)</span></p></td><td class="cl-fda02737"><p class="cl-fd9fec26"><span class="cl-fd9a1972">6 (5.0%)</span></p></td><td class="cl-fda02740"><p class="cl-fd9fec26"><span class="cl-fd9a1972">15 (3.2%)</span></p></td><td class="cl-fda02741"><p class="cl-fd9fec26"><span class="cl-fd9a1972">5 (2.2%)</span></p></td><td class="cl-fda0274a"><p class="cl-fd9fec26"><span class="cl-fd9a1972">3 (7.0%)</span></p></td><td class="cl-fda02754"><p class="cl-fd9fec26"><span class="cl-fd9a1972">110 (20%)</span></p></td><td class="cl-fda02755"><p class="cl-fd9fec26"><span class="cl-fd9a1972">13 (10%)</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-fda0272c"><p class="cl-fd9fec27"><span class="cl-fd9a1972">Sepeda</span></p></td><td class="cl-fda02736"><p class="cl-fd9fec26"><span class="cl-fd9a1972">0 (0%)</span></p></td><td class="cl-fda02737"><p class="cl-fd9fec26"><span class="cl-fd9a1972">0 (0%)</span></p></td><td class="cl-fda02740"><p class="cl-fd9fec26"><span class="cl-fd9a1972">8 (1.7%)</span></p></td><td class="cl-fda02741"><p class="cl-fd9fec26"><span class="cl-fd9a1972">8 (3.6%)</span></p></td><td class="cl-fda0274a"><p class="cl-fd9fec26"><span class="cl-fd9a1972">0 (0%)</span></p></td><td class="cl-fda02754"><p class="cl-fd9fec26"><span class="cl-fd9a1972">1 (0.2%)</span></p></td><td class="cl-fda02755"><p class="cl-fd9fec26"><span class="cl-fd9a1972">1 (0.8%)</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-fda02768"><p class="cl-fd9fec27"><span class="cl-fd9a1972">Sepeda motor pribadi</span></p></td><td class="cl-fda02772"><p class="cl-fd9fec26"><span class="cl-fd9a1972">2 (8.0%)</span></p></td><td class="cl-fda02773"><p class="cl-fd9fec26"><span class="cl-fd9a1972">57 (48%)</span></p></td><td class="cl-fda0277c"><p class="cl-fd9fec26"><span class="cl-fd9a1972">296 (63%)</span></p></td><td class="cl-fda0277d"><p class="cl-fd9fec26"><span class="cl-fd9a1972">125 (56%)</span></p></td><td class="cl-fda02786"><p class="cl-fd9fec26"><span class="cl-fd9a1972">23 (53%)</span></p></td><td class="cl-fda02787"><p class="cl-fd9fec26"><span class="cl-fd9a1972">394 (71%)</span></p></td><td class="cl-fda02790"><p class="cl-fd9fec26"><span class="cl-fd9a1972">94 (75%)</span></p></td></tr></tbody><tfoot><tr style="overflow-wrap:break-word;"><td  colspan="8"class="cl-fda02791"><p class="cl-fd9fec3a"><span class="cl-fd9a197c">1</span><span class="cl-fd9a1972">n (%)</span></p></td></tr></tfoot></table></div>
+<div class="tabwid"><style>.cl-9c8da04a{}.cl-9c84d78a{font-family:'Arial';font-size:11pt;font-weight:bold;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-9c84d794{font-family:'Arial';font-size:11pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-9c84d79e{font-family:'Arial';font-size:6.6pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;position: relative;bottom:3.3pt;}.cl-9c88d16e{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:2pt;padding-top:2pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-9c88d182{margin:0;text-align:center;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:2pt;padding-top:2pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-9c88d18c{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-9c88d196{margin:0;text-align:center;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-9c88d1a0{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:15pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-9c88d1aa{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-9c890cce{width:2.967in;background-color:transparent;vertical-align: middle;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 1pt solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9c890cd8{width:0.931in;background-color:transparent;vertical-align: middle;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 1pt solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9c890ce2{width:1.771in;background-color:transparent;vertical-align: middle;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 1pt solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9c890cf6{width:1.202in;background-color:transparent;vertical-align: middle;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 1pt solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9c890d0a{width:2.476in;background-color:transparent;vertical-align: middle;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 1pt solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9c890d14{width:2.356in;background-color:transparent;vertical-align: middle;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 1pt solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9c890d28{width:1.44in;background-color:transparent;vertical-align: middle;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 1pt solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9c890d29{width:1.516in;background-color:transparent;vertical-align: middle;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 1pt solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9c890d3c{width:2.967in;background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9c890d46{width:0.931in;background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9c890d5a{width:1.771in;background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9c890d5b{width:1.202in;background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9c890d64{width:2.476in;background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9c890d65{width:2.356in;background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9c890d6e{width:1.44in;background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9c890d78{width:1.516in;background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9c890d8c{width:2.967in;background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9c890d96{width:0.931in;background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9c890da0{width:1.771in;background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9c890db4{width:1.202in;background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9c890db5{width:2.476in;background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9c890db6{width:2.356in;background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9c890dc8{width:1.44in;background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9c890dd2{width:1.516in;background-color:transparent;vertical-align: top;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9c890dd3{width:2.967in;background-color:transparent;vertical-align: top;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9c890de6{width:0.931in;background-color:transparent;vertical-align: top;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9c890df0{width:1.771in;background-color:transparent;vertical-align: top;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9c890dfa{width:1.202in;background-color:transparent;vertical-align: top;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9c890e04{width:2.476in;background-color:transparent;vertical-align: top;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9c890e0e{width:2.356in;background-color:transparent;vertical-align: top;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9c890e2c{width:1.44in;background-color:transparent;vertical-align: top;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9c890e36{width:1.516in;background-color:transparent;vertical-align: top;border-bottom: 1pt solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9c890e37{width:2.967in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(255, 255, 255, 0.00);border-top: 0 solid rgba(255, 255, 255, 0.00);border-left: 0 solid rgba(255, 255, 255, 0.00);border-right: 0 solid rgba(255, 255, 255, 0.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9c890e40{width:0.931in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(255, 255, 255, 0.00);border-top: 0 solid rgba(255, 255, 255, 0.00);border-left: 0 solid rgba(255, 255, 255, 0.00);border-right: 0 solid rgba(255, 255, 255, 0.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9c890e4a{width:1.771in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(255, 255, 255, 0.00);border-top: 0 solid rgba(255, 255, 255, 0.00);border-left: 0 solid rgba(255, 255, 255, 0.00);border-right: 0 solid rgba(255, 255, 255, 0.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9c890e54{width:1.202in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(255, 255, 255, 0.00);border-top: 0 solid rgba(255, 255, 255, 0.00);border-left: 0 solid rgba(255, 255, 255, 0.00);border-right: 0 solid rgba(255, 255, 255, 0.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9c890e5e{width:2.476in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(255, 255, 255, 0.00);border-top: 0 solid rgba(255, 255, 255, 0.00);border-left: 0 solid rgba(255, 255, 255, 0.00);border-right: 0 solid rgba(255, 255, 255, 0.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9c890e68{width:2.356in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(255, 255, 255, 0.00);border-top: 0 solid rgba(255, 255, 255, 0.00);border-left: 0 solid rgba(255, 255, 255, 0.00);border-right: 0 solid rgba(255, 255, 255, 0.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9c890e72{width:1.44in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(255, 255, 255, 0.00);border-top: 0 solid rgba(255, 255, 255, 0.00);border-left: 0 solid rgba(255, 255, 255, 0.00);border-right: 0 solid rgba(255, 255, 255, 0.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-9c890e7c{width:1.516in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(255, 255, 255, 0.00);border-top: 0 solid rgba(255, 255, 255, 0.00);border-left: 0 solid rgba(255, 255, 255, 0.00);border-right: 0 solid rgba(255, 255, 255, 0.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}</style><table data-quarto-disable-processing='true' class='cl-9c8da04a'><thead><tr style="overflow-wrap:break-word;"><th class="cl-9c890cce"><p class="cl-9c88d16e"><span class="cl-9c84d78a">Characteristic</span></p></th><th class="cl-9c890cd8"><p class="cl-9c88d182"><span class="cl-9c84d78a">Asrama</span><span class="cl-9c84d794">  </span><br><span class="cl-9c84d794">N = 25</span><span class="cl-9c84d79e">1</span></p></th><th class="cl-9c890ce2"><p class="cl-9c88d182"><span class="cl-9c84d78a">Kos bersama-sama</span><span class="cl-9c84d794">  </span><br><span class="cl-9c84d794">N = 120</span><span class="cl-9c84d79e">1</span></p></th><th class="cl-9c890cf6"><p class="cl-9c88d182"><span class="cl-9c84d78a">Kos sendiri</span><span class="cl-9c84d794">  </span><br><span class="cl-9c84d794">N = 468</span><span class="cl-9c84d79e">1</span></p></th><th class="cl-9c890d0a"><p class="cl-9c88d182"><span class="cl-9c84d78a">Rumah mengontrak bersama</span><span class="cl-9c84d794">  </span><br><span class="cl-9c84d794">N = 223</span><span class="cl-9c84d79e">1</span></p></th><th class="cl-9c890d14"><p class="cl-9c88d182"><span class="cl-9c84d78a">Rumah mengontrak pribadi</span><span class="cl-9c84d794">  </span><br><span class="cl-9c84d794">N = 43</span><span class="cl-9c84d79e">1</span></p></th><th class="cl-9c890d28"><p class="cl-9c88d182"><span class="cl-9c84d78a">Rumah pribadi</span><span class="cl-9c84d794">  </span><br><span class="cl-9c84d794">N = 553</span><span class="cl-9c84d79e">1</span></p></th><th class="cl-9c890d29"><p class="cl-9c88d182"><span class="cl-9c84d78a">Rumah saudara</span><span class="cl-9c84d794">  </span><br><span class="cl-9c84d794">N = 125</span><span class="cl-9c84d79e">1</span></p></th></tr></thead><tbody><tr style="overflow-wrap:break-word;"><td class="cl-9c890d3c"><p class="cl-9c88d18c"><span class="cl-9c84d794">kendaraan utama</span></p></td><td class="cl-9c890d46"><p class="cl-9c88d196"><span class="cl-9c84d794"></span></p></td><td class="cl-9c890d5a"><p class="cl-9c88d196"><span class="cl-9c84d794"></span></p></td><td class="cl-9c890d5b"><p class="cl-9c88d196"><span class="cl-9c84d794"></span></p></td><td class="cl-9c890d64"><p class="cl-9c88d196"><span class="cl-9c84d794"></span></p></td><td class="cl-9c890d65"><p class="cl-9c88d196"><span class="cl-9c84d794"></span></p></td><td class="cl-9c890d6e"><p class="cl-9c88d196"><span class="cl-9c84d794"></span></p></td><td class="cl-9c890d78"><p class="cl-9c88d196"><span class="cl-9c84d794"></span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-9c890d8c"><p class="cl-9c88d1a0"><span class="cl-9c84d794">Berjalan kaki</span></p></td><td class="cl-9c890d96"><p class="cl-9c88d196"><span class="cl-9c84d794">23 (92%)</span></p></td><td class="cl-9c890da0"><p class="cl-9c88d196"><span class="cl-9c84d794">20 (17%)</span></p></td><td class="cl-9c890db4"><p class="cl-9c88d196"><span class="cl-9c84d794">39 (8.3%)</span></p></td><td class="cl-9c890db5"><p class="cl-9c88d196"><span class="cl-9c84d794">17 (7.6%)</span></p></td><td class="cl-9c890db6"><p class="cl-9c88d196"><span class="cl-9c84d794">11 (26%)</span></p></td><td class="cl-9c890dc8"><p class="cl-9c88d196"><span class="cl-9c84d794">0 (0%)</span></p></td><td class="cl-9c890dd2"><p class="cl-9c88d196"><span class="cl-9c84d794">1 (0.8%)</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-9c890d8c"><p class="cl-9c88d1a0"><span class="cl-9c84d794">Layanan online</span></p></td><td class="cl-9c890d96"><p class="cl-9c88d196"><span class="cl-9c84d794">0 (0%)</span></p></td><td class="cl-9c890da0"><p class="cl-9c88d196"><span class="cl-9c84d794">19 (16%)</span></p></td><td class="cl-9c890db4"><p class="cl-9c88d196"><span class="cl-9c84d794">86 (18%)</span></p></td><td class="cl-9c890db5"><p class="cl-9c88d196"><span class="cl-9c84d794">28 (13%)</span></p></td><td class="cl-9c890db6"><p class="cl-9c88d196"><span class="cl-9c84d794">6 (14%)</span></p></td><td class="cl-9c890dc8"><p class="cl-9c88d196"><span class="cl-9c84d794">37 (6.7%)</span></p></td><td class="cl-9c890dd2"><p class="cl-9c88d196"><span class="cl-9c84d794">12 (9.6%)</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-9c890d8c"><p class="cl-9c88d1a0"><span class="cl-9c84d794">Menumpang dengan teman/keluarga</span></p></td><td class="cl-9c890d96"><p class="cl-9c88d196"><span class="cl-9c84d794">0 (0%)</span></p></td><td class="cl-9c890da0"><p class="cl-9c88d196"><span class="cl-9c84d794">18 (15%)</span></p></td><td class="cl-9c890db4"><p class="cl-9c88d196"><span class="cl-9c84d794">24 (5.1%)</span></p></td><td class="cl-9c890db5"><p class="cl-9c88d196"><span class="cl-9c84d794">40 (18%)</span></p></td><td class="cl-9c890db6"><p class="cl-9c88d196"><span class="cl-9c84d794">0 (0%)</span></p></td><td class="cl-9c890dc8"><p class="cl-9c88d196"><span class="cl-9c84d794">11 (2.0%)</span></p></td><td class="cl-9c890dd2"><p class="cl-9c88d196"><span class="cl-9c84d794">4 (3.2%)</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-9c890d8c"><p class="cl-9c88d1a0"><span class="cl-9c84d794">Mobil pribadi</span></p></td><td class="cl-9c890d96"><p class="cl-9c88d196"><span class="cl-9c84d794">0 (0%)</span></p></td><td class="cl-9c890da0"><p class="cl-9c88d196"><span class="cl-9c84d794">6 (5.0%)</span></p></td><td class="cl-9c890db4"><p class="cl-9c88d196"><span class="cl-9c84d794">15 (3.2%)</span></p></td><td class="cl-9c890db5"><p class="cl-9c88d196"><span class="cl-9c84d794">5 (2.2%)</span></p></td><td class="cl-9c890db6"><p class="cl-9c88d196"><span class="cl-9c84d794">3 (7.0%)</span></p></td><td class="cl-9c890dc8"><p class="cl-9c88d196"><span class="cl-9c84d794">110 (20%)</span></p></td><td class="cl-9c890dd2"><p class="cl-9c88d196"><span class="cl-9c84d794">13 (10%)</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-9c890d8c"><p class="cl-9c88d1a0"><span class="cl-9c84d794">Sepeda</span></p></td><td class="cl-9c890d96"><p class="cl-9c88d196"><span class="cl-9c84d794">0 (0%)</span></p></td><td class="cl-9c890da0"><p class="cl-9c88d196"><span class="cl-9c84d794">0 (0%)</span></p></td><td class="cl-9c890db4"><p class="cl-9c88d196"><span class="cl-9c84d794">8 (1.7%)</span></p></td><td class="cl-9c890db5"><p class="cl-9c88d196"><span class="cl-9c84d794">8 (3.6%)</span></p></td><td class="cl-9c890db6"><p class="cl-9c88d196"><span class="cl-9c84d794">0 (0%)</span></p></td><td class="cl-9c890dc8"><p class="cl-9c88d196"><span class="cl-9c84d794">1 (0.2%)</span></p></td><td class="cl-9c890dd2"><p class="cl-9c88d196"><span class="cl-9c84d794">1 (0.8%)</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-9c890dd3"><p class="cl-9c88d1a0"><span class="cl-9c84d794">Sepeda motor pribadi</span></p></td><td class="cl-9c890de6"><p class="cl-9c88d196"><span class="cl-9c84d794">2 (8.0%)</span></p></td><td class="cl-9c890df0"><p class="cl-9c88d196"><span class="cl-9c84d794">57 (48%)</span></p></td><td class="cl-9c890dfa"><p class="cl-9c88d196"><span class="cl-9c84d794">296 (63%)</span></p></td><td class="cl-9c890e04"><p class="cl-9c88d196"><span class="cl-9c84d794">125 (56%)</span></p></td><td class="cl-9c890e0e"><p class="cl-9c88d196"><span class="cl-9c84d794">23 (53%)</span></p></td><td class="cl-9c890e2c"><p class="cl-9c88d196"><span class="cl-9c84d794">394 (71%)</span></p></td><td class="cl-9c890e36"><p class="cl-9c88d196"><span class="cl-9c84d794">94 (75%)</span></p></td></tr></tbody><tfoot><tr style="overflow-wrap:break-word;"><td  colspan="8"class="cl-9c890e37"><p class="cl-9c88d1aa"><span class="cl-9c84d79e">1</span><span class="cl-9c84d794">n (%)</span></p></td></tr></tfoot></table></div>
 ```
 
 Tabel silang yang merupakan hasil dari *script* di atas adalah seperti berikut. Baris menunjukkan kategori dalam variabel `kendaraan utama`, sementara kolom menunjukkan kategori dalam variabel `jenis tempat tinggal`. Nilai-nilai dalam sel-selnya adalah frekuensi/jumlah data yang termasuk ke dalam kondisi berupa kategori kedua variabel.
@@ -4813,23 +4988,32 @@ table(data_mahasiswa$`jenis tempat tinggal`,  # vektor variabel-variabel ini kit
 
 ```
 ##                           
-##                            Berjalan kaki Layanan online Menumpang dengan teman/keluarga
-##   Asrama                              23              0                               0
-##   Kos bersama-sama                    20             19                              18
-##   Kos sendiri                         39             86                              24
-##   Rumah mengontrak bersama            17             28                              40
-##   Rumah mengontrak pribadi            11              6                               0
-##   Rumah pribadi                        0             37                              11
-##   Rumah saudara                        1             12                               4
+##                            Berjalan kaki Layanan online
+##   Asrama                              23              0
+##   Kos bersama-sama                    20             19
+##   Kos sendiri                         39             86
+##   Rumah mengontrak bersama            17             28
+##   Rumah mengontrak pribadi            11              6
+##   Rumah pribadi                        0             37
+##   Rumah saudara                        1             12
 ##                           
-##                            Mobil pribadi Sepeda Sepeda motor pribadi
-##   Asrama                               0      0                    2
-##   Kos bersama-sama                     6      0                   57
-##   Kos sendiri                         15      8                  296
-##   Rumah mengontrak bersama             5      8                  125
-##   Rumah mengontrak pribadi             3      0                   23
-##   Rumah pribadi                      110      1                  394
-##   Rumah saudara                       13      1                   94
+##                            Menumpang dengan teman/keluarga Mobil pribadi
+##   Asrama                                                 0             0
+##   Kos bersama-sama                                      18             6
+##   Kos sendiri                                           24            15
+##   Rumah mengontrak bersama                              40             5
+##   Rumah mengontrak pribadi                               0             3
+##   Rumah pribadi                                         11           110
+##   Rumah saudara                                          4            13
+##                           
+##                            Sepeda Sepeda motor pribadi
+##   Asrama                        0                    2
+##   Kos bersama-sama              0                   57
+##   Kos sendiri                   8                  296
+##   Rumah mengontrak bersama      8                  125
+##   Rumah mengontrak pribadi      0                   23
+##   Rumah pribadi                 1                  394
+##   Rumah saudara                 1                   94
 ```
 
 **Latihan: buatlah tabel silang antara variabel `Tingkat Semester` dan `Uang Saku` baik dengan `gt_summary` maupun dengan `table()`!**
@@ -4904,21 +5088,37 @@ chisq_tempat_tinggal_kend$expected
 
 ```
 ##                                  
-##                                       Asrama Kos bersama-sama Kos sendiri Rumah mengontrak bersama
-##   Berjalan kaki                    1.7822736         8.554913   33.364162                15.897881
-##   Layanan online                   3.0186256        14.489403   56.508671                26.926140
-##   Menumpang dengan teman/keluarga  1.5574823         7.475915   29.156069                13.892742
-##   Mobil pribadi                    2.4405909        11.714836   45.687861                21.770071
-##   Sepeda                           0.2890173         1.387283    5.410405                 2.578035
-##   Sepeda motor pribadi            15.9120103        76.377649  297.872832               141.935132
+##                                       Asrama Kos bersama-sama Kos sendiri
+##   Berjalan kaki                    1.7822736         8.554913   33.364162
+##   Layanan online                   3.0186256        14.489403   56.508671
+##   Menumpang dengan teman/keluarga  1.5574823         7.475915   29.156069
+##   Mobil pribadi                    2.4405909        11.714836   45.687861
+##   Sepeda                           0.2890173         1.387283    5.410405
+##   Sepeda motor pribadi            15.9120103        76.377649  297.872832
 ##                                  
-##                                   Rumah mengontrak pribadi Rumah pribadi Rumah saudara
-##   Berjalan kaki                                  3.0655106     39.423892      8.911368
-##   Layanan online                                 5.1920360     66.771997     15.093128
-##   Menumpang dengan teman/keluarga                2.6788696     34.451509      7.787412
-##   Mobil pribadi                                  4.1978163     53.985870     12.202954
-##   Sepeda                                         0.4971098      6.393064      1.445087
-##   Sepeda motor pribadi                          27.3686577    351.973667     79.560051
+##                                   Rumah mengontrak bersama
+##   Berjalan kaki                                  15.897881
+##   Layanan online                                 26.926140
+##   Menumpang dengan teman/keluarga                13.892742
+##   Mobil pribadi                                  21.770071
+##   Sepeda                                          2.578035
+##   Sepeda motor pribadi                          141.935132
+##                                  
+##                                   Rumah mengontrak pribadi Rumah pribadi
+##   Berjalan kaki                                  3.0655106     39.423892
+##   Layanan online                                 5.1920360     66.771997
+##   Menumpang dengan teman/keluarga                2.6788696     34.451509
+##   Mobil pribadi                                  4.1978163     53.985870
+##   Sepeda                                         0.4971098      6.393064
+##   Sepeda motor pribadi                          27.3686577    351.973667
+##                                  
+##                                   Rumah saudara
+##   Berjalan kaki                        8.911368
+##   Layanan online                      15.093128
+##   Menumpang dengan teman/keluarga      7.787412
+##   Mobil pribadi                       12.202954
+##   Sepeda                               1.445087
+##   Sepeda motor pribadi                79.560051
 ```
 
 Kita akan menghitung nilai koefisien V Cramer untuk menyatakan korelasi antara jenis kendaraan yang digunakan sebagai moda ke kampus dan jenis tempat tinggal mahasiswa menggunakan rumus berikut dan berdasarkan nilai $\chi^2$ yang kita dapatkan dari tes sebelumnya.
@@ -6945,18 +7145,18 @@ glimpse(data_analisis)
 ```
 ## Rows: 319
 ## Columns: 12
-## $ ongkos    <dbl> 464.40, 464.40, 464.40, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 10000.00, 300…
-## $ bparkir   <dbl> 2000, 2000, 3000, 0, 0, 0, 0, 0, 0, 0, 2000, 5000, 0, 0, 0, 0, 0, 0, 0, 3000, 0…
-## $ durasi    <dbl> 20, 10, 15, 30, 5, 30, 5, 30, 5, 9, 30, 30, 10, 30, 2, 30, 60, 30, 30, 30, 20, …
-## $ bareng    <dbl> 2, 0, 2, 5, 2, 0, 0, 0, 0, 0, 2, 3, 1, 0, 10, 3, 2, 3, 3, 2, 1, 1, 0, 1, 1, 1, …
-## $ toplajur  <dbl> 4, 4, 4, 8, 2, 4, 4, 4, 0, 2, 8, 6, 4, 4, 2, 4, 6, 4, 4, 4, 4, 4, 8, 4, 4, 4, 2…
-## $ usia      <dbl> 45, 46, 50, 25, 22, 63, 22, 60, 20, 19, 16, 46, 22, 28, 50, 28, 17, 28, 25, 43,…
-## $ jmlmotor  <dbl> 2, 2, 3, 0, 2, 1, 1, 2, 1, 0, 2, 1, 1, 4, 5, 1, 3, 1, 1, 1, 1, 1, 1, 1, 2, 1, 0…
-## $ jmlmobil  <dbl> 0, 1, 0, 0, 3, 1, 1, 1, 0, 0, 2, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0…
-## $ jmlsepeda <dbl> 2, 4, 0, 2, 3, 2, 1, 1, 0, 0, 0, 2, 0, 2, 6, 1, 4, 1, 1, 0, 1, 0, 3, 3, 1, 0, 1…
-## $ jmldewasa <dbl> 4, 4, 4, 3, 5, 2, 2, 4, 1, 1, 3, 1, 5, 2, 2, 3, 5, 12, 5, 2, 1, 2, 5, 2, 6, 2, …
-## $ jmlanak   <dbl> 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 2, 2, 0, 0, 0, 0, 3, 3, 0, 1, 0, 0, 0, 1, 2, 0, 0…
-## $ jarak     <dbl> 3000, 3000, 3000, 7000, 280, 7000, 600, 7200, 0, 500, 5000, 4000, 2000, 5000, 1…
+## $ ongkos    <dbl> 464.40, 464.40, 464.40, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00…
+## $ bparkir   <dbl> 2000, 2000, 3000, 0, 0, 0, 0, 0, 0, 0, 2000, 5000, 0, 0, 0…
+## $ durasi    <dbl> 20, 10, 15, 30, 5, 30, 5, 30, 5, 9, 30, 30, 10, 30, 2, 30,…
+## $ bareng    <dbl> 2, 0, 2, 5, 2, 0, 0, 0, 0, 0, 2, 3, 1, 0, 10, 3, 2, 3, 3, …
+## $ toplajur  <dbl> 4, 4, 4, 8, 2, 4, 4, 4, 0, 2, 8, 6, 4, 4, 2, 4, 6, 4, 4, 4…
+## $ usia      <dbl> 45, 46, 50, 25, 22, 63, 22, 60, 20, 19, 16, 46, 22, 28, 50…
+## $ jmlmotor  <dbl> 2, 2, 3, 0, 2, 1, 1, 2, 1, 0, 2, 1, 1, 4, 5, 1, 3, 1, 1, 1…
+## $ jmlmobil  <dbl> 0, 1, 0, 0, 3, 1, 1, 1, 0, 0, 2, 1, 0, 0, 1, 0, 0, 0, 0, 0…
+## $ jmlsepeda <dbl> 2, 4, 0, 2, 3, 2, 1, 1, 0, 0, 0, 2, 0, 2, 6, 1, 4, 1, 1, 0…
+## $ jmldewasa <dbl> 4, 4, 4, 3, 5, 2, 2, 4, 1, 1, 3, 1, 5, 2, 2, 3, 5, 12, 5, …
+## $ jmlanak   <dbl> 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 2, 2, 0, 0, 0, 0, 3, 3, 0, 1…
+## $ jarak     <dbl> 3000, 3000, 3000, 7000, 280, 7000, 600, 7200, 0, 500, 5000…
 ```
 
 **Latihan 1:**
@@ -7010,10 +7210,10 @@ KMO(data_analisis)
 ## Call: KMO(r = data_analisis)
 ## Overall MSA =  0.63
 ## MSA for each item = 
-##    ongkos   bparkir    durasi    bareng  toplajur      usia  jmlmotor  jmlmobil jmlsepeda 
-##      0.66      0.65      0.60      0.63      0.81      0.62      0.61      0.61      0.57 
-## jmldewasa   jmlanak     jarak 
-##      0.48      0.44      0.64
+##    ongkos   bparkir    durasi    bareng  toplajur      usia  jmlmotor 
+##      0.66      0.65      0.60      0.63      0.81      0.62      0.61 
+##  jmlmobil jmlsepeda jmldewasa   jmlanak     jarak 
+##      0.61      0.57      0.48      0.44      0.64
 ```
 
 Berdasarkan hasil di atas: - Nilai KMO Keseluruhan (*Overall MSA*) = 0,63 (Layak, \> 0,5). - Namun, jika dilihat per variabel (*MSA for each item*), terdapat variabel dengan nilai \< 0,5 yaitu `jmldewasa` (0,48) dan `jmlanak` (0,44).
@@ -7035,10 +7235,10 @@ KMO(data_analisis_final)
 ## Call: KMO(r = data_analisis_final)
 ## Overall MSA =  0.65
 ## MSA for each item = 
-##    ongkos   bparkir    durasi    bareng  toplajur      usia  jmlmotor  jmlmobil jmlsepeda 
-##      0.66      0.65      0.60      0.63      0.82      0.62      0.64      0.62      0.58 
-##     jarak 
-##      0.64
+##    ongkos   bparkir    durasi    bareng  toplajur      usia  jmlmotor 
+##      0.66      0.65      0.60      0.63      0.82      0.62      0.64 
+##  jmlmobil jmlsepeda     jarak 
+##      0.62      0.58      0.64
 ```
 
 Sekarang seluruh variabel memiliki MSA \> 0,5 dan KMO keseluruhan naik menjadi 0,68. Data siap diekstraksi.
@@ -7061,8 +7261,8 @@ analisis_awal$values
 ```
 
 ```
-##  [1] 2.4878770 1.6496907 1.2355641 1.0172985 0.8514614 0.8261586 0.6137405 0.5061041 0.4703792
-## [10] 0.3417258
+##  [1] 2.4878770 1.6496907 1.2355641 1.0172985 0.8514614 0.8261586 0.6137405
+##  [8] 0.5061041 0.4703792 0.3417258
 ```
 
 Kriteria umum penentuan jumlah dimensi: 1. **Kaiser's Criterion**: Ambil komponen dengan nilai eigen \> 1. 2. **Cumulative Variance**: Ambil jumlah komponen yang menjelaskan total variansi \> 60%.
