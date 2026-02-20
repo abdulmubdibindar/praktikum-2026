@@ -127,54 +127,57 @@ Sebelum memulai praktikum, kalian perlu menginstal R dan RStudio terlebih dahulu
 
 ## Cara Menjalankan R
 
-Cara (paling) utama untuk menjalankan perintah bahasa pemrograman R adalah dengan mengetikkannya langsung di **Console** (jendela nomor 3 pada Gambar \@ref(fig:jendela-rstudio)).
+### Langsung di *Console*
 
-Misalnya, jika Anda mengetikkan `1 + 1` di Console lalu menekan **Enter**, R akan langsung memberikan jawabannya.
+Pertama, silakan buka program **RGui**. Caranya, buka Start Menu, ketikkan `R x.x.x`. Ganti `x.x.x` dengan nomor versi yang Anda unduh sebelumnya. Kemudian tekan *Enter*. Tampilannya adalah seperti yang terlihat pada Gambar \@ref(fig:jendela-r) berikut.
+
+```{r jendela-r, fig.cap = "Jendela R 4.5.2", echo=FALSE, fig.align='center'}
+knitr::include_graphics("images/jendela-r.png")
+```
 
 ::: rmdexercise
-**Aktivitas Mandiri: Halo Dunia**
+**Aktivitas Mandiri: Kode R Pertama**
 
-Cobalah ketik perintah berikut di Console, lalu tekan Enter:
+Cobalah ketik perintah berikut di jendela yang terdapat kursor di dalamnya, lalu tekan Enter setelah mengetikkan kode berikut:
 
-`print("Halo dunia!")`
+`print(2 + 2)`
+
+Anda akan melihat angka `4` sebagai hasilnya.
 
 Selamat! Anda baru saja menjalankan kode R pertama Anda.
 :::
 
-Namun, mengetik satu per satu di Console akan melelahkan jika perintahnya banyak. Oleh karena itu, kita biasanya menulis kode dalam sebuah file *source code* (ekstensi `.R`).
+Anda akan menyadari bahwa antarmuka RGui tidak bersahabat dengan pengguna *(user friendly)*. Selain itu tidak ada juga alat-alat yang memudahkan kita memanajemen pekerjaan seperti menampilkan lokasi file atau *script* kode sumber.
 
-### Membuat File Kode Sumber R (`.R`)
+Oleh karena itu, kita membutuhkan cara kedua, yakni menggunakan **RStudio** melalui panel **Console** (jendela nomor 3 pada Gambar \@ref(fig:jendela-rstudio)).
+
+::: rmdexercise
+**Aktivitas Mandiri: Kode R pertama di RStudio**
+
+Cobalah ketik perintah berikut di Console, lalu tekan Enter:
+
+`print(2 + 2)`
+
+Anda akan melihat hasil yang sama seperti yang Anda dapat di RGui. Inilah tempat menjalankan kode R di RStudio.
+
+Selamat! Anda baru saja menjalankan kode R pertama Anda di RStudio.
+:::
+
+### Menggunakan *File* Kode Sumber
+
+Namun, mengetik satu per satu di Console akan melelahkan jika perintahnya banyak. Oleh karena itu, kita biasanya menulis kode dalam sebuah file *source code* yang berekstensi (berakhiran) `.R`.
+
+#### Membuat *File* Kode Sumber R (`.R`)
 
 File kode sumber R (berekstensi `.R`) adalah dokumen teks yang berisi rangkaian perintah R yang dapat disimpan, diedit, dan dijalankan berulang kali. Ini adalah cara profesional dalam bekerja dengan R, karena kode kita menjadi **terdokumentasi**, **dapat direproduksi**, dan **mudah dibagikan**.
 
-**Langkah-langkah membuat file `.R` baru:**
+::: rmdexercise
+
+**Aktivitas Mandiri: Membuat *file* Kode Sumber R Pertama**
 
 1. Di RStudio, pilih menu **File → New File → R Script** (atau tekan **Ctrl + Shift + N** di Windows/Linux, **Cmd + Shift + N** di Mac)
 2. Sebuah tab baru akan muncul di panel *Script* (jendela kiri atas)
-3. Ketikkan kode R Anda di dalam tab tersebut
-4. Simpan file dengan memilih **File → Save** (atau **Ctrl + S** / **Cmd + S**)
-5. Beri nama file dengan ekstensi `.R`, misalnya `kode_R_pertama_saya.R`
-
-**Menjalankan kode dari file `.R`:**
-
-Untuk menjalankan kode dari file `.R` ke Console tanpa mengetik ulang:
-
-1. Sorot (blok) baris kode yang ingin dijalankan di panel *Script*
-2. Tekan kombinasi tombol **Ctrl + Enter** (Windows/Linux) atau **Cmd + Enter** (Mac)
-3. Kode yang disorot akan otomatis dikirim ke *Console* dan dijalankan
-
-Ini adalah cara kerja standar yang efisien dalam menggunakan R. Dengan cara ini, kita bisa:
-
-- **Menyimpan pekerjaan** untuk digunakan di lain waktu
-- **Menjalankan ulang** analisis dengan mudah
-- **Berbagi kode** dengan rekan kerja atau asisten praktikum
-- **Mendokumentasikan** setiap langkah analisis kita
-
-::: rmdexercise
-**Aktivitas Mandiri: Membuat Kode Sumber R**
-
-1. Buatlah file R Script baru melalui menu **File → New File → R Script**
-2. Ketikkan kode berikut di dalam file tersebut:
+3. Ketikkan kode R berikut di dalam tab tersebut
 
 ``` r
 # File kode R pertama saya
@@ -188,12 +191,58 @@ print("Hari ini saya mulai belajar R!")
 2 * 3
 ```
 
-3. Simpan file dengan nama `kode_R_pertama_saya.R` di dalam folder **Praktikum STP 2026**
-4. Sorot baris-baris kode `print`, lalu tekan **Ctrl + Enter** (Windows/Linux) atau **Cmd + Enter** (Mac). Setelah itu, sorot baris-baris operasi matematika, lalu tekan **Ctrl + Enter** (Windows/Linux) atau **Cmd + Enter** (Mac) lagi.
-5. Perhatikan jendela *Console* - Anda akan melihat hasil eksekusi kode Anda
-6. Selamat! Anda baru saja membuat file kode sumber R pertama Anda yang dapat disimpan dan dijalankan kapan saja. Jangan lupa tekan **Ctrl + S** / **Cmd + S** untuk menyimpan file Anda setiap kali Anda selesai mengeditnya.
+
+4. Simpan file dengan memilih **File → Save** (atau **Ctrl + S** / **Cmd + S**) di direktori/folder pertama muncul di jendela Anda tersebut
+5. Beri nama file dengan ekstensi `.R`, misalnya `kode_R_pertama_saya.R`
 
 :::
+
+#### Menjalankan kode dari file `.R`
+
+Untuk menjalankan kode dari file `.R` ke Console tanpa mengetik ulang:
+
+1. Anda bisa melakukan salah satu dari sekian cara ini:
+    1. Sorot (blok) baris-baris kode yang ingin dijalankan di panel *Script*. Ini akan menjalankan kode yang Anda sorot saja.
+    2. Klik angka baris di sebelah kiri untuk memilh seluruh kode yang ada dalam satu baris.
+    3. **REKOMENDASI**: menempatkan kursor pada baris yang kodenya akan dijalankan. Ini akan secara otomatis meminta R menjalankan baris kode yang dianggap satu paket. 
+2. Tekan kombinasi tombol **Ctrl + Enter** (Windows/Linux) atau **Cmd + Enter** (Mac)
+3. Kode tersebut akan otomatis dikirim ke *Console* dan dijalankan
+
+::: rmdexercise
+
+**Aktivitas Mandiri: Menjalankan Kode R dari File Kode Sumber**
+
+1. Masih dari *script* `kode_R_pertama_saya.R` tadi, tempatkan kursor pada baris berikut
+
+``` r
+...
+print("Halo dunia!")
+...
+
+```
+
+2. Jalankan baris tersebut dengan menekan tombol kombinasi sesuai penjelasan.
+3. Kemudian, tempatkan kursor pada baris berikut
+
+``` r
+...
+2 * 3
+...
+
+```
+
+4. Jalankan baris tersebut kembali.
+
+:::
+
+
+Ini adalah cara kerja standar yang efisien dalam menggunakan R. Dengan cara ini, kita bisa:
+
+- **Menyimpan pekerjaan** untuk digunakan di lain waktu
+- **Menjalankan ulang** analisis dengan mudah
+- **Berbagi kode** dengan rekan kerja atau asisten praktikum
+- **Mendokumentasikan** setiap langkah analisis kita
+
 
 ------------------------------------------------------------------------
 
@@ -301,7 +350,7 @@ Setelah itu, RStudio akan membuat file **`Praktikum STP 2026.Rproj`** di dalam f
 
 ### Mengunduh Dataset Praktikum dari GitHub
 
-Setelah struktur direktori dan Project sudah siap, langkah selanjutnya adalah **mengunduh dataset-dataset praktikum** yang akan digunakan sepanjang semester. Semua dataset praktikum disimpan di repository GitHub dan dapat diunduh secara gratis.
+Setelah struktur direktori dan Project sudah siap, langkah selanjutnya adalah **mengunduh dataset-dataset praktikum** yang akan digunakan sepanjang semester. Semua dataset praktikum disimpan di *repository* GitHub dan dapat diunduh secara gratis.
 
 ::: rmdnote
 **Mengapa Dataset Disimpan di GitHub? {.header}**
@@ -396,40 +445,7 @@ Praktikum STP 2026/           ← Folder Project kalian
 **PENTING**: Jika folder `datasets` berada di lokasi lain (misalnya di **Desktop** atau **Downloads**), kode praktikum **tidak akan bisa** membaca dataset. Pastikan folder `datasets` berada **langsung di dalam** folder `Praktikum STP 2026`.
 :::
 
-#### Alternatif: Download Dataset Satu per Satu (Tidak Disarankan)
-
-Jika kalian hanya ingin mengunduh satu atau beberapa file dataset tertentu, bisa menggunakan cara berikut:
-
-1. Buka [folder datasets di GitHub](https://github.com/abdulmubdibindar/praktikum-r-stp/tree/main/datasets)
-2. Klik nama file dataset yang ingin diunduh (misalnya `Data Praktikum 01.xlsx`)
-3. Klik tombol **"Download"** di pojok kanan atas halaman
-4. Simpan file tersebut ke dalam folder **`datasets/`** di Project RStudio kalian
-
-> **Catatan**: Cara ini lebih lambat jika kalian perlu banyak file. **Sangat disarankan** menggunakan cara download ZIP untuk mendapatkan **semua dataset sekaligus** agar tidak perlu download berulang-ulang.
-
-#### Troubleshooting: Jika Kode Tidak Bisa Membaca Dataset
-
-Jika kalian mengalami error seperti:
-
-```
-Error in file(file, "rt") : cannot open the connection
-```
-
-Kemungkinan penyebabnya:
-
-- ❌ Folder `datasets` tidak berada di lokasi yang benar
-- ❌ Nama folder salah ketik (misalnya `dataset` tanpa huruf 's' atau `Datasets` dengan huruf kapital)
-- ❌ File Project `.Rproj` tidak dibuka (sehingga *working directory* salah)
-
-**Solusi:**
-
-1. Tutup RStudio
-2. Buka **kembali** RStudio dengan cara double-click file **`Praktikum STP 2026.Rproj`**
-3. Jalankan kembali kode `dir.exists("datasets")` - harus menghasilkan `TRUE`
-4. Jika masih `FALSE`, cek kembali apakah folder `datasets` sudah benar-benar berada di dalam folder Project
-
-
-## Sintaks Dasar Bahasa r
+## Sintaks Dasar Bahasa R
 
 Dalam subbab ini, kita akan membahas sintaks dasar bahasa R yang akan sering digunakan dalam praktikum ini.
 
@@ -446,44 +462,145 @@ Pada dasarnya, semua yang kita tulis di *script* akan dijalankan oleh R. Akan te
 Komentar sangat berperan penting dalam kode kalian. Malahan, ini adalah kekuatan terbesar dari penggunaan R dalam Kita akan sering menggunakan komentar dalam kode kalian. Jadi, jangan ragu untuk menggunakan komentar untuk menjelaskan kode kalian.
 :::
 
-### *Assignment* (Pemberian Nilai)
+#### Komentar Blok (*Block Comment*)
 
-Untuk menyimpan nilai ke dalam variabel/objek, kita menggunakan tanda panah kiri (`<-`). Gunakanlah selalu `<-` sebagai penanda bahwa kita sedang memasukkan nilai ke dalam objek, karena ini adalah standar baku dalam pemrograman R.
+Untuk menulis komentar yang panjang (lebih dari satu baris), kita bisa menggunakan **komentar blok**. Ada dua cara:
+
+**Cara 1: Tanda Pagar di Setiap Baris**
 
 ``` r
-x <- 10
-nama <- "Budi"
+# Ini adalah komentar blok
+# yang terdiri dari beberapa baris
+# untuk menjelaskan konsep yang kompleks
+hasil <- data.ubl |>
+  filter(Jenis.Kelamin == "Laki-Laki") |>
+  summarize(rata_rata = mean(jarak))
 ```
 
-### *Case Sensitivity*
+**Cara 2: Menggunakan if(FALSE)**
 
-R membedakan huruf besar dan huruf kecil (*case sensitive*). Variabel `Data` dianggap berbeda dengan `data`.
+``` r
+if(FALSE) {
+  Ini adalah komentar blok alternatif.
+  Semua teks di dalam kurung kurawal tidak akan dijalankan.
+  Berguna untuk men-disable blok kode sementara saat debugging.
+}
+```
+
+::: rmdnote
+**Kapan Menggunakan Komentar Blok?**
+
+- Menulis jawaban analisis yang panjang (misalnya interpretasi hasil statistik)
+- Mendokumentasikan proses pemikiran Anda
+- Men-disable sementara kode yang tidak ingin dihapus
+- Menjawab soal Aktivitas Mandiri dalam bentuk teks
+:::
+
+
+### Variabel
+
+Variabel adalah tempat menyimpan data dan informasi di R. Variabel terdiri atas nama variabel dan nilainya, Cara mendeklarasikan variabel adalah dengan operator `<-`. Operator deklarasi bisa dimasukkan dengan *hotkey* `Alt` + `I`.
+
+Contoh:
+
+```{r mod0-assignment, echo=TRUE}
+a <- 1 # 'a' adalah nama variabel yang nilainya 1
+b <- 2 # 'b' adalah nama variabel yang nilainya 2
+```
+
+::: rmdimportant
+Meskipun kita bisa menggunakan `=` untuk meng-*assign* nilai ke variabel, praktik tersebut tidak lazim dipakai dalam komunitas R. Oleh karena itu, tetap gunakan *assignment operator* `<-` untuk memberi nilai pada suatu variabel.
+:::
+
+Variabel juga bisa dideklarasikan menggunakan operasi matematika dan variabel sebelumnya.
+
+```{r mod0-assignment-math, echo=TRUE}
+hasil <- a + b
+
+paste("Hasil:",hasil)
+```
+
+Untuk menampilkan nilai variabel tuliskan kembali nama variabelnya lalu jalankan.
+
+```{r mod0-var-display, echo=TRUE}
+a
+b
+hasil
+```
+
+### Konvensi Penamaan dalam R
+
+R mendukung beberapa gaya penamaan variabel. Penting untuk diingat bahwa **R membedakan huruf besar dan kecil** (*case-sensitive*), sehingga `data` berbeda dengan `Data`, `JenisKelamin` berbeda dengan `jeniskelamin`, dan `"Laki-Laki"` berbeda dengan `"Laki-laki"`. Kesalahan dalam kapitalisasi adalah sumber *error* yang sangat umum bagi pemula.
+
+R mendukung beberapa gaya penamaan variabel:
+
+1. **snake_case** (disarankan untuk variabel R):
+   - `data_mahasiswa`, `jarak_tempuh`, `biaya_sepekan`
+   - Menggunakan garis bawah (`_`) untuk memisahkan kata
+   
+2. **dot.notation** (umum untuk nama kolom):
+   - `data.ubl`, `Jenis.Kelamin`, `biaya.dalam.sepekan`
+   - Menggunakan titik (`.`) untuk memisahkan kata
+   - Sering muncul saat mengimpor data dari Excel
+
+3. **camelCase** (jarang dipakai di R):
+   - `dataMahasiswa`, `jarakTempuh`
+   - Huruf besar menandai awal kata baru
+
+**Rekomendasi:**
+
+- Gunakan **snake_case** untuk nama variabel/objek R yang Anda buat sendiri
+- Gunakan **dot.notation** untuk nama kolom dataset (konsisten dengan output dari Excel)
+- Hindari spasi dan karakter khusus dalam nama variabel
+- Gunakan nama yang deskriptif: `data_ubl` lebih baik dari `d1`
+- Konsisten: Pilih satu gaya dan gunakan terus sepanjang kode Anda
+
+::: rmdexercise
+**Aktivitas Mandiri: Membuat Variabel Disertai Komentar**
+
+1. Buatlah variabel dengan nama `nama` yang nilainya adalah nama kalian.
+2. Buatlah variabel dengan nama `nim` yang nilainya adalah NIM kalian.
+3. Buatlah variabel dengan nama `prodi` yang nilainya adalah program studi kalian.
+4. Buatlah variabel dengan nama `angkatan` yang nilainya adalah angkatan kalian.
+5. Tambahkan komentar pada baris paling atas bahwa variabel-variabel di bawahnya adalah "Identitas Saya".
+6. Tampilkan nilai variabel `nama`, `nim`, `prodi`, dan `angkatan` dengan perintah berikut.
+
+```r
+cat("Nama saya adalah",nama,". NIM saya adalah",nim,". Saya adalah mahasiswa",prodi," angkatan",angkatan,".")
+```
+
+:::
 
 ## Paket (*Packages*)
 
 R memiliki ribuan paket tambahan yang menyediakan fungsi-fungsi khusus.
 
--   **`install.packages("nama_paket")`**: Digunakan untuk mengunduh dan menginstal paket dari internet ke komputer kita. Ini cukup dilakukan satu kali saja.
--   **`library(nama_paket)`**: Digunakan untuk memuat paket yang sudah terinstal ke dalam sesi kerja kita agar isinya bisa digunakan. Ini harus dilakukan setiap kali kita membuka RStudio baru.
+-   **`install.packages("nama_paket")`**: Digunakan untuk mengunduh dan menginstal paket dari internet ke komputer kita. Ini cukup dilakukan satu kali saja. **Perhatikan bahwa nama paket ditulis dengan tanda `"` di awal dan akhir nama paket yang akan diinstal.**
+-   **`library(nama_paket)`**: Digunakan untuk memuat paket yang sudah terinstal ke dalam sesi kerja kita agar isinya bisa digunakan. Ini harus dilakukan setiap kali kita membuka RStudio baru. **Perhatikan bahwa tanda `"` tidak perlu lagi ditulis ketika kita ingin memuat paket yang sudah kita instal.**
 
-Paket utama yang akan sering kita gunakan adalah:
-
--   **`tidyverse`**: Kumpulan paket untuk pengolahan data modern.
--   **`openxlsx`**: Untuk membaca dan menulis file Excel.
 
 ::: rmdexercise
 **Aktivitas Mandiri: Instalasi Paket**
 
-Cobalah untuk menginstal paket `tidyverse` dan `openxlsx` di komputer Anda dengan mengetikkan perintah berikut di *Console*:
+Berikut adalah paket-paket yang akan kita gunakan selama praktikum ini. Instalasilah paket-paket berikut di komputer kalian:
 
-`install.packages(c("tidyverse", "openxlsx"))`
+- `tidyverse`
+- `openxlsx`
+- `gtsummary`
+- `flextable`
+- `treemapify`
+- `MKinfer`
+- `rcompanion`
+- `RCPA3`
+- `vcdExtra`
+- `psych`
 
-Tunggu hingga proses instalasi selesai. Ingat, tahap ini hanya perlu dilakukan satu kali saja.
+Tunggu hingga masing-masing proses instalasi selesai. Ingat, tahap ini hanya perlu dilakukan satu kali saja.
 :::
 
 ## Fungsi (*Functions*)
 
-Fungsi adalah serangkaian instruksi yang dibungkus menjadi satu perintah untuk melakukan tugas tertentu. R memiliki banyak fungsi bawaan, dan kita juga bisa membuat fungsi sendiri.
+Fungsi adalah serangkaian instruksi yang dibungkus menjadi satu perintah untuk melakukan tugas tertentu. R memiliki banyak fungsi bawaan yang berguna untuk banyak hal, seperti `print()` untuk menampilkan output, `mean()` untuk menghitung rata-rata, atau `sum()` untuk menghitung jumlah.
 
 ### Menggunakan Fungsi
 
@@ -497,7 +614,7 @@ rata_rata <- mean(nilai) # Hasil: 20
 
 ### Membuat Fungsi Sendiri
 
-Kita dapat membuat fungsi kustom menggunakan perintah `function()`. Struktur dasarnya adalah:
+Kita dapat membuat fungsi buatan kita sendiri menggunakan perintah `function()`. Struktur dasarnya adalah sebagai berikut:
 
 ``` r
 nama_fungsi <- function(input) {
@@ -507,18 +624,90 @@ nama_fungsi <- function(input) {
 }
 ```
 
+Penjelasan:
+
+- `nama_fungsi`: Nama yang akan kita gunakan untuk memanggil fungsi ini.
+- `function(input)`: Mendefinisikan bahwa kita membuat sebuah fungsi yang menerima satu argumen bernama `input`.
+- `{ ... }`: Blok kode yang berisi instruksi yang akan dijalankan.
+- `return(hasil)`: Mengembalikan nilai `hasil` sebagai *output* dari fungsi.
+
+::: rmdexercise
+**Aktivitas Mandiri: Membuat Fungsi Sendiri**
+
+1. Buatlah dua variabel dengan nama `c` dan `d` dengan nilai 10 dan 20
+2. Buatlah fungsi dengan nama `kali_dua` yang menerima satu argumen `x` sebagai berikut:
+
+``` r
+kali_dua <- function(x) {
+  # Proses yang dilakukan
+  hasil <- x * 2
+  return(hasil)
+}
+```
+
+3. Jalankan fungsi tersebut dengan argumen nilai `c` dan `d` dan simpan nilainya berturut-turut pada variabel `c_kali2` dan `d_kali2`.
+4. Tampilkan nilai variabel `c_kali2` dan `d_kali2`.
+
+:::
+
 Ini akan sangat berguna ketika kita ingin melakukan perhitungan yang sama berulang kali, seperti pada perhitungan IQV di Modul 2.
 
 ## Struktur Data Dasar
 
+Kita perlu mengenal jenis-jenis struktur data yang ada di R. Mereka akan sangat sering kita gunakan selama praktikum ini.
+
 ### Vektor
 
-Vektor adalah struktur data paling dasar di R yang menampung deretan nilai dengan tipe yang sama. Kita membuatnya dengan fungsi `c()` (*combine*).
+Vektor adalah struktur data paling dasar di R yang dapat menampung lebih dari satu nilai. Kita membuatnya dengan fungsi `c()` (*combine*).
+
+Ciri utama vektor adalah semua elemen di dalamnya harus memiliki tipe data yang sama. Jika tidak, R akan mengubah tipe data elemen tersebut menjadi tipe data yang paling umum.
 
 ``` r
 angka <- c(1, 2, 3, 4, 5)
 huruf <- c("a", "b", "c")
+campuran <- c(1, "a", TRUE) # R akan mengubah tipe data elemen tersebut menjadi tipe data yang paling umum, yaitu character/string
 ```
+
+::: rmdexercise
+**Aktivitas Mandiri: Membuat Vektor**
+
+1. Buatlah vektor dengan nama `nilai_ujian` yang berisi nilai ujian 5 mahasiswa berikut: 85, 90, 78, 92, 88
+2. Buatlah vektor dengan nama `fakultas` yang berisi nama-nama fakultas di ITERA
+3. Buatlah vektor dengan nama `apa_saja` yang berisi nilai `1` dan `"a"`
+4. Tampilkan tipe data dari variabel `nilai_ujian`, `fakultas`, dan `apa_saja`. Perhatikan hasil pada bagian `apa_saja`. Apa jenis nilai-nilai dalam vektor tersebut?
+
+:::
+
+
+### List
+
+List adalah struktur data yang dapat menampung banyak nilai yang berbeda tipe datanya.
+
+``` r
+list_saya <- list("kucing", 1, TRUE)
+list_saya # Untuk menampilkan nilai list_saya
+```
+
+List juga bahkan dapat menampung vektor.
+
+``` r
+list_saya <- list(c(1, 2, 3), c("a", "b", "c"), c(TRUE, FALSE, TRUE))
+list_saya
+```
+
+Kita dapat memberi nama elemen-elemen dalam list dengan mengetikkan nama elemen dan diikuti tanda `=` sebelum nilai elemen tersebut.
+
+``` r
+list_saya <- list(nama = "Budi", nilai_ujian = c(85, 90, 78), fakultas = "FTI")
+```
+
+::: rmdexercise
+**Aktivitas Mandiri: Membuat List**
+
+1. Buatlah list dengan nama `list_saya` yang berisi nama, nilai ujian, dan fakultas
+2. Tampilkan nilai variabel `list_saya`
+
+:::
 
 ### Tipe Data
 
@@ -548,7 +737,13 @@ data |>
 
 Artinya: "Ambil `data`, lalu `fungsi_1`, kemudian hasilnya dimasukkan ke `fungsi_2`."
 
+Kita akan mempelajari penggunaan operator pipa (`|>`) secara lebih praktis dalam Modul \@ref(modul-1). 
+
 ## Manajemen Data (Input/Output)
+
+Ini adalah kemampuan yang penting dalam pengolahan data di R karena seringkali kita perlu mengolah data dari file eksternal (seperti Excel) atau menyimpan data hasil pengolahan ke file eksternal.
+
+Kita akan mempraktikkan kemampuan ini lebih banyak mulai di Modul \@ref(modul-1).
 
 ### Membaca Data
 

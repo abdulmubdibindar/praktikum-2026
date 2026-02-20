@@ -18,7 +18,7 @@ Seperti biasa, kita perlu memuat pustaka *(libraries)* yang diperlukan dalam pen
 
 Dalam modul ini kita akan menggunakan sebuah pustaka bernama `stats` yang merupakan pustaka khusus untuk perhitungan-perhitungan statistik dan juga penghasil angka acak.
 
-```{r}
+```{r mod05-load-libraries, echo=TRUE}
 library(tidyverse)
 library(readr)
 library(stats)
@@ -40,7 +40,7 @@ data_mahasiswa <- read_csv2("data_mahasiswa.csv")
 # read_csv() → untuk file CSV dgn pemisah koma (,).
 ```
 
-```{r}
+```{r mod05-load-data, echo=TRUE}
 data_mahasiswa <- read_csv2("datasets/data_mahasiswa.csv") 
 ```
 
@@ -93,7 +93,7 @@ Pertama, mari kita buat sebuah fungsi di R untuk menghitung nilai statistik uji.
 
 
 
-```{r membuat-fungsi-mean1pop}
+```{r mod05-create-function-mean-1pop, echo=TRUE}
 # Membuat fungsi uji hipotesis (hypothesis testing, ht) untuk rata-rata (mean)
 # dengan 1 populasi (1pop)
 # Keterangan input:
@@ -103,8 +103,8 @@ Pertama, mari kita buat sebuah fungsi di R untuk menghitung nilai statistik uji.
 #   - n    : ukuran sampel
 ht_mean_1pop <- function(xbar, mu, sd, n) {
   se <- sd/sqrt(n) # menghitung standard error untuk rata-rata
-  Z_hitung <- (xbar - mu)/se # menghitung nilai Z dari statistik
-  return(Z_hitung)
+  z_hitung <- (xbar - mu)/se # menghitung nilai Z dari statistik
+  return(z_hitung)
 }
 ```
 
@@ -114,7 +114,7 @@ Setelah fungsi dibuat, kita deklarasikan variabel-variabel yang akan digunakan. 
 
 
 
-```{r mendeklarasikan-variabel-uji-mean1pop}
+```{r mod05-declare-variables-mean-1pop, echo=TRUE}
 # Mendeklarasikan variabel-variabel yang akan diuji
 sample_mean <- mean(data_mahasiswa$jarak_km) # artinya menghitung rata-rata dari kolom jarak_km pada data data_mahasiswa.
 pop_mean <- 4.0 # ini nilai hipotesis μ₀ yang ingin diuji.
@@ -139,7 +139,7 @@ Dalam uji hipotesis, kita menggunakan distribusi normal standar (kurva Z) untuk 
 
 Untuk memahami konsep area kritis, perhatikan Gambar \@ref(fig:dist-normal-two-tailed). Gambar tersebut menunjukkan bahwa untuk uji two-tailed dengan α = 0.05, area kritis terbagi menjadi dua bagian (masing-masing 2.5%) di kedua ekor distribusi.
 
-```{r dist-normal-two-tailed, echo=FALSE, fig.cap='Distribusi Normal dengan Area Kritis Two-Tailed (α = 0.05)', fig.align='center', fig.width=8, fig.height=5}
+```{r mod05-visualize-two-tailed, echo=FALSE, fig.cap='Distribusi Normal dengan Area Kritis Two-Tailed (α = 0.05)', fig.align='center', fig.width=8, fig.height=5}
 library(ggplot2)
 # Data untuk kurva normal
 x <- seq(-4, 4, length.out = 1000)
@@ -196,7 +196,7 @@ ggplot(df_normal, aes(x = x, y = y)) +
 
 #### Visualisasi Left-Tailed Test (α = 0.05)
 
-```{r dist-normal-left-tailed, echo=FALSE, fig.cap='Distribusi Normal dengan Area Kritis Left-Tailed (α = 0.05)', fig.align='center', fig.width=8, fig.height=5}
+```{r mod05-visualize-left-tailed, echo=FALSE, fig.cap='Distribusi Normal dengan Area Kritis Left-Tailed (α = 0.05)', fig.align='center', fig.width=8, fig.height=5}
 # Z kritis untuk left-tailed
 z_kritis_left <- qnorm(0.05)  # -1.64
 ggplot(df_normal, aes(x = x, y = y)) +
@@ -232,7 +232,7 @@ ggplot(df_normal, aes(x = x, y = y)) +
 
 #### Visualisasi Right-Tailed Test (α = 0.05)
 
-```{r dist-normal-right-tailed, echo=FALSE, fig.cap='Distribusi Normal dengan Area Kritis Right-Tailed (α = 0.05)', fig.align='center', fig.width=8, fig.height=5}
+```{r mod05-visualize-right-tailed, echo=FALSE, fig.cap='Distribusi Normal dengan Area Kritis Right-Tailed (α = 0.05)', fig.align='center', fig.width=8, fig.height=5}
 # Z kritis untuk right-tailed
 z_kritis_right <- qnorm(0.95)  # 1.64
 ggplot(df_normal, aes(x = x, y = y)) +
@@ -288,7 +288,7 @@ Langkah pertama adalah merumuskan hipotesis. Di sini kita mendefinisikan dua kem
 
 
 
-```{r merumuskan-hipotesis-mean1poptt}
+```{r mod05-hypothesis-mean-1pop-twotail, echo=TRUE}
 cat("H0 : rata-rata jarak = 4 km", # fungsi "cat()" digunakan untuk mecetak teks ke console dengan format yang bisa kita atur sendiri.
     "\n\nH1 : rata-rata jarak != 4 km") # "!=" berarti "tidak sama dengan" (menandakan uji dua sisi).
 ```
@@ -299,12 +299,12 @@ Setelah hipotesis dirumuskan, kita perlu menentukan distribusi sampling dan titi
 
 
 
-```{r memilih-distribusi-sampling-wil-titik-kritis-mean1poptt}
+```{r mod05-critical-value-mean-1pop-twotail, echo=TRUE}
 # Hipotesis yang dipakai tidak berarah, maka wilayah kritis adalah alpha/2
 alpha <- 0.05
-Z.crit_2tail <- abs(qnorm(alpha/2)) # Nilai yang digunakan adalah nilai absolut, karena dibagi 2, tanda tidak berpengaruh
+z_crit_2tail <- abs(qnorm(alpha/2)) # Nilai yang digunakan adalah nilai absolut, karena dibagi 2, tanda tidak berpengaruh
 
-cat("Titik kritis uji two-tailed:",Z.crit_2tail)
+cat("Titik kritis uji two-tailed:",z_crit_2tail)
 ```
 
 ##### Menghitung statistik uji
@@ -313,11 +313,11 @@ Setelah menentukan titik kritis, kita menghitung nilai statistik uji menggunakan
 
 
 
-```{r menghitung-stat-uji-mean1poptt}
+```{r mod05-test-statistic-mean-1pop-twotail, echo=TRUE}
 # hasil perhitungan statistik uji diabsolutkan untuk mengambil nilainya saja tanpa tandanya
-Z_meanJarak <- abs(ht_mean_1pop(sample_mean, pop_mean, sample_sd, ukuran_sampel))
+z_mean_jarak <- abs(ht_mean_1pop(sample_mean, pop_mean, sample_sd, ukuran_sampel))
 
-cat("Hasil statistik uji rata-rata:", Z_meanJarak)
+cat("Hasil statistik uji rata-rata:", z_mean_jarak)
 ```
 
 ##### Menarik kesimpulan
@@ -326,8 +326,8 @@ Langkah terakhir adalah menarik kesimpulan berdasarkan perbandingan antara nilai
 
 
 
-```{r menarik-kesimpulan-mean1poptt}
-if (Z_meanJarak < Z.crit_2tail) {
+```{r mod05-conclusion-mean-1pop-twotail, echo=TRUE}
+if (z_mean_jarak < z_crit_2tail) {
   tolak_h0 <- FALSE
   cat("Hipotesis kosong gagal ditolak. Perbedaan rata-rata sampel", round(sample_mean, 2), "dengan", pop_mean, "hanyalah kebetulan")
 } else {
@@ -348,7 +348,7 @@ Untuk uji satu arah, hipotesis alternatif ditentukan dengan arah tertentu. Misal
 
 Dengan cara ini, kita hanya akan menolak H0 jika bukti menunjukkan bahwa rata-rata memang lebih kecil. Jika ternyata rata-rata lebih besar, maka hal itu tidak mendukung H1.
 
-```{r merumuskan-hipotesis-mean1popot}
+```{r mod05-hypothesis-mean-1pop-onetail, echo=TRUE}
 cat("H0 : rata-rata jarak = 4 km",
     "\n\nH1 : rata-rata jarak < 4 km")
 ```
@@ -359,16 +359,16 @@ Karena hipotesis alternatif hanya mengarah ke satu sisi, maka daerah kritis hany
 
 
 
-```{r memilih-distribusi-sampling-wil-titik-kritis-mean1popot}
+```{r mod05-critical-value-mean-1pop-onetail, echo=TRUE}
 tail <- "kiri" # H1 menyatakan lebih kecil dari (left-tailed)
 
 if (tail == "kiri") {
-  Z.crit_1tail <- qnorm(alpha)
+  z_crit_1tail <- qnorm(alpha)
 } else {
-  Z.crit_1tail <- qnorm(1-alpha)
+  z_crit_1tail <- qnorm(1-alpha)
 }
 
-cat("Titik kritis uji one-tailed:", Z.crit_1tail)
+cat("Titik kritis uji one-tailed:", z_crit_1tail)
 ```
 
 ##### Menghitung statistik uji
@@ -377,11 +377,11 @@ Setelah titik kritis ditentukan, kita menghitung nilai statistik uji. Pada uji s
 
 
 
-```{r menghitung-stat-uji-mean1popot}
+```{r mod05-test-statistic-mean-1pop-onetail, echo=TRUE}
 # Hasil perhitungan statistik uji TIDAK diabsolutkan
-Z_meanJarak <- ht_mean_1pop(sample_mean, pop_mean, sample_sd, ukuran_sampel)
+z_mean_jarak <- ht_mean_1pop(sample_mean, pop_mean, sample_sd, ukuran_sampel)
 
-cat("Hasil statistik uji rata-rata:", Z_meanJarak)
+cat("Hasil statistik uji rata-rata:", z_mean_jarak)
 ```
 
 ##### Menarik kesimpulan
@@ -390,8 +390,8 @@ Langkah terakhir adalah membandingkan nilai statistik uji dengan titik kritis. J
 
 
 
-```{r menarik-kesimpulan-mean1popot}
-if (Z_meanJarak < Z.crit_1tail) {
+```{r mod05-conclusion-mean-1pop-onetail, echo=TRUE}
+if (z_mean_jarak < z_crit_1tail) {
   tolak_h0 <- TRUE
   cat("Hipotesis kosong ditolak. Rata-rata jarak pada sampel mahasiswa sebesar", round(sample_mean, 2), "km menunjukkan perbedaan yang signifikan (lebih kecil)")
 } else {
@@ -412,11 +412,11 @@ Untuk memudahkan proses, kita membuat sebuah fungsi di R yang dapat menghitung s
 
 
 
-```{r membuat-fungsi-prop1pop}
+```{r mod05-create-function-prop-1pop, echo=TRUE}
 ht_prop_1pop <- function(p_hat, P, n) {
   se <- sqrt((p_hat * (1-p_hat))/n) # menghitung standard error untuk rata-rata
-  Z_hitung <- (p_hat - P)/se # menghitung nilai Z dari statistik
-  return(Z_hitung)
+  z_hitung <- (p_hat - P)/se # menghitung nilai Z dari statistik
+  return(z_hitung)
 }
 ```
 
@@ -426,13 +426,13 @@ Sebelum melakukan uji hipotesis, kita perlu mengetahui berapa proporsi mahasiswa
 
 
 
-```{r meringkas-data-1}
-summarize_tempatTinggal <- data_mahasiswa |> 
+```{r mod05-summarize-housing-data, echo=TRUE}
+summarize_tempat_tinggal <- data_mahasiswa |> 
   group_by("Tipe tinggal" = tipe_tinggal_baku) |> 
   summarize("Jumlah" = n()) |> 
   mutate("proporsi" = Jumlah/sum(Jumlah))
 
-summarize_tempatTinggal
+summarize_tempat_tinggal
 ```
 
 ##### Menyimpan Nilai Proporsi
@@ -441,9 +441,9 @@ Setelah kita memperoleh ringkasan data, kita simpan nilai proporsi mahasiswa yan
 
 
 
-```{r menyimpan-nilai-proporsi-2}
-proporsi_kosAsrama <- summarize_tempatTinggal$proporsi[1]
-proporsi_kosAsrama
+```{r mod05-save-proportion-value, echo=TRUE}
+proporsi_kos_asrama <- summarize_tempat_tinggal$proporsi[1]
+proporsi_kos_asrama
 ```
 
 ##### Mendeklarasikan variabel pengujian
@@ -452,9 +452,9 @@ Pada tahap ini, kita menentukan variabel-variabel utama yang akan digunakan dala
 
 
 
-```{r mendeklarasikan-variabel-uji-3}
+```{r mod05-declare-variables-prop-1pop, echo=TRUE}
 # Mendeklarasikan variabel-variabel yang akan diuji
-sample_prop <- proporsi_kosAsrama
+sample_prop <- proporsi_kos_asrama
 pop_prop <- 0.5
 
 # Menghasilkan data frame ringkasan dataset dengan menghitung jumlah mahasiswa sebagai ukuran sampel
@@ -479,7 +479,7 @@ Sama seperti uji dua arah pada rata-rata, uji dua arah pada proporsi diawali den
 
 
 
-```{r merumuskan-hipotesis-4}
+```{r mod05-hypothesis-prop-1pop-twotail, echo=TRUE}
 cat("H0 : prop. Kos/Asrama = 0,5",
     "\n\nH1 : prop. Kos/Asrama != 0,5")
 ```
@@ -490,12 +490,12 @@ Sama seperti sebelumnya, setelah hipotesis ditetapkan, kita perlu menentukan dis
 
 
 
-```{r memilih-distribusi-sampling-wil-titik-kritis-5}
+```{r mod05-critical-value-prop-1pop-twotail, echo=TRUE}
 # Hipotesis yang dipakai tidak berarah, maka wilayah kritis adalah alpha/2
 alpha <- 0.10 # (tingkat signifikansi 10%)
-Z.crit_2tail <- abs(qnorm(alpha/2)) # Nilai yang digunakan adalah nilai absolut
+z_crit_2tail <- abs(qnorm(alpha/2)) # Nilai yang digunakan adalah nilai absolut
 
-cat("Titik kritis uji two-tailed:", Z.crit_2tail)
+cat("Titik kritis uji two-tailed:", z_crit_2tail)
 ```
 
 ##### Menghitung Statistik Uji
@@ -504,11 +504,11 @@ Setelah titik kritis ditentukan, kita menghitung nilai statistik uji Z berdasark
 
 
 
-```{r menghitung-stat-uji-6}
+```{r mod05-test-statistic-prop-1pop-twotail, echo=TRUE}
 # Hasil perhitungan statistik uji diabsolutkan
-Z_propKos <- abs(ht_prop_1pop(sample_prop, pop_prop, ukuran_sampel))
+z_prop_kos <- abs(ht_prop_1pop(sample_prop, pop_prop, ukuran_sampel))
 
-Z_propKos
+z_prop_kos
 ```
 
 ##### Menarik kesimpulan
@@ -517,8 +517,8 @@ Langkah terakhir adalah membandingkan nilai statistik uji dengan titik kritis. D
 
 
 
-```{r menarik-kesimpulan-7}
-if (Z_propKos < Z.crit_2tail) {
+```{r mod05-conclusion-prop-1pop-twotail, echo=TRUE}
+if (z_prop_kos < z_crit_2tail) {
   tolak_h0 <- FALSE
   cat("Hipotesis kosong gagal ditolak. Perbedaan proporsi penghuni Kos/Asrama sebanyak", round(sample_prop, 3), "dari", pop_prop, "hanyalah kebetulan")
 } else {
@@ -537,7 +537,7 @@ Hipotesis dirumuskan sebagai berikut:
 
 
 
-```{r merumuskan-hipotesis-8}
+```{r mod05-hypothesis-prop-1pop-onetail, echo=TRUE}
 cat("H0 : prop. Kos/Asrama = 0,5",
     "\n\nH1 : prop. Kos/Asrama < 0,5")
 ```
@@ -548,16 +548,16 @@ Distribusi sampling yang digunakan tetap distribusi normal. Namun, karena ini uj
 
 
 
-```{r memilih-distribusi-sampling-wil-titik-kritis-9}
+```{r mod05-critical-value-prop-1pop-onetail, echo=TRUE}
 tail <- "kiri"
 
 if (tail == "kiri") {
-  Z.crit_1tail <- qnorm(alpha)
+  z_crit_1tail <- qnorm(alpha)
 } else {
-  Z.crit_1tail <- qnorm(1-alpha)
+  z_crit_1tail <- qnorm(1-alpha)
 }
 
-cat("Titik kritis uji one-tailed:", Z.crit_1tail)
+cat("Titik kritis uji one-tailed:", z_crit_1tail)
 ```
 
 ##### Menghitung statistik uji
@@ -566,21 +566,21 @@ Sama seperti pada uji dua arah, kita menghitung nilai statistik uji Z dengan fun
 
 
 
-```{r menghitung-stat-uji-10}
+```{r mod05-test-statistic-prop-1pop-onetail, echo=TRUE}
 # Hasil perhitungan statistik uji TIDAK diabsolutkan
-Z_propKos <- ht_prop_1pop(sample_prop, pop_prop, ukuran_sampel)
+z_prop_kos <- ht_prop_1pop(sample_prop, pop_prop, ukuran_sampel)
 
-Z_propKos
+z_prop_kos
 ```
 
 ##### Menarik kesimpulan
 
-Kesimpulan diambil dengan membandingkan nilai statistik uji (Z_propKos) dengan titik kritis (Z.crit_1tail). Untuk uji satu arah (kiri), kita menolak H₀ jika nilai statistik uji lebih kecil dari titik kritis. Jika tidak, kita gagal menolak H₀. Kesimpulan ini menjelaskan apakah ada cukup bukti untuk menyatakan proporsi memang lebih kecil dari nilai acuan.
+Kesimpulan diambil dengan membandingkan nilai statistik uji (z_prop_kos) dengan titik kritis (z_crit_1tail). Untuk uji satu arah (kiri), kita menolak H₀ jika nilai statistik uji lebih kecil dari titik kritis. Jika tidak, kita gagal menolak H₀. Kesimpulan ini menjelaskan apakah ada cukup bukti untuk menyatakan proporsi memang lebih kecil dari nilai acuan.
 
 
 
-```{r menarik-kesimpulan-11}
-if (Z_propKos < Z.crit_1tail) {
+```{r mod05-conclusion-prop-1pop-onetail, echo=TRUE}
+if (z_prop_kos < z_crit_1tail) {
   tolak_h0 <- TRUE
   cat("Hipotesis kosong ditolak. Perbedaan proporsi penghuni Kos/Asrama sebanyak", round(sample_prop, 3), "dari", pop_prop, "adalah signifikan (lebih kecil)")
 } else {
@@ -601,8 +601,8 @@ Pada langkah ini, kita akan membuat fungsi uji hipotesis rata-rata untuk dua pop
 
 
 
-```{r merumuskan-fungsi-12}
-ht_mean_2popIn <- function(xbar1, xbar2, sd1, sd2, n1, n2) {
+```{r mod05-create-function-mean-2pop, echo=TRUE}
+ht_mean_2pop_ind <- function(xbar1, xbar2, sd1, sd2, n1, n2) {
   se <- sqrt(             # Indentasi diberikan untuk memudahkan
     (                     # pembacaan karena banyaknya tanda kurung
       (sd1^2)/(n1 - 1)
@@ -610,8 +610,8 @@ ht_mean_2popIn <- function(xbar1, xbar2, sd1, sd2, n1, n2) {
       (sd2^2)/(n2 - 1)
     )
   )
-  Z_hitung <- (xbar1 - xbar2)/se # menghitung nilai Z dari statistik
-  return(Z_hitung)
+  z_hitung <- (xbar1 - xbar2)/se # menghitung nilai Z dari statistik
+  return(z_hitung)
 }
 ```
 
@@ -621,14 +621,14 @@ Sebelum menjalankan uji hipotesis, kita perlu mendapatkan data ringkasan berupa 
 
 
 
-```{r menghitung-mean-2-populasi-12}
-summarize_Jarak2Pop <- data_mahasiswa |>
+```{r mod05-calculate-mean-2pop, echo=TRUE}
+summarize_jarak_2pop <- data_mahasiswa |>
   group_by(Kampus = kampus) |>
   summarize(`Rata-rata` = mean(jarak_km),
             `Simpangan baku` = sd(jarak_km),
             Jumlah = n())
 
-summarize_Jarak2Pop
+summarize_jarak_2pop
 ```
 
 ##### Mendeklarasikan variabel uji
@@ -637,15 +637,15 @@ Setelah mendapatkan ringkasan data, kita harus menyimpan nilai rata-rata, simpan
 
 
 
-```{r mendeklarasikan-variabel-uji-13s}
-mean_jarakUINRIL <- summarize_Jarak2Pop$`Rata-rata`[3]
-mean_jarakITERA <- summarize_Jarak2Pop$`Rata-rata`[1]
+```{r mod05-declare-variables-mean-2pop, echo=TRUE}
+mean_jarak_uinril <- summarize_jarak_2pop$`Rata-rata`[3]
+mean_jarak_itera <- summarize_jarak_2pop$`Rata-rata`[1]
 
-sd_jarakUINRIL <- summarize_Jarak2Pop$`Simpangan baku`[3]
-sd_jarakITERA <- summarize_Jarak2Pop$`Simpangan baku`[1]
+sd_jarak_uinril <- summarize_jarak_2pop$`Simpangan baku`[3]
+sd_jarak_itera <- summarize_jarak_2pop$`Simpangan baku`[1]
 
-n_jarakUINRIL <- summarize_Jarak2Pop$Jumlah[3]
-n_jarakITERA <- summarize_Jarak2Pop$Jumlah[1]
+n_jarak_uinril <- summarize_jarak_2pop$Jumlah[3]
+n_jarak_itera <- summarize_jarak_2pop$Jumlah[1]
 ```
 
 #### *Two-tailed Test*
@@ -656,7 +656,7 @@ Sama seerti sebelumnya, langkah pertama dalam uji hipotesis adalah menyusun hipo
 
 
 
-```{r merumuskan-hipotesis-15}
+```{r mod05-hypothesis-mean-2pop-twotail, echo=TRUE}
 cat("H0: mu_jarakUINRIL - mu_jarakITERA = 0",
     "\n\nH1: mu_jarakUINRIL - mu_jarakITERA != 0")
 ```
@@ -667,28 +667,28 @@ Setelah hipotesis dirumuskan, kita harus menentukan distribusi sampling yang dip
 
 
 
-```{r memilih-distribusi-sampling-wil-titik-kritis-15}
+```{r mod05-critical-value-mean-2pop-twotail, echo=TRUE}
 # Hipotesis yang dipakai tidak berarah, maka wilayah kritis adalah alpha/2
 alpha <- 0.001
 
-Z.crit_2tail <- abs(qnorm(alpha/2)) # Nilai yang digunakan adalah nilai absolut
+z_crit_2tail <- abs(qnorm(alpha/2)) # Nilai yang digunakan adalah nilai absolut
 
-cat("Titik kritis uji two-tailed:", Z.crit_2tail)
+cat("Titik kritis uji two-tailed:", z_crit_2tail)
 ```
 
 ##### Menghitung statistik uji
 
-Setelah mengetahui titik kritis, kita hitung nilai statistik uji (Z) dari data yang dimiliki. Nilai ini diperoleh dengan memasukkan rata-rata, simpangan baku, dan ukuran sampel ke fungsi ht_mean_2popIn. Karena pengujian dilakukan dua sisi, nilai Z hasil perhitungan diabsolutkan agar bisa dibandingkan langsung dengan titik kritis.
+Setelah mengetahui titik kritis, kita hitung nilai statistik uji (Z) dari data yang dimiliki. Nilai ini diperoleh dengan memasukkan rata-rata, simpangan baku, dan ukuran sampel ke fungsi ht_mean_2pop_ind. Karena pengujian dilakukan dua sisi, nilai Z hasil perhitungan diabsolutkan agar bisa dibandingkan langsung dengan titik kritis.
 
 
 
-```{r menghitung-stat-uji-a}
+```{r mod05-test-statistic-mean-2pop-twotail, echo=TRUE}
 # Hasil perhitungan statistik uji diabsolutkan
-Z_meanJarak2Pop <- abs(ht_mean_2popIn(mean_jarakUINRIL, mean_jarakITERA,
-                                      sd_jarakUINRIL, sd_jarakITERA,
-                                      n_jarakUINRIL, n_jarakITERA))
+z_mean_jarak_2pop <- abs(ht_mean_2pop_ind(mean_jarak_uinril, mean_jarak_itera,
+                                      sd_jarak_uinril, sd_jarak_itera,
+                                      n_jarak_uinril, n_jarak_itera))
 
-Z_meanJarak2Pop
+z_mean_jarak_2pop
 ```
 
 ##### Menarik kesimpulan
@@ -697,8 +697,8 @@ Langkah terakhir adalah membandingkan nilai statistik uji dengan titik kritis. J
 
 
 
-```{r menarik-kesimpulan-b}
-if (Z_meanJarak2Pop < Z.crit_2tail) {
+```{r mod05-conclusion-mean-2pop-twotail, echo=TRUE}
+if (z_mean_jarak_2pop < z_crit_2tail) {
   tolak_h0 <- FALSE
   cat("Hipotesis kosong gagal ditolak. Perbedaan rata-rata jarak mahasiswa UINRIL dengan ITERA dari sampel hanyalah kebetulan.")
 } else {
@@ -715,7 +715,7 @@ Untuk one-tailed test, hipotesis alternatif (H1) menyebutkan arah perbedaan yang
 
 
 
-```{r merumuskan-hipotesis-c}
+```{r mod05-hypothesis-mean-2pop-onetail, echo=TRUE}
 cat("H0: mu_jarakUINRIL - mu_jarakITERA = 0",
     "\n\nH1: mu_jarakUINRIL - mu_jarakITERA < 0")
 ```
@@ -726,31 +726,31 @@ Dalam pengujian one-tailed, kita perlu menentukan sisi mana yang akan digunakan 
 
 
 
-```{r memilih-distribusi-sampling-wil-titik-kritis-a}
+```{r mod05-critical-value-mean-2pop-onetail, echo=TRUE}
 tail <- "kiri"
 
 if (tail == "kiri") {
-  Z.crit_1tail <- qnorm(alpha)
+  z_crit_1tail <- qnorm(alpha)
 } else {
-  Z.crit_1tail <- qnorm(1-alpha)
+  z_crit_1tail <- qnorm(1-alpha)
 }
 
-cat("Titik kritis uji one-tailed:", Z.crit_1tail)
+cat("Titik kritis uji one-tailed:", z_crit_1tail)
 ```
 
 ##### Menghitung Statistik uji
 
-Selanjutnya, kita menghitung nilai statistik uji menggunakan fungsi ht_mean_2popIn. Berbeda dengan two-tailed test, pada one-tailed test nilai Z tidak diabsolutkan karena arah perbedaan menjadi penting.
+Selanjutnya, kita menghitung nilai statistik uji menggunakan fungsi ht_mean_2pop_ind. Berbeda dengan two-tailed test, pada one-tailed test nilai Z tidak diabsolutkan karena arah perbedaan menjadi penting.
 
 
 
-```{r menghitung-stat-uji-d}
+```{r mod05-test-statistic-mean-2pop-onetail, echo=TRUE}
 # Hasil perhitungan statistik uji TIDAK diabsolutkan
-Z_meanJarak2Pop <- ht_mean_2popIn(mean_jarakUINRIL, mean_jarakITERA,
-                                  sd_jarakUINRIL, sd_jarakITERA,
-                                  n_jarakUINRIL, n_jarakITERA)
+z_mean_jarak_2pop <- ht_mean_2pop_ind(mean_jarak_uinril, mean_jarak_itera,
+                                  sd_jarak_uinril, sd_jarak_itera,
+                                  n_jarak_uinril, n_jarak_itera)
 
-Z_meanJarak2Pop
+z_mean_jarak_2pop
 ```
 
 ##### Menarik kesimpulan
@@ -759,8 +759,8 @@ Tahap terakhir adalah menarik kesimpulan dengan cara membandingkan nilai statist
 
 
 
-```{r menarik-kesimpulan-c}
-if (Z_meanJarak2Pop < Z.crit_1tail) {
+```{r mod05-conclusion-mean-2pop-onetail, echo=TRUE}
+if (z_mean_jarak_2pop < z_crit_1tail) {
   tolak_h0 <- TRUE
   cat("Hipotesis kosong ditolak. Mahasiswa ITERA secara rata-rata tinggal lebih jauh dari kampus dibandingkan mahasiswa UINRIL significanly.")
 } else {
@@ -777,7 +777,7 @@ Pada bagian ini kita akan melakukan uji hipotesis terhadap proporsi dua populasi
 
 Sama seperti sebelumnya, langkah pertama adalah membuat fungsi khusus untuk menghitung nilai statistik uji pada uji hipotesis proporsi dua populasi independen. Fungsi ini menerima input berupa proporsi sampel masing-masing populasi (p_hat1 dan p_hat2) serta ukuran sampelnya (n1 dan n2). Di dalam fungsi, dihitung terlebih dahulu proporsi gabungan (p_gab) yang mewakili keseluruhan sampel. Kemudian dihitung standard error (SE), dan akhirnya didapatkan nilai Z hitung.
 
-```{r membuat-fungsi-0}
+```{r mod05-create-function-prop-2pop, echo=TRUE}
 # Membuat fungsi uji hipotesis (hypothesis testing, ht) untuk rata-rata (mean)
 # dengan 1 populasi (2pop) Independen (In)
 # Keterangan input:
@@ -787,7 +787,7 @@ Sama seperti sebelumnya, langkah pertama adalah membuat fungsi khusus untuk meng
 #   - sd2   : statistik simpangan baku populasi #2
 #   - n1    : ukuran sampel dari populasi #1
 #   - n2    : ukuran sampel dari populasi #2
-ht_prop_2popIn <- function(p_hat1, p_hat2, n1, n2) {
+ht_prop_2pop_ind <- function(p_hat1, p_hat2, n1, n2) {
   p_gab <- ((n1*p_hat1 + n2*p_hat2))/(n1 + n2) # Total proporsi yang diuji
                                                # untuk kedua populasi
   se <- sqrt(
@@ -795,8 +795,8 @@ ht_prop_2popIn <- function(p_hat1, p_hat2, n1, n2) {
       (1/n1) + (1/n2)     # karena banyaknya kurung
     )
   )
-  Z_hitung <- (p_hat1 - p_hat2)/se # menghitung nilai Z dari statistik
-  return(Z_hitung)
+  z_hitung <- (p_hat1 - p_hat2)/se # menghitung nilai Z dari statistik
+  return(z_hitung)
 }
 ```
 
@@ -804,43 +804,43 @@ ht_prop_2popIn <- function(p_hat1, p_hat2, n1, n2) {
 
 Setelah fungsi dibuat, kita perlu menyiapkan data yang akan diuji. Pertama, data mahasiswa dikelompokkan berdasarkan kampus dan tipe_tinggal_baku. Selanjutnya dihitung proporsi tiap kategori (misalnya proporsi mahasiswa yang tinggal di kos/asrama). Data kemudian diubah dari format long ke wide sehingga tiap kategori menjadi variabel. Dari hasil ini kita bisa mengambil proporsi masing-masing populasi, serta ukuran sampel total pada tiap kampus.
 
-```{r mendeklarasikan-variabel-uji-g}
-summarize_tempatTinggal2Pop <- data_mahasiswa |> 
+```{r mod05-declare-variables-prop-2pop, echo=TRUE}
+summarize_tempat_tinggal_2pop <- data_mahasiswa |> 
   group_by(kampus, tipe_tinggal_baku) |> 
   summarize(Jumlah = n()) |>
   mutate(proporsi = Jumlah/sum(Jumlah)) |> # menghitung proporsi tiap kategori.
   select(-Jumlah) |> 
   spread(tipe_tinggal_baku, proporsi) # mengubah data long menjadi wide (kolom                                          # kategori jadi variabel).
 
-summarize_tempatTinggal2Pop
+summarize_tempat_tinggal_2pop
 
-proporsi_kosAsrama_ITERA <- summarize_tempatTinggal2Pop$`Kos/Asrama`[1]
-proporsi_kosAsrama_UINRIL <- summarize_tempatTinggal2Pop$`Kos/Asrama`[3]
+proporsi_kos_asrama_itera <- summarize_tempat_tinggal_2pop$`Kos/Asrama`[1]
+proporsi_kos_asrama_uinril <- summarize_tempat_tinggal_2pop$`Kos/Asrama`[3]
 
-n_kosAsrama_2Pop <- data_mahasiswa |> 
+n_kos_asrama_2pop <- data_mahasiswa |> 
   count(kampus)
 
-n_kosAsrama_ITERA <- n_kosAsrama_2Pop$n[1]
-n_kosAsrama_UINRIL <- n_kosAsrama_2Pop$n[3]
+n_kos_asrama_itera <- n_kos_asrama_2pop$n[1]
+n_kos_asrama_uinril <- n_kos_asrama_2pop$n[3]
 ```
 
 ####*Two-tailed Test*
 
-```{r coba-sendiri0}
+```{r mod05-test-prop-2pop-twotail, echo=TRUE}
 # Gunakan CI = 93%, artinya alpha = 7% = 0.07
 alpha <- 0.07
 
 # Hitung Z kritis 2-tailed
-Z.crit_2tail <- abs(qnorm(alpha/2))
+z_crit_2tail <- abs(qnorm(alpha/2))
 
 # Hitung statistik uji proporsi 2 populasi
 # Asumsi: Menggunakan data proporsi kos/asrama ITERA vs UINRIL yang sudah disiapkan sebelumnya
-Z_prop2Pop <- abs(ht_prop_2popIn(proporsi_kosAsrama_UINRIL, proporsi_kosAsrama_ITERA,
-                             n_kosAsrama_UINRIL, n_kosAsrama_ITERA))
+z_prop_2pop <- abs(ht_prop_2pop_ind(proporsi_kos_asrama_uinril, proporsi_kos_asrama_itera,
+                             n_kos_asrama_uinril, n_kos_asrama_itera))
 
-cat("Titik Kritis:", Z.crit_2tail, "\nZ Hitung:", Z_prop2Pop, "\n")
+cat("Titik Kritis:", z_crit_2tail, "\nZ Hitung:", z_prop_2pop, "\n")
 
-if (Z_prop2Pop < Z.crit_2tail) {
+if (z_prop_2pop < z_crit_2tail) {
   cat("Hipotesis nol gagal ditolak.")
 } else {
   cat("Hipotesis nol ditolak.")
@@ -849,25 +849,25 @@ if (Z_prop2Pop < Z.crit_2tail) {
 
 #### *One-tailed Test*
 
-```{r coba-sendiri1}
+```{r mod05-test-prop-2pop-onetail, echo=TRUE}
 # Gunakan CI = 96%, artinya alpha = 4% = 0.04
 alpha <- 0.04
 tail <- "kiri" # Asumsi uji lebih kecil (UINRIL < ITERA misalnya)
 
 # Hitung Z kritis 1-tailed
 if (tail == "kiri") {
-  Z.crit_1tail <- qnorm(alpha)
+  z_crit_1tail <- qnorm(alpha)
 } else {
-  Z.crit_1tail <- qnorm(1-alpha)
+  z_crit_1tail <- qnorm(1-alpha)
 }
 
 # Hitung statistik uji (tidak absolut)
-Z_prop2Pop <- ht_prop_2popIn(proporsi_kosAsrama_UINRIL, proporsi_kosAsrama_ITERA,
-                             n_kosAsrama_UINRIL, n_kosAsrama_ITERA)
+z_prop_2pop <- ht_prop_2pop_ind(proporsi_kos_asrama_uinril, proporsi_kos_asrama_itera,
+                             n_kos_asrama_uinril, n_kos_asrama_itera)
 
-cat("Titik Kritis:", Z.crit_1tail, "\nZ Hitung:", Z_prop2Pop, "\n")
+cat("Titik Kritis:", z_crit_1tail, "\nZ Hitung:", z_prop_2pop, "\n")
 
-if (Z_prop2Pop < Z.crit_1tail) {
+if (z_prop_2pop < z_crit_1tail) {
   cat("Hipotesis nol ditolak (Signifikan).")
 } else {
   cat("Hipotesis nol gagal ditolak.")
