@@ -31,7 +31,7 @@ Seperti yang kalian lihat, paket `tidyverse` menyertakan paket-paket berikut yan
 
 Selain paket `tidyverse`, kita juga akan menggunakan paket `openxlsx` untuk mengoperasikan *file* Excel.
 
-```{r load-openxlsx}
+```{r load-openxlsx, echo=TRUE}
 library(openxlsx)
 ```
 
@@ -85,8 +85,8 @@ View(data_ubl)
 
 Kita sudah mempelajari bahwa data terstruktur terdiri atas **objek**, **variabel**, dan **nilai**. Satu objek diwakili oleh satu baris, variabel oleh kolom, dan nilai berada di dalam sel-sel yang merupakan perpotongan kolom dan baris.
 
-::: rmdimportant
-⚠️ **Penting**
+::: rmdwarning
+⚠️ **Perhatian**
 
 Di modul ini kita menggunakan istilah "variabel" untuk menyebut dua hal yang berbeda. Makna pertama mengacu pada penyimpan nilai di R, sementara yang kedua adalah elemen data terstruktur yang menjadi kolom-kolom.
 
@@ -102,7 +102,7 @@ glimpse(data)
 
 Hasil dari fungsi `glimpse()` tersebut menunjukkan jumlah baris, jumlah kolom, dan kolom-kolom yang ada dalam set data kita beserta rinciannya. Set data kita memiliki 400 baris yang ditunjukkan oleh **`Rows`** dan 25 kolom yang ditunjukkan oleh **`Columns`** . Ini artinya, set data kita memiliki 400 objek dan 25 variabel.
 
-Rincian nama-nama variabel ditunjukkan pada baris keluaran yang diawali oleh simbol **`\$`**. Singkatan-singkatan di dalam kurung sudut `<>` bermakna jenis nilai dari variabel tersebut. [Laman ini](https://cran.r-project.org/web/packages/tibble/vignettes/types.html) memberikan penjelasan makna setiap singkatan tersebut.
+Rincian nama-nama variabel ditunjukkan pada baris keluaran yang diawali oleh simbol **`$`**. Singkatan-singkatan di dalam kurung sudut `<>` bermakna jenis nilai dari variabel tersebut. [Laman ini](https://cran.r-project.org/web/packages/tibble/vignettes/types.html) memberikan penjelasan makna setiap singkatan tersebut.
 
 Terlihat dalam data kita bahwa hanya ada dua tipe nilai variabel: `dbl` dan `chr` yang berarti *double* (bilangan desimal) dan *character* (huruf/*string*).
 
@@ -166,11 +166,11 @@ length(colnames(data)) # jumlah kolom set data UIN RIL
 length(colnames(data_ubl)) # jumlah kolom set data UBL
 ```
 
-Hasil ini menunjukkan bahwa kedua dataset memiliki jumlah kolom yang sama (25 kolom). Meskipun jumlahnya sama, kita sudah melihat bahwa ada perbedaan penamaan di antara keduanya yang perlu diseragamkan.
+Hasil ini menunjukkan bahwa kedua dataset memiliki jumlah kolom yang hanya berbeda 1 kolom (25 kolom untuk UINRIL, 26 untuk UBL). Selain jumlahnya yang berbeda, terdapat juga perbedaan penamaan kolom pada kedua dataset sehingga perlu diseragamkan.
 
 
-::: rmdimportant
-⚠️ Penting!
+::: rmdnote
+**Catatan**
 
 Fungsi `length()` pada dasarnya adalah fungsi penghitung jumlah elemen dalam suatu vektor atau jenis data lain yang berupa daftar.
 
@@ -276,12 +276,14 @@ Hasil dari kedua perintah di atas seharusnya adalah daftar nama yang identik.
 ::: {.rmdexercise}
 ### Aktivitas Mandiri 2: Seleksi dan Rename Kolom [STP-1.4].{capaian} {-}
 
-Gunakan dataset dari sheet UINRIL yang sudah diimpor di aktivitas sebelumnya:
+Pada aktivitas ini kita akan mengolah kembali dataset dari UINRIL.
 
-1. Pilih hanya kolom: `Nomor.urut`, `Jenis.Kelamin`, `Umur`, `Fakultas`, `Prodi`
-2. Rename kolom `Jenis.Kelamin` menjadi `JK` (gunakan fungsi `rename()`)
-3. Simpan hasilnya ke variabel `data_uinril_subset`
-4. Gunakan `glimpse(data_uinril_subset)` untuk memverifikasi hanya ada 5 kolom dan nama `JK` sudah benar
+1. Impor kembali sheet pertama (UINRIL) dari file dataset dengan fungsi `read.xlsx()`, lalu simpan hasilnya dengan nama `data_uinril_lat`.
+2. Pilih hanya 6 kolom berikut menggunakan perintah `select()`: `Kampus_PT`, `Jenis.Kelamin`, `kepemilikan.mobil`, `kepemilikan.motor`, `kepemilikan.sepedan`, dan `` `jarak.(km)` `` (ingat menggunakan *backtick* (\`) untuk kolom jarak karena terdapat karakter khusus).
+3. Buat vektor `kolom_final` berisi nama standar berikut: `c("kampus", "jenis_kelamin", "kepemilikan_mobil", "kepemilikan_motor", "kepemilikan_sepeda", "jarak")`.
+4. Gunakan vektor tersebut untuk menyeragamkan nama kolom dari data hasil seleksi Langkah 2 dengan fungsi `colnames(...) <- ...`
+5. Simpan hasil akhir (setelah diseleksi dan diubah nama kolomnya) ke variabel `data_uinril_subset`.
+6. Gunakan `glimpse(data_uinril_subset)` untuk memverifikasi bahwa sekarang hanya ada 6 kolom dan namanya sudah seragam sesuai dengan isi dari `kolom_final`.
 :::
 
 ### Menyatukan Kedua Set Data
@@ -361,52 +363,40 @@ glimpse(data_gabungan)
 ::: {.rmdexercise}
 ### Aktivitas Mandiri 3: Menggabungkan Data UINRIL dan ITERA [STP-1.3, STP-1.4].{capaian} {-}
 
-Dari file `Data Praktikum 01.xlsx`, gabungkan data responden dari UINRIL yang sudah kita impor sebelumnya dengan data ITERA.
+Melanjutkan dari aktivitas mandiri sebelumnya, gabungkan data responden dari UINRIL yang sudah kita siapkan (`data_uinril_subset`) dengan data mahasiswa ITERA.
 
 **Langkah-langkah:**
 
 1. **Impor data dari sheet ITERA** menggunakan `read.xlsx()`
-   - Simpan sheet ITERA ke variabel `data_itera_lat`
+   - Buka kembali file Excel asal dan impor dataset ITERA dari *sheet* `DataUtama_mhsITERA` ke variabel `data_itera_lat`.
 
-2. **Identifikasi kolom yang bisa digabungkan**
-   - Gunakan `glimpse()` untuk melihat nama dan tipe data setiap kolom
-   - Keenam kolom berikut akan kita gunakan: kampus, jenis kelamin, kepemilikan mobil, motor, sepeda, dan jarak
+2. **Seleksi kolom yang sesuai** menggunakan `select()`
+   - Gunakan `glimpse()` untuk mengecek nama variabel pada hasil impor di Langkah 1.
+   - Pilihlah 6 kolom yang maknanya bersesuaian dengan variabel kita pada aktivitas sebelumnya (yakni: kampus, jenis kelamin, kepemilikan mobil, motor, sepeda, dan jarak).
+   - *Penting*: Urutan kolom yang diseleksi harus sejajar dengan urutan nama di `kolom_final` pada aktivitas mandiri sebelumnya.
 
-3. **Seragamkan nama kolom**
-   - Buat vektor `kolom_final` berisi nama standar untuk semua kolom. Anda dapat menyalin susunan berikut untuk membuat vektor tersebut:
-   ```r
-   kolom_final <- c("kampus", "jenis.kelamin", "kepemilikan.mobil", "kepemilikan.motor",
-                    "kepemilikan.sepeda", "jarak")
-   ```
-   - Gunakan vektor tersebut untuk mengganti nama kolom di kedua dataset `colnames(data_itera_selected) <- kolom_final`
+3. **Ganti nama kolom** menggunakan fungsi `colnames()`
+   - Timpa nama kolom dataset ITERA yang sudah diseleksi pada Langkah 2 tadi dengan vektor `kolom_final` dari aktivitas mandiri sebelumnya.
+   - Simpan hasil akhirnya ke dalam variabel `data_itera_subset`.
 
-   Catatan: urutan 3 dan 4 dalam latihan ini sebenarnya bisa ditukar, sehingga tidak ada masalah kalau pun berbeda dengan urutan yang kalian pelajari sebelumnya
-
-4. **Seleksi kolom yang sesuai** menggunakan `select()`
-   - Pilih kolom-kolom yang sebelumnya kita sudah seleksi. Penting: urutan kolom yang diseleksi harus sesuai dengan urutan nama di `kolom_final`
-   - Ingat menggunakan backtick (`) untuk kolom dengan karakter khusus
-
-5. **Ganti nama kolom untuk kedua dataset** menggunakan `colnames()`
-   - Ganti nama kolom untuk kedua dataset dengan `colnames(dataset_tiap_kampus) <- kolom_final`
-
-6. **Gabungkan dengan `bind_rows()`**
-   - Jika ada error tipe data, periksa dengan `glimpse()` dan perbaiki
-   - Simpan hasil gabungan ke variabel `data_gabungan_iteraunila`
+4. **Gabungkan dengan `bind_rows()`**
+   - Gabungkan `data_uinril_subset` dengan `data_itera_subset` menggunakan `bind_rows()`.
+   - Simpan set data dari hasil gabungan ini ke variabel `data_gabungan_iterauinril`.
 
 **Analisis [STP-1.3]:**
 
-1. Berapa jumlah **variabel** (kolom) dalam data gabungan?
+1. Berapa jumlah **variabel** (kolom) dalam data gabungan (`data_gabungan_iterauinril`)?
 2. Berapa jumlah **objek** (baris) dalam data gabungan?
-3. Tampilkan bukti dengan `glimpse(data_gabungan_iteraunila)`
+3. Tampilkan bukti dengan menjalankan perintah `glimpse(data_gabungan_iterauinril)`.
 
 **Refleksi:**
 - Apa tantangan terbesar yang Anda hadapi dalam menggabungkan data?
-- Mengapa penting untuk mengecek tipe data sebelum menggabungkan dataset?
+- Mengapa penting untuk mengecek atau menyeragamkan tipe data sebelum menggabungkan dataset?
 :::
 
 ### Mengekspor Set Data Hasil Pengolahan ke Fail *(File)* Terpisah
 
-Dalam dunia data sains dikenal jenis fail `.csv` yang merupakan singkatan dari **comma-separated values*.* Fail ini menyimpan nilai-nilai dalam bentuk teks biasa yang dipisahkan oleh koma (*comma-separated*) sehingga dapat dibaca sebagai tabel. 
+Dalam dunia data sains dikenal jenis fail `.csv` yang merupakan singkatan dari ***comma-separated values***. Fail ini menyimpan nilai-nilai dalam bentuk teks biasa yang dipisahkan oleh koma (*comma-separated*) sehingga dapat dibaca sebagai tabel. 
 
 
 ::: rmdnote
@@ -472,7 +462,7 @@ Fungsi `write.csv()` digunakan untuk set data yang menggunakan **tanda titik** s
 
 Sementara itu, `write.csv2()` menggunakan pemisah **titik-koma (;)** *(semicolon)*. Ini digunakan untuk set data yang pemisah desimalnya adalah **tanda koma**.
 
-```{r mod01-export-csv, echo=TRUE}
+```{r mod01-export-csv, echo=TRUE, eval=FALSE}
 # Mengekspor data_gabungan dalam format csv
 write.csv2(data_gabungan, "Data UINRIL & UBL.csv")
 ```
@@ -481,8 +471,15 @@ write.csv2(data_gabungan, "Data UINRIL & UBL.csv")
 
 Sama seperti write.csv2(), fungsi write.xlsx() juga mengikuti format yang sama.
 
-```{r mod01-export-xlsx, echo=TRUE}
+```{r mod01-export-xlsx, echo=TRUE, eval=FALSE}
 write.xlsx(data_gabungan, "Data UINRIL & UBL.xlsx")
+```
+
+Jika kita ingin mengekspor fail ke dalam suatu direktori yang sudah ada, misalnya `dir-saya`, maka kita bisa menambahkan nama direktori tersebut sebelum nama failnya.
+
+```{r mod01-export-csv-dir, echo=TRUE, eval=FALSE}
+# Mengekspor data_gabungan ke dalam direktori dir-saya
+write.csv2(data_gabungan, "dir-saya/Data UINRIL & UBL.csv")
 ```
 
 ::: {.rmdexercise}
@@ -490,8 +487,8 @@ write.xlsx(data_gabungan, "Data UINRIL & UBL.xlsx")
 
 **Simpan ke file**
    - Ekspor hasil gabungan dengan `write.xlsx()`
-   - Nama file: `Prak1_[NIM1]_[NIM2].xlsx`
-   - Pastikan direktori file hasil ekspor ada di
+   - Nama file: `Prak1_[NIM]_[Nama].xlsx`
+   - Pastikan direktori file hasil ekspor ada di direktori `output`.
 
 :::
 
