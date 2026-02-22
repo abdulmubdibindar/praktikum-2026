@@ -107,7 +107,7 @@ Rincian nama-nama variabel ditunjukkan pada baris keluaran yang diawali oleh sim
 Terlihat dalam data kita bahwa hanya ada dua tipe nilai variabel: `dbl` dan `chr` yang berarti *double* (bilangan desimal) dan *character* (huruf/*string*).
 
 ::: {.rmdexercise}
-### Aktivitas Mandiri 1: Menganalisis Struktur Data [STP-1.3].{capaian} {-}
+### Aktivitas Mandiri 1: Menganalisis Struktur Data [STP-1.3]{.capaian} {-}
 
 Impor dan jalankan `glimpse(data)` untuk dataset **UIN RIL** dan jawab:
 
@@ -274,7 +274,7 @@ colnames(data_ubl_selected)
 Hasil dari kedua perintah di atas seharusnya adalah daftar nama yang identik.
 
 ::: {.rmdexercise}
-### Aktivitas Mandiri 2: Seleksi dan Rename Kolom [STP-1.4].{capaian} {-}
+### Aktivitas Mandiri 2: Seleksi dan Rename Kolom [STP-1.4]{.capaian} {-}
 
 Pada aktivitas ini kita akan mengolah kembali dataset dari UINRIL.
 
@@ -361,7 +361,7 @@ glimpse(data_gabungan)
 - Sudah siap untuk analisis lebih lanjut!
 
 ::: {.rmdexercise}
-### Aktivitas Mandiri 3: Menggabungkan Data UINRIL dan ITERA [STP-1.3, STP-1.4].{capaian} {-}
+### Aktivitas Mandiri 3: Menggabungkan Data UINRIL dan ITERA [STP-1.3, STP-1.4]{.capaian} {-}
 
 Melanjutkan dari aktivitas mandiri sebelumnya, gabungkan data responden dari UINRIL yang sudah kita siapkan (`data_uinril_subset`) dengan data mahasiswa ITERA.
 
@@ -483,7 +483,7 @@ write.csv2(data_gabungan, "dir-saya/Data UINRIL & UBL.csv")
 ```
 
 ::: {.rmdexercise}
-### Aktivitas Mandiri 4: Mengekspor Set Data Gabungan [STP-1.3, STP-1.4].{capaian} {-}
+### Aktivitas Mandiri 4: Mengekspor Set Data Gabungan [STP-1.3, STP-1.4]{.capaian} {-}
 
 **Simpan ke file**
    - Ekspor hasil gabungan dengan `write.xlsx()`
